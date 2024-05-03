@@ -1,0 +1,18 @@
+- key:      avast
+  items:
+  - name:   Avast
+    slug:   /hersteller/avast/
+  - name:   Antivirus
+    slug:   /hersteller/avast/antivirus/
+  - name:   Antivirus Pro
+    slug:   /hersteller/avast/antivirus-pro/
+  - name:   Antivirus Pro Plus
+    slug:   /hersteller/avast/antivirus-proplus/
+  - name:   Antivirus für Linux
+    slug:   /hersteller/avast/antivirus-for-linux/
+  - name:   Essentials Business Security
+    slug:   /hersteller/avast/essentials-business-security/
+  - name:   Premium Business Security
+    slug:   /hersteller/avast/premium-business-security/
+  - name:   Ultimate Business Security
+    slug:   /hersteller/avast/ultimate-business-security/

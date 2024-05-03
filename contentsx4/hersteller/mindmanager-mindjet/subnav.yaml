@@ -1,0 +1,16 @@
+- key:      mindmanager-mindjet
+  items:
+  - name:   MindManager
+    slug:   /hersteller/mindmanager-mindjet/
+  - name:   MM Essentials
+    slug:   /hersteller/mindmanager-mindjet/mindmanager-essentials/
+  - name:   MM for Mac
+    slug:   /hersteller/mindmanager-mindjet/mindmanager-for-mac/
+  - name:   MM for Windows
+    slug:   /hersteller/mindmanager-mindjet/mindmanager-for-windows/
+  - name:   MM for Teams
+    slug:   /hersteller/mindmanager-mindjet/mindmanager-for-teams/
+  - name:   MM Professional
+    slug:   /hersteller/mindmanager-mindjet/mindmanager-professional/
+  - name:   MM Enterprise
+    slug:   /hersteller/mindmanager-mindjet/mindmanager-enterprise/

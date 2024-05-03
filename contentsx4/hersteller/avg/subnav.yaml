@@ -1,0 +1,12 @@
+- key:      avg
+  items:
+  - name:   AVG Technologies
+    slug:   /hersteller/avg/
+  - name:   E-Mail Server
+    slug:   /hersteller/avg/email-server-business/
+  - name:   File Server
+    slug:   /hersteller/avg/file-server-business/
+  - name:   AntiVirus
+    slug:   /hersteller/avg/antivirus-business/
+  - name:   Internet Security
+    slug:   /hersteller/avg/internet-security-business/

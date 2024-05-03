@@ -1,0 +1,8 @@
+- key:      wasabi
+  items:
+  - name:   Wasabi
+    slug:   /hersteller/wasabi/
+  - name:   Hot Cloud Storage
+    slug:   /hersteller/wasabi/hot-cloud-storage/
+  - name:   Direct Connect (Add-on)
+    slug:   /hersteller/wasabi/direct-connect/

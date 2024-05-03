@@ -1,0 +1,9 @@
+- key:      sep
+  items:
+  - name:   SEP
+    slug:   /hersteller/sep/
+  - name:   CAPS
+    slug:   /hersteller/sep/caps/
+  - name:   sesam
+    slug:   /hersteller/sep/sesam/
+  

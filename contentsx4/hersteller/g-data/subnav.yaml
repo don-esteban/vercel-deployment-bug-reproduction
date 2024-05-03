@@ -1,0 +1,22 @@
+- key:      g-data
+  items:
+  - name:   G-DATA
+    slug:   /hersteller/g-data/
+  - name:   Antivirus
+    slug:   /hersteller/g-data/antivirus/
+  - name:   Client Security
+    slug:   /hersteller/g-data/client-security/
+  - name:   Endpoint Protection
+    slug:   /hersteller/g-data/endpoint-protection/
+  - name:   Module
+    sub:
+    - name:   Übersicht
+      slug:   /hersteller/g-data/module/
+    - name:   Patch Management
+      slug:   /hersteller/g-data/module/#patch-management
+    - name:   Linux Web Security Gateway
+      slug:   /hersteller/g-data/module/#linux-web-security-gateway-preise
+    - name:   Linux Mail Security Gateway
+      slug:   /hersteller/g-data/module/#linux-mail-security-gateway-preise
+    - name:   Exchange Mail Security
+      slug:   /hersteller/g-data/module/#exchange-mail-security-modul

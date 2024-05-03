@@ -1,0 +1,10 @@
+- key:      avepoint
+  items:
+  - name:   AvePoint
+    slug:   /hersteller/avepoint/
+  - name:   Cloud Backup
+    slug:   /hersteller/avepoint/cloud-backup/
+  - name:   Fly Migrator
+    slug:   /hersteller/avepoint/fly-migrator/
+  - name:   Policies & Insights
+    slug:   /hersteller/avepoint/policies-insights/

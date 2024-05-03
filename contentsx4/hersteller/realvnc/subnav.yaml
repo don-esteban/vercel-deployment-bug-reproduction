@@ -1,0 +1,24 @@
+- key:      realvnc
+  items:
+  - name:   RealVNC
+    slug:   /hersteller/realvnc/
+  - name:   per Device
+    sub:
+    - name: Essentials
+      slug: /hersteller/realvnc/essentials/
+    - name: Business Plus
+      slug: /hersteller/realvnc/business-plus/
+    - name: Business Premium
+      slug: /hersteller/realvnc/business-premium/
+    - name: Enterprise
+      slug: /hersteller/realvnc/enterprise/
+  - name:   per User
+    sub:
+    - name: Essentials
+      slug: /hersteller/realvnc/essentials-user/
+    - name: Business Plus
+      slug: /hersteller/realvnc/business-plus-user/
+    - name: Business Premium
+      slug: /hersteller/realvnc/business-premium-user/
+    - name: Enterprise
+      slug: /hersteller/realvnc/enterprise-user/

@@ -1,0 +1,10 @@
+- key:      tetra4d
+  items:
+  - name:   Tetra4D
+    slug:   /hersteller/tetra4d/
+  - name:   Converter
+    slug:   /hersteller/tetra4d/converter/
+  - name:   Enrich
+    slug:   /hersteller/tetra4d/enrich/
+  - name:   Automate
+    slug:   /hersteller/tetra4d/automate/

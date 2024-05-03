@@ -1,0 +1,202 @@
+---
+title: Windows Server 2022 Lizenzierung
+bcTitle: Lizenzierung
+bkey: microsoft
+ckey: stefan-barth
+tocMaxLevel: 2
+date: 2023-11-17
+wanted:
+  features:
+    - name: Windows Server Standard und Datacenter werden nach Prozessorkernen lizenziert
+    - name: Windows Server Essentials ist eine eingeschränkte Lizenz für maximal eine CPU mit 10 Cores
+    - name: Hier finden Sie weitere Informationen zur Core-Lizenzierung
+furtherReading:
+  - name: Microsoft Lizenzierung
+    slug: /hersteller/microsoft/lizenzierung/
+    description: Übersicht der Windows Server Lizenzierungsmöglichkeiten und Unterschiede in den Bezugswegen.
+  - name: Neue Windows Server vCore Lizenzierung
+    slug: /blog/lizenzierung-nach-vm-fuer-windows-server-angekuendigt/
+    description: Die neue Core Lizenzierung für virtuelle Kerne.
+  - name: Windows Server LTSC und SAC
+    slug: /blog/windows-server2019-ltsc-sac/
+    description: Windows Server Updates mit LTSC und SAC.
+---
+
+<Intro>
+
+Windows Server wird nach Cores (Prozessorkernen) lizenziert. Zusätzlich zur Serverlizenz werden auch Zugriffslizenzen (CALs) für Nutzer oder Geräte benötigt.
+Auf dieser Seite erklären wir die Lizenzierung der beiden Haupt-Editionen (Standard und Datacenter), der Essentials Edition und zeigen welche CALs Sie wofür benötigen.
+
+
+</Intro>
+
+<TOC />
+
+
+
+## Neue vCore Lizenzierung
+
+Seit Oktober 2022 gibt es eine neue Lizenzierungsmöglichkeit nach der Anzahl an vCores/vCPUs. Damit können auch einzelne Windows Server Standard VMs nach Cores lizenziert werden und die Lizenzierung von virtuellen Umgebungen wird vereinfacht: Es muss nicht mehr unbedingt der komplette Host lizenziert werden.
+
+Voraussetzung für die Nutzung der Lizenzierung einzelner VMs:
+
+<ArrowList>
+
+- Die Windows Serverlizenz und die CALs müssen entweder als CSP Subscription lizenziert werden oder über aktive Software Assurance verfügen. Eine Mischung der beiden Lizenzformen ist ebenfalls möglich.
+- Die Mindestlizenzierung beträgt mindestens 8 Cores pro VM und 16 Cores pro Kunden.
+- Beliebiges Verschieben der Lizenzen im eigenen Rechenzentrum. 90 Tage Frist beim Verschieben in andere Rechenzentren (Siehe: [Lizenzmobilität innerhalb der eigenen Serverfarm](/blog/lizenzmobilitaet-fuer-microsoft-lizenzen-mit-software-assurance/#lizenzmobilität-innerhalb-einer-serverfarm)).
+- Weitere Infos finden Sie in unserem Beitrag [Lizenzierung nach VM für Windows Server angekündigt](/blog/lizenzierung-nach-vm-fuer-windows-server-angekuendigt/).
+
+</ArrowList>
+
+<Info>
+
+**Achtung:** Bei der vCore Lizenzierung ist keine Lizenz für den Hypervisor Host enthalten. Es werden lediglich die virtuellen Kerne lizenziert. Bei der Nutzung von Hyper-V benötigt der Hypervisor daher ebenfalls eine Windows Server Lizenz.
+
+</Info>
+
+
+## Windows Server 2022 Editionen
+
+<ArrowList>
+
+- **[Windows Server 2022 Standard](/hersteller/microsoft/windows-server/standard-2022/)**:<br />
+  Prozessorkern (Core)- und Zugriffslizenzen (CAL). Enthält die Berechtigung für 2 Betriebssystemumgebungen (physisch oder virtuell).
+
+- **[Windows Server 2022 Datacenter](/hersteller/microsoft/windows-server/datacenter-2022/)**:<br />
+  Prozessorkern (Core)- und Zugriffslizenzen (CAL). Unbegrenzte Virtualisierung.
+
+- **[Windows Server 2022 Essentials](/hersteller/microsoft/windows-server/essentials-2022/)**:<br />
+  Beschränkte Serverlizenz mit maximal einer CPU und 10 Cores. Keine CALs nötig!
+
+</ArrowList>
+
+
+## Windows Server 2022 Lizenzierung
+
+Windows Server Standard und Windows Server Datacenter werden immer nach Prozessorkernen (Cores) mit Zugriffslizenzen (CALs) lizenziert. Für die Lizenzierung der Server gilt:
+
+<ArrowList>
+
+- Jede Betriebssysteminstanz (physisch oder virtuell), in der ein Windows Server ausgeführt wird, benötigt eine Serverlizenz.
+- Die [Serverlizenz](#serverlizenz-cores) wird nach Prozessorkernen (Cores) lizenziert.
+- Jeder Zugriff auf den Windows Server erfordert eine [Zugriffslizenz (CAL)](#windows-server-cal-lizenzierung).
+- Kauflizenzen erhalten Sie im [CSP](/hersteller/microsoft/csp/) oder mit eingeschränkten Rechten als [OEM](/hersteller/microsoft/oem/).
+- [CSP Subscriptions](/hersteller/microsoft/csp/) enthalten zusätzliche Virtualisierungsrechte.
+- Volumenlizenzen mit 3 Jahren Software Assurance (SA) erhalten Sie im [Open Value](/hersteller/microsoft/open-value/).
+- Mit Software Assurance (SA) erhalten Sie zusätzliche Vorteile.
+
+</ArrowList>
+
+
+### Serverlizenz (Cores)
+
+<ArrowList>
+
+- Jeder Prozessorkern der ausführenden Hardware muss lizenziert werden.
+- Es müssen mindestens 8 Cores je Prozessor lizenziert werden.
+- Mindestlizenzierung sind 16 Cores pro (physischem) Server. Für virtualisierte Server gilt eine Mindestlizenzierung von 8 Cores.
+- Für die Lizenzierung von virtuellen Prozessorkernen (vCores) wird aktive SA oder eine CSP Subscription benötigt.
+- Core-Lizenzen sind in 2-Core und 16-Core Lizenzpaketen verfügbar. 8-Core Pakete gibt es nur bei Subscriptions.
+- Core-Lizenzen können nicht aufgeteilt und für mehrere Server genutzt werden.
+
+</ArrowList>
+
+<Info>
+
+**Windows Server Standard Virtualisierung**<br />
+Für die Virtualisierung muss die gesamte physische Hardware des Hypervisor-Server abgedeckt sein. Nur produktive Server benötigen eine Lizenz. Wird der Hypervisor nur zur Bereitstellung der virtuellen Instanzen benutzt, so benötigt er keine eigene Lizenz.
+Damit können mit einer Windows Server Standard Lizenz 2 virtuelle Instanzen und der zugrunde liegende Hypervisor lizenziert werden.
+
+</Info>
+
+
+### Windows Server CAL-Lizenzierung
+
+<ArrowList>
+
+- Eine CAL wird für den Zugriff auf Windows Server Standard oder Datacenter benötigt.
+- CALs können nach Benutzern ([User CAL](/glossar/user-cal-microsoft/)) oder Geräten ([Device CAL](/glossar/device-cal-microsoft/)) lizenziert werden.
+- CALs sind versionsgebunden und abwärtskompatibel.
+- Eine CAL berechtigt zum Zugriff auf alle Windows Server im Unternehmen.
+- Für den Zugriff auf einen Terminalserver werden [RDS CALs](/hersteller/microsoft/windows-server/remote-desktop-services/) benötigt.
+- Für die Rechteverwaltung mit AD Rights Management Services sind [RMS CALs](/hersteller/microsoft/windows-server/rights-management-services/) nötig.
+- [External Connector](/hersteller/microsoft/windows-server/external-connector/) ermöglichen den Zugriff aller externen Benutzer auf den lizenzierten Server.
+- Windows Server Essentials benötigt keine CALs.
+
+</ArrowList>
+
+<Info>
+
+User CALs bieten sich an, wenn ein Nutzer von mehreren Geräten auf den Server zugreift, Device CALs sind günstiger, wenn mehrere Nutzer über ein Gerät zugreifen. Die Lizenzierung einer großen Anzahl an externen Zugriffe kann mit einer External Connector Lizenz günstiger sein.
+
+</Info>
+
+### Windows Server 2022 CALs kaufen
+
+<ArrowList>
+
+ - [Windows Server CAL](/hersteller/microsoft/windows-server/cal/)
+ - [External Connector](/hersteller/microsoft/windows-server/external-connector/)
+ - [Remote Desktop Services (RDS) CAL](/hersteller/microsoft/windows-server/remote-desktop-services/)
+ - [Rights Management Services (RMS) CAL](/hersteller/microsoft/windows-server/rights-management-services/)
+ - [Microsoft CAL Suites](/hersteller/microsoft/cal-suite/)
+
+</ArrowList>
+
+
+## Windows Server 2022 Essentials Lizenzierung
+
+Die Essentials Edition wird im Gegensatz zur [Standard](/hersteller/microsoft/windows-server/standard-2022/) und [Datacenter](/hersteller/microsoft/windows-server/datacenter-2022/) Edition nicht core-basiert, sondern server-basiert lizenziert.
+
+<ArrowList>
+
+- Serverlizenz ohne Prozessorkerne und CALs.
+- Der Server ist auf maximal eine CPU und mit 10 Kernen beschränkt.
+- Limit von 25 Benutzern oder 50 Geräten über Active Directory (AD).
+- Kann als Terminalserver genutzt werden. In diesem Fall werden [RDS CALs](/hersteller/microsoft/windows-server/remote-desktop-services/) benötigt.
+- Windows Server Essentials 2022 ist nicht als Volumenlizenz verfügbar und kann ausschließlich als [OEM-Lizenz](/hersteller/microsoft/oem/) gekauft werden.
+
+</ArrowList>
+
+### Essentials als Terminalserver
+
+Der Windows Server Essentials kann auch als Terminalserver eingesetzt werden.
+Zugriffe benötigen dann allerdings eine [Remote Desktop Services Zugriffslizenz (RDS CAL)][Remote Desktop Services](/hersteller/microsoft/windows-server/remote-desktop-services/).
+
+
+
+## Lizenzprogramme und Bezugswege
+
+### OEM Kauflizenzen
+
+Dauerhaft gültige [OEM-Lizenz](/hersteller/microsoft/oem/) (perpetual License) mit eigenschränkten Rechten. Support und einige Nutzungsrechte, bspw. zur Zweitnutzung oder Virtualisierung, sind nicht enthalten.
+
+### CSP Kauflizenzen
+
+Kauflizenzen für gewerbliche Kunden sind im [CSP-Lizenzprogramm](/hersteller/microsoft/csp/) erhältlich. Es gibt hier keine Mindestbestellmenge und auch keine Software Assurance. Bildungseinrichtungen und gemeinnützige Organisationen erhalten Sonderkonditionen. Behörden erhalten dieselben Einkaufskonditionen, wie Unternehmen. Das Downgrade-Recht, zum Einsatz älterer Versionen, ist aber enthalten. Software Sie im CSP Portal herunterladen.
+
+### CSP Subscriptions
+
+CSP Subscriptions enthalten dieselben [Vorteile wie die Software Assurance](/hersteller/microsoft/software-assurance/) in den Volumenlizenzverträgen. Die Lizenzen können im CSP Portal heruntergeladen werden.
+
+### Open Value Volumenlizenzen
+
+[Open Value Volumenlizenzen](/hersteller/microsoft/open-value/) enthalten immer [Software Assurance (SA)](/hersteller/microsoft/software-assurance/) und können als Kauflizenz mit 3 Jahren Software Assurance im Voraus oder auf Raten gekauft werden. Es gibt Sonderkonditionen für Behörden, Bildungseinrichtungen und gemeinnützige Organisationen. Seit Ende 2021 werden Open License Kunden bei SA-Verlängerungen auf das Open Value Lizenzprogramm umgestellt. Beachten Sie bitte, dass sich hierbei die Vertragslaufzeit von 2 Jahren (Open License) auf 3 Jahre (Open Value) ändert. Gerne beraten wir Sie beim Wechsel.
+
+
+
+## Wartung und Support
+
+Windows Server enthält seit Version 2022 nur noch die Long Term Servicing Channel (LTSC)-Version. LTSC-Versionen sind die Basis für traditionelle Applikationen wie Exchange, SQL-Server, Oracle, SAP und Services wie Fileservices, Printservices, Domain Controller. Semi Annual Channel (SAC) Versionen sind nicht mehr enthalten (siehe: [Windows Server mit LTSC und ohne SAC](/blog/windows-server2019-ltsc-sac/)).
+Windows Server folgt der Microsoft Fixed Lifecycle Richtlinie und erhält damit 5 Jahre Mainstream und 5 Jahre erweiterten Support bis 14. Oktober 2031.
+
+Siehe: [Microsoft Support-Ende](/hersteller/microsoft/supportende-eol/).
+
+
+<GetInTouch theme="light">
+
+Sie haben weitere Fragen zum Produkt oder zur Lizenzierung?<br />
+Kein Problem. Rufen Sie an oder schreiben Sie eine E-Mail. Ich berate Sie gerne.
+
+</GetInTouch>

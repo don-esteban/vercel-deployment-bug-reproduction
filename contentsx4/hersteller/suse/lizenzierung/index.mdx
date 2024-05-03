@@ -1,0 +1,144 @@
+---
+title: SUSE Lizenzierung
+bcTitle: Lizenzierung
+bkey: suse
+ckey: enrico-koehle
+date: 2023-08-04
+wanted:
+  title: SUSE Lizenzierung und Support
+  features:
+    - name: Lizenzierung
+    - name: Support
+furtherReading:
+    - name: SUSE Enterprise Linux Product Guide
+      description: Lizenzierungsguide für SUSE Produkte
+      slug: https://www.suse.com/products/terms_and_conditions.pdf
+---
+
+
+
+
+<Intro>
+
+
+Auf dieser Seite finden Sie wichtige Informationen zum Kauf von SUSE Produkten. Sie erfahren, wie Sie SUSE lizenzieren und was Sie dabei beachten müssen.
+
+
+</Intro>
+
+<TOC />
+
+
+
+## Subscription
+
+Software- und Supportsubscriptions erweitern die Funktionalität und Unterstützung von SUSE Produkten. SUSE Subscriptions können für 1, 3 oder 5 Jahre gebucht werden. Andere Laufzeiten können angefragt werden. Die Subscription gibt es entweder ohne Wartung [(Basic-Support)](#basic) oder mit [Standard-](#standard) und [Priority-Support](#priority). Mit den erworbenen Subscriptions besteht auch ein Downgrade-Recht.
+
+Zusätzliche Funktionen gibt es beispielsweise bei SUSE Manager. Nach Ablauf der Subscription erlischt dann das Nutzungsrecht. Wenn eine weitere Nutzung gewünscht wird, muss verlängert werden.
+
+## Lizenzierung nach virtuellen Instanzen
+
+Beim Deployment auf Hypervisor/Cloud gibt es zwei Möglichkeiten, die virtuellen Instanzen abzudecken.
+
+Beispiel für Lizenzierung nach virtuellen Instanzen: SUSE Linux Enterprise Server (SLES).
+
+###  Physical or Virtual
+
+Bei "Physical or Virtual" - Lizenzen wird pro 2 Sockets oder pro 2 virtuelle Instanzen lizenziert. Bei der Lizenzierung nach virtuellen Instanzen werden alle Instanzen addiert und durch 2 geteilt, um die Anzahl der Lizenzen zu erhalten.
+
+<Info>
+
+Je nach Bedarf, können Ihre bereits erworbenen SLE Physical or Virtual Subscriptions (mit Wartung) von physischen Sockets in virtuelle Instanzen (2) umwandeln und umgekehrt.
+
+</Info>
+
+### Physical and Unlimited Virtual
+
+Bei "Physical and Unlimited Virtual" - Lizenzen werden alle virtuellen Instanzen auf einem Server abgedeckt. Lizenziert wird pro 2er Socket. Es müssen hier alle physischen Sockets lizenziert werden.
+
+## Lizenzierung nach Sockets
+
+Bei Deployment auf physischer Hardware wird nach Sockets lizenziert. Eine Subscription deckt zwei Sockets ab (Socket-Paar) oder ein Socket-System (Server mit einem Socket).
+
+Beispiel für Lizenzierung nach Sockets: SUSE Linux Enterprise Server (SLES).
+
+<Info>
+
+Je nach Bedarf, können Ihre bereits erworbenen SLE Physical or Virtual Subscriptions (mit Wartung) von physischen Sockets in virtuelle Instanzen (2) umwandeln und umgekehrt.
+
+</Info>
+
+## Lizenzierung nach PCs
+
+Bei der Lizenzierung nach PCs ist die eingesetzte Hardware irrelevant. Jeder PC erfordert eine Lizenz.
+
+Beispiel für Lizenzierung nach PCs: SUSE Linux Enterprise Desktop (SLED).
+
+## Lizenzierung nach Nodes
+
+Bei der Lizenzierung nach Nodes, werden alle Nodes der jeweiligen Instanz (Server) gezählt. Die Basis deckt einen Server und 20 Nodes ab. Falls Ihr Server mehr Nodes aufzählt, können zusätzliche Node-Lizenzen dazu gebucht werden.
+
+Beispiel für Lizenzierung nach Nodes: SUSE Rancher.
+
+## Laufzeitanpassungen
+
+Wenn Sie während der Laufzeit einer bestehenden Subscription Lizenzen nachkaufen, kann ich für Sie die Laufzeiten anpassen. Laufzeitanpassungen für Nachbestellungen können zwischen 12 und 60 Monaten angefragt werden. Gerne können Sie mich dazu kontaktieren.
+
+## Add-ons
+
+Add-Ons erweitern die Funktionalität von SLES und werden nach der Anzahl an vorhandenen SLES Subscriptions des jeweiligen Servers lizenziert und zugewiesen. Entweder werden auf dem Server alle Subscriptions mit Add-On(s) ausgestattet oder keine.
+
+## SUSE Support
+
+Es gibt 3 Support-Stufen: Basic, Standard und Priority. <br/>
+
+### Basic
+
+Mit Basic hat man keinen Anspruch auf technischen Support. Man erhält lediglich Zugriff auf Tools und kostenlose Hotfixes, Patches und Updates über das Customer Center.
+
+### Standard
+
+Ab Standard hat man Anspruch auf den technischen SUSE Support und auf die aktuellste Version. Der Support  ist erreichbar zu den üblichen Geschäftszeiten (12x5 Support), siehe [Support Reaktionszeiten](/hersteller/suse/lizenzierung/#support---reaktionszeiten).
+
+### Priority
+
+Mit Priority hat man bessere Reaktionszeiten beim technischen SUSE Support. Dieser ist auch außerhalb der Geschäftzeiten erreichbar an 365 Tagen (24/7 Support), siehe [Support Reaktionszeiten](/hersteller/suse/lizenzierung/#support---reaktionszeiten).
+
+### Support - Reaktionszeiten
+
+|Support|Basic|Standard|Priority|
+|:---|:---|:---|:---|
+|Support Verfügbarkeit|Nicht verfügbar|Montag - Freitag|Jederzeit (24/7/365)|
+|Antwortzeiten|Keine SLA|1 - Severity: 2 Geschäftsstunden <br /> 2 - Severity: 4 Geschäftsstunden<br /> 3 - Severity: Nächster Geschäftstag <br /> 4 - Severity: Nächster Geschäftstag|1 - Severity: 1 Stunde<br /> 2 - Severity: 2 Stunden<br /> 3 - Severity: 4 Stunden<br /> 4 - Severity: Nächster Geschäftstag|
+|Kontaktmöglichkeiten|Knowledge Base, Foren|Chat, Telefonisch, Web|Chat, Telefonisch, Web|
+
+
+<Info>
+
+Falls Sie mehr Support benötigen, beispielsweise durch direkten Ansprechpartner, können Sie ihren Priority Support erweitern. Es gibt 4 [SUSE Premium (Bronze, Silber, Gold, Platinum)](https://www.suse.com/services/premium/) Supportstufen. Gerne können Sie mich dazu kontaktieren.
+
+</Info>
+
+### Support-Prioritäten
+
+
+- **1 - Critical** - Bei Produktionsstop und drohenden Verlust von Daten und Ausfällen, kein Workaround möglich.
+- **2 - High ** - Unternehmensprozesse sind stark eingeschränkt, und wichtige Funktionen sind nicht mehr verfügbar. Workaround ist eingeschränkt möglich.
+- **3 - Medium** - Tägliche Geschäfte sind weiterhin möglich, aber teilweiser Ausfall der Software.
+- **4 - Low** - Einreichen von Dokumentationsfehler, Verbesserungsvorschläge.
+
+### Wartungszyklen
+
+SUSE Produkte haben generelle Wartungszyklen von mindestens 10 Jahren. So können Sie auch nach 10 Jahren auf eine aktuelle Version updaten und migrieren.
+
+Genauere Informationen zu den Wartungszyklen finden Sie unter [SUSE Product Support Lifecycle](https://www.suse.com/support/policy/).
+
+
+
+<GetInTouch theme="light">
+
+**Unterstützung bei der Implementierung:**
+
+Wenn Sie Fragen haben oder Unterstützung bei der Implementierung benötigen oder Schulungen zu wichtigen administrativen Prozessen, können wir Ihnen gerne einen Consulting Service anbieten. Gerne können Sie mich dazu kontaktieren.
+
+</GetInTouch>

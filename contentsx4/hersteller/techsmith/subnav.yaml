@@ -1,0 +1,16 @@
+- key:      techsmith
+  items:
+  - name:   TechSmith
+    slug:   /hersteller/techsmith/
+  - name:   Snagit
+    slug:   /hersteller/techsmith/snagit/
+  - name:   Camtasia
+    slug:   /hersteller/techsmith/camtasia/
+  - name:   Bundle Camtasia/Snagit
+    slug:   /hersteller/techsmith/camtasia-snagit-bundle/
+  - name:   Snagit/Camtasia Assets (Addon)
+    slug:   /hersteller/techsmith/assets/
+  - name:   Audiate
+    slug:   /hersteller/techsmith/audiate/
+  - name:   Screencast
+    slug:   /hersteller/techsmith/screencast/

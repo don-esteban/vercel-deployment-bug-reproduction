@@ -1,0 +1,10 @@
+- key:      kofax
+  items:
+  - name:   Kofax
+    slug:   /hersteller/kofax/
+  - name:   Power PDF
+    slug:   /hersteller/kofax/power-pdf/
+  - name:   PaperPort
+    slug:   /hersteller/kofax/paperport/
+  - name:   OmniPage
+    slug:   /hersteller/kofax/omnipage/

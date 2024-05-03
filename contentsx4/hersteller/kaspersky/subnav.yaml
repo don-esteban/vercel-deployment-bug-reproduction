@@ -1,0 +1,40 @@
+- key:      kaspersky
+  items:
+  - name:   Kaspersky
+    slug:   /hersteller/kaspersky/
+  - name:   Endpoint Security
+    sub:
+    - name:   Endpoint Security Select
+      slug:   /hersteller/kaspersky/endpoint-security-select/
+    - name:   Endpoint Security Advanced
+      slug:   /hersteller/kaspersky/endpoint-security-advanced/
+    - name:   Endpoint Security Cloud
+      slug:   /hersteller/kaspersky/endpoint-security-cloud/
+    - name:   Endpoint Security Cloud Plus
+      slug:   /hersteller/kaspersky/endpoint-security-cloud-plus/
+    - name:   Endpoint Security Microsoft Office 365
+      slug:   /hersteller/kaspersky/security-for-microsoft-office-365/
+  - name:   Total Security for Business
+    slug:   /hersteller/kaspersky/total-security-for-business/
+  - name:   Target Security
+    sub:
+    - name:   Target Security for Internet Gateway
+      slug:   /hersteller/kaspersky/security-for-internet-gateway/
+    - name:   Target Security for Mail Server
+      slug:   /hersteller/kaspersky/security-for-mail-server/
+    - name:   Target Security for Office 365
+      slug:   /hersteller/kaspersky/security-for-microsoft-office-365/
+  - name:   Small Office Security
+    slug:   /hersteller/kaspersky/small-office-security/
+  - name:   Endpoint Detection and Response
+    slug:   /hersteller/kaspersky/edr-optimum/
+  - name:   Hybrid Cloud Security
+    slug:   /hersteller/kaspersky/hybrid-cloud-security/
+  - name:   Vulnerability and Patch Management
+    slug:   /hersteller/kaspersky/vulnerability-patch-management/
+  - name:   Encrpytion for Endpoint
+    slug:   /hersteller/kaspersky/encryption-for-endpoint/
+  - name:   Sandbox
+    slug:   /hersteller/kaspersky/sandbox/
+  - name:   Security Health Check
+    slug:   /hersteller/kaspersky/health-check/

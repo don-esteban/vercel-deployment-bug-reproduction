@@ -1,0 +1,14 @@
+- key:      prtg
+  items:
+  - name:   PRTG
+    slug:   /hersteller/prtg/
+  - name:   PRTG Network Monitor
+    slug:   /hersteller/prtg/network-monitor/
+  - name:   Erweiterungen
+    sub:
+    - name: PRTG SLA Reporter
+      slug: /hersteller/prtg/sla-reporter/
+    - name: PRTG Data Exporter
+      slug: /hersteller/prtg/data-exporter/
+    - name: PRTG Database Observer
+      slug: /hersteller/prtg/database-observer/

@@ -1,0 +1,10 @@
+- key:      embarcadero
+  items:
+  - name:   Embarcadero
+    slug:   /hersteller/embarcadero/
+  - name:   C++ Builder
+    slug:   /hersteller/embarcadero/c-builder/
+  - name:   Delphi
+    slug:   /hersteller/embarcadero/delphi/
+  - name:   RAD Studio
+    slug:   /hersteller/embarcadero/rad-studio/

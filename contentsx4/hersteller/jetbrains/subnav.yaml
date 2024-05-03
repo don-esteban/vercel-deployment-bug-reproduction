@@ -1,0 +1,40 @@
+- key:      jetbrains
+  items:
+  - name:   jetbrains
+    slug:   /hersteller/jetbrains/
+  - name:   All Products Pack
+    slug:   /hersteller/jetbrains/all-products-pack/
+  - name:   CLion
+    slug:   /hersteller/jetbrains/clion/
+  - name:   DataGrip
+    slug:   /hersteller/jetbrains/datagrip/
+  - name:   Datalore
+    slug:   /hersteller/jetbrains/datalore/
+  - name:   DataSpell
+    slug:   /hersteller/jetbrains/dataspell/
+  - name:   dotUltimate
+    slug:   /hersteller/jetbrains/dotultimate/
+  - name:   Fleet (Preview)
+    slug:   /hersteller/jetbrains/fleet/
+  - name:   GoLand
+    slug:   /hersteller/jetbrains/goland/
+  - name:   IntelliJ IDEA
+    slug:   /hersteller/jetbrains/intellij-idea-ultimate/
+  - name:   PhpStorm
+    slug:   /hersteller/jetbrains/phpstorm/
+  - name:   PyCharm
+    slug:   /hersteller/jetbrains/pycharm/
+  - name:   ReSharper
+    slug:   /hersteller/jetbrains/resharper/
+  - name:   Rider
+    slug:   /hersteller/jetbrains/rider/
+  - name:   RubyMine
+    slug:   /hersteller/jetbrains/rubymine/
+  - name:   Space
+    slug:   /hersteller/jetbrains/space/
+  - name:   TeamCity
+    slug:   /hersteller/jetbrains/teamcity/
+  - name:   WebStorm
+    slug:   /hersteller/jetbrains/webstorm/
+  - name:   YouTrack
+    slug:   /hersteller/jetbrains/youtrack/

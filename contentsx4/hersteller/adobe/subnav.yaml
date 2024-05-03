@@ -1,0 +1,65 @@
+- key:      adobe
+  items:
+  - name:   Adobe
+    slug:   /hersteller/adobe/
+  - name:   Acrobat
+    sub:
+    - name:   Acrobat Übersicht
+      slug:   /hersteller/adobe/acrobat/
+    - name:   Subscriptions
+    - name:   Acrobat Standard for Teams
+      slug:   /hersteller/adobe/acrobat/standard-for-teams/
+    - name:   Acrobat Standard for Enterprise
+      slug:   /hersteller/adobe/acrobat/standard-for-enterprise/
+    - name:   Acrobat Pro for Teams
+      slug:   /hersteller/adobe/acrobat/pro-for-teams/
+    - name:   Acrobat Pro for Enterprise
+      slug:   /hersteller/adobe/acrobat/pro-for-enterprise/
+    - name:   Kauflizenz
+    - name:   Acrobat Standard 2020
+      slug:   /hersteller/adobe/acrobat/standard-2020/
+    - name:   Acrobat Pro 2020
+      slug:   /hersteller/adobe/acrobat/pro-2020/
+    - name:   Sign Solutions
+    - name:   Acrobat Sign Solutions Übersicht
+      slug:   /hersteller/adobe/acrobat/sign-solutions/
+    - name:   Acrobat Sign Solutions for business
+      slug:   /hersteller/adobe/acrobat/sign-solutions/for-business/
+    - name:   Acrobat Sign Solutions for enterprise
+      slug:   /hersteller/adobe/acrobat/sign-solutions/for-enterprise/
+  - name:   Creative Cloud for Teams
+    slug:   /hersteller/adobe/creative-cloud-for-teams/
+  - name:   Creative Cloud for Enterprise
+    slug:   /hersteller/adobe/creative-cloud-for-enterprise/
+  - name:   Creative Cloud Einzelprodukte
+    sub:
+    - name:   Übersicht
+      slug:   /hersteller/adobe/creative-cloud-einzelprodukte/
+    - name:   PhotoShop CC
+      slug:   /hersteller/adobe/creative-cloud-einzelprodukte/photoshop-cc/
+    - name:   InDesign CC
+      slug:   /hersteller/adobe/creative-cloud-einzelprodukte/indesign-cc/
+    - name:   Illustrator CC
+      slug:   /hersteller/adobe/creative-cloud-einzelprodukte/illustrator-cc/
+    - name:   Premiere Pro CC
+      slug:   /hersteller/adobe/creative-cloud-einzelprodukte/premiere-pro-cc/
+    - name:   Dreamweaver CC
+      slug:   /hersteller/adobe/creative-cloud-einzelprodukte/dreamweaver-cc/
+    - name:   After Effects CC
+      slug:   /hersteller/adobe/creative-cloud-einzelprodukte/after-effects-cc/
+  - name:   Adobe Stock
+    slug:   /hersteller/adobe/stock/
+  - name:   Substance 3D Collection
+    slug:   /hersteller/adobe/substance-3d-collection/
+  - name:   Substance 3D Assets
+    slug:   /hersteller/adobe/substance-3d-assets/    
+  - name:   Captivate
+    slug:   /hersteller/adobe/captivate/
+  - name:   FrameMaker
+    slug:   /hersteller/adobe/framemaker/
+  - name:   Lightroom Classic CC
+    slug:   /hersteller/adobe/lightroom-classic-cc/
+  - name:   PhotoShop Elements
+    slug:   /hersteller/adobe/photoshop-elements/
+  - name:   Premiere Elements
+    slug:   /hersteller/adobe/premiere-elements/

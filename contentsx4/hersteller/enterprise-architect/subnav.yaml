@@ -1,0 +1,14 @@
+- key:      enterprise-architect
+  items:
+  - name:   Enterprise Architect
+    slug:   /hersteller/enterprise-architect/
+  - name:   Professional
+    slug:   /hersteller/enterprise-architect/professional/
+  - name:   Corporate
+    slug:   /hersteller/enterprise-architect/corporate/
+  - name:   Unified
+    slug:   /hersteller/enterprise-architect/unified/
+  - name:   Ultimate
+    slug:   /hersteller/enterprise-architect/ultimate/
+  - name:   Pro Cloud Server
+    slug:   /hersteller/enterprise-architect/pro-cloud-server/

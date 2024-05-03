@@ -1,0 +1,14 @@
+- key: abbyy
+  items:
+    - name: ABBYY
+      slug: /hersteller/abbyy/
+    - name: ABBYY Vantage
+      slug: /hersteller/abbyy/vantage/
+    - name: FineReader Server
+      slug: /hersteller/abbyy/finereader-server/
+    - name: FineReader PDF Standard
+      slug: /hersteller/abbyy/finereader-standard/
+    - name: FineReader PDF Corporate
+      slug: /hersteller/abbyy/finereader-corporate/
+    - name: FineReader PDF für Mac
+      slug: /hersteller/abbyy/finereader-mac/

@@ -1,0 +1,10 @@
+- key:      xmind
+  items:
+  - name:   Xmind
+    slug:   /hersteller/xmind/
+  - name:   Xmind VLE
+    slug:   /hersteller/xmind/vle/
+  - name:   Xmind Pro
+    slug:   /hersteller/xmind/pro/
+  - name:   Xmind 2023
+    slug:   /hersteller/xmind/xmind-2023/

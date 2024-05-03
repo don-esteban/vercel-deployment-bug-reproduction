@@ -1,0 +1,18 @@
+- key:      arcserve
+  items:
+  - name:   Arcserve
+    slug:   /hersteller/arcserve/
+  - name: UDP Workstation
+    slug: /hersteller/arcserve/udp-workstation/
+  - name: UDP Standard
+    slug: /hersteller/arcserve/udp-standard/
+  - name: UDP Advanced
+    slug: /hersteller/arcserve/udp-advanced/
+  - name: UDP Premium
+    slug: /hersteller/arcserve/udp-premium/
+  - name: UDP Premium Plus
+    slug: /hersteller/arcserve/udp-premium-plus/
+  - name: UDP Backup for Microsoft 365
+    slug: /hersteller/arcserve/udp-microsoft-office-365-backup/
+  - name: UDP Cloud Hybrid Secured by Sophos
+    slug: /hersteller/arcserve/udp-cloud-hybrid-secured-by-sophos/

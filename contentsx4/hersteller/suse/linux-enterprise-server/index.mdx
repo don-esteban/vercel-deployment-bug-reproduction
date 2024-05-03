@@ -1,0 +1,101 @@
+---
+title: SUSE Linux Enterprise Server (SLES)
+bcTitle: Linux Enterprise Server (SLES)
+bkey: suse
+ckey: enrico-koehle
+date: 2024-01-02
+seoTitle: SUSE Linux Enterprise Server (SLES) | Preise, Lizenzierung, Subscriptions
+wanted:
+  title: Linux Enterprise Server
+  features:
+    - name: Linuxdistribution mit Schwerpunkt Sicherheit, robusten Storage, VMs.
+    - name: Erweiterter Support und lange Wartungszyklen.
+    - name: Erweiterbar mit Add-Ons.
+furtherReading:
+    - name: Lizenzierung und Support
+      slug: /hersteller/suse/lizenzierung/
+---
+
+
+
+<Intro>
+
+SUSE Linux Enterprise Server (SLES) ist eine Enterprise-Linux-Distribution mit umfangreichen Funktionen für Sicherheit, robuste Speicherung und Softwareentwicklung. SLES zeichnet sich durch erweiterten technischen Support und lange Wartungszyklen aus.
+
+
+</Intro>
+
+<TOC />
+
+## Preise
+
+Linux Enterprise Server (SLES) ist mit [Standard](/hersteller/suse/lizenzierung/#standard) oder [Priority Support](/hersteller/suse/lizenzierung/#priority) verfügbar. Lizenziert wird nach Sockets oder virtuellen Instanzen. Es gibt auch dazu buchbare [Add-Ons](#preise-add-ons). Für verschiedene Kundengruppen wie _Bildungseinrichtungen_ gibt es Rabatte und Sonderkonditionen. Gerne prüfe ich, ob für Sie spezielle Rabatte gelten.
+
+### Physical
+
+Deckt *zwei* Sockets ab.
+
+<Products bkey="suse" tags={["server-skt", "std"]}/>
+<Products bkey="suse" tags={["server-skt", "priority"]}/>
+
+### Virtual
+
+Deckt *eine* virtuelle Instanzen (VM) ab.
+
+<Products bkey="suse" tags={["server-vm", "std"]}/>
+<Products bkey="suse" tags={["server-vm", "priority"]}/>
+
+
+
+### Physical and Unlimited Virtual
+
+Deckt alle Instanzen auf diesem Server ab. Es müssen hier alle physischen Sockets lizenziert werden. Nur inklusive Live Patching verfügbar.
+
+<Products bkey="suse" tags={["server-unlimited", "std"]}/>
+<Products bkey="suse" tags={["server-unlimited", "priority"]}/>
+
+
+## Preise Add-Ons
+
+Inherited Subscription bedeutet, dass der Inhalt der SLE Subscription vererbt wird z.B. Support. Eine Lizenz deckt 1-2 physische Sockets ab. Inherited Virtual deckt die Anzahl an virtuellen Instanzen der SLE Subscription ab.
+
+### High Availabilty (HA)
+
+Für HA-Clustering zur Automatisierung von Wiederherstellung von Datenverlusten. Kann in physischen als auch in virtuellen Umgebungen implementiert werden.
+
+<Products bkey="suse" tags={["addon-ha"]}/>
+
+
+### Live Patching
+
+Benötigt SUSE Linux Enterprise _Priority_. Kein Neustart des Systems nötig und reduziert so die Ausfallzeiten. Unterbrechungsfreier Systembetrieb während dem Update. Ab 10 Systemen empfehlen wir den [SUSE Manager](/hersteller/suse/linux-manager/) einzusetzen.
+
+<Products bkey="suse" tags={["addon-live"]}/>
+
+
+### Virtual Machine Driver Pack
+
+Für 1-4 Virtual Machines oder Unlimited Virtual Machines.  Enthält paravirtualisierte Festplatten-, Netzwerk- und Balloon-Treiber. Verlängert die Nutzungsdauer unternehmenseigener und älterer Anwendungen (speziell im Fall älterer Betriebssysteme).
+
+<Products bkey="suse" tags={["addon-driver-pack"]}/>
+
+
+### Workstation Extension
+
+Eine Lizenz pro PC. Eine Instanzierung möglich. Enthält Anwendungen von SUSE Linux Enterprise Desktop, wie LibreOffice, E-Mail und Kalender.
+
+<Products bkey="suse" tags={["addon-workstation"]}/>
+
+
+## SUSE Linux Enterprise Server Alternativen
+
+<ArrowList>
+
+- [Red Hat Enterprise Linux Server](/hersteller/red-hat/enterprise-linux-server/)  <br />
+Für physische und virtuelle Umgebungen.
+- [Red Hat Enterprise Linux Virtual Datacenters](/hersteller/red-hat/enterprise-linux-virtual-datacenters/)  <br />
+Für größere Virtualisierungsumgebungen (ab ca. 7 Instanzen). Nur für virtuelle Instanzen.
+
+</ArrowList>
+
+<GetInTouch theme="light" />

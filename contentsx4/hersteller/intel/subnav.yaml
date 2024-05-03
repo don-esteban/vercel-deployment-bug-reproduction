@@ -1,0 +1,40 @@
+- key:      intel
+  items:
+  - name:   Intel
+    slug:   /hersteller/intel/
+  - name:   oneAPI Toolkits
+    sub:
+      - name: Übersicht
+        slug: /hersteller/intel/oneapi/
+      - name: oneAPI Base Toolkit
+        slug: /hersteller/intel/oneapi/base-toolkit/
+      - name: oneAPI Base & HPC Toolkit
+        slug: /hersteller/intel/oneapi/hpc-toolkit/
+      - name: oneAPI Base & IoT Toolkit
+        slug: /hersteller/intel/oneapi/iot-toolkit/
+      - name: oneAPI Base & Rendering Toolkit
+        slug: /hersteller/intel/oneapi/rendering-toolkit/
+      - name: oneAPI Base & AI Analytics Toolkit
+        slug: /hersteller/intel/oneapi/ai-analytics-toolkit/
+  - name:   System Studio (Renewals only)
+    sub:
+      - name:   System Studio Übersicht
+        slug:   /hersteller/intel/system-studio/
+      - name:   Professional Edition
+        slug:   /hersteller/intel/system-studio/professional-edition/
+      - name:   Composer Edition
+        slug:   /hersteller/intel/system-studio/composer-edition/
+      - name:   Ultimate Edition
+        slug:   /hersteller/intel/system-studio/ultimate-edition/
+      - name:   FreeBSD
+        slug:   /hersteller/intel/system-studio/freebsd/
+  - name:   Parallel Studio XE (Renewals only)
+    sub:
+      - name:   Parallel Studio XE Übersicht
+        slug:   /hersteller/intel/parallel-studio-xe/
+      - name:   Professional Edition
+        slug:   /hersteller/intel/parallel-studio-xe/professional-edition/
+      - name:   Composer Edition
+        slug:   /hersteller/intel/parallel-studio-xe/composer-edition/
+      - name:   Cluster Edition
+        slug:   /hersteller/intel/parallel-studio-xe/cluster-edition/

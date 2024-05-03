@@ -1,0 +1,64 @@
+- key:      mcafee
+  items:
+  - name:   Trellix
+    slug:   /hersteller/mcafee/
+  - name:   MVISION
+    sub:
+    - name:   MVISION Übersicht
+      slug:   /hersteller/mcafee/mvision/
+    - name:   MVISION Standard
+      slug:   /hersteller/mcafee/mvision/standard/
+    - name:   MVISION EDR
+      slug:   /hersteller/mcafee/mvision/edr/
+    - name:   MVISION EDR Premium
+      slug:   /hersteller/mcafee/mvision/edr-premium/
+    - name:   MVISION Plus
+      slug:   /hersteller/mcafee/mvision/plus/
+    - name:   MVISION Plus & EDR Premium
+      slug:   /hersteller/mcafee/mvision/plus-and-edr-premium-for-endpoint/
+    - name:   MVISION Plus EDR
+      slug:   /hersteller/mcafee/mvision/plus-edr-for-endpoint/
+    - name:   MVISION Mobile Advanced
+      slug:   /hersteller/mcafee/mvision/mobile-advanced/
+  - name:   MOVE
+    sub:
+    - name: MOVE Übersicht
+      slug: /hersteller/mcafee/move/
+    - name: MOVE AntiVirus for Virtual Desktops
+      slug: /hersteller/mcafee/move/antivirus-for-virtual-desktops/
+    - name: MOVE AntiVirus for Virtual Servers
+      slug: /hersteller/mcafee/move/antivirus-for-virtual-servers/
+  - name:   Cloud Workload Security
+    sub:
+    - name:   Cloud Workload Security Übersicht
+      slug:   /hersteller/mcafee/cloud-workload-security/
+    - name:   Basic
+      slug:   /hersteller/mcafee/cloud-workload-security/basic/
+    - name:   Advanced
+      slug:   /hersteller/mcafee/cloud-workload-security/advanced/
+    - name:   Essentials
+      slug:   /hersteller/mcafee/cloud-workload-security/essentials/
+  - name:   Complete DATA Protection
+    sub:
+    - name:   Übersicht
+      slug:   /hersteller/mcafee/cdp-uebersicht/
+    - name:   CDA - Complete Data Protection - Advanced
+      slug:   /hersteller/mcafee/complete-data-protection-advanced/
+    - name:   CDB - Complete Data Protection
+      slug:   /hersteller/mcafee/complete-data-protection/
+  - name:   CEB
+    slug:   /hersteller/mcafee/complete-endpoint-protection-business/
+  - name:   EDR
+    slug:   /hersteller/mcafee/endpoint-threat-defense-and-response/
+  - name:   Lizenzierung und FAQ
+    sub:
+    - name:   Lizenzierung
+      slug:   /hersteller/mcafee/lizenzierung/
+    - name:   ePolicy Orchestrator (ePO) - FAQ
+      slug:   /hersteller/mcafee/epolicy-orchestrator-epo-faq/
+    - name:   Endpoint Security - FAQ
+      slug:   /hersteller/mcafee/endpoint-security/
+    - name:   Migration McAfee Produkte
+      slug:   /hersteller/mcafee/migration/
+  - name:   Vergleich McAfee Lösungen
+    slug:   /hersteller/mcafee/vergleich-mcafee-endpoint-security-loesungen/

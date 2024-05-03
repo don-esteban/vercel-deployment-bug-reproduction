@@ -1,0 +1,12 @@
+- key:      maxon
+  items:
+  - name:   MAXON
+    slug:   /hersteller/maxon/
+  - name:   One
+    slug:   /hersteller/maxon/one/
+  - name:   Cinema 4D
+    slug:   /hersteller/maxon/cinema-4d/
+  - name:   Redshift
+    slug:   /hersteller/maxon/redshift/
+  - name:   Red Giant
+    slug:   /hersteller/maxon/red-giant/

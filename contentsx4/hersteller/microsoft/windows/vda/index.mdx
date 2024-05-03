@@ -1,0 +1,119 @@
+---
+title: Microsoft Windows Virtual Desktop Access (VDA)
+bcTitle: VDA
+bkey: microsoft
+ckey: stefan-barth
+date: 2023-05-26
+tocMaxLevel: 1
+wanted:
+  features:
+    - name: Virtual Desktop Access (VDA) Subscriptions werden für den Zugriff auf virtuelle Windows Desktops benötigt, beispielsweise bei Thin Clients
+    - name: Ermöglicht die Ausführung von mehreren Windows-Instanzen, beispielsweise für den Terminalserver Betrieb
+furtherReading:
+  - name: Windows Lizenzierung
+    slug: /hersteller/microsoft/windows/lizenzierung/
+    description: Informationen und Details zum Kauf von Windows Lizenzen.
+  - name: Windows Versionsvergleich
+    slug: /hersteller/microsoft/windows/versionsvergleich/
+    description: Vergleich von Windows 10 und 11.
+---
+
+
+
+<Intro>
+
+ Microsoft Windows Virtual Desktop Access (VDA) Subscriptions dienen dem Zugriff auf virtuelle Windows Desktops, beispielsweise für Thin Clients, Linux PCs oder Macs. VDA gibt es in zwei Editionen:
+
+ Microsoft Windows Virtual Desktop Access (VDA) aus dem Open Value Volumenlizenzprogramm: Beinhaltet unter anderem das Recht, auf virtualisierte Instanzen im eigenen Rechenzentrum zuzugreifen. Lizenziert wird nach Geräten.
+
+ Windows 10/11 Enterprise E3 VDA als CSP-Subscription: Dies ist eine reine Cloud Lizenz für den Zugriff auf die VMs/virtuellen Desktops in der Azure Cloud. Lizenziert wird pro Benutzer.
+
+
+</Intro>
+
+<TOC />
+
+
+
+## Windows 10/11 VDA per Device
+
+**Achtung:** Preis pro Gerät / Monat!
+
+ <Products bkey="microsoft" tags={["windows", "enterprise-vda", "ov"]}/>
+
+## Windows 10/11 Enterprise E3 VDA
+
+ **Hinweis:** Die E3 VDA CSP Subscription wird nur für bestimmte [Anwendungsszenarien](/hersteller/microsoft/windows/lizenzierung/#windows-vda-anwendungsbeispiele) benötigt und kann nur über die Azure Cloud genutzt werden (nicht lokal). Lizenziert wird pro Benutzer.
+Weitere Informationen finden Sie im [Lizenzierungsabschnitt](/hersteller/microsoft/windows/lizenzierung/#windows-vda-lizenzierung).
+
+
+ <Products bkey="microsoft" tags={["windows", "enterprise-vda", "csp"]}/>
+
+
+## Lizenzüberblick
+
+In [Windows 10/11 Enterprise E5](/hersteller/microsoft/windows/enterprise/e5/) und [Windows 10/11 Enterprise](/hersteller/microsoft/windows/enterprise/) inkl. Software Assurance bereits enthalten.
+Die VDA per device Subscription wird nur für bestimmte [Anwendungsszenarien](#windows-vda-anwendungsbeispiele) benötigt. Weitere Informationen finden Sie auf der [Windows Virtual Desktop](/hersteller/microsoft/azure/azure-virtual-desktop/) Seite.
+
+<ArrowList>
+
+  - Es wird pro Gerät lizenziert. Mehr Informationen im [Lizenzierungsabschnitt](/hersteller/microsoft/windows/lizenzierung/#windows-vda-lizenzierung).
+  - Als monatliche Subscription verfügbar im Volumenlizenzprogramm [Open Value](/hersteller/microsoft/open-value/).
+  - Open Value Verträge haben eine Laufzeit von 3 Jahren. Der oben genannte Preis ist für eine Jahresrate.
+  - VDA beinhaltet [Vorteile der Software Assurance](/hersteller/microsoft/software-assurance/), darunter beispielsweise technischen Support.
+
+</ArrowList>
+
+## Windows 10/11 VDA Lizenzierung
+
+### Windows VDA aus dem Volumenlizenzprogramm
+
+Mit Windows 10 Enterprise VDA wird immer ein **spezifisches Gerät** lizenziert. Auch Geräte außerhalb des Unternehmens, beispielsweise Home Office-PCs die dem jeweiligen Mitarbeiter gehören oder PCs die bei einem Vertragspartner stehen, können lizenziert werden.
+
+Das lizenzierte Gerät muss mit einem qualifizierenden Betriebssystem (OS) lizenziert sein und das qualifizierende OS muss auf dem lizenzierten Gerät installiert sein. Die Zuweisung der VDA Pro-Gerät-Lizenz ist dauerhaft, außer der Kunde hat Software Assurance für das betreffende Gerät. Die Lizenz kann nach 90 Tagen einem anderen Gerät zugewiesen werden. Im Falle eines Hardware-Defekts auch vor Ablauf der 90-tägigen Frist.
+
+
+### Windows VDA aus dem CSP Programm
+
+Windows 10/11 Enterprise E3 VDA CSP wird pro Benutzer lizenziert. Mit VDA CSP erhalten Sie unter anderem ein erweitertes Roaming Use-Recht für den benannten Nutzer. Der Nutzer darf auf seinen virtuellen Desktop oder auf eine virtuelle Maschine aus der Azure Cloud, von einem beliebigen Gerät außerhalb des Unternehmensnetzwerks zugreifen. Innerhalb des Unternehmens darf jedoch nur von verschiedenen PCs zugegriffen werden, wenn diese eine SA-Abdeckung oder eine eigene VDA-Lizenz haben. Wenn kein Hauptnutzer für die VDA-Lizenz benannt wird, entfällt das Roaming Use-Recht.
+
+
+## Windows VDA Anwendungsbeispiele
+
+ VDA (Virtual Desktop Access) wird benötigt, wenn von Nicht-Windows-Rechnern (Mac, Thin Client, Linux PCs etc.) auf virtuelle Windows-Desktops zugegriffen werden soll, beispielsweise:
+
+<ArrowList>
+
+ - Ausführung von mehreren Windows-Instanzen auf dem eigenen Rechner für Test und Entwicklung.
+ - Ausführung von Windows auf Servern im Rechenzentrum oder in der Azure-Cloud (VDI bzw. Virtual Desktop Infrastructure).
+ - Von Thin Clients, von Tablets und beispielsweise von Zuhause wird auf den virtuellen Desktop zugegriffen.
+ - Reines BYOD. Mitarbeiter nutzen ihren virtuellen Desktop ausschließlich von eigenen Devices wie Notebooks oder Tablets.
+ - Externe Mitarbeiter bekommen Zugriff auf einen im Rechenzentrum gehosteten virtuellen Desktop.
+
+</ArrowList>
+
+### Vorteile mit VDA
+
+<ArrowList>
+
+ - Das Windows Betriebssystem kann auf virtuellen Maschinen in allen möglichen Kombinationen aus Hardware und Storage installiert werden.
+ - Die VMs können beliebig zwischen Server und Storage verschoben werden.
+ - VDA beinhaltet [Vorteile der Software Assurance](/hersteller/microsoft/software-assurance/), darunter beispielsweise technischen Support
+ - Zugriff auf Produkte, die exklusiv für SA-Kunden zur Verfügung stehen. Dazu zählt beispielsweise das Microsoft Desktop Optimization Pack (MDOP).
+
+</ArrowList>
+
+<Info>
+
+ **Achtung:** Windows Enterprise E3 VDA Subscription kann nur für virtuelle Maschinen bzw. Desktops innerhalb der Azure Cloud eingesetzt werden.
+ Für lokale Rechenzentren und Netzwerke wird eine Windows Enterprise Lizenz aus dem Open Value Volumenlizenzprogramm benötigt.
+
+</Info>
+
+
+<GetInTouch theme="light">
+
+Sie haben weitere Fragen zum Produkt oder zur Lizenzierung?<br />
+Kein Problem. Rufen Sie an oder schreiben Sie eine E-Mail. Ich berate Sie gerne.
+
+</GetInTouch>

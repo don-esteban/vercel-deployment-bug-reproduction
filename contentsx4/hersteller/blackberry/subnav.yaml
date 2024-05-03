@@ -1,0 +1,12 @@
+- key:      blackberry
+  items:
+  - name:   BlackBerry
+    slug:   /hersteller/blackberry/
+  - name:   Spark Suite
+    slug:   /hersteller/blackberry/spark-suite/
+  - name:   UEM Suite
+    slug:   /hersteller/blackberry/uem-suite/
+  - name:   UEM Express Suite
+    slug:   /hersteller/blackberry/uem-express-suite/
+  - name:   UES Suite
+    slug:   /hersteller/blackberry/ues-suite/

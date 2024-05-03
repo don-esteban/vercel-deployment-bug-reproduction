@@ -1,0 +1,38 @@
+- key:      bitdefender
+  items:
+  - name:   Bitdefender
+    slug:   /hersteller/bitdefender/
+  - name:   Business Security Bundles
+    sub:
+    - name:   Business Security
+      slug:   /hersteller/bitdefender/gravityzone-business-security/
+    - name:   Business Security Premium
+      slug:   /hersteller/bitdefender/gravityzone-business-security-premium/
+    - name:   Business Security Enterprise
+      slug:   /hersteller/bitdefender/gravityzone-business-security-enterprise/
+  - name:   Enterprise Security Einzelprodukte
+    sub:
+    - name: Security for Workstations
+      slug: /hersteller/bitdefender/gravityzone-security-for-workstations/
+    - name: Cloud and Server Security
+      slug: /hersteller/bitdefender/gravityzone-cloud-and-server-security/
+    - name: Security for Containers
+      slug: /hersteller/bitdefender/gravityzone-security-for-containers/
+    - name: Security for Mobile Devices
+      slug: /hersteller/bitdefender/gravityzone-security-for-mobile-devices/
+    - name: Security for Exchange Servers
+      slug: /hersteller/bitdefender/gravityzone-security-for-exchange-servers/
+    - name: EDR Cloud
+      slug: /hersteller/bitdefender/gravityzone-edr-cloud/
+  - name:   Add-Ons
+    sub:
+    - name: Security for Storage
+      slug: /hersteller/bitdefender/gravityzone-security-for-storage/
+    - name: Security for Email
+      slug: /hersteller/bitdefender/gravityzone-security-for-email/
+    - name: Patch Management
+      slug: /hersteller/bitdefender/gravityzone-patch-management/
+    - name: Full Disk Encryption
+      slug: /hersteller/bitdefender/gravityzone-full-disk-encryption/
+    - name: Endpoint Detection and Response
+      slug: /hersteller/bitdefender/gravityzone-endpoint-detection-and-response/

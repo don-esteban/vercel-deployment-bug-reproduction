@@ -1,0 +1,54 @@
+- key:      barracuda-networks
+  items:
+  - name:   Barracuda Networks
+    slug:   /hersteller/barracuda-networks/
+  - name:       Email Protection
+    sub:
+    - name:   Übersicht
+      slug:   /hersteller/barracuda-networks/email-protection/
+    - name:   Advanced
+      slug:   /hersteller/barracuda-networks/email-protection/#advanced
+    - name:   Premium
+      slug:   /hersteller/barracuda-networks/email-protection/#premium
+    - name:   Premium Plus
+      slug:   /hersteller/barracuda-networks/email-protection/#premium-plus
+  - name:       Backup
+    sub:
+    - name:   Hardware Appliances
+      slug:   /hersteller/barracuda-networks/barracuda-backup/
+    - name:   Virtual Appliances
+      slug:   /hersteller/barracuda-networks/barracuda-backup-virtual/
+  - name:     CloudGen Firewall
+    sub:
+    - name:   Hardware Appliance
+      slug:   /hersteller/barracuda-networks/cloudgen-firewall/
+    - name:   Virtual Appliance
+      slug:   /hersteller/barracuda-networks/cloudgen-firewall-virtual/
+    - name:   Firewall Insights Server
+      slug:   /hersteller/barracuda-networks/cloudgen-firewall-insights-server/
+  - name:     Email Security Gateway
+    sub:
+    - name:   Hardware Appliance
+      slug:   /hersteller/barracuda-networks/email-security-gateway/
+    - name:   Virtual Appliance
+      slug:   /hersteller/barracuda-networks/email-security-gateway-virtual/
+  - name:     Message Archiver
+    sub:
+    - name:   Hardware Appliance
+      slug:   /hersteller/barracuda-networks/message-archiver/
+    - name:   Virtual Appliance
+      slug:   /hersteller/barracuda-networks/message-archiver-virtual/
+  - name:     Web Application Firewall
+    sub:
+    - name:   Hardware Appliance
+      slug:   /hersteller/barracuda-networks/web-application-firewall/
+    - name:   Virtual Appliance
+      slug:   /hersteller/barracuda-networks/web-application-firewall-virtual/
+    - name:    WAF as SaaS
+      slug:   /hersteller/barracuda-networks/waf-as-a-service/
+  - name:       Web Security Gateway
+    sub:
+      - name:   Hardware Appliance
+        slug:   /hersteller/barracuda-networks/web-security-gateway/
+      - name:   Virtual Appliance
+        slug:   /hersteller/barracuda-networks/web-security-gateway-virtual/

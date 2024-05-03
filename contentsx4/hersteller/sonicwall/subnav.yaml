@@ -1,0 +1,10 @@
+- key:      sonicwall
+  items:
+  - name:   SonicWall
+    slug:   /hersteller/sonicwall/
+  - name:   Capture Client
+    slug:   /hersteller/sonicwall/capture-client/
+  - name:   Cloud App Security
+    slug:   /hersteller/sonicwall/cloud-app-security/
+  - name:   NSv Firewall
+    slug:   /hersteller/sonicwall/nsv-firewall/

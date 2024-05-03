@@ -1,0 +1,56 @@
+- key:      mcafee
+  items:
+  - name:   Trellix
+    slug:   /hersteller/mcafee/
+  - name:   MVISION
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/mcafee/mvision/
+    - name:   MVISION Protect Standard (MV1)
+      slug:   /hersteller/mcafee/mvision/standard/
+    - name:   MVISION Protect Plus (MV2)
+      slug:   /hersteller/mcafee/mvision/plus/
+    - name:   MVISION Protect Mobile Advanced (MV3)
+      slug:   /hersteller/mcafee/mvision/mobile-advanced/
+    - name:   MVISION EDR (MV4)
+      slug:   /hersteller/mcafee/mvision/edr/
+    - name:   MVISION EDR Premium (MV5)
+      slug:   /hersteller/mcafee/mvision/edr-premium/
+    - name:   MVISION Protect Plus EDR for Endpoint (MV6)
+      slug:   /hersteller/mcafee/mvision/plus-edr-for-endpoint/
+    - name:   MVISION Protect Plus and EDR Premium for Endpoint (MV7)
+      slug:   /hersteller/mcafee/mvision/plus-and-edr-premium-for-endpoint/
+  - name:   MOVE Antivirus
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug: /hersteller/mcafee/move/
+    - name: MOVE AntiVirus for Virtual Desktops
+      slug: /hersteller/mcafee/move/antivirus-for-virtual-desktops/
+    - name: MOVE AntiVirus for Virtual Servers
+      slug: /hersteller/mcafee/move/antivirus-for-virtual-servers/
+  - name:   Cloud Workload Security (CWS)
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/mcafee/cloud-workload-security/
+    - name:   Basic
+      slug:   /hersteller/mcafee/cloud-workload-security/basic/
+    - name:   Essentials
+      slug:   /hersteller/mcafee/cloud-workload-security/essentials/
+    - name:   Advanced
+      slug:   /hersteller/mcafee/cloud-workload-security/advanced/
+  - name:   Complete DATA Protection
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/mcafee/cdp-uebersicht/
+    - name:   Complete Data Protection Advanced (CDA)
+      slug:   /hersteller/mcafee/complete-data-protection-advanced/
+    - name:   Complete Data Protection (CDB)
+      slug:   /hersteller/mcafee/complete-data-protection/
+  - name:   Complete Endpoint Protection (CEB)
+    slug:   /hersteller/mcafee/complete-endpoint-protection-business/
+  - name:   Endpoint Threat Defense and Response (EDR)
+    slug:   /hersteller/mcafee/endpoint-threat-defense-and-response/

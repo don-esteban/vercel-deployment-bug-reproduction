@@ -1,0 +1,36 @@
+- key:      altova
+  items:
+  - name:   Altova
+    slug:   /hersteller/altova/
+  - name:   Authentic Browser Plugin
+    slug:   /hersteller/altova/authentic-browser-plugin/
+  - name:   Authentic Desktop
+    slug:   /hersteller/altova/authentic-desktop/
+  - name:   DatabaseSpy
+    slug:   /hersteller/altova/databasespy/
+  - name:   DiffDog
+    slug:   /hersteller/altova/diffdog/
+  - name:   DiffDog Server
+    slug:   /hersteller/altova/diffdog-server/
+  - name:   FlowForce Server
+    slug:   /hersteller/altova/flowforce-server/
+  - name:   MapForce
+    slug:   /hersteller/altova/mapforce/
+  - name:   MapForce Server
+    slug:   /hersteller/altova/mapforce-server/
+  - name:   MissionKit
+    slug:   /hersteller/altova/missionkit/
+  - name:   MobileTogether Server
+    slug:   /hersteller/altova/mobiletogether-server/
+  - name:   RaptorXML/XBRL Server
+    slug:   /hersteller/altova/raptorxml-server/
+  - name:   SchemaAgent
+    slug:   /hersteller/altova/schemaagent/
+  - name:   StyleVision
+    slug:   /hersteller/altova/stylevision/
+  - name:   StyleVision Server
+    slug:   /hersteller/altova/stylevision-server/
+  - name:   UModel
+    slug:   /hersteller/altova/umodel/
+  - name:   XMLSpy
+    slug:   /hersteller/altova/xmlspy/

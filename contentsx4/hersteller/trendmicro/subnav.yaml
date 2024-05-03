@@ -1,0 +1,30 @@
+- key:      trendmicro
+  items:
+  - name:   Trend Micro
+    slug:   /hersteller/trendmicro/
+  - name:   Worry-Free
+    sub:
+      - name:   Worry-Free Security Standard
+        slug:   /hersteller/trendmicro/worry-free-security-standard/
+      - name:   Worry-Free Security Advanced
+        slug:   /hersteller/trendmicro/worry-free-security-advanced/
+      - name:   Worry-Free Services
+        slug:   /hersteller/trendmicro/worry-free-services/
+      - name:   Worry-Free Services Advanced
+        slug:   /hersteller/trendmicro/worry-free-services-advanced/
+      - name:   Worry-Free Services EDR
+        slug:   /hersteller/trendmicro/worry-free-services-edr/
+      - name:   Worry-Free XDR
+        slug:   /hersteller/trendmicro/worry-free-xdr/
+      - name:   Worry-Free Vergleich
+        slug:   /hersteller/trendmicro/worry-free-vergleich/
+  - name:   Apex One as a Service
+    slug:   /hersteller/trendmicro/apex-one-as-a-service/
+  - name:   Apex One On-Prem
+    slug:   /hersteller/trendmicro/apex-one-on-premises/
+  - name:   Smart Protection for Endpoints Suite
+    slug:   /hersteller/trendmicro/smart-protection-for-endpoints-suite/
+  - name:   Smart Protection Complete Suite
+    slug:   /hersteller/trendmicro/smart-protection-complete-suite/
+  - name: Mobile Security
+    slug: /hersteller/trendmicro/mobile-security/

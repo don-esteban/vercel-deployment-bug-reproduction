@@ -1,0 +1,48 @@
+- key:      solarwinds
+  items:
+  - name:   SolarWinds
+    slug:   /hersteller/solarwinds/
+  - name:   Database Performance Analyzer (DPA)
+    sub:
+      - name:   DPA Übersicht
+        slug:   /hersteller/solarwinds/database-performance-analyzer/
+      - name:   Category 1 - alle DBs
+        slug:   /hersteller/solarwinds/database-performance-analyzer/#preise-category-1
+      - name:   Category 2 - die meisten DBs
+        slug:   /hersteller/solarwinds/database-performance-analyzer/#preise-category-2
+      - name:   For Azure SQL DB
+        slug:   /hersteller/solarwinds/database-performance-analyzer/#preise-for-azure-sql
+      - name:   Übersicht unterstützter Datenbanken
+        slug:   /hersteller/solarwinds/database-performance-analyzer/#unterstützte-db-mit-dpa
+  - name:   Dameware
+    sub:
+      - name:   Dameware Übersicht
+        slug:   /hersteller/solarwinds/dameware/
+      - name:   Mini Remote Control
+        slug:   /hersteller/solarwinds/dameware/mini-remote-control/
+      - name:   Remote Support
+        slug:   /hersteller/solarwinds/dameware/remote-support/
+      - name:   Remote Everywhere
+        slug:   /hersteller/solarwinds/dameware/remote-everywhere/
+  - name:   Access Rights Manager (ARM)
+    slug:   /hersteller/solarwinds/access-rights-manager/
+  - name:   Server Application Monitor (SAM)
+    slug:   /hersteller/solarwinds/server-application-monitor/
+  - name:   Server Configuration Monitor (SCM)
+    slug:   /hersteller/solarwinds/server-configuration-monitor/
+  - name:   Virtualization Manager (VMAN)
+    slug:   /hersteller/solarwinds/virtualization-manager/
+  - name:   Kiwi CatTools
+    slug:   /hersteller/solarwinds/kiwi-cattools/
+  - name:   Kiwi Syslog Server
+    slug:   /hersteller/solarwinds/kiwi-syslog-server/
+  - name:   Network Performance Monitor (NPM)
+    slug:   /hersteller/solarwinds/network-performance-monitor/
+  - name:   Network Configuration Monitor (NCM)
+    slug:   /hersteller/solarwinds/network-configuration-monitor/
+  - name:   IP Address Manager (IPAM)
+    slug:   /hersteller/solarwinds/ip-address-manager/
+  - name:   Network Topology Mapper
+    slug:   /hersteller/solarwinds/network-topology-mapper/
+  - name:   Netflow Traffic Analyzer (NTA)
+    slug:   /hersteller/solarwinds/netflow-traffic-analyzer/

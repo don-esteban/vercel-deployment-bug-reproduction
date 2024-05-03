@@ -1,0 +1,14 @@
+- key:      citrix
+  items:
+  - name:   Citrix
+    slug:   /hersteller/citrix/
+  - name:   Hypervisor
+    slug:   /hersteller/citrix/hypervisor/
+  - name:   Virtual Apps
+    slug:   /hersteller/citrix/virtual-apps/
+  - name:   Virtual Desktops
+    slug:   /hersteller/citrix/virtual-desktops/
+  - name:   Virtual Apps and Desktops
+    slug:   /hersteller/citrix/virtual-apps-and-desktops/
+  - name:   Workspace
+    slug:   /hersteller/citrix/workspace/

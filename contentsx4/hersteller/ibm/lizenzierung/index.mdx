@@ -1,0 +1,237 @@
+---
+title: IBM Software Lizenzierung
+bcTitle: Software Lizenzierung
+seoTitle: IBM Lizenzierung |  Authorized User, Concurrent, PVU, Terabyte
+bkey: ibm
+ckey: enrico-koehle
+date: 2022-07-26
+tocMaxLevel: 2
+wanted:
+  features:
+    - name: Mit Authorized User lizenzieren Sie einzelne Mitarbeiter (Nutzung/Zugriffe)
+    - name: Mit Concurrent User lizenzieren Sie gleichzeitige Nutzung und Zugriffe
+    - name: Mit Processor Value Units (PVU) lizenzieren Sie Backend Systemen wie Server nach deren Leistung
+---
+
+<Intro>
+
+IBM Software können Sie unterschiedlich lizenzieren. Erfahren Sie Wissenswertes über Benutzerlizenzen, Netzwerklizenzen, Terabyte-Lizenzierung, Processor Value Units und anderen Lizenzmetriken.
+
+</Intro>
+
+<TOC />
+
+## Lizenzmetriken
+
+Definition:
+
+> Eine Lizenzmetrik gibt an, wie die Anzahl benötigter Lizenzen errechnet wird.
+
+Es folgen die wichtigsten IBM Software Lizenzmetriken.
+
+
+### Authorized User
+
+Authorized User License ist die häufigste Metrik bei Arbeitsplatz-Software. Jeder lizenzierte Mitarbeiter erhält das Recht, die Software auf seinem Arbeitsplatz zu installieren und zu nutzen. Meistens ist ein Zweitnutzungsrecht enthalten. Der Mitarbeiter darf das Programm ebenfalls auf einem mobilen Gerät (Laptop etc.) oder seinem Heimarbeitsplatz installieren und ausführen.
+
+Beispiel: Alle [SPSS Statistics Kauflizenzen](/hersteller/ibm/spss-statistics/#kauflizenzen) können Sie nach Anwendern lizenzieren.
+
+Bei Abonnement-Lizenzen (Subscriptions, Mietlizenzen) ist das Zweitnutzungsrecht wesentlich umfangreicher und gestattet Installation und Nutzung auf beliebig vielen eigenen Endgeräten. Natürlich darf immer nur der autorisierte Anwender mit dem Programm arbeiten.
+
+Beispiel: Alle [SPSS Statistics Subscriptions](/hersteller/ibm/spss-statistics/#mietlizenzen-subscriptions) werden nach Anwendern lizenziert. Hier gilt das erweiterte Zweitnutzungsrecht.
+
+<Info>
+
+Kaufen Sie für jeden Mitarbeiter, der das Programm nutzt, eine Authorized User License.
+
+</Info>
+
+
+### Concurrent User
+
+Concurrent User License ist eine flexiblere Metrik. Es werden nicht die Nutzer, sondern die gleichzeitige Nutzung gemessen und lizenziert. Jeder Mitarbeiter darf die Software installieren und ausführen, solange genügend Lizenzen frei sind. Hat bspw. eine Organisation 10 Lizenzen, dann dürfen alle Mitarbeiter mit dem Programm arbeiten. Sobald 10 Mitarbeiter gleichzeitig mit dem Programm arbeiten, sind alle Lizenzen aufgebraucht.
+
+Praktische Hinweise:
+
+
+<ArrowList>
+
+- Sie dürfen das lizenzierte Programm auf beliebig vielen PCs im Netzwerk installieren.
+- Ein kleines Programm, der License Manager, muss zur Lizenzsteuerung im Netzwerk installiert und ausgeführt werden.
+- Lizenzen werden im License Manager registriert.
+
+</ArrowList>
+
+
+Beispiel: Alle [SPSS Statistics Kauflizenzen](/hersteller/ibm/spss-statistics/#kauflizenzen) können Sie nach Concurrent User lizenzieren.
+
+
+<Info>
+
+Daumenregel: Concurrent User Lizenzen deutlich teurer als Authorized User Lizenzen. Der Einsatz lohnt sich nur, wenn Sie mindestens dreimal weniger Concurrent User Lizenzen benötigen würden. Bei vielen sporadischen Nutzern können Concurrent User Lizenzen günstiger sein.
+
+</Info>
+
+
+### Processor Value Unit (PVU)
+
+Processor Value Unit (PVU) ist eine Metrik, die zur Berechnung notwendiger Lizenzen die Hardware-Leistung heranzieht. Backend-Systeme, wie bspw. IBM Spectrum Protect Backup Server, wird nach PVU lizenziert.
+
+Zunächst zählen Sie alle Prozessoren, auf denen die Software eingesetzt wird. Für jede CPU ermitteln Sie einen modell-/leistungsabhängigen Wert (PVU). Diesen Wert können Sie aus einer [Tabelle entnehmen oder mithilfe des PVU-Kalkulators errechnen](https://www.ibm.com/software/passportadvantage/pvu_licensing_for_customers.html).
+
+Sie können PVU Lizenzierung entweder auf physischen CPUs (Full-Capacity) oder in virtualisierten Umgebungen wahlweise auf virtuellen vCPUs (Sub-Capacity) basieren. Bei Sub-Capacity müssen Sie zur Compliance-Sicherstellung zwingend [IBM License Metric Tool (ILMT)](https://www.ibm.com/docs/en/license-metric-tool?topic=tool-upgrading-latest-version) verwenden. Lizenziert wird die Summer aller PVU.
+
+Virtualization Capacity (Sub-capacity)
+
+
+<ArrowList>
+
+- ILMT Pflicht
+- Unter der Virtualization Capacity (auch Sub-capacity) Lizenzierung versteht IBM die Software-Lizenzierung nach Processor Value Units (PVU) in virtualisierten Umgebungen. Daher werden hier nur die virtuellen Ressourcen (nach PVU) lizenziert. Die Höchstmenge der PVU für den Kauf sind auf die maximal physisch vorhandene Hardware begrenzt, damit ist der Höchstpreis bei Virtualization Capacity immer die normale „Full-Capacity“ Lizenzierung nach PVU. Mit der Nutzung von Virtualization Capacity verpflichtet sich der Kunde das IBM License Metric Tool (ILMT) einzusetzen und Berichte aufzubewahren.
+- Ein Beispiel zur Lizenzierung mit Virtualization Capacity finden Sie in unserem Beitrag IBM Virtualization Capacity (früher Sub Capacity) Lizenzen und VMware.
+
+</ArrowList>
+
+<Info>
+
+Besprechen Sie Ihren Bedarf immer mit mir. Ich erstelle Ihnen alternative Angebote und helfe beim Preisvergleich verschiedener Lizenzierungsmöglichkeiten.
+
+</Info>
+
+### Speichervolumen (Terabyte)
+
+Eine weitere Lizenzmetrik ist die Terabyte-Lizenzierung. Sie findet bspw. bei Archivierungs- und Backup-Systemen wie Spectrum Protect Anwendung. Lizenziert wird das Datensicherungsvolumen. Bei Spectrum Protect können Sie zwischen Frontend-Volumen (Daten der Applikationen) und Backend-Volumen (Daten auf den Sicherungsmedien) wählen.
+
+#### Frontend-Volumen
+
+Bei der Frontend-Lizenzierung werden die zu sichernden Daten der Applikationen als Berechnungsgrundlage herangezogen. Die Berechnung nach Frontend-Volumen ist komplizierter, kann jedoch, je nach Anwendungsfall, die günstigere Lizenzierungsalternative sein.
+
+Beispiel: Spectrum Protect [Suite Entry](/hersteller/ibm/spectrum-protect/suite-entry/#preise-bei-frontend-lizenzierung) und [Suite](/hersteller/ibm/spectrum-protect/suite/#preise-bei-frontend-lizenzierung) können nach Frontend-Volumen lizenziert werden.
+
+#### Backend-Volumen
+
+Bei der Backend-Lizenzierung werden die vom Backupserver gesicherten und verwalteten Daten als Berechnungsgrundlage herangezogen.
+
+Beispiel: Spectrum Protect [Suite Entry](/hersteller/ibm/spectrum-protect/suite-entry/#preise-bei-backend-lizenzierung) und [Suite](/hersteller/ibm/spectrum-protect/suite/#preise-bei-backend-lizenzierung) können nach Backend-Volumen lizenziert werden.
+
+
+#### Image Größe
+
+Keine Regel ohne Ausnahme. Bei Image-basierten Programmen wird das Datenvolumen der Snapshots lizenziert. [Spectrum Protect Snapshot](/hersteller/ibm/spectrum-protect/snapshot/) ist so ein Sonderfall.
+
+
+## Lizenz-Laufzeit
+
+Lizenzen sind mit unterschiedlichen Laufzeiten ausgestattet. Seit einigen Jahren werden immer mehr Mietmodelle (Subscriptions/Abonnement-Lizenzen) angeboten und nachgefragt.
+
+### Perpetual
+
+Mit Perpetual-Lizenzen erwirbt man ein dauerhaftes Nutzungsrecht an einer bestimmten Programmversion. [Downgrades](/glossar/downgrade/), also der Einsatz älterer Versionen, ist üblicherweise erlaubt. Installation und Nutzung von Nachfolgeversionen ist ohne zusätzliche Vereinbarungen (Maintenance/Unterhalt) jedoch nicht erlaubt.
+
+Perpetual Lizenzen heißen auch Dauerlizenzen oder Kauflizenzen.
+
+### Fix Term
+
+Mit Fix Term Lizenzen erwirbt man ein zeitlich begrenztes Nutzungsrecht an einer bestimmten Programmversion. [Downgrades](/glossar/downgrade/), also der Einsatz älterer Versionen, ist üblicherweise erlaubt. Installation und Nutzung von Nachfolgeversionen ist ohne zusätzliche Vereinbarungen (Maintenance/Unterhalt) nicht erlaubt.
+
+Nach Ende der Laufzeit erlischt das Nutzungsrecht. Wenn Sie die Software weiter benötigen, müssen Sie neu kaufen. Fix Term Lizenzen werden zwar noch angeboten, sind aber Auslaufmodelle, und werden nach und nach durch Subscriptions ersetzt.
+
+Fix Term Lizenzen heißen auch Mietlizenzen. Sie sind beispielsweise für den temporären Einsatz von Software im Rahmen von Projekten geeignet.
+
+
+### Subscription
+
+Subscriptions ähneln Fix Term Lizenzen. Sie gewähren ebenfalls ein zeitlich begrenztes Nutzungsrecht. Bei Subscriptions steht allerdings der Abonnement- und Service-Gedanken im Vordergrund. Sie abonnieren eine Lösung bzw. beziehen einen Komplett-Service. Subscriptions werden auf Sicht Perpetual Lizenzen ersetzen.
+
+Nehmen wir [SPSS Statistics Subscriptions](/hersteller/ibm/spss-statistics/#mietlizenzen-subscriptions) als Beispiel: Die Installation ist vereinfacht und Updates auf neue Versionen werden automatisch durchgeführt. Sie arbeiten immer mit der neusten Version. Technischer Support ist enthalten. Die Lizenzierung gestattet Ihnen die Installation auf mehreren Geräten, wie Arbeitsplatz-Rechner, Tablet, Notebook und Heimarbeitsplatz-Rechner. Mit einer SPSS Subscription bekommen Sie folglich eine flexible, komfortable Komplettlösung.
+
+
+## Software-Unterhalt
+
+Software wird gepflegt, weiterentwickelt und verbessert. Bedrohungen aus dem Internet erfordern Security-Patches. Fehler, die auftauchen, werden beseitigt. Treten technische Probleme auf, bspw. beim Installieren oder beim Aktualisieren von Systemsoftware, müssen gegebenenfalls Techniker helfen. Bei Perpetual Lizenzen (Kauflizenzen) mit unbegrenzter Laufzeit werden diese Services separat berechnet.
+
+Beim Neukauf von IBM Perpetual Lizenzen ist immer das erste Jahr Unterhalt enthalten. Nach Ablauf eines Jahres können Sie nichts tun und auf den Service verzichten oder den Unterhalt verlängern. Das nennt sich Renewal. Wir empfehlen aktiv genutzte Software immer zu renewaln, also aktuell zu halten. Neben technischen und funktionalen Verbesserungen sind mit aktueller Software vor Bedrohungen aus dem Internet besser geschützt.
+
+Das enthält Software-Unterhalt:
+
+
+<ArrowList>
+
+- Technischer Support
+- Security-Patches
+- Updates und Upgrades (auch Major Upgrades)
+
+</ArrowList>
+
+Es gibt noch einige inoffizielle Vorteile bei Software mit aktivem Unterhalt. Möchten Sie beispielsweise in nennenswertem Umfang zusätzliche Lizenzen kaufen, dann können Sie über uns bei IBM Sonderkonditionen beantragen. Aktiver Unterhalt erleichtert die Verhandlungen merkbar.
+
+<Info>
+
+Software-Unterhalt ist bei Subscriptions bereits enthalten. Berücksichtigen Sie das bei einer rein ökonomischen Gegenüberstellung von Subscriptions und Kauflizenzen.
+
+</Info>
+
+### Renewal
+
+Beim Neukauf von IBM Perpetual Lizenzen ist immer das erste Jahr Unterhalt enthalten. Nach Ablauf erhalten Sie von IBM und von uns ein Angebot, den Unterhalt um ein Jahr zu verlängern. Tun Sie nichts, läuft der Unterhalt ab. Nehmen Sie das Renewal-Angebot an, läuft der Unterhalt ein Jahr weiter.
+
+<Info>
+
+IBM bietet Ihnen immer schlechtere Konditionen als wir. Sie sollten das IBM-Angebot ohne Rücksprache mit mir nicht annehmen. IBMs Informationspolitik ist nicht immer transparent. Teilweise verschickt IBM einfach Rechnungen, die bei Nichtbezahlung intern storniert und niemals angemahnt werden.
+
+Bei Wünsche, Fragen und Zweifeln rund um Ihrer IBM Lizenzen können Sie mich jederzeit ansprechen.
+
+</Info>
+
+### Update
+
+Updates und Upgrades sind bei aktivem Unterhalt kostenlos. Wenn Sie Software ohne aktiven Unterhalt aktualisieren möchten, dann können Sie Reinstatements kaufen. Das ist nichts anderes als ein schickes Wort für "Upgrade inklusive ein Jahr Unterhalt". Wie bei Neulizenzen ist auch bei Upgrades immer ein Jahr Unterhalt enthalten.
+
+<Info>
+
+Reinstatements werden selten nachgefragt. Wir führen Sie daher nicht mehr auf unseren Produktseiten. Nehmen Sie als Hausnummer ca. 70 Prozent vom Neupreis und fragen Sie bei mir an. Genre erstelle ich Ihnen ein unverbindliches Angebot.
+
+</Info>
+
+
+### Support
+
+Technischer Support ist im Unterhalt enthalten. Er hilft 24x7 bei technischen Problemen, nicht jedoch bei Anwendungsfragen. Der Support ist weltweit verteilt. Je nach Uhrzeit müssen Sie mit englischen Antworten rechnen.
+
+
+<ArrowList>
+
+- Technische Unterstützung rund um die Uhr, zeitnah und plattformübergreifend
+- Technischer Online-Support mit Zugriff auf eine breite Wissensdatenbank, erweiterte Selbsthilfe und direkte Suchfunktion
+- 24 Stunden telefonischer Support für alle Supportfälle der „Dringlichkeitsstufe 1“ – wobei Sie selbst entscheiden, welche Probleme in diese Stufe fallen.
+
+</ArrowList>
+
+
+## Sonderpreise
+
+Strikt genommen gehörten Trade-Ups, Trade-Ins und Competitive Upgrades nicht zur Software-Lizenzierung. Da Sie vermutlich über den Kauf von IBM Software nachdenken, könnten Sie folgende Informationen interessieren:
+
+- Von einem **Trade-Up** spricht man beim "Aufstieg" von einer günstigeren, einfacheren Edition auf eine teurere, höherwertige Edition. Teilweise unterhält IBM dafür eigene SKUs (Artikelnummern von Standard-Produkten), teilweise werden Trade-Up Preise individuell auf Anfrage berechnet. Restlaufzeiten des Unterhalts werden teilweise angerechnet.
+- Von einem **Trade-In** spricht man beim Eintausch eines Produkts gegen ein anderes. Wie beim Trade-Up ist das neue Produkt üblicherweise höherwertiger und teurer. Teilweise unterhält IBM dafür eigene SKUs, teilweise werden Trade-In-Preise individuell auf Anfrage verhandelt. Restlaufzeiten des Unterhalts werden teilweise angerechnet.
+- Von einem **Competitive Upgrade (CUP)** spricht man, wenn man das Produkt eines Mitbewerbers gegen ein IBM Produkt eintauscht. Teilweise unterhält IBM dafür eigene SKUs, teilweise werden CUP-Preise individuell auf Anfrage verhandelt.
+
+<Info>
+
+Sprechen Sie mich bei Interesse an. Gerne erstelle ich Ihnen ein unverbindliches Angebot.
+
+</Info>
+
+
+## Häufige Produktbezeichnungen
+
+|IBM Produktbezeichnung|Bedeutung|
+|:---|:---|
+|LICENSE + SW SUBSCRIPTION & SUPPORT 12 MONTHS|[Neulizenz (Dauerlizenz) inklusive einem Jahr Unterhalt und Support](/hersteller/ibm/lizenzierung/#perpetual)|
+|ANNUAL SW SUBSCRIPTION & SUPPORT RENEWAL|[Wartungs- und Support-Verlängerung bei Dauerlizenzen](/hersteller/ibm/lizenzierung/#renewal)|
+|SW MAINTENANCE REINSTATEMENT 12 MONTH|[Versions-Upgrade (Dauerlizenz) inklusive einem Jahr Unterhalt und Support](/hersteller/ibm/lizenzierung/#update)|
+|AUTHORIZED USER|[Mitarbeiter-/Anwenderlizenz](/hersteller/ibm/lizenzierung/#authorized-user)|
+|CONCURRENT USER|[Netzwerklizenz für gleichzeitige Nutzung](/hersteller/ibm/lizenzierung/#concurrent-user)|
+|PROCESSOR VALUE UNITS (PVU)|[Leistungsbasierte Lizenzierung](/hersteller/ibm/lizenzierung/#processor-value-unit-pvu)|
+|BACKEND xxx-yyy TB|[Volumenbasierte Lizenzierung. Verwaltete Daten auf Sicherungsmedien.](/hersteller/ibm/spectrum-protect/#terabyte-lizenzierung)|
+|FRONTEND xxx-yyy TB|[Volumenbasierte Lizenzierung. Daten der Applikationen](/hersteller/ibm/spectrum-protect/#terabyte-lizenzierung)|

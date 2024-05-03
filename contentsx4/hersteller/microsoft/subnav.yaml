@@ -1,0 +1,505 @@
+- key:      microsoft
+  items:
+  - name:   Microsoft
+    slug:   /hersteller/microsoft/
+  - name:   Azure
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/microsoft/azure/
+    - name:   Azure Active Directory (AAD)
+      slug:   /hersteller/microsoft/azure/active-directory/
+    - name:   Azure SQL Database (SQL-DB)
+      slug:   /hersteller/microsoft/azure-sql-database/
+    - name:   Windows Virtual Desktop
+      slug:   /hersteller/microsoft/azure/azure-virtual-desktop/
+  - name:   Copilot
+    sub:
+    - name: Hauptseite
+      style: index
+      slug: /hersteller/microsoft/copilot/
+    - name: Copilot for Microsoft 365
+      slug: /hersteller/microsoft/copilot/microsoft-365/
+    - name: Copilot for Sales
+      slug: /hersteller/microsoft/copilot/sales/
+  - name:   Exchange
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/microsoft/exchange/
+    - name:   Exchange Server 2019
+      sub:
+      - name:   Exchange Server Standard 2019
+        slug:   /hersteller/microsoft/exchange/server-standard-2019/
+      - name:   Exchange Server Enterprise 2019
+        slug:   /hersteller/microsoft/exchange/server-enterprise-2019/
+    - name:   Exchange Server 2019 CALs
+      sub:
+      - name:   Exchange Server Standard CAL 2019
+        slug:   /hersteller/microsoft/exchange/server-standard-cal/
+      - name:   Exchange Server Enterprise CAL 2019
+        slug:   /hersteller/microsoft/exchange/server-enterprise-cal/
+    - name:   Exchange Online
+      sub:
+      - name:   Exchange Online Plan 1
+        slug:   /hersteller/microsoft/exchange/online-plan-1/
+      - name:   Exchange Online Plan 2
+        slug:   /hersteller/microsoft/exchange/online-plan-2/
+      - name:   Exchange Online Kiosk
+        slug:   /hersteller/microsoft/exchange/online-kiosk/
+    - name:   Exchange Add-Ons
+      sub:
+      - name:   Exchange Online Archiving (EOA)
+        slug:   /hersteller/microsoft/exchange/online-archiving/
+      - name:   Exchange Online Protection (EOP)
+        slug:   /hersteller/microsoft/exchange/online-protection/
+      - name:   Exchange Server 2025 / vNext Vorschau
+        slug:   /hersteller/microsoft/exchange/server/
+  - name:   EMS
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/microsoft/enterprise-mobility-security/
+    - name:  EMS Editionen
+      sub:
+        - name:   Enterprise Mobility + Security E3
+          slug:   /hersteller/microsoft/enterprise-mobility-security/e3/
+        - name:   Enterprise Mobility + Security E5
+          slug:   /hersteller/microsoft/enterprise-mobility-security/e5/
+    - name: Weitere Security Produkte
+      sub:
+        - name:   Intune
+          slug:   /hersteller/microsoft/intune/
+        - name:   Microsoft Cloud App Security
+          slug:   /hersteller/microsoft/microsoft-365/cloud-app-security/
+  - name:   Defender
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/microsoft/microsoft-365/defender/
+    - name:   Defender Editionen
+      sub:
+      - name:   Defender for Business
+        slug:   /hersteller/microsoft/microsoft-365/defender/business/
+      - name:   Defender for Business Server
+        slug:   /hersteller/microsoft/microsoft-365/defender/business-server/
+      - name:   Defender for Endpoint
+        slug:   /hersteller/microsoft/microsoft-365/defender/endpoint/
+      - name:   Defender for Endpoint for Server
+        slug:   /hersteller/microsoft/microsoft-365/defender/endpoint/#microsoft-defender-for-endpoint-servers
+      - name:   Defender for Identity
+        slug:   /hersteller/microsoft/microsoft-365/defender/identity/
+      - name:   Defender for Office 365
+        slug:   /hersteller/microsoft/microsoft-365/defender/office-365/
+  - name:   Microsoft Teams
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/microsoft/teams/
+    - name:   Microsoft Teams Editionen
+      sub:
+      - name:   Microsoft Teams Essentials
+        slug:   /hersteller/microsoft/teams/essentials/
+      - name:   Microsoft Teams EEA
+        slug:   /hersteller/microsoft/teams/eea/
+      - name:   Microsoft Teams Premium
+        slug:   /hersteller/microsoft/teams/premium/
+    - name:   Microsoft Teams in Microsoft 365
+      slug:   /hersteller/microsoft/teams/#microsoft-teams-in-microsoft-365-plänen
+    - name:   Add-Ons für VoIP und Telefonie
+      slug:   /hersteller/microsoft/teams/add-ons/
+  - name:   Microsoft Entra
+    sub:
+      - name:   Hauptseite
+        style: index
+        slug:   /hersteller/microsoft/entra/
+      - name:   Microsoft Entra ID P1 (AAD P1)
+        slug:   /hersteller/microsoft/entra/id-p1/
+      - name:   Microsoft Entra ID P2 (AAD P2)
+        slug:   /hersteller/microsoft/entra/id-p2/
+      - name:   Microsoft Entra ID Governance Add-on
+        slug:   /hersteller/microsoft/entra/id-governance/
+  - name:   Microsoft 365
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/microsoft/microsoft-365/
+    - name:   Business-Pläne
+      sub:
+      - name:   Microsoft 365 Apps for Business
+        slug:   /hersteller/microsoft/microsoft-365/apps-for-business/
+      - name:   Microsoft 365 Apps for Enterprise
+        slug:   /hersteller/microsoft/microsoft-365/apps-for-enterprise/
+      - name:   Microsoft 365 Business Basic
+        slug:   /hersteller/microsoft/microsoft-365/business-basic/
+      - name:   Microsoft 365 Business Standard
+        slug:   /hersteller/microsoft/microsoft-365/business-standard/
+      - name:   Microsoft 365 Business Premium
+        slug:   /hersteller/microsoft/microsoft-365/business-premium/
+    - name:   Enterprise Pläne
+      sub:
+      - name:   Microsoft 365 Enterprise E3
+        slug:   /hersteller/microsoft/microsoft-365/enterprise-e3/
+      - name:   Microsoft 365 Enterprise E5
+        slug:   /hersteller/microsoft/microsoft-365/enterprise-e5/
+    - name:   Education Pläne
+      sub:
+      - name:   Microsoft 365 Education A3
+        slug:   /hersteller/microsoft/microsoft-365/education-a3/
+      - name:   Microsoft 365 Education A5
+        slug:   /hersteller/microsoft/microsoft-365/education-a5/
+    - name:   Kiosk-Pläne
+      sub:
+      - name:   Microsoft 365 F1
+        slug:   /hersteller/microsoft/microsoft-365/f1/
+      - name:   Microsoft 365 F3
+        slug:   /hersteller/microsoft/microsoft-365/f3/
+      - name:   Microsoft 365 F5
+        slug:   /hersteller/microsoft/microsoft-365/f5/
+    - name:   Microsoft 365 Add-ons
+      slug:   /hersteller/microsoft/microsoft-365/add-ons/
+      sub:
+      - name:   Extra File Storage (1 GB)
+        slug:   /hersteller/microsoft/microsoft-365/add-ons/extra-file-storage/
+      - name:   Microsoft 365 E3 Unattended License
+        slug:   /hersteller/microsoft/microsoft-365/add-ons/e3-unattended-license/
+      - name:   Microsoft 365 10 Year Audit Log Retention
+        slug:   /hersteller/microsoft/microsoft-365/add-ons/10-year-audit-log-retention/
+      - name:   Microsoft 365 Viva Topic
+        slug:   /hersteller/microsoft/microsoft-365/add-ons/viva-topic/
+      - name:   Microsoft 365 E5 Compliance
+        slug:   /hersteller/microsoft/microsoft-365/add-ons/e5-compliance/
+      - name:   Microsoft 365 E5 Insider Risk Management
+        slug:   /hersteller/microsoft/microsoft-365/add-ons/e5-insider-risk-management/
+      - name:   Microsoft 365 E5 Information Protection Governance
+        slug:   /hersteller/microsoft/microsoft-365/add-ons/e5-information-protection-governance/
+      - name:   Microsoft 365 E5 eDiscovery & Audit
+        slug:   /hersteller/microsoft/microsoft-365/add-ons/e5-ediscovery-audit/
+      - name:   Microsoft 365 E5 Security
+        slug:   /hersteller/microsoft/microsoft-365/add-ons/e5-security/
+  - name:   Office 365
+    sub:
+    - name:   Hauptseite
+      style: index
+      akey:   Office 365
+      slug:   /hersteller/microsoft/office-365/
+    - name:   Office 365 Enterprise Pläne
+      sub:
+      - name:   Office 365 Enterprise E1
+        slug:   /hersteller/microsoft/office-365/enterprise-e1/
+      - name:   Office 365 Enterprise E3
+        slug:   /hersteller/microsoft/office-365/enterprise-e3/
+      - name:   Office 365 Enterprise E5
+        slug:   /hersteller/microsoft/office-365/enterprise-e5/
+      - name:   Office 365 Enterprise F3
+        slug:   /hersteller/microsoft/office-365/enterprise-f1/
+    - name:   Office 365 Education Pläne
+      sub:
+      - name:   Office 365 Education A3
+        slug:   /hersteller/microsoft/office-365/education-a3/
+      - name:   Office 365 Education A5
+        slug:   /hersteller/microsoft/office-365/education-a5/
+    - name:   Office 365 Einzelprodukte
+      sub:
+      - name:   Teams
+        slug:   /hersteller/microsoft/teams/
+      - name:   OneDrive for Business Plan 1
+        slug:   /hersteller/microsoft/microsoft-365/onedrive-for-business-plan-1/
+      - name:   OneDrive for Business Plan 2
+        slug:   /hersteller/microsoft/microsoft-365/onedrive-for-business-plan-2/
+      - name:   Office 365 Add-Ons
+        slug:   /hersteller/microsoft/office-365/add-ons/
+      - name:   Office 365 ProPlus
+        slug:   /hersteller/microsoft/microsoft-365/apps-for-enterprise/
+  - name:   Office
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/microsoft/office/
+    - name: Office 2021 Pakete
+      sub:
+      - name:   Office Home & Business 2021
+        slug:   /hersteller/microsoft/office/home-business-2021/
+      - name:   Office Standard 2021
+        slug:   /hersteller/microsoft/office/standard-2021/
+      - name:   Office Standard for Mac 2021
+        slug:   /hersteller/microsoft/office/standard-for-mac-2021/
+      - name:   Office Professional 2021
+        slug:   /hersteller/microsoft/office/professional-2021/
+      - name:   Office Professional Plus 2021
+        slug:   /hersteller/microsoft/office/professional-plus-2021/
+    - name:   Office 2021 Einzelprodukte
+      sub:
+      - name:   Hauptseite
+        slug:   /hersteller/microsoft/office/einzelprodukte/
+      - name:   Word 2021
+        slug:   /hersteller/microsoft/office/einzelprodukte/word-2021/
+      - name:   Excel 2021
+        slug:   /hersteller/microsoft/office/einzelprodukte/excel-2021/
+      - name:   PowerPoint 2021
+        slug:   /hersteller/microsoft/office/einzelprodukte/powerpoint-2021/
+      - name:   Access 2021
+        slug:   /hersteller/microsoft/office/einzelprodukte/access-2021/
+      - name:   Outlook 2021
+        slug:   /hersteller/microsoft/office/einzelprodukte/outlook-2021/
+      - name:   Publisher 2021
+        slug:   /hersteller/microsoft/office/einzelprodukte/publisher-2021/
+      - name:   Skype for Business 2019
+        slug:   /hersteller/microsoft/office/einzelprodukte/skype-for-business-2019/
+    - name:   Office 2024 Preview
+      slug:   /hersteller/microsoft/office/2024/
+  - name:   Project
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/microsoft/project/
+    - name: Project 2021
+      sub:
+      - name:   Project Standard 2021
+        slug:   /hersteller/microsoft/project/standard-2021/
+      - name:   Project Professional 2021
+        slug:   /hersteller/microsoft/project/professional-2021/
+    - name: Project Server
+      sub:
+      - name:   Project Server Subscription Edition
+        slug:   /hersteller/microsoft/project/server-subscription-edition/
+      - name:   Project Server 2019
+        slug:   /hersteller/microsoft/project/server-2019/
+      - name:   Project Server CALs
+        slug:   /hersteller/microsoft/project/server-2019/cal/
+    - name:  Project Online
+      sub:
+      - name:   Project Online Essentials
+        slug:   /hersteller/microsoft/project/online-essentials/
+      - name:   Project Plan 1
+        slug:   /hersteller/microsoft/project/plan-1/
+      - name:   Project Plan 3
+        slug:   /hersteller/microsoft/project/plan-3/
+      - name:   Project Plan 5
+        slug:   /hersteller/microsoft/project/plan-5/
+  - name:   Power Plattform
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/microsoft/power-platform/
+    - name:   Power BI
+      slug:   /hersteller/microsoft/power-platform/power-bi/
+    - name:   Power Apps
+      slug:   /hersteller/microsoft/power-platform/power-apps/
+    - name:   Power Automate
+      slug:   /hersteller/microsoft/power-platform/power-automate/
+  - name:   SharePoint
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/microsoft/sharepoint/
+    - name:   SharePoint Server Editionen
+      sub:
+      - name:   SharePoint Server Subscription Edition
+        slug:   /hersteller/microsoft/sharepoint/server-subscription-edition/
+      - name:   SharePoint Server 2019
+        slug:   /hersteller/microsoft/sharepoint/server-2019/
+    - name:   SharePoint Server CALs
+      sub:
+      - name:   SharePoint Server Standard CAL
+        slug:   /hersteller/microsoft/sharepoint/server-standard-cal/
+      - name:   SharePoint Server Enterprise CAL
+        slug:   /hersteller/microsoft/sharepoint/server-enterprise-cal/
+    - name:   SharePoint Online
+      sub:
+      - name:   SharePoint Online Plan 1
+        slug:   /hersteller/microsoft/sharepoint/online-plan-1/
+      - name:   SharePoint Online Plan 2
+        slug:   /hersteller/microsoft/sharepoint/online-plan-2/
+  - name:   Skype for Business
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/microsoft/skype-for-business/
+    - name:   Skype for Business 2019
+      sub:
+      - name:   Skype for Business 2019 Server
+        slug:   /hersteller/microsoft/skype-for-business/server-2019/
+      - name:   Skype for Business 2019 Client
+        slug:   /hersteller/microsoft/office/einzelprodukte/skype-for-business-2019/
+    - name:   Skype for Business Server CALs
+      sub:
+      - name:   Skype for Business Standard CAL
+        slug:   /hersteller/microsoft/skype-for-business/server-2019/standard-cal/
+      - name:   Skype for Business Enterprise CAL
+        slug:   /hersteller/microsoft/skype-for-business/server-2019/enterprise-cal/
+      - name:   Skype for Business Plus CAL
+        slug:   /hersteller/microsoft/skype-for-business/server-2019/plus-cal/
+    - name:   Skype for Business Server 2022 / vNext
+      slug:   /hersteller/microsoft/skype-for-business/server/
+  - name:   SQL Server
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/microsoft/sql-server/
+    - name:   SQL Server 2022 Core
+      sub:
+      - name:   SQL Server Standard Core 2022
+        slug:   /hersteller/microsoft/sql-server/standard-2022/#core-lizenzierung
+      - name:   SQL Server Enterprise Core 2022
+        slug:   /hersteller/microsoft/sql-server/enterprise-2022/
+    - name:   SQL Server 2022 Server/CAL
+      sub:
+      - name:   SQL Server Standard 2022
+        slug:   /hersteller/microsoft/sql-server/standard-2022/#servercal-lizenzierung
+    - name:   Azure SQL Database
+      slug:   /hersteller/microsoft/azure-sql-database/
+    - name: SQL Server 2012 ESU
+      slug: /hersteller/microsoft/sql-server/extended-security-updates-esu/
+    - name: SQL Server OEM Preise
+      slug: /hersteller/microsoft/sql-server/oem/
+  - name:   System Center
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/microsoft/system-center/
+    - name:   Server Management Lizenzen
+      sub:
+      - name:   System Center Standard 2022
+        slug:   /hersteller/microsoft/system-center/standard-2022/
+      - name:   System Center Datacenter 2022
+        slug:   /hersteller/microsoft/system-center/datacenter-2022/
+    - name:   Client Management Lizenzen
+      sub:
+        - name:   Übersicht
+          slug:   /hersteller/microsoft/system-center/client-management-license/
+        - name:   Microsoft Endpoint Configuration Manager (MECM)
+          slug:   /hersteller/microsoft/system-center/client-management-license/endpoint-configuration-manager/
+        - name:   Endpoint Protection
+          slug:   /hersteller/microsoft/system-center/client-management-license/endpoint-protection/
+        - name:   Data Protection Manager (SCDPM)
+          slug:   /hersteller/microsoft/system-center/client-management-license/data-protection-manager/
+        - name:   Service Manager (SCSM)
+          slug:   /hersteller/microsoft/system-center/client-management-license/service-manager/
+        - name:   Operations Manager (SCOM)
+          slug:   /hersteller/microsoft/system-center/client-management-license/operations-manager/
+        - name:   Orchestrator
+          slug:   /hersteller/microsoft/system-center/client-management-license/orchestrator/
+  - name:   Surface
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/microsoft/surface/
+    - name:   Surface-World
+      slug:   https://surface-world.de/
+  - name:   Visio
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/microsoft/visio/
+    - name:   Visio 2021
+      sub:
+      - name:   Visio Standard 2021
+        slug:   /hersteller/microsoft/visio/standard-2021/
+      - name:   Visio Professional 2021
+        slug:   /hersteller/microsoft/visio/professional-2021/
+    - name:   Visio Online
+      sub:
+      - name:   Vision Online Plan 1
+        slug:   /hersteller/microsoft/visio/online-plan-1/
+      - name:   Vision Online Plan 2
+        slug:   /hersteller/microsoft/visio/online-plan-2/
+  - name:   Visual Studio
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/microsoft/visual-studio/
+    - name:   Visual Studio 2022
+      sub:
+        - name:   Visual Studio Professional 2022
+          slug:   /hersteller/microsoft/visual-studio/professional-2022/
+        - name:   Visual Studio Test Professional 2022
+          slug:   /hersteller/microsoft/visual-studio/test-professional-2022/
+        - name:   Visual Studio Enterprise 2022
+          slug:   /hersteller/microsoft/visual-studio/enterprise-2022/
+    - name:   Azure DevOps (Team Foundation Server)
+      sub:
+        - name:   Azure DevOps
+          slug:   /hersteller/microsoft/visual-studio/azure-devops/
+        - name:   Azure DevOps Server
+          slug:   /hersteller/microsoft/visual-studio/azure-devops-server/
+        - name:   MSDN for Platforms
+          slug:   /hersteller/microsoft/visual-studio/msdn-for-platforms/
+  - name:   Windows
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/microsoft/windows/
+    - name:   Gerätelizenzen
+      sub:
+      - name:   Windows 11 Pro
+        slug:   /hersteller/microsoft/windows/pro/
+      - name:   Windows 10/11 Enterprise per Device
+        slug:   /hersteller/microsoft/windows/enterprise/per-device/
+      - name:   Windows 10 Enterprise LTSC
+        slug:   /hersteller/microsoft/windows/enterprise/ltsc/
+    - name:   Nutzerlizenzen
+      sub:
+      - name:   Windows 10/11 Enterprise E3
+        slug:   /hersteller/microsoft/windows/enterprise/e3/
+      - name:   Windows 10/11 Enterprise E5
+        slug:   /hersteller/microsoft/windows/enterprise/e5/
+      - name:   Windows 365
+        slug:   /hersteller/microsoft/windows/windows-365/
+    - name: Education Lizenzen
+      sub:
+      - name:   Windows 10/11 Education per Device
+        slug:   /hersteller/microsoft/windows/education/
+      - name:   Windows 10/11 Enterprise A3
+        slug:   /hersteller/microsoft/windows/enterprise/a3/
+      - name:   Windows 10/11 Enterprise A5
+        slug:   /hersteller/microsoft/windows/enterprise/a5/
+    - name: Weitere Lizenzen
+      sub:
+      - name:   Windows Virtual Desktop Access (VDA)
+        slug:   /hersteller/microsoft/windows/vda/
+      - name:   Windows OEM Preise
+        slug:   /hersteller/microsoft/windows/oem/
+      - name:   Windows 365
+        slug:   /hersteller/microsoft/windows/windows-365/
+  - name:   Windows Server
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/microsoft/windows-server/
+    - name: Windows Server Editionen
+      sub:
+      - name:   Windows Server Standard 2022
+        slug:   /hersteller/microsoft/windows-server/standard-2022/
+      - name:   Windows Server Datacenter 2022
+        slug:   /hersteller/microsoft/windows-server/datacenter-2022/
+      - name:   Windows Server Essentials 2022
+        slug:   /hersteller/microsoft/windows-server/essentials-2022/
+      - name:   Windows Server 2012 ESU
+        slug:   /hersteller/microsoft/windows-server/extended-security-updates-esu/
+      - name:   Windows Server 2025 (ab Q4/2024)
+        slug:   /hersteller/microsoft/windows-server/2025/
+    - name: Windows Server CALs
+      sub:
+      - name:   Windows Server CAL
+        slug:   /hersteller/microsoft/windows-server/cal/
+      - name:   Windows Server External Connector
+        slug:   /hersteller/microsoft/windows-server/external-connector/
+      - name:   Remote Desktop Services (RDS) CAL
+        slug:   /hersteller/microsoft/windows-server/remote-desktop-services/
+      - name:   Rights Management Services (RMS) CAL
+        slug:   /hersteller/microsoft/windows-server/rights-management-services/
+      - name:   Microsoft CAL Suites
+        slug:   /hersteller/microsoft/cal-suite/
+    - name:   Core Infrastructure Server Suite (CIS)
+      sub:
+      - name: CIS Standard
+        slug: /hersteller/microsoft/windows-server/core-infrastructure-server-suite/standard/
+      - name: CIS Datacenter
+        slug: /hersteller/microsoft/windows-server/core-infrastructure-server-suite/datacenter/
+    - name: Windows Server OEM Übersicht
+      slug: /hersteller/microsoft/windows-server/oem-rok/
+  - name:   OEM Preise
+    slug:   /hersteller/microsoft/oem-produktliste/
+  - name:   Gebrauchtsoftware
+    slug:   /hersteller/microsoft/gebrauchtsoftware/

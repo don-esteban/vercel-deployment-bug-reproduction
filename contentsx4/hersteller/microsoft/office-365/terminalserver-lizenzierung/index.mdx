@@ -1,0 +1,88 @@
+---
+title: Office 365 Terminalserver Lizenzierung
+bcTitle: Terminalserver Lizenzierung
+bkey: microsoft
+ckey: stefan-barth
+date: 2024-01-10
+seoTitle: Office 365 Terminalserver Lizenzierung | Pläne. Funktionen. Nutzungsrechte.
+wanted:
+  features:
+    - name: Terminalserver-Lizenzierung mit Office 365
+    - name: Übersicht der zur Nutzung berechtigten Pläne
+furtherReading:
+  - name: Microsoft 365 Apps RDS (Microsoft)
+    slug: https://learn.microsoft.com/de-de/deployoffice/deploy-microsoft-365-apps-remote-desktop-services
+---
+
+
+
+<Intro>
+
+Das Recht zur Nutzung der Office Programme über einen Terminalserver ist in den Volumenlizenzen (Open Value) der Pläne Office 365 Enterprise E3, Office 365 Enterprise E5, Visio Online und Project Online, sowie in Microsoft 365 Apps for Enterprise, Microsoft 365 Enterprise E3 und Microsoft 365 Enterprise E5, enthalten.
+
+Bei den Plänen Microsoft 365 Business Premium, sowie den Visio- und Project Online Plänen ist dies auch mit den CSP Abonnements möglich.
+
+
+
+</Intro>
+
+<TOC />
+
+
+
+## Berechtigte Pläne
+
+Alle Volumenlizenz-Subscriptions, die Microsoft Apps enthalten, berechtigen zur Nutzung der lokal installierbaren Office Programme über Remote Desktop Services unter [Windows Server](/hersteller/microsoft/windows-server/). Das sind die folgenden Pläne:
+
+<ArrowList>
+
+-  [Office 365 Enterprise E3](/hersteller/microsoft/office-365/enterprise-e3/)
+-  [Office 365 Enterprise E5](/hersteller/microsoft/office-365/enterprise-e5/)
+-  [Microsoft 365 Apps for Enterprise](/hersteller/microsoft/microsoft-365/apps-for-enterprise/)
+-  [Microsoft 365 Business Premium](/hersteller/microsoft/microsoft-365/business-premium/)
+-  [Microsoft 365 Enterprise E3](/hersteller/microsoft/microsoft-365/enterprise-e3/)
+-  [Microsoft 365 Enterprise E5](/hersteller/microsoft/microsoft-365/enterprise-e5/)
+-  [Visio Pläne](/hersteller/microsoft/visio/)
+-  [Project Pläne](/hersteller/microsoft/project/)
+
+</ArrowList>
+
+<Info>
+
+Alle [anderen Office 365 Pläne](/hersteller/microsoft/office-365/), also alle **Office 365 Business Pläne**, mittlerweise Microsoft 365, enthalten **keine Berechtigung** die Office Programme über Terminalserver/RDS zu nutzen. Die Ausnahme gibt es nur mit Microsoft 365 Business Premium (ehemals M365 Business).
+
+</Info>
+
+
+## Office 365/Microsoft 365 Terminalserver Installation
+
+Wenn Office 365 bzw. Microsoft 365 über einen Terminalserver (Remote Desktop Services) genutzt werden soll, muss die Installation über das [Office Deployment Tool (Click-to-Run)](https://www.microsoft.com/en-us/download/details.aspx?id=49117) erfolgen. In der Konfigurationsdatei des Office Bereitstellungstools muss [Shared Computer Activation (SCA)](https://learn.microsoft.com/de-de/deployoffice/overview-shared-computer-activation) aktiviert werden. Aktuell werden Windows Server 2019 und Windows Server 2016 unterstützt bis Oktober 2025. Microsoft 365 Apps (Version 2302 oder höher) wird unter Windows Server 2022 bis Oktober 2026 unterstützt.
+
+**Shared Computer Activation (SCA)** oder **Aktivierung gemeinsam genutzter Computer** wird benötigt, um Microsoft 365 Apps auf einem Computer bereitzustellen, auf den mehrere Benutzer zugreifen. Das ist bei der Nutzung über Terminal Services der Fall. Dabei ist unerheblich, ob nur die Anwendungen gemeinsam genutzt werden (Installation auf einem Terminalserver/RDS) oder ob der gesamte Desktop virtualisiert wird (Installation in einer Virtuellen Maschine bzw. VDI, Virtual Desktop Infrastructure).
+
+
+<Info>
+
+Der Terminalserver benötigt eine **aktive Internet-Verbindung**, um die korrekte Lizenzierung der Microsoft Apps sicherzustellen. Die Prüfung erfolgt bei neuen Nutzern sofort und wird ab dann fortwährend im Abstand einiger Tage wiederholt.
+
+</Info>
+
+
+## Weiterführende Informationen
+
+<ArrowList>
+
+- [Alle Office 365 Pläne](/hersteller/microsoft/office-365/)
+- [Office 365 Lizenzierung](/hersteller/microsoft/office-365/lizenzierung/)
+- [Alle Microsoft 365 Pläne](/hersteller/microsoft/microsoft-365/)
+- [Office Deployment Tool](https://www.microsoft.com/en-us/download/details.aspx?id=49117)
+- [Überblick über die Aktivierung gemeinsam genutzer Computer für Microsoft 365 Apps (ehemals auch Office ProPlus)](https://learn.microsoft.com/de-de/deployoffice/overview-shared-computer-activation)
+
+</ArrowList>
+
+<GetInTouch theme="light">
+
+Sie haben weitere Fragen zum Produkt oder zur Lizenzierung?<br />
+Kein Problem. Rufen Sie an oder schreiben Sie eine E-Mail. Ich berate Sie gerne.
+
+</GetInTouch>

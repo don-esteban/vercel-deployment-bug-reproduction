@@ -1,0 +1,50 @@
+- key:      docusign
+  items:
+  - name:   DocuSign eSignature
+    slug:   /hersteller/docusign/
+  - name:   Standard
+    slug:   /hersteller/docusign/esignature-standard/
+  - name:   Business Pro
+    slug:   /hersteller/docusign/esignature-business-pro/
+  - name:   Enterprise Pro
+    slug:   /hersteller/docusign/esignature-enterprise-pro/
+  - name:   For Salesforce
+    slug:   /hersteller/docusign/esignature-salesforce/
+  - name:   Add-ons
+    sub:
+    - name: Hauptseite
+      style: index
+      slug: /hersteller/docusign/add-ons/
+    - name: Advanced Workflow
+      slug: /hersteller/docusign/add-ons/#advanced-workflow
+    - name: Expanded Branding
+      slug: /hersteller/docusign/add-ons/#expanded-branding
+    - name: Access Management w/SSO
+      slug: /hersteller/docusign/add-ons/#access-management-wsso
+  - name:   Connectors
+    sub:
+    - name: Hauptseite
+      style: index
+      slug: /hersteller/docusign/connectors/
+    - name: Alfresco
+      slug: /hersteller/docusign/connectors/#alfresco
+    - name: Ariba
+      slug: /hersteller/docusign/connectors/#ariba
+    - name: Google Enterprise Apps
+      slug: /hersteller/docusign/connectors/#google-enterprise-apps
+    - name: Microsoft Dynamics
+      slug: /hersteller/docusign/connectors/#microsoft-dynamics
+    - name: Microsoft SharePoint
+      slug: /hersteller/docusign/connectors/#microsoft-sharepoint
+    - name: NetSuite
+      slug: /hersteller/docusign/connectors/#netsuite
+    - name: Salesforce
+      slug: /hersteller/docusign/connectors/#salesforce
+    - name: SAP
+      slug: /hersteller/docusign/connectors/#sap-connector
+    - name: SuccessFactors
+      slug: /hersteller/docusign/connectors/#successfactors
+    - name: SugarCRM
+      slug: /hersteller/docusign/connectors/#sugarcrm
+    - name: Various Integrations
+      slug: /hersteller/docusign/connectors/#various-integrations

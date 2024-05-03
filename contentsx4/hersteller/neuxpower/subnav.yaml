@@ -1,0 +1,10 @@
+- key:      neuxpower
+  items:
+  - name:   NXPowerLite
+    slug:   /hersteller/neuxpower/
+  - name:   Desktop
+    slug:   /hersteller/neuxpower/nxpowerlite-desktop/
+  - name:   Exchange
+    slug:   /hersteller/neuxpower/nxpowerlite-exchange/
+  - name:   File Server
+    slug:   /hersteller/neuxpower/nxpowerlite-file-server/

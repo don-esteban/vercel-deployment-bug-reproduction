@@ -1,0 +1,8 @@
+- key:      autodesk
+  items:
+  - name:   Autodesk
+    slug:   /hersteller/autodesk/
+  - name:   AutoCAD
+    slug:   /hersteller/autodesk/autocad/
+  - name:   Revit
+    slug:   /hersteller/autodesk/revit/

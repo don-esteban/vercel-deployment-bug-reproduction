@@ -1,0 +1,8 @@
+- key:      sharegate
+  items:
+  - name:   Sharegate
+    slug:   /hersteller/sharegate/
+  - name:   Standard
+    slug:   /hersteller/sharegate/standard/
+  - name:   Nintex
+    slug:   /hersteller/sharegate/nintex/

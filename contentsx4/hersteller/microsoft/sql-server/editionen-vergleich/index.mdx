@@ -1,0 +1,131 @@
+---
+title: SQL Server 2022 - Editionen Vergleich
+bcTitle: Editionen-Vergleich
+bkey: microsoft
+ckey: stefan-barth
+date: 2023-03-03
+wanted:
+  features:
+    - name: Vergleich der SQL Server Editionen Standard, Enterprise und Express
+    - name: Hardwarebedarf, Datenbankgröße, und Funktionen
+furtherReading:
+  - name: SQL Server Lizenzierung
+    slug: /hersteller/microsoft/sql-server/lizenzierung/
+    description: Informationen und Details zum Kauf von SQL Server Lizenzen.
+  - name: SQL Server FAQ
+    slug: /blog/sql-server-lizenzierung-faq/
+    description: Antworten auf die wichtigsten Fragen zum SQL Server.
+  - name: SQL Server 2022 Datasheet (En)
+    slug: https://download.microsoft.com/download/d/1/1/d115ab99-0b39-48e2-987f-dfee5731437c/SQL_Server_2022_datasheet.pdf
+    description: Microsoft SQL Server 2022 Datenblatt.
+---
+
+
+
+<Intro>
+
+Auf dieser Seite finden Sie einen Vergleich von SQL Server 2022 Standard, SQL Server 2022 Enterprise und SQL Server 2022 Express.
+
+Es gibt noch eine vierte Developer Edition. Dies ist die Free Version für Developer/Tester und umfasst im wesentlichen alle Enterprise Funktionen für nicht-produktive Umgebungen (exlusive Software Assurance Vorteile).
+
+
+</Intro>
+
+<TOC />
+
+
+## Hardware-, Speichernutzung und Datenbankgröße
+
+|Feature|EXP|STD|ENT|
+|:---|:---:|:---:|:---:|
+|Maximale Anzahl Kerne:|4 |24 |[Max](#max)|
+|Speicher: Max Pufferpoolgröße pro Instanz |1410 MB|128 GB|[Max](#max)|
+|Speicher: Max. Spaltenstore-Segmentcache pro Instanz|352 MB|32 GB|[Max](#max)|
+|Speicher: Max. speicheroptimierte Daten pro Datenbank|352 MB|32 GB|[Max](#max)|
+|Maximale Datenbankgröße|10 GB|524 PB|524 PB|
+
+**<span id="max">Max</span>:** Nur vom Betriebssystem abhängig <br />
+
+<Legend>
+
+|Verwendete Abkürzungen:||
+|:---|:---|
+|**EXP:** SQL Server 2022 Express|**STD:** [SQL Server 2022 Standard Edition](/hersteller/microsoft/sql-server/standard-2022/)|
+|**ENT:** [SQL Server 2022 Enterprise Edition](/hersteller/microsoft/sql-server/enterprise-2022/)||
+
+</Legend>
+
+
+## Funktionsumfang
+
+ Eine genaue Auflistung und einzelner Funktionen finden Sie auf der Microsoft Seite [Editions and supported features of SQL Server](https://learn.microsoft.com/de-de/sql/sql-server/editions-and-components-of-sql-server-2019?view=sql-server-ver15).
+ Eine Übersicht der neuen (Azure-) Funktionen mit SQL Server 2022 finden Sie in der [Microsoft SQL-Dokumentation](https://learn.microsoft.com/de-de/sql/sql-server/what-s-new-in-sql-server-2022?view=sql-server-ver16).
+
+
+|Feature|EXP|STD|ENT|
+|:---|:---:|:---:|:---:|
+|**Azure Unterstützung**||||
+|HA/DR auf Azure SQL: Unterstützung für High-Availabity und Disaster Recovery in der Azure Cloud|–|–|✓|
+|Azure Synapse Link: Abrufen von Echtzeitanalyse über betriebsbezogene Daten in SQL Server 2022|–|–|✓|
+|Azure Purview Integration: Wenden Sie Microsoft Purview-Zugriffsrichtlinien auf jede hybride SQL Server-Instanz an.|–|–|✓|
+|Authentifizierung über Azure Active Directory|–|–|✓|
+|**Intelligente Datenbank**||||
+|Unified AI platform: Trainieren und operationalisierbare Modelle mit SQL Server ML Service|✓|✓|✓|
+|Grundlegende Machine Learning-Integration: Konnektivität mit Open Source-Python und -R, begrenzter Parallelismus|✓|✓|✓|
+|Erweiterte Machine Learning-Integration: Vollständiger Parallelismus von R- und Python-Analytics und Möglichkeit der Ausführung auf GPUs|–|–|✓|
+|Adaptive Abfrageverarbeitung|–|–|✓|
+|Machine Learning für Hadoop/Spark und Machine Learning für Linux, eine Software Assurance-Vergünstigung|–|–|✓|
+|**Programmiersprache und Platform**|
+|UTF-8 Support, Support for SQL Server Java extension|✓|✓|✓|
+Kubernetes-Support|–|–|✓|
+|**Performance und Verfügbarkeit**|
+|Kostenfreies asynchrones Replikat auf virtuellen Azure-Computern für die Notfallwiederherstellung|–|✓|✓|
+|In-Memory-Datenbank: speicheroptimierte tempdb|–|–|✓|
+|Advanced OLTP: In-Memory-OLTP, operative Analyse|✓|✓|✓|
+|In-Memory-Columnstore|✓|✓|✓|
+|Stretch Database|–|–|✓|
+|Kalkulationsgruppen in tabellarischen Modellen|–|–|✓|
+|Schnellere Datenbankwiederherstellung|✓|✓|✓|
+|Basic High Availability: Failover in einer einzelnen Datenbank mit zwei Knoten, nicht lesbares sekundäres Replikat|–|✓|✓|
+|Erweiterte hohe Verfügbarkeit: Basic-Verfügbarkeitsgruppen, Failover auf mehreren Datenbanken, lesbare sekundäre Replikate|–|✓|✓|
+|Always On-Verfügbarkeitsgruppen|–|–|✓|
+|Grundlegende Business Intelligence für Unternehmen: Grundlegende mehrdimensionale Modelle, grundlegendes tabellarisches Modell, In-Memory-Speichermodus|–|✓|✓|
+|Erweiterte Business Intelligence für Unternehmen: Erweiterte mehrdimensionale Modelle, erweitertes tabellarisches Modell, DirectQuery-Speichermodus, erweitertes Data Mining|–|–|✓|
+|Unbegrenzte Virtualisierung, eine Software Assurance-Vergünstigung|–|–|✓|
+|**Sicherheit**|
+|Schwachstellenanalyse|✓|✓|✓|
+|Datenermittlung und -klassifizierung|–|–|✓|
+|Basic Reporting und Analytics|✓|–|✓|
+|Kompatibilitätsberichte mit SQL Server Audit|✓|✓|✓|
+|Erweiterte Sicherheit: Always Encrypted, Sicherheit auf Zeilenebene, Datenmaskierung, differenzierte Überprüfung|✓|✓|✓|
+|Always Encrypted mit Secure Enclaves|–|–|✓|
+|Transparent Data Encryption|–|✓|✓|
+|Mobile Berichte und KPIs|–|–|✓|
+|Ledger: Funktionen für manipulationssichere Beweise in Datenbanken. Kryptografischer Nachweis gegenüber Dritten, dass die Daten nicht manipuliert wurden|–|–|✓|
+|Integration von Microsoft Defender für Cloud|–|–|✓|
+|**Management, Dashboards und Tools**||||
+|Programmierbarkeit und Entwicklungstools: T-SQL, SQL CLR, Service Broker, JSON, XML, Unterstützung von Diagrammdaten|✓|✓|✓|
+|Verwaltbarkeit: Management Studio, richtlinienbasierte Verwaltung|✓|✓|✓|
+|Advanced Data Integration: Fuzzygruppierung und Lookups|✓|–|✓|
+|Data Marts und Data Warehousing: Partitioning, Datenkomprimierung, Erfassung von Datenänderungen, Datenbankmomentaufnahme|✓|✓|✓|
+|Enterprise Data Management: Master Data Services, Data Quality Services|✓|–|✓|
+|Grundlegende Datenintegration: SQL Server Integration Services, integrierte Connectors|–|✓|✓|
+|Azure Data Studio zur Verwaltung des SQL Server inkl. Support für T-SQL mit einem Notebook|✓|✓|✓|
+|Zugriff auf Power BI-Berichtsserver, eine Software Assurance-Vergünstigung|–|–|✓|
+
+<Legend>
+
+|Verwendete Abkürzungen:||
+|:---|:---|
+|**EXP:** SQL Server 2022 Express|**STD:** [SQL Server 2022 Standard Edition](/hersteller/microsoft/sql-server/standard-2022/)|
+|**ENT:** [SQL Server 2022 Enterprise Edition](/hersteller/microsoft/sql-server/enterprise-2022/)||
+
+</Legend>
+
+
+<GetInTouch theme="light">
+
+Sie haben weitere Fragen zum Produkt oder zur Lizenzierung?<br />
+Kein Problem. Rufen Sie an oder schreiben Sie eine E-Mail. Ich berate Sie gerne.
+
+</GetInTouch>

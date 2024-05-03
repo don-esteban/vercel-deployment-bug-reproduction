@@ -1,0 +1,16 @@
+- key:      hcl
+  items:
+  - name:   HCL
+    slug:   /hersteller/hcl/
+  - name:   HCL Lotus Domino Notes
+    slug:   /hersteller/hcl/lotus-domino-notes/
+  - name:   HCL Domino Leap
+    slug:   /hersteller/hcl/domino-leap/
+  - name:   HCL Connections
+    slug:   /hersteller/hcl/connections/
+  - name:   HCL Sametime
+    slug:   /hersteller/hcl/sametime/
+  - name:   HCL Appscan
+    slug:   /hersteller/hcl/appscan/
+  - name:   HCL Volt MX
+    slug:   /hersteller/hcl/volt-mx/

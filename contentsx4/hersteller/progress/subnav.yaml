@@ -1,0 +1,22 @@
+- key: progress
+  items:
+  - name: Progress
+    slug: /hersteller/progress/
+  - name: WhatsUp Gold
+    sub:
+    - name: Alle Editionen
+      slug:  /hersteller/progress/whatsup-gold/
+    - name: WhatsUp Gold Total Plus
+      slug:  /hersteller/progress/whatsup-gold/total-plus/
+    - name: WhatsUp Gold Premium
+      slug:  /hersteller/progress/whatsup-gold/premium/
+    - name: WhatsUp Gold Subscription
+      slug:  /hersteller/progress/whatsup-gold/subscription/
+  - name: WS_FTP
+    sub:
+    - name: Übersicht
+      slug:  /hersteller/progress/ws_ftp/
+    - name: WS_FTP Server
+      slug:  /hersteller/progress/ws_ftp/server/
+    - name: WS_FTP Professional
+      slug:  /hersteller/progress/ws_ftp/professional/

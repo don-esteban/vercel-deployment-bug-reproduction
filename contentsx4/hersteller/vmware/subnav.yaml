@@ -1,0 +1,50 @@
+- key: vmware
+  items:
+    - name: VMware
+      slug: /hersteller/vmware/
+    - name: Workstation
+      sub:
+        - name: Hauptseite
+          style: index
+          slug: /hersteller/vmware/workstation/
+        - name: Workstation Pro
+          slug: /hersteller/vmware/workstation/pro/
+        - name: Workstation Player
+          slug: /hersteller/vmware/workstation/player/
+    - name: Fusion
+      sub:
+        - name: Hauptseite
+          style: index
+          slug: /hersteller/vmware/fusion/
+        - name: Fusion Pro
+          slug: /hersteller/vmware/fusion/pro/
+        - name: Fusion Player
+          slug: /hersteller/vmware/fusion/player/
+    - name: vSphere
+      sub:
+        - name: Hauptseite
+          style: index
+          slug: /hersteller/vmware/vsphere/
+        - name: VMware vSphere Standard (VVS)
+          slug: /hersteller/vmware/vsphere/standard/
+        - name: VMware vSphere Essentials Plus (VVEP)
+          slug: /hersteller/vmware/vsphere/essentials-plus-kit/
+        - name: VMware vSphere Foundation (VVF)
+          slug: /hersteller/vmware/vsphere-foundation/
+        - name: VMware Cloud Foundation (VCF)
+          slug: /hersteller/vmware/cloud-foundation/
+        - name: vSAN Add-ons für VVF und VCF
+          slug: /hersteller/vmware/vsan/
+    - name: Horizon
+      sub:
+        - name: Hauptseite
+          style: index
+          slug: /hersteller/vmware/horizon/
+        - name: Horizon Editionen (Term Edition)
+          sub:
+            - name: Horizon Standard
+              slug: /hersteller/vmware/horizon/standard/
+            - name: Horizon Advanced
+              slug: /hersteller/vmware/horizon/advanced/
+            - name: Horizon Enterprise
+              slug: /hersteller/vmware/horizon/enterprise/

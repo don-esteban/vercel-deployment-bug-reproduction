@@ -1,0 +1,32 @@
+- key:      quest
+  items:
+  - name:   Quest
+    slug:   /hersteller/quest/
+  - name:   Recovery Manager
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/quest/recovery-manager/
+    - name:   Recovery Manager for Active Directory
+      slug:   /hersteller/quest/recovery-manager/active-directory/
+    - name:   Recovery Manager for Exchange
+      slug:   /hersteller/quest/recovery-manager/exchange/
+  - name:   Rapid Recovery
+    slug:   /hersteller/quest/rapid-recovery/
+  - name:   Toad
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/quest/toad/
+    - name:   Toad for IBM DB2
+      slug:   /hersteller/quest/toad/db2/
+    - name:   Toad for Oracle
+      slug:   /hersteller/quest/toad/oracle/
+    - name:   Toad for SQL Server
+      slug:   /hersteller/quest/toad/sql-server/
+    - name:   Toad for SAP Solutions
+      slug:   /hersteller/quest/toad/sap-solutions/
+    - name:   Toad Data Point
+      slug:   /hersteller/quest/toad/data-point/
+  - name:   Foglight
+    slug:   /hersteller/quest/foglight/

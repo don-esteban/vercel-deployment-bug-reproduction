@@ -1,0 +1,112 @@
+---
+title: Red Hat OpenShift Kauf und Lizenzierung
+bcTitle: OpenShift Kauf und Lizenzierung
+bkey: red-hat
+ckey: enrico-koehle
+date: 2023-07-20
+wanted:
+  title: OpenShift Kauf und Lizenzierung
+  features:
+    - name: OpenShift Lizenzierung
+    - name: Beschaffungsbeispiele mit Kosten
+furtherReading:
+  - name: Red Hat Enterprise Linux Kauf und Lizenzierung
+    description: So lizenzieren und kaufen Sie Red Hat Enterprise Linux (RHEL).
+    slug: /hersteller/red-hat/rhel-lizenzierung/
+  - name: Red Hat Kauf und Lizenzierung Allgemein
+    description: Alles Wissenswerte zum Kauf, Support und Lizenzierung der Red Hat Produkte.
+    slug: /hersteller/red-hat/lizenzierung/
+  - name: Red Hat Enterprise Linux Subscription Guide
+    description: Ausführliches Red Hat Enterprise Linux Subscription- und Lizenzierungs-PDF.
+    slug: https://www.redhat.com/de/resources/red-hat-enterprise-linux-subscription-guide
+---
+
+
+
+<Intro>
+
+Auf dieser Seite finden Sie wichtige Informationen zum Erwerb von Red Hat OpenShift. Erfahren Sie, wie man OpenShift lizenziert und was es zu beachten gilt.
+
+</Intro>
+
+<TOC />
+
+## OpenShift Lizenzierung und Beispiele
+
+
+<Info>
+
+Die OpenShift-Subscription (Red Hat OpenShift Platform Plus, Red Hat OpenShift Container Platform und Red Hat OpenShift Kubernetes Engine) sind kombinierbar, um größere Hosts abzudecken.
+
+Weitere Details finden Sie auf der [Red Hat Lizenzierungsseite](/hersteller/red-hat/lizenzierung/).
+
+</Info>
+
+### Lizenzierung nach Cores
+
+Kernbasiert (2 Kerne oder 4 vCPUs). Dies basiert auf der Gesamtzahl der physischen oder virtuellen Kerne (vCPUs) der OpenShift-Workerknoten, die in den OpenShift-Clustern ausgeführt werden. Kernbasierte Subskriptionen können so verteilt werden, dass sie die gesamten OpenShift-Workerknoten in den OpenShift-Clustern abdecken.
+
+
+Beispiel: 100 Red Hat OpenShift Platform Plus Subskriptionen mit zwei Kernen bieten 200 Kerne (400 vCPUs), die für eine beliebige Anzahl von Workerknoten in den laufenden OpenShift-Clustern genutzt werden können.
+
+
+### Lizenzierung nach Sockets
+
+Bare Metal-Socket-Paar (1-2 Sockets mit bis zu 64 Kernen). Diese Subskription ist nur für physische x86-Bare-Metal-Knoten verfügbar, bei denen OpenShift direkt auf der Hardware installiert ist, mit Ausnahme von IBM zSystem- und Power-Architekturen, für die kernbasierten Subskriptionen verwendet werden müssen.
+
+Beispiel:
+
+Ein Server hat 2 Sockets und 48 Kerne. In diesem Fall ist eine Subskription erforderlich, weil der Server 2 Sockets und weniger als 64 Kerne hat. Für einen Server mit 2 Sockets und 96 Kernen würden Sie zwei Subskriptionen benötigen. Zwei Subskriptionen sind erforderlich, um 96 Kerne abzudecken, weil eine einzige Subskription maximal 64 Kerne abdeckt.
+
+
+### Welche Subscription eignet sich für wen?
+
+Es gibt zwei Optionen:
+
+Sie können OpenShift direkt auf der Hardware installieren oder in einer VM hosten.
+
+Wenn Sie OpenShift direkt auf der Hardware installieren, können Sie die Bare Metal-Socket-Paar Subscription in Betracht ziehen.
+
+Ein physischer Bare-Metal-Server, der Socket-basierende Berechtigungen nutzt, kann allerdings nur als einzelner OpenShift-Knoten verwendet werden. Die Anzahl der Container pro Knoten ist auf 500 begrenzt.
+
+Für einen Cluster werden mindestens drei physische Bare-Metal-Server und die entsprechenden Subscriptions benötigt. Nehmen wir an, dass die Bare-Metal-Server maximal 2 Sockets und 32 Kerne haben. Da eine Socket-basierte Subscription 2 Sockets und maximal 64 Kerne abdeckt, werden drei OpenShift Bare-Metal, Socket-pair Subscriptions benötigt.
+
+Für das gleiche Szenario können Sie auch die Core-Subskription verwenden, die jedoch unter Umständen teurer ist. Anhand eines Beispiels möchten wir Ihnen dies verdeutlichen.
+
+Beispiel:
+
+Sie haben 3x physische Bare-Metal-Server, 2 mit je 32 Kernen und 1x mit 96 Kernen. Für Ihren Cluster benötigen Sie noch zusätzliche Management- und Securityfunktionen sowie 24/7 Support. Dies wird mit OpenShift Platform Plus mit Premium Support abgedeckt. Zunächst beläuft sich das ganze auf 1 Jahr.
+
+Zeigen wir die Lizenzierungsmöglichkeiten mit Kostenpunkten auf:
+
+Socketsubscription:
+
+- Eine Subscription deckt 64 Kerne ab und beläuft sich auf a 12.000,00 netto.
+- Für 2x System mit 32 Kernen benötigen Sie zwei Subscriptions.
+- Für 1x System mit 96 Kernen benötigen Sie zwei Subscriptions, da eine Subscription maximal 64 Kerne abdeckt.
+- Als Summe ergibt dies 4 Subscriptions a 12.000,00 = 48.000 netto.
+
+Coresubscription: 
+
+- Eine Subscription deckt 2 Cores ab und beläuft sich auf a 4000 netto.
+- Zählen Sie alle Kerne der Systeme zusammen, daraus ergeben sich 160 Kerne.
+- Als Summe ergibt dies 160 Kerne/2 = 80 Subscriptions a 4000 = 320.000 netto.
+
+Fazit: In diesem Fall wäre eine Lizenzierung auf Socketbasis günstiger unter Einschränkungen:
+
+Wenn ein Hypervisor wie OpenShift Virtualization verwendet wird, um virtuelle OpenShift-Rechenknoten zu erstellen, sind kernbasierte Subskriptionen für die virtuellen Rechenknoten erforderlich. Eine Socket-basierende Subscription ist nur für physische Bare-Metal-Server möglich.
+
+Auszug:
+
+>Das Bare-Metal-Socket-Paar-Modell eignet sich am besten für ressourcenintensive Workloads wie OpenShift Virtualization (wo eine vollständige virtuelle Maschine für jeden Workload ausgeführt wird) oder künstliche Intelligenz und maschinelles Lernen (KI/ML) (wo jeder Workload eine große Menge an CPU und GPU verbraucht).
+
+## Wartung, Support und Serviceleistungen
+
+Mit einer Red Hat Subscription erhalten Sie Zugang auf viele Dienste, Tools und technischem Support. Mehr dazu erfahren Sie auf unserer [Allgemeinen Red Hat Lizenzierungseite](/hersteller/red-hat/lizenzierung/) unter [Red Hat Serviceleistungen](/hersteller/red-hat/lizenzierung/#red-hat-serviceleistungen) und [Wartung und Support](/hersteller/red-hat/lizenzierung/#wartung-und-support).
+
+
+<GetInTouch theme="light">
+
+Sie haben Fragen zu den Produkten oder zur Lizenzierung? Für Beratung zu Red Hat-Produkten, attraktive Angebote oder Rechnungen mit Umsatzsteuer, kontaktieren Sie mich telefonisch oder per E-Mail. Ich berate Sie gerne.
+
+</GetInTouch>

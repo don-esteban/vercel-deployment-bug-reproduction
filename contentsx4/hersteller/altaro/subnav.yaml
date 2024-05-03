@@ -1,0 +1,21 @@
+- key:      altaro
+  items:
+  - name:   Altaro
+    slug:   /hersteller/altaro/
+  - name:   VM Backup
+    slug:   /hersteller/altaro/vm-backup/
+  - name:   365 Total Backup
+    slug:   /hersteller/altaro/365-total-backup/
+  - name:   365 Total Protection
+    sub:
+    - name: Hauptseite 365 TP
+      style: index
+      slug: /hersteller/altaro/365-total-protection/
+    - name: 365 TP Business
+      slug: /hersteller/altaro/365-total-protection/#business
+    - name: 365 TP Enterprise
+      slug: /hersteller/altaro/365-total-protection/#enterprise
+    - name: 365 TP Enterprise Backup
+      slug: /hersteller/altaro/365-total-protection/#enterprise-backup
+    - name: 365 TP Compliance & Awareness
+      slug: /hersteller/altaro/365-total-protection/#365-tp-compliance--awareness

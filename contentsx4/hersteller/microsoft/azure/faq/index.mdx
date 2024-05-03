@@ -1,0 +1,154 @@
+---
+title: Microsoft Azure FAQ und Dienstübersicht
+bcTitle: FAQ und Dienstübersicht
+seoTitle: "Microsoft Azure FAQ | Azure Cloud, Dienste und Subscription."
+bkey: microsoft
+ckey: stefan-barth
+date: 2022-06-22
+wanted:
+  features:
+    - name: Antworten auf die häufigsten Azure Fragen
+    - name: Übersicht der Azure Dienste
+---
+
+
+
+<Intro>
+
+Azure kann kompliziert sein. Mit unserer Hilfe finden Sie einen einfachen Einstieg in das Azure-Thema. Wir helfen Ihnen das Thema Azure zu verstehen. Auf dieser Seite finden Sie alle wichtigen Begriffe und Informationen, um sich mit diesem Thema auseinander zu setzen.
+
+Unten finden Sie eine Übersicht der verfügbaren Diensten in Azure. Eine Übersicht unserer Azure Services finden Sie auf der Azure Startseite.
+
+
+</Intro>
+
+<TOC />
+
+
+
+## Azure FAQ
+
+### Was ist ein Azure Konto?
+
+ Ein Konto, das Sie zur Verwaltung von Azure Abonnements nutzen, nennt man Azure Konto. Im engen Sinne gibt es gar kein spezielles Azure Konto. Sie können dazu ein privates oder geschäftliches Microsoft Konto oder Ihre Office 365 Login-Daten nehmen. Mit all diesen Konten können Sie sich im Azure Portal anmelden und Azure Ressourcen verwalten.
+
+
+### Was kann das Azure Portal?
+
+ Das [Azure Portal](https://portal.azure.com) ist die einfachste Möglichkeit Azure Subscriptions (und damit die Azure Ressourcen) zu verwalten. Im Azure Portal werden die umfangreichen Azure Services (auch Ressorcen genannt) konfiguriert oder Kosten abgerufen. Benutzer mit Anmeldedaten und Zugriffsrechten werden im [Azure AD Portal](https://portal.azure.com) angelegt und geändert. Das AD ist übrigens im Azure Portal integriert und kann dort direkt genutzt werden.
+
+
+
+### Was ist die Azure CLI?
+
+ Ihre Azure Subscriptions können ebenfalls über das Kommandozeilen-Tool Azure CLI (Azure Command Line Interface) administriert werden. Die Azure CLI ist für Linux, macOS und Windows verfügbar oder kann direkt in der [Azure Cloud Shell](/) ausgeführt werden. Die Azure CLI ermöglicht das “scripten” (automatisieren mittels Script-Programmen, Bash oder PowerShell) von komplexen und/oder wiederkehrenden Aufgaben, die sonst interaktiv im Azure Portal von Hand durchgeführt werden müssten.
+
+ An dieser Stelle sei auch auf die Azure REST API hingewiesen, über die ebenfalls Ressourcen verwaltet werden können. Die Azure REST API ermöglicht die Integration von Azure in andere Systeme, beispielsweise Third Party Lösungen zur Kostenkontrolle und Optimierung.
+
+
+
+### Wie funktioniert die Azure Kontenverwaltung?
+
+ Wenn sie bereits ein erfahrener Azure Administrator sind, können Sie Ihr Abonnements selbst verwalten. In den meisten Fällen wird es jedoch besser sein, wenn wir die Administration übernehmen. Sie sparen Zeit und schützen sich vor Fehlbedienung. Wir helfen Ihnen bei der **Kostenkontrolle**, beobachten den Ressourcenverbrauch und kommen auf Sie zu, sollten vereinbarte **Grenzwerte** überschritten werden oder wenn wir **Optimierungsmöglichkeiten** sehen.
+
+<ArrowList>
+
+ - **Service-Nutzung optimieren**
+ - **Fehlbedienung und Wildwuchs vermeiden**
+ - **Benachrichtigung beim Erreichen von Kostenlimits**
+ - **Zeitersparnis**
+ - **Kostenkontrolle**
+
+</ArrowList>
+
+## Was ist Azure Active Directory?
+
+ Azure Active Directory ist eine Lösung zur Identitätsverwaltung aus der Microsoft Azure Cloud.
+
+ Azure AD benötigt **keine separate Azure Subscription** und kann auch einzeln lizenziert werden, alle kostenpflichtigen Office 365 Dienste enthalten die Azure Active Directory (free) Edition. Die grundlegenden Azure Active Directory Funktionen sind kostenlos erhältlich. Damit können Sie Benutzer und Gruppen verwalten, eine Synchronisierung mit lokalen Verzeichnissen ausführen und erhalten die Funktion zum einmaligem Anmelden (Single-Sign-On) für zahlreiche Online Services, wie Office 365, Azure, Salesforce, Google Apps, Box. Die kostenlose Edition kann auf eine höherwertige Version aufgerüstet werden, um weitere Features freizuschalten.
+
+ Die kostenpflichtigen Azure Active Directory Editionen sind über das [Cloud Service Provider (CSP)](/hersteller/microsoft/csp/) Programm erwerbbar, nicht über die Azure Subscription. Die Office 365 Pläne und auch die Azure Subscription beinhalten die kostenlose Edition.
+
+ Zu den Azure Active Directory Preisen
+
+## Was benötige ich für Azure in Verbindung mit Office 365?
+
+### Tenant
+
+ Für die Nutzung der Microsoft Online Dienste wird immer zuerst ein **Tenant** benötigt. Der Tenant ist der Speicherplatz in einem der Microsoft Rechenzentren, der über die Domain des Unternehmens mit dem Zusatz onmicrosoft.com, bzw. onmicrosoft.de für die deutsche Cloud, identifiziert wird. Dieser kann sowohl für Azure, als auch für [Office 365](/hersteller/microsoft/office-365/) genutzt werden. Der Wechsel auf einen anderen Tenant, beispielsweise beim Umzug von der europäischen Cloud in ein deutsches Rechenzentrum, ist mit einem erheblichen Aufwand verbunden.
+
+### Portal
+
+ Für Office 365 gibt es ein eigenes Portal ([office.com](https://www.office.com/)) mit eigener Buchung und Verwaltung, das nicht mit dem Azure Portal ([portal.azure.com](https://portal.azure.com) kompatibel ist. Wenn Sie sowohl Azure, als auch Office 365 nutzen, müssen Sie beide Portale verwalten. Die Daten liegen trotzdem im selben Tenant.
+
+### Abrechnung und Laufzeit
+
+ Die Office 365 Produkte werden immer als **eigene Subscription mit fester Laufzeit** gebucht, die tatsächliche Nutzung spielt hier keine Rolle.
+
+ Azure Dienste dagegen werden auf **eine Azure Subscription** gebucht, am Ende des Monates wird die Nutzung der einzelnen Dienste addiert und über die Subscription(s) abgerechnet.
+
+
+### Azure AD
+
+ Der Azure Active Directory Dienst (Azure AD) für die Verwaltung der Benutzeridentitäten (bspl: Single-Sign-On und Kennwortsynchronisation), ist in der "free" Variante bei allen kostenpflichtigen Office 365 Produkten enthalten. Der Dienst muss aber vor der Nutzung erst manuell aktiviert werden. Microsoft stellt dazu eine [Anleitung](https://learn.microsoft.com/de-de/purview/use-your-free-azure-ad-subscription-in-office-365?view=o365-worldwide) bereit.
+
+
+## Rechenzentren
+
+ Wir empfehlen Ihnen die Dienste über die Europa (Nord) und Europa (West) Cloud zu nutzen. Die Verfügbarkeit der einzelnen Produkte sehen sie auf der M[icrosoft Seite zur globalen Infrastruktur von Azure.](https://azure.microsoft.com/de-de/explore/global-infrastructure/products-by-region/)
+
+
+## Die einzelnen Azure Dienste
+
+ Auf den Microsoft Seiten finden Sie eine ausführliche Beschreibung der Dienste und Kosten für unterschiedliche Konfigurationen:
+
+
+
+### Server
+
+<ArrowList>
+
+ - [Virtuelle Computer](https://azure.microsoft.com/de-de/pricing/details/virtual-machines/linux/)
+ - [Windows](/hersteller/microsoft/windows/), Linux, [SQL Server](/hersteller/microsoft/sql-server/), etc.
+ - [Cloud-Dienste](https://azure.microsoft.com/de-de/pricing/details/cloud-services/)
+ - [Websites](https://azure.microsoft.com/de-de/pricing/details/app-service/windows/)
+
+</ArrowList>
+
+### Data Services
+
+<ArrowList>
+
+ - [Speicher](https://azure.microsoft.com/de-de/pricing/details/storage/blobs/)
+ - [Backup](https://azure.microsoft.com/de-de/pricing/details/backup/)
+ - [Cache](https://azure.microsoft.com/de-de/pricing/details/cache/)
+ - [HDInsight](https://azure.microsoft.com/de-de/pricing/details/hdinsight/)
+ - [Site Recovery](https://azure.microsoft.com/de-de/pricing/details/site-recovery/)
+
+</ArrowList>
+
+### App Dienste
+
+<ArrowList>
+
+ - [Mediendienste](https://azure.microsoft.com/de-de/pricing/details/media-services/)
+ - [Active Directory](https://www.microsoft.com/de-de/security/microsoft-entra-pricing?rtc=1&market=de)
+ - [Services Bus](https://azure.microsoft.com/de-de/pricing/details/service-bus/)
+ - [Benachrichtigungs-Hubs](https://azure.microsoft.com/de-de/pricing/details/notification-hubs/)
+ - [BizTalk-Dienste](https://azure.microsoft.com/de-de/pricing/details/logic-apps/)
+ - [Automatisierungsvorschau](https://azure.microsoft.com/de-de/pricing/details/automation/)
+ - [Content Delivery Network - CDN](https://azure.microsoft.com/de-de/pricing/details/cdn/)
+ - [API-Verwaltung](https://azure.microsoft.com/de-de/pricing/details/api-management/)
+ - [Event Hubs](https://azure.microsoft.com/de-de/pricing/details/event-hubs/)
+
+</ArrowList>
+
+### Netzwerk
+
+<ArrowList>
+
+ - [ExpressRoute](https://azure.microsoft.com/de-de/pricing/details/expressroute/)
+ - [Virtuelles Netzwerk](https://azure.microsoft.com/de-de/pricing/details/virtual-network/)
+ - [Traffic Manager](https://azure.microsoft.com/de-de/pricing/details/traffic-manager/)
+
+</ArrowList>

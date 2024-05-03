@@ -1,0 +1,80 @@
+---
+title: SQL Server 2022 - Servicing Model
+bcTitle: Servicing Model
+bkey: microsoft
+ckey: stefan-barth
+date: 2023-03-03
+wanted:
+  features:
+    - name: Das Servicing Model beschreibt den Wartungszyklus des SQL Server
+    - name: Mainstream Support, Extended Support, Extended Security Updates (ESU)
+furtherReading:
+  - name: SQL Server Lizenzierung
+    slug: /hersteller/microsoft/sql-server/lizenzierung/
+    description: Informationen und Details zum Kauf von SQL Server Lizenzen.
+  - name: SQL Server FAQ
+    slug: /blog/sql-server-lizenzierung-faq/
+    description: Antworten auf die wichtigsten Fragen zum SQL Server.
+---
+
+
+
+<Intro>
+
+ Mit der Einführung des SQL Server 2017 hat Microsoft den Wartungszyklus (Servicing Model) für SQL Server geändert. Das alte inkrementelle Wartungsmodell wird durch ein modernes Wartungsmodell abgelöst. Die Cumulative Updates (CU) werden nicht mehr über den Hotfix Server, sondern über das [Download Center](https://support.microsoft.com/de-de/topic/kb957826-informationen-zu-den-neuesten-sql-server-builds-43994ba5-9aed-2323-ea7c-d29fe9c4fbe8), den Windows Server Update Service (WSUS) und als optionales Microsoft Update zur Verfügung gestellt und ersetzen damit praktisch die alten Service Packs (SP).
+
+
+</Intro>
+
+<TOC />
+
+
+## Das alte SQL Server Incremental Servicing Model (ISM)
+
+ In den Vorgängerversionen SQL Server 2016 und früher hat Microsoft die Cumulative Updates (CU) alle 2 Monate nach einem Major Release und zusätzlich jährliche Service Packs (SPs) veröffentlicht. Die Service Packs fassen dabei die Fixes aus allen vorherigen CUs zusammen und enthalten zusätzliche Erweiterungen bei Funktionalität und Support.
+
+<ArrowList>
+
+ - Cumulative Updates (CU): Behebt konkrete Fehler und erweitert die Funktionalität. Veröffentlichung etwa alle 2 Monate.
+ - Service Pack (SP): Zusammenfassung der CUs Releases. Jedes Service Pack Relase wird bis 12 Monate nach dem nächsten SP Release mit neuen CUs versorgt.
+ - General Distribution Release (GDR): Zusammenfassung von sicherheitsrelevanten Fixes. während des [Lebenszyklus für die Version](https://learn.microsoft.com/de-de/lifecycle/products/?alpha=sql%20server)
+
+</ArrowList>
+
+
+## Das Modern Servicing Model im SQL Server 2022
+
+ Das mit [SQL Server 2022](/hersteller/microsoft/sql-server/) gültige Modell, vereinfacht den Wartungszyklus. Es gibt keine Service Packs mehr! Regelmäßige Updates gibt es als **Cummulative Upgrades (CU)**.
+
+ Die CU werden erweitert und enthalten auch die Inhalte in anderen Sprachversionen. Somit integriert Microsoft neue Funktionen und Erweiterungen schneller in den SQL Server.
+
+ Gegenüber dem alten, jährlichen Zyklus bei den Service Packs, werden die Cummulative Updates nach der Einführung neuer Versionen nun häufiger veröffentlicht. In den ersten 12 Monaten erscheint **jeden Monat** ein neues CU, die restlichen 4 Jahre des Produklebenszyklus werden CU **alle zwei Monate** veröffentlicht.
+
+
+## Der Wartungszyklus
+
+ Der Support bei Microsoft ist in 3 Abstufungen verfügbar, die sich nach dem Releasezeitpunkt der SQL Server Version richten. 5 Jahre wird jede SQL Server Version mit Funktions- und Sicherheits-Updates verbessert, danach erhält die Version im Extended Support weiterhin sicherheitsrelevante Updates. Nach 10 Jahren ist ausschließlich kostenpflichtiger Support (Extended Security Updates) für Enterprise Verträgen (EA / MPSA) verfügbar. Ausgenommen sind die SQL Server unter Microsoft Azure Plänen. Diese erhalten automatisch ESU. Hier finden Sie eine kurze Übersicht der Supportarten:
+
+<ArrowList>
+
+ - **Mainstream Support** (Die ersten 5 Jahre): Sicherheits- und Funktionsupdates über CU. Sicherheitsupdates mit GDR.
+ - **Extended Support** (5 weitere Jahre): Nach Ende des Mainstream Supports gibt es den erweiterten Support. Hier werden nur Sicherheits- und kritische Funktionsupdates gepatcht.
+
+</ArrowList>
+
+
+ Nach dem Ende des Extended Support bleiben nur kostenpflichtige ESU oder die Nutzung von Azure:
+
+<ArrowList>
+
+ - **Extended Security Updates (ESU)**: Für Enterprise Kunden, mit Verträgen wie Enterprise Agreement oder Server & Cloud Enrollment, gibt es kostenpflichtige Extended Security Updates (ESU), um kritische Sicherheitsupdates bis zu 3 Jahre nach Ende des erweiterten Supports zu erhalten. Die ESU sind in der Azure Version immer enthalten.
+
+</ArrowList>
+
+
+<GetInTouch theme="light">
+
+Sie haben weitere Fragen zum Produkt oder zur Lizenzierung?<br />
+Kein Problem. Rufen Sie an oder schreiben Sie eine E-Mail. Ich berate Sie gerne.
+
+</GetInTouch>

@@ -1,0 +1,24 @@
+- key:      macrium
+  items:
+  - name:   Macrium
+    slug:   /hersteller/macrium/
+  - name:   Workstation
+    slug:   /hersteller/macrium/workstation/
+  - name:   Server
+    slug:   /hersteller/macrium/server/
+  - name:   Server Plus
+    slug:   /hersteller/macrium/server-plus/
+  - name:   Bundles
+    sub:
+      - name:   Workstation
+        slug:   /hersteller/macrium/workstation-bundle/
+      - name:   Server
+        slug:   /hersteller/macrium/server-bundle/
+      - name:   Virtual Server
+        slug:   /hersteller/macrium/vm-server-bundle/
+  - name:   Techniker Produkte
+    sub:
+      - name:   Technicians License
+        slug:   /hersteller/macrium/technicians/
+      - name:   SiteDeploy
+        slug:   /hersteller/macrium/sitedeploy/

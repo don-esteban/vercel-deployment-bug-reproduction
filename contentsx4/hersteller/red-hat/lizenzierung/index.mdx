@@ -1,0 +1,145 @@
+---
+title: Red Hat Kauf und Lizenzierung
+bcTitle: Lizenzierung
+bkey: red-hat
+ckey: enrico-koehle
+date: 2023-07-20
+wanted:
+  title: Red Hat Kauf und Lizenzierung
+  features:
+    - name: Allgemeiner Leitfaden zur Beschaffung und Lizenzierung
+    - name: Supportstufen und -vergleich
+furtherReading:
+  - name: Red Hat OpenShift Kauf und Lizenzierung
+    description: Alles Wissenswerte zum Kauf und Lizenzierung der Red Hat OpenShift.
+    slug: /hersteller/red-hat/openshift-lizenzierung/
+  - name: Red Hat Enterprise Linux Kauf und Lizenzierung
+    description: So lizenzieren und kaufen Sie Red Hat Enterprise Linux (RHEL).
+    slug: /hersteller/red-hat/rhel-lizenzierung/
+  - name: Red Hat Enterprise Linux Subscription Guide
+    description: Ausführliches Red Hat Enterprise Linux Subscription- und Lizenzierungs-PDF.
+    slug: https://www.redhat.com/de/resources/red-hat-enterprise-linux-subscription-guide
+---
+
+
+
+<Intro>
+
+
+Auf diesen Seiten finden Sie wesentliche Informationen zum Erwerb von Red Hat Enterprise Produkten. Sie erfahren, wie Sie lizenzieren und was Sie dabei beachten müssen.
+
+</Intro>
+
+<TOC />
+
+## Lizenzierung
+
+<Info>
+
+Je nach Produktgruppe finden Sie spezifische Informationen zur Lizenzierung auf den entsprechenden Seiten:
+
+- Red Hat Enterprise Linux auf der [RHEL Kauf- und Lizenzierungsseite](/hersteller/red-hat/lizenzierung/)
+- Red Hat OpenShift auf der [OpenShift Kauf und Lizenzierungsseite](/hersteller/red-hat/openshift-lizenzierung/)
+- Für Middleware und andere Produkte auf den jeweiligen Produktseiten
+
+</Info>
+
+### Subscription
+
+Software- und Supportsubscriptions erweitern die Funktionalität und Unterstützung von Red Hat Produkten. Red Hat Subscriptions können für 1 oder 3 Jahre gebucht werden. Die Subscription gibt es entweder ohne Wartung [(Self-Support)](#self-support-entry-level) oder mit Service-Level-Agreement (SLA) ([Standard](/hersteller/red-hat/lizenzierung/#standard-support) oder [Premium](/hersteller/red-hat/lizenzierung/#premium-support)).
+
+Wenn eine Subscription abläuft, müssen Sie diese nicht verlängern, um die Software weiterhin nutzen zu können. Funktionen und Dienstleistungen, die auf Red Hat Services beruhen, fallen jedoch weg. Sie dürfen dann auch keinen Red Hat Enterprise Support mehr in Anspruch nehmen.
+
+Wenn alle Ihre Subscriptions abgelaufen sind und es keine weiteren aktiven Subscriptions in Ihrem Unternehmen gibt, können Sie die Software gemäß den anwendbaren Lizenzbedingungen weiter nutzen. Dies bedeutet, wenn Sie nur eine einzige Subscription gebucht haben und damit die Serviceleistungen von Red Hat in Anspruch nehmen, dann benötigen Sie auch für alle weiteren genutzten „Instanzen“ die jeweilige Software- und Supportsubscriptions, sonst sind Sie nicht lizenzkonform.
+
+
+### Lizenzierung nach Cores
+
+Bei der Lizenzierung nach Cores werden alle physischen Sockets der Systeme erfasst. Als System zählen bspw. Server, Laptops, Workstation oder Blades. Eine Subscription deckt ein Socketpaar bzw. zwei Sockets ab. Diese können nicht aufgeteilt werden.
+
+Beispiel:
+
+- Für 1-Socket Systeme: Pro physischem System benötigen Sie eine Subscription, da die Socketpaare nicht aufgeteilt werden können.
+- Für 2-Socket Systeme: Pro Socketpaar benötigen Sie eine Subscription. Also benötigen Sie pro System eine Subscription.
+- Für 4-Socket Systeme: Pro Socketpaar benötigen Sie eine Subscription. Also benötigen Sie pro System Sie zwei Subscriptions.
+- Alle weiteren Socket Systeme folgen dem gleichen Muster.
+- Zählen Sie nun alles zusammen und dann erhalten Sie die benötige Anzahl der Subscriptions.
+
+
+### Lizenzierung nach vCPUs
+
+Bei der Lizenzierung nach vCPUs, werden alle vCPUs (virtuelle Prozessoren) auf dem Hypervisor oder der Cloud erfasst. Die Hardware, auf der die Software installiert wird, ist dabei unerheblich. Sobald das Deployment auf einem Hypervisor oder in der Cloud erfolgt, zählen nur die vCPUs der virtuellen Instanzen. Eine Subscription deckt 4 vCPUs ab. Diese können nicht aufgeteilt werden.
+
+**Hyperthreading**:
+
+Wenn eine einzelne virtuelle Maschine (VM) mit 2 vCPUs Hyperthreading verwendet, wodurch 1 vCPU berechnet wird, ist eine Subscription (2 Core or 4vCPU) erforderlich. Eine Subscription kann nicht auf zwei VMs mit 2 vCPU aufgeteilt werden, indem Hyperthreading verwendet wird.
+
+Beispiel:
+
+Wenn Sie Hyperthreading aktiviert haben und ein Hyperthread entspricht einem sichtbaren Systemkern, werden die Kerne wie folgt berechnet: 2 Kernen zu 4 vCPUs. Sie haben eine virtuelle Maschine (VM) mit 12 vCPUs. Eine 2-Core Subscription deckt 4 vCPUs ab. Daher benötigen Sie drei 2-Core Subscriptions um 12 vCPUs oder 6 Cores abzudecken.
+
+<Info>
+
+Wenn Hyperthreading nicht aktiviert ist und jeder sichtbare Systemkern direkt mit einem zugrundeliegenden physischen Kern gekoppelt ist, werden die Kerne wie folgt berechnet: 2 Kerne zu 2 vCPUs.
+
+</Info>
+
+### Lizenzierung nach virtuellen Instanzen
+
+Eine virtuelle Umgebung umfasst neben physischen Servern für das Hosten der Hypervisoren auch virtuelle Guests (Gast-Betriebssystem).
+
+Bei der Lizenzierung nach virtuellen Instanzen werden alle Guests erfasst. Die Hardware, auf der die Software installiert wird, ist dabei unerheblich. Sobald das Deployment auf einem Hypervisor oder in der Cloud erfolgt, zählen nur Guests. Teilen Sie die Anzahl der Guests durch 2. Dies ist die Anzahl der Subskriptionen, die Sie für die Guests in Ihrer virtuellen Umgebung benötigen.
+
+Beispiel:
+
+Sie haben 3 Hypervisoren, die auf Red Hat Enterprise Linux ausgeführt wird, mit Red Hat Enterprise Guests (Gastsysteme).
+
+- Hypervisor 1 hat 30 Gäste.
+- Hypervisor 2 hat 60 Gäste.
+- Hypervisor 3 hat 36 Gäste.
+
+- Zählen Sie nun alles zusammen und teilen Sie die Anzahl durch 2. Dann erhalten Sie die benötige Anzahl der Subscriptions. Bei 116 Gästen entspricht dies 58 Red Hat Enterprise Linux Server Subscriptions.
+
+## Wartung und Support
+
+Versionen haben einen [Wartungszyklus](https://access.redhat.com/support/policy/updates/errata) von bis zu 13 Jahren. Es werden regelmäßig Updates, Patches sowie Hotfixes rausgebracht. Red Hat bietet zusätzlich Service Level Agreements (SLAs) für Produktionsumgebungen. SLA legt die [Support Reaktionszeiten](/hersteller/red-hat/lizenzierung/#vergleich-von-standard-und-premium-support) von Standard und Premium Support je Schweregrad bzw. Supportanfrage nach fest.
+
+### Self-Support (Entry-Level)
+
+Mit Self Support (Entry-Level) hat man keinen Anspruch auf technischen Support von Red Hat. Man erhält lediglich Updates bzw. Hotfixes. Bei Problemen gibt es die Möglichkeit auf die Knowledge Base von Red Hat zuzugreifen oder Hilfe im Portal zu suchen.
+
+### Standard Support
+
+Mit Standard Support können sich Red Hat Kunden bei Supportbedarf und technischen Problemen, telefonisch oder per Web, an den Support wenden.
+
+### Premium Support
+
+Bietet Premium Support über die üblichen Geschäftszeiten hinaus und schnellere Reaktionszeiten. Sie können den technischen Support von Red hat 24x7 kontaktieren.
+
+### Laufzeitanpassungen
+
+Wenn Sie während der Laufzeit einer bestehenden Subscription Lizenzen nachkaufen, kann ich für Sie die Laufzeiten anpassen. Laufzeitanpassungen für Nachbestellungen können zwischen 12 und 60 Monaten angefragt werden. Gerne können Sie mich dazu kontaktieren.
+
+### Vergleich von Standard und Premium Support
+
+Ab Standard Support haben Sie Anspruch auf Support über Web und Telefon. Die Reaktionszeiten sind abhängig vom Schweregrad:
+
+|Supportstufe|Beschreibung|Standard Reaktionszeiten|Premium Reaktionszeiten|
+|:---|:---|:---|:---|
+|Schweregrad 1 (Dringend):|Bei Produktionsstop und drohendem Verlust von Daten und Ausfällen, kein Workaround möglich|1 Geschäftsstunde|Erste Reaktion: 1 Stunde / Folge: nach Vereinbarung|
+|Schweregrad 2 (Hoch):|Unternehmensprozesse sind stark eingeschränkt, kein Workaround möglich|4 Geschäftsstunden|Erste Reaktion: 2 Stunden / Folge: 4 Stunden|
+|Schweregrad 3 (Medium):|Tägliche Geschäfte sind weiterhin möglich, aber teilweiser Ausfall der Software|1 Werktag|Erste Reaktion: 4 Geschäftsstunden / Folge: 8 Geschäftsstunden|
+|Schweregrad 4 (Niedrig):|Einreichen von Dokumentationsfehlern, Verbesserungsvorschläge|2 Werktage|8 Geschäftsstunden|
+
+## Red Hat Serviceleistungen
+
+Die Red Hat Subscription beinhaltet folgende Serviceleistungen:
+
+- Aktuelle zertifizierte Softwareversionen
+- Security Errata und Bug Fixes
+- Technischer Support von Red Hat
+- Zugang zum Customer Portal und Experten-Community
+- Open Source Assurance von Red Hat
+- Zugang zu Wissensressourcen
+- Spezifische Sicherheitsupdates
+- Supporttools

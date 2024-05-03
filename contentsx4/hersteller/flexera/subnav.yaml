@@ -1,0 +1,10 @@
+- key:      flexera
+  items:
+  - name:   Flexera
+    slug:   /hersteller/flexera/
+  - name:   InstallShield
+    slug:   /hersteller/flexera/installshield/
+  - name:   InstallAnywhere
+    slug:   /hersteller/flexera/installanywhere/
+  - name:   AdminStudio
+    slug:   /hersteller/flexera/adminstudio/

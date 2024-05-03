@@ -1,0 +1,56 @@
+- key:      red-hat
+  items:
+  - name:   Red Hat
+    slug:   /hersteller/red-hat/
+  - name:   Enterprise Linux Server
+    sub:
+      - name:   Übersicht
+        slug:   /hersteller/red-hat/enterprise-linux-server/
+        sub:
+            - name:   Server Entry Level
+              slug:   /hersteller/red-hat/enterprise-linux-server/#entry-level
+            - name:   Server Standard
+              slug:   /hersteller/red-hat/enterprise-linux-server/#standard
+            - name:   Server Premium
+              slug:   /hersteller/red-hat/enterprise-linux-server/#premium
+  - name:   Enterprise Linux Virtual Datacenter
+    sub:
+      - name:   Übersicht
+        slug:   /hersteller/red-hat/enterprise-linux-virtual-datacenters/
+        sub:
+            - name:   Virtual Datacenter Standard
+              slug:   /hersteller/red-hat/enterprise-linux-virtual-datacenters/#standard
+            - name:   Virtual Datacenter Premium
+              slug:   /hersteller/red-hat/enterprise-linux-virtual-datacenters/#premium/
+  - name:   Enterprise Linux Workstation
+    slug:   /hersteller/red-hat/enterprise-linux-workstation/
+  - name:   OpenShift
+    sub:
+      - name:   OpenShift Kubernetes Engine
+        slug:   /hersteller/red-hat/openshift-kubernetes-engine/
+      - name:   OpenShift Container Platform
+        slug:   /hersteller/red-hat/openshift-container-platform/
+      - name:   OpenShift Platform Plus
+        slug:   /hersteller/red-hat/openshift-platform-plus/
+  - name:   OpenStack
+    slug:   /hersteller/red-hat/openstack/
+  - name:   JBoss EAP
+    sub:
+        - name:   JBoss
+          slug:   /hersteller/red-hat/jboss-enterprise-application-platform/
+        - name:   JBoss for OpenShift
+          slug:   /hersteller/red-hat/jboss-enterprise-application-platform/#preise-jboss-eap-for-openshift
+  - name:   JBoss Web Server
+    sub:
+        - name:   JBoss Web Server
+          slug:   /hersteller/red-hat/jboss-web-server/
+        - name:   JBoss Web Server Plus
+          slug:   /hersteller/red-hat/jboss-web-server/#jboss-web-server-plus
+  - name:   3scale API Management
+    slug:   /hersteller/red-hat/3scale-api-management/
+  - name:   Fuse
+    slug:   /hersteller/red-hat/fuse/
+  - name:   Ansible Automation
+    slug:   /hersteller/red-hat/ansible-automation/
+  - name:   Satellite
+    slug:   /hersteller/red-hat/satellite/

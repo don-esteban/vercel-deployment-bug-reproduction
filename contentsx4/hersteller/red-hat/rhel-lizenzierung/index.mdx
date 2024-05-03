@@ -1,0 +1,194 @@
+---
+title: Red Hat Enterprise Linux Lizenzierung
+bcTitle: Enterprise Linux Lizenzierung
+bkey: red-hat
+ckey: enrico-koehle
+date: 2023-07-20
+tocMaxLevel: 2
+seoTitle: Red Hat Enterprise Linux Kauf und Lizenzierung
+seoDescription: Red Hat | Lizenzierung | Wir beraten Sie individuell zu Fragen bei Lizenzierung und Kosten.
+wanted:
+  title: RHEL Lizenzierung
+  features:
+    - name: So lizenzieren und kaufen Sie Red Hat Enterprise Linux.
+    - name: Die wichtigsten Lizenzierungsregeln
+furtherReading:
+  - name: Red Hat Kauf und Lizenzierung Allgemein
+    description: Alles Wissenswerte zum Kauf, Support und Lizenzierung der Red Hat Produkte.
+    slug: /hersteller/red-hat/lizenzierung/
+  - name: Red Hat Enterprise Linux Subscription Guide
+    description: Ausführliches Red Hat Enterprise Linux Subscription- und Lizenzierungs-PDF.
+    slug: https://www.redhat.com/de/resources/red-hat-enterprise-linux-subscription-guide
+---
+
+<Intro>
+
+So lizenzieren Sie Red Hat Enterprise Linux (RHEL). Auf dieser Seite erfahren Sie Wissenswertes über den Kauf und die richtige Lizenzierung von RHEL.
+
+</Intro>
+
+<TOC />
+
+
+## Lizenzierung
+
+### Subscription
+
+Software- und Supportsubscriptions erweitern die Funktionalität und Unterstützung von Red Hat Enterprise Linux. Subscriptions gibt es für 1 Jahr und 3 Jahre. Nach Ablauf der Subscription behalten Sie ihr Enterprise Open Source Betriebssystem, aber können auf die Serviceleistungen und Dienste von Red Hat nicht mehr zugreifen und erhalten auch keine spezifischen Patches oder betriebsbedingte Bugfixes mehr. Wenn eine weitere Nutzung gewünscht wird, muss verlängert werden.
+
+<Info>
+
+Andere Laufzeiten sind nur bei einer [Laufzeitanpassung](#laufzeitanpassungen) möglich.
+
+</Info>
+
+### Subscription Vorteile mit RHEL
+
+Während der Laufzeit erhalten Sie folgende Subscription Vorteile:
+
+<ArrowList>
+
+- Produktionsfähiger Code, insbesondere Patches, Bugfixes und Entwicklerunterstützung bei Fehlern
+- Lifecycle-Management
+- Software-Interoperabilität
+- Zugang zu Experten und Tools, die Sie bei Ihren Geschäftsabläufen unterstützen
+- Sicherheits-, Performance- und Automatisierungs-Support
+- Zugang zu technischem Support, Dokumentation und Tools
+- Open Source Assurance von Red Hat
+
+</ArrowList>
+
+### Bundles
+
+Bundles gibt es für RHEL Server und RHEL for Virtual Datacenters. Diese enthalten die Linux Distribution, Add-on- und Support-Subscription. Support- und Add-on-Subscriptions können keiner anderen Lizenz übertragen werden. Diese sind nur der Lizenz bzw. Linuxdistribution des Bundles zugehörig.
+
+### Add-ons
+
+Add-ons erweitern die Funktionalität von RHEL und werden nach der Anzahl an vorhandenen RHEL Server/for Virtual Datacenters Subscriptions des jeweiligen Servers lizenziert und zugewiesen. Entweder werden auf dem Server alle Subscriptions mit Add-on(s) ausgestattet oder keine.
+
+
+### Laufzeitanpassungen
+
+Wenn Sie während der Laufzeit einer bestehenden Support-Subscription Lizenzen nachkaufen, kann ich für Sie die Laufzeiten anpassen. Laufzeitanpassungen für Nachbestellungen können zwischen 12 und 60 Monaten angefragt werden. Gerne können Sie mich dazu kontaktieren.
+
+## Lizenzierungsregeln
+
+Ein ausführliches Dokument über Kauf und Lizenzierung von RHEL können Sie bei Red Hat abrufen: [Red Hat Enterprise Linux Subscription Guide](https://www.redhat.com/de/resources/red-hat-enterprise-linux-subscription-guide). Nutzung für externe Zwecke ist nicht erlaubt. Wenn dies aber nötig ist, muss es vorab mit Red Hat besprochen und vertraglich festgelegt werden.
+
+Gerne können Sie sich bei Fragen an mich wenden.
+
+
+### RHEL Server
+
+Es gibt 3 Subscription-Supportstufen:
+
+<ArrowList>
+
+- Entry-Level (Self-Support): Wird nur nach physischen Sockets lizenziert.
+- Standard: Wird pro 2er Socket oder 2er virtuellen Instanzen lizenziert.
+- Premium: Wird pro 2er Socket oder 2er virtuellen Instanzen lizenziert.
+
+</ArrowList>
+
+
+Kunden können, je nach Bedarf, Ihre bereits erworbenen RHEL-Server-Subscriptions (mit Standard- oder Premium-Wartung) von physischen Sockets in virtuelle Instanzen (2) umwandeln und umgekehrt. Dies dürfen Red Hat Kunden im Customer Portal eigenständig verwalten, ohne Änderung an den Vertragsbedingungen.
+
+### RHEL for Virtual Datacenters
+
+Es gibt 2 Subscription-Supportstufen:
+
+<ArrowList>
+
+- Standard: Wird pro 2er Socket lizenziert und darf nur für virtuelle Instanzen genutzt werden.
+- Premium: Wird pro 2er Socket lizenziert und darf nur für virtuelle Instanzen genutzt werden.
+
+</ArrowList>
+
+
+<Info>
+
+Bei Pooling (Gruppierung von Ressourcen) müssen Sie identische [SLAs](/hersteller/red-hat/lizenzierung/#wartung-und-support) (Standard oder Premium) für alle Hosts in einem Cluster erwerben. Enthalten ist [Standard](#standard-support) oder [Premium](#premium-support) Support.
+
+</Info>
+
+### Red Hat Virtualization
+
+Es gibt 2 Subscription-Supportstufen:
+
+<ArrowList>
+
+- Standard: Wird pro 2er Core lizenziert und nach Hosts (verwaltete Hypervisoren).
+- Premium: Wird pro 2er Core lizenziert und nach Hosts (verwaltete Hypervisoren).
+
+</ArrowList>
+
+
+### RHEL Workstation
+
+Es gibt 3 Subscription-Supportstufen:
+
+<ArrowList>
+
+- Entry-Level (Self-Support): Wird pro Desktop lizenziert (maximal 2 Sockets).
+- Standard: Wird pro Desktop lizenziert (maximal 2 Sockets).
+- Premium: Wird pro Desktop lizenziert (maximal 2 Sockets).
+
+</ArrowList>
+
+
+## Lizenzierung von Disaster Recovery bei RHEL
+
+<ArrowList>
+
+- Bei Disaster Recovery müssen alle Subscriptions, RHEL Server/for Virtual Datacenters/Virtualization und Add-ons lizenziert werden
+- Disaster Recovery muss mit dem Support von RHEL Server/for Virtual Datacenters/Virtualization übereinstimmen
+- Die genauen Lizenzbestimmungen finden Sie im [Red Hat Lizenzierungsguide](https://www.redhat.com/cms/managed-files/li-rhel-subscription-guide-us13117wg-201807-a4-de.pdf)
+- Es gelten folgende Backup-Lizenzierungsregeln:
+
+  - **Cold Backup:** Benötigt keine zusätzliche Lizenz. Die RHEL Server Subscription ist ausreichend, im Rahmen der RHEL Lizenzbestimmungen. Andernfalls werden Gebühren von Red Hat entrichtet
+  - **Warm Backup (Backupzyklus: Alle 60 Tage oder höher):** Benötigt eine zusätzliche Lizenz zum Produktionsserver. Jede RHEL Server Subscription benötigt zusätzlich eine Disaster-Recovery Subscription
+  - **Hot Backup (Backupzyklus: Weniger als 60 Tage):** Benötigt eine zusätzliche Lizenz zum Produktionsserver. Jede RHEL Server Subscription benötigt zusätzlich eine RHEL Server Subscription für den Backup Server
+
+</ArrowList>
+
+
+## Updates, Upgrades und Support
+
+### Downgrade
+
+Mit den erworbenen Subscriptions besteht auch ein Downgrade-Recht auf die zuletzt supporteten Versionen wie RHEL 7.9 und 8.7, siehe auch [Red Hat Enterprise Linux Life Cycle (englisch)](https://access.redhat.com/support/policy/updates/errata/).
+
+### Updates und Upgrades
+
+Während der Laufzeit der Subscription haben Sie Anspruch auf kostenlose Updates, Upgrades, Patches und Bugfixes.
+
+### Support
+
+RHEL Versionen haben einen [Wartungszyklus](https://access.redhat.com/support/policy/updates/errata) von bis zu 13 Jahren. Es werden regelmäßig Updates, Patches sowie Hotfixes rausgebracht. Bei Supportbedarf und technischen Problemen können sich Red Hat Kunden sich an den technischen Support wenden. Je nach Supportstufe, Schweregrad bzw. Supportanfrage unterscheiden sich die [Support Reaktionszeiten](/hersteller/red-hat/lizenzierung/#vergleich-von-standard-und-premium-support). Mehr zu Wartung und Support finden Sie auf unserer [Allgemeinen Red Hat Lizenzierungseite](/hersteller/red-hat/lizenzierung/) unter [Wartung und Support](/hersteller/red-hat/lizenzierung/#wartung-und-support).
+
+<ArrowList>
+
+- [Self Support](#self-support): Kein Support/Wartung, nur kostenlose Updates
+- [Standard Support](#standard-support): Support während der üblichen Geschäftszeiten (8x5), Updates, Hotfixes
+- [Premium Support](#premium-support): Rund um die Uhr Support (24x7) bei kritischen Fällen, sowie Hotfixes und Updates
+
+</ArrowList>
+
+#### Self-Support
+
+Bei Self Support hat man keinen Anspruch auf technischen Support von Red Hat. Man erhält lediglich Updates bzw. Hotfixes. Bei Problemen gibt es die Möglichkeit auf die Knowledge Base von Red Hat zuzugreifen oder Hilfe im Portal zu suchen. RHEL mit Self-Support ist begrenzt für Testumgebungen geeignet und darf innerhalb einer Organisation **nicht** mit supporteten Distributionen wie _RHEL Server Standard Subscription_ und _RHEL Server Premium Subscription_ kombiniert werden. Mit Self-Support sind **keine** Deployments auf Hypervisor/Cloud möglich. Dies geht erst ab _RHEL Server Standard und Premium Subscription_.
+
+#### Standard Support
+
+Ab Standard Support können Sie sich bei Supportbedarf und technischen Problemen an den Red Hat Support (telefonisch oder im Web) wenden.
+
+#### Premium Support
+
+Premium Support enthält Standard Support inklusive [Extended Update Support (EUS)](https://www.redhat.com/rhdc/managed-files/li-eus-datasheet-f22786pr-202003-a4-de.pdf). Dies ist für die Kunden interessant, die aus Testgründen oder unflexiblen Maintenance-Fenstern nicht kurzfristig auf jedes Minor-Release updaten können und einzelne Releases überspringen wollen. Normalerweise hat man eine Frist von maximal 6 Monaten um auf das neue Minor-Release upzudaten, dies verlängert sich aber mit EUS um bis zu 24 Monate. In dem [Red Hat Extended Update Support Schaubild](https://access.redhat.com/sites/default/files/images/eus2.png) wird dies genauer veranschaulicht. Eine genaue Übersicht über die verschiedenen Support-Zyklen gibt es unter [Red Hat Enterprise Linux Life Cycle](https://access.redhat.com/support/policy/updates/errata).
+
+
+<GetInTouch theme="light">
+
+Sie haben Fragen zu den Produkten oder zur Lizenzierung? Für Beratung zu Red Hat-Produkten, attraktive Angebote oder Rechnungen mit Umsatzsteuer, kontaktieren Sie mich telefonisch oder per E-Mail. Ich berate Sie gerne.
+
+</GetInTouch>

@@ -1,0 +1,42 @@
+- key:      sophos
+  items:
+  - name:   Sophos
+    slug:   /hersteller/sophos/
+  - name:   Central Intercept X Endpoint
+    sub:
+    - name: Übersicht
+      slug: /hersteller/sophos/endpoint-protection/
+    - name: Central Intercept X Essentials
+      slug: /hersteller/sophos/endpoint-protection/central-intercept-x-essentials/
+    - name: Central Intercept X Advanced
+      slug: /hersteller/sophos/endpoint-protection/central-intercept-x-advanced/
+    - name: Central Intercept X Advanced with XDR
+      slug: /hersteller/sophos/endpoint-protection/central-intercept-x-advanced-edr/
+  - name:   Intercept X for Server
+    sub:
+    - name: Übersicht
+      slug: /hersteller/sophos/intercept-x-for-server/
+    - name: Intercept X Essentials for Server
+      slug: /hersteller/sophos/intercept-x-for-server/intercept-x-essentials-server/
+    - name: Intercept X Advanced for Server
+      slug: /hersteller/sophos/intercept-x-for-server/intercept-x-advanced-server/
+    - name: Intercept X Advanced for Server with XDR
+      slug: /hersteller/sophos/intercept-x-for-server/intercept-x-advanced-server-with-edr/
+  - name: Central Device Encryption
+    slug: /hersteller/sophos/central-device-encryption/
+  - name:   Central Mobile
+    sub:
+    - name: Übersicht
+      slug: /hersteller/sophos/mobile/
+    - name: Central Mobile Standard
+      slug: /hersteller/sophos/mobile/central-mobile-standard/
+    - name: Central Mobile Advanced
+      slug: /hersteller/sophos/mobile/central-mobile-advanced/
+  - name:   Central Email Advanced
+    slug:   /hersteller/sophos/central-email/central-email-advanced/
+  - name: XGS Firewall Hardware Appliance
+    slug: /hersteller/sophos/xgs-firewall-hardware-appliances/
+  - name: XG Firewall Virtual Appliance
+    slug: /hersteller/sophos/xg-firewall-virtual-appliances/
+  - name: SG UTM Hardware Appliance
+    slug: /hersteller/sophos/sg-utm-hardware-appliances/

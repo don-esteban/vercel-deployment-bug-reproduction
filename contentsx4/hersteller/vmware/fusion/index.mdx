@@ -1,0 +1,157 @@
+---
+title: VMware Fusion
+bcTitle: Fusion
+bkey: vmware
+ckey: enrico-koehle
+date: 2023-02-15
+wanted:
+  features:
+    - name: Desktop-Hypervisor für macOS Anwender
+furtherReading:
+  - name: VMware Workstation
+    slug: /hersteller/vmware/workstation/
+    description: Desktop-Hypervisor für Windows und Linux mit ähnlichem Funktionsumfang.
+---
+
+
+
+<Intro>
+
+ Die neue Version VMware Fusion 13 wurde am 11. November 2022 veröffentlicht. VMware Fusion Pro richtet sich an Entwickler, Tester und Administratoren, die fortschrittliche Funktionalitäten wie Netzwerksimulation, Clones und Verbindungen mit vSphere/ESXi benötigen. Vielen Anwendern wird jedoch die funktional etwas abgespeckte Version VMware Fusion Player ausreichen.
+
+</Intro>
+
+<TOC />
+
+
+
+
+
+## Editionen
+
+<ArrowList>
+
+- [Fusion 13 Pro](/hersteller/vmware/fusion/pro/):<br />
+  Für anspruchsvolle Nutzer wie Administratoren, Tester und Entwickler.
+- [Fusion 13 Player](/hersteller/vmware/fusion/player/):<br />
+  Für Anwender, die zusätzliche Betriebssystemumgebungen auf Ihrem Mac ausführen möchten.
+
+</ArrowList>
+
+
+## Lizenzierung
+
+VMware Fusion Pro und Player werden nach Hosts (Macs) lizenziert, auf denen VMware Fusion ausgeführt wird. Jeder Host erfordert eine Lizenz. Die Anzahl der virtualisierten Betriebssysteme (Guests) ist nicht eingeschränkt. Im Gegensatz zum Windows Pendent [VMware Player](/hersteller/vmware/workstation/player/) ist Fusion Player nicht auf eine parallele Instanz beschränkt.
+
+Die Software wird als Download bereitgestellt und bei der Installation mit einem Lizenzschlüssel aktiviert. Jede Installation wird mit einem individuellen Key freigeschaltet. Volumenlizenzierung mit einem Volumenlizenzschlüssel für alle Installationen ist nicht verfügbar.
+
+Das erste Jahr Support ist Pflicht und muss bei Kauf immer dazu gebucht werden! Es gibt nur noch Production Support (24/7 rund um die Uhr). Support darf innerhalb einer Organisation nicht gemischt werden. Alle Lizenzen müssen mit derselben Supportstufe ausgestattet werden.
+
+<Info>
+
+**Wichtig:** Das erste Jahr Support ist Pflicht und muss bei Kauf immer dazu gebucht werden!
+
+</Info>
+
+## Funktionen
+
+Alle Funktionen von Fusion Player sind in Fusion Pro enthalten.
+
+### Fusion Player
+
+VMware Fusion Player richtet sich an Anwender, die auf ihrem Mac weitere, gekapselte Betriebssysteminstanz (Windows, Linux) ausführen möchten.
+
+-  **Erstellung neuer virtueller Maschinen** <br />
+    Unterstützt werden bis 32 CPU, 128GB RAM und 8GB vRAM.
+-  **Verschlüsselte virtuelle Maschinen** <br />
+    Mit der Fusion Pro lassen sich virtuelle Maschinen verschlüsseln und verschlüsselte virtuelle Maschinen ausführen. Weiterhin können Benutzerrechte eingeschränkt werden, um virtuelle Maschinen zu konfigurieren.
+-  **Gleichzeitige Ausführung mehrerer virtueller Maschinen** <br />
+    Mit Fusion Player können bereits mehrere virtuelle Maschinen gleichzeitig ausgeführt werden. Die Anzahl möglicher Instanzen hängt von der Konfiguration der virtuellen Maschinen und den verfügbaren Ressourcen des Host ab.
+-  **Unterstützung von ca. 100 Gast-Betriebssystemen** <br />
+    Im [VMware Compatibility Guide](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=software&details=1&releases=436&productNames=3&page=1&display_interval=10&sortColumn=Partner&sortOrder=Asc&testConfig=16) finden sie ausführliche Informationen zu unterstützten Gast-Betriebssystemen.
+-  **Neuste Windows 10 Versionen** <br />
+    Unterstützt die neusten Windows 10 Versionen als Gast- und als als Host-Betriebssystem.
+-  **Automatisierte Installation (Mass Deployment)** <br />
+    Über Windows Kommandozeilenscripts lassen sich VMware Fusions [automatisiert installieren](https://kb.vmware.com/s/article/2148301).
+-  **File Sharing und gemeinsame Ordner** <br />
+    Host- und Gastbetriebssysteme können sich Dateien und Ordner teilen. Ordner können auch für mehrere virtuelle Maschinen freigegeben werden. Damit lassen sich Dateien auch zwischen virtuellen Maschinen teilen.
+-  **Verschiedene Anzeige-Modi** <br />
+    Anzeigemöglichkeiten: Anzeige in Fenstern und auf dem ganzen Bildschirm. Anzeige einzelne Applikationen aus einer VM im Host-Betriebssystem und VM-Anzeige auf verschiedene Monitore verteilen.
+-  **3D Graphics with DX10.1 and OpenGL 3.3 Support** <br />
+    VMware Fusion nutzt moderne 3D Grafikkarten, wenn das Host-Betriebssystem damit ausgestattet ist.
+-  **Umfassende Geräteunterstützung** <br />
+    Ausführung auf dem neuesten macOS, 4K und 5k Retina Anzeigen, USB 3.0 und USB Smart Card Reader, Virtuelles TPM-Gerät (Trusted Platform Module) und multilinguale Tastaturen.
+-  **Security Features** <br />
+    UEFI Boot und UEFI Secure Boot Support, vTPM Virtual Trusted Platform Module und	Microsoft VBS (Virtualization Based Security, nur Gast-OS).
+-  **Vereinfachter SSH Login** <br />
+    Bereits in der Fusion Player Edition (seit Fusion 12). Mit einem Mausklick wird die SSH-Verbindung hergestellt und ein Terminal Fenster geöffnet. Verbindungsdaten müssen nur beim ersten Mal eingegeben werden.
+-  **Snapshots** <br />
+    Bereits in der Fusion Player Edition (seit Fusion 12). Snapshots ist eine nützliche Funktion für Tester und Entwickler. Nach Änderungen (beispielsweise ein Software-Update) kann die virtuelle Maschine auf den Zustand (Snapshot) vor dem Update zurückgesetzt werden.
+-  **REST API** <br />
+    Mit der lassen sich beispielsweise virtuelle NIC-Einstellungen konfigurieren, IP Adressen ermitteln und gemeinsame Ordner konfigurieren.
+-  **vCenter Server Appliance Deployment** <br />
+    [vCenter Server Appliance](/hersteller/vmware/vcenter-server/) lässt sich mit wenigen Mausklicks als Linux VM installieren und ausführen. Gegenüber der traditionellen Installation ist das deutlich einfacher.
+-  **Command Line Operation: vmrun** <br />
+    Kommandozeilenprogramm für die Steuerung von virtuellen Maschinen. Beispielsweise an-/ausschalten, neu starten, Dateien zwischen Host/Guest kopieren, Prozesse im Gast-OS anzeigen usw.
+
+
+### Fusion Pro
+
+VMware Fusion Pro richtet sich an anspruchsvolle Anwender wie Administratoren, Software-Entwickler, Tester, die unter anderem virtuelle Maschinen klonen und verändern oder Netzwerke simulieren.
+
+Enthält alle Features des Players plus folgende zusätzliche Möglichkeiten:
+
+-  **Anpassung/Test virtueller Netzwerke** <br />
+    Umbenennung virtueller Netzwerke (nur Windows Hosts). Konfiguration DHCP, NAT, IP-Adressen, LAN Segmente, Samba (Linux), Simulation (packet loss, latency).
+-  **VM Klone** <br />
+    Linked und Full Clones. Linked Clones sind eigene VM-Kopien, die sich virtuelle Festplatten mit dem Eltern-Klon teilen. Volle Klone sind vollständige Kopien inkl. Kopien virtueller Festplatten.
+-  **Geteilte virtuelle Maschinen (Fusion Server)** <br />
+    Shared/Remote VMs werden auf einem VMware Fusion Server ausgeführt und lassen sich von anderen VMware Fusions aus über das Netzwerk nutzen. Fusion Server ist in VMware Fusion Pro enthalten.
+-  **Mit vSphere/ESXi/vCenter Server verbinden** <br />
+    Beispiele für mögliche Aktionen mit verbundenen Remote-Hosts sind Neustart, Herunterfahren, Power Control, aktivieren des Wartungsmodus und erstellen neuer virtueller Maschinen.
+
+## Häufige Fragen und Antworten
+
+- **Unterstützt VMware Fusion Windows 11 auch auf M1 und M2 Macs?**<br />
+Ja, VMware Fusion unterstützt alle Windows 11 Versionen als Gast-Betriebssystem. Auf Intel Hardware kann Windows 11 ausgeführt werden. Auf Mac M1 und M2 Hardware kann Windows 11 ARM ausgeführt werden. Bitte beachten Sie: Die Ausführung von Windows in einer viruellen Maschine erfordert eine Lizenz.
+
+- **Wird Kali Linux unterstützt?**<br />
+Ja, VMware Fusion auf Macs mit Intel Prozessoren unterstützt Kali Linux als [Gast-Betriebssystem](https://www.kali.org/docs/virtualization/install-vmware-guest-vm/).
+
+- **Werden 32-Bit-Betriebssysteme unterstützt?**<br />
+Ja, als Gast-Betriebssysteme.
+
+- **Für welche Versionen gibt es Upgrades?**<br />
+Upgrades gibt es für Version 11 und höher. Wenn Sie eine ältere Version ohne aktiven Support besitzen, bleibt nur der Neukauf.
+
+- **Was unterscheidet Fusion Pro von Fusion Player?**<br />
+Die wichtigsten zusätzlichen Features von Fusion Pro sind:
+
+  - Verbindung mit entfernten vSphere Hosts.
+  - Erstellen von Linked Clones und vollständigen Clones.
+  - Erweiterte Unterstützung virtueller Netzwerke.
+  - Simulation virtueller Netzwerke (Paketverlust, Latenz, Bandbreite)
+
+- **Welches sind die häufigsten Anwendungsszenarien?**
+
+  - Betriebssystem-Wechsel ohne Neustart.
+  - Virtuelle Firmendesktops nutzen, etwa im Homeoffice.
+  - Software Testen
+  - Software entwickeln
+  - Alte Betriebssysteme nutzen, etwa für Browser-Tests bei der Web-Entwicklung.
+
+
+## Alternativen zu VMware Fusion
+
+Bei der Desktop-Virtualisierung (Personal Desktop Virtualization, nicht mit VDI bzw. Virtual Desktop Infrastructure zu verwechseln) ist VMware Fusion eine hervorragende Wahl. Die Integration mit vSphere ist ein weiterer Pluspunkt. Es gibt allerdings Alternativen.
+
+<ArrowList>
+
+- [VMware Workstation](/hersteller/vmware/workstation/)<br/>
+  VMware Workstation bietet einen ähnlichen Funktionsumfang, läuft aber auf Windows oder Linux PCs.
+- [Parallels Desktop für Mac](/hersteller/parallels/desktop-mac-business-edition/)<br/>
+  Alternative zu VMware Fusion.
+- [Oracle VirtualBox](https://www.virtualbox.org/)<br/>
+  Eine beliebte Open Source Alternative, die jedoch seitens Komfort und Funktionalität weder mit Fusion noch mit Parallels mithalten kann.
+
+</ArrowList>

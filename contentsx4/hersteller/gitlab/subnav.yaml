@@ -1,0 +1,8 @@
+- key:      gitlab
+  items:
+  - name:   GitLab
+    slug:   /hersteller/gitlab/
+  - name:   Premium
+    slug:   /hersteller/gitlab/premium/
+  - name:   Ultimate
+    slug:   /hersteller/gitlab/ultimate/

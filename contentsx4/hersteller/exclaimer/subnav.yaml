@@ -1,0 +1,8 @@
+- key:      exclaimer
+  items:
+  - name:   Exclaimer
+    slug:   /hersteller/exclaimer/
+  - name:   Signature Manager Exchange
+    slug:   /hersteller/exclaimer/signature-manager-exchange/
+  - name:   Signature Manager Outlook
+    slug:   /hersteller/exclaimer/signature-manager-outlook/

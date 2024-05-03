@@ -1,0 +1,148 @@
+---
+title: Arcserve UDP Lizenzierung
+bkey: arcserve
+ckey: harald-wieke
+date: 2023-01-31
+author: jessica-kiefer-haas
+seoTitle: Arcserve Lizenzierung |  Universal, Instance, Socket, Capacity, Appliance, User
+tocMaxLevel: 1
+furtherReading:
+    - name: Leitfaden zur UDP Lizenzierung
+      slug: /hersteller/arcserve/arcserve-udp-advanced-licensing-guide-de.pdf
+---
+
+<Intro>
+
+Bei Arcserve gibt es unterschiedliche Optionen die Unified Data Protection (UDP) zu lizenzieren:
+Die beiden wichtigsten Lizenzierungen sind die nach **Prozessoren** (Socket-License) und **Instanzen** (Server OS Instance). Welche der Optionen beim Kauf zur Auswahl stehen, hängt von jeweiligen Produkt ab.
+
+</Intro>
+
+<TOC />
+
+
+
+## Lizenzierungsoptionen
+
+
+|Lizenzierung|[STD](/hersteller/arcserve/udp-standard/)|[ADV](/hersteller/arcserve/udp-advanced/)|[PRE](/hersteller/arcserve/udp-premium/)|[WST](/hersteller/arcserve/udp-workstation/)|[O365B](/hersteller/arcserve/udp-microsoft-office-365-backup/)|
+|:---|:---:|:---:|:---:|:---:|:---:|
+|Universal (Subscription per frontend TB, FETB)|✓|✓|✓|–|–|
+|Instanz (per OS instance)|✓|✓|–|✓|–|
+|Socket (per CPU socket)|✓|✓|✓|–|–|
+|Capacity (per frontend TB)|✓|✓|✓|–|–|
+|Appliance|–|✓|✓|–|–|
+|User|–|–|–|–|✓|
+
+
+*Instanzen-basierte und Socket-basierte Lizenzen der **gleichen Edition** können gleichzeitig in derselben Umgebung genutzt werden.
+
+<Legend>
+
+|Verwendete Abkürzungen:||
+|:---|:---|
+|**STD:** [Arcserve UDP 9.0 Standard Edition](/hersteller/arcserve/udp-standard/)|**ADV:** [Arcserve UDP 9.0 Advanced Edition](/hersteller/arcserve/udp-advanced/)|
+|**PRE:** [Arcserve UDP 9.0 Premium Edition](/hersteller/arcserve/udp-premium/)|**WST:** [Arcserve UDP 9.0 Workstation Edition](/hersteller/arcserve/udp-workstation/)|
+|**O365B:** [Arcserve UDP Microsoft Office 365 Backup](/hersteller/arcserve/udp-microsoft-office-365-backup/)||
+
+</Legend>
+
+### Instanz (per OS instance)
+
+Eine Instanzen-basierte Lizenzierung ermöglicht die Sicherung einer Betriebssysteminstanz auf einem physischem PC-System oder einer virtuellen Maschine. Nur [Standard](/hersteller/arcserve/udp-standard/)- und [Advanced-Editionen](/hersteller/arcserve/udp-advanced/) sind erhältlich. Die [Workstation-Edition](/hersteller/arcserve/udp-workstation/) ist auf Windows Arbeitsplätze beschränkt.
+
+### Lizenzierung Essentials
+
+_Server Essentials/SBS OS_ Instanz-basierte Lizenzen unterstützen nur [Microsoft Windows Server Essentials](/hersteller/microsoft/windows-server/essentials-2022/) und SBS-Systeme. VMware Essentials wird nur mit der Socket-basierten Lizenzierung unterstützt. Es gibt keine Beschränkung der Bestellmenge.
+
+### Socket (per CPU socket)
+
+<ArrowList>
+
+Die Socket-basierte Lizenzierungsoption unterstützt die Sicherung von physischen Servern, virtuellen Hosts und Cloud-basierten virtuellen Maschinen:
+
+- In öffentlichen Clouds, einschließlich Amazon AWS und Microsoft Azure, zählen virtuelle CPUs genauso wie physische Server, unabhängig von der Zahl virtueller Kerne.
+- NAS- und andere Systeme, welche remote über das NDMP-Protokoll durch Arcserve Backup gesichert werden, zählen als ein
+Socket für jeden NAS-/System-Node.
+-  Schutz eines physischen Computersystems und einer unbegrenzten Zahl von virtuellen Maschinen auf demselben PC-System. Beispiel: Ein virtueller Host-Server mit vier Sockets auf dem Motherboard und nur zwei installierten CPUs benötigt zwei Socket-basierte UDP-Lizenzen.
+
+</ArrowList>
+
+### Capacity (per frontend TB)
+
+Arcserve Managed Capacity Programm (MCP), der Kapazitäts-basierten Lizenzierung, sichert die erworbene Datenmenge an Front-End-Terabyte auf einer unbegrenzten Anzahl von Systemen. Es kann nicht gleichzeitig mit Socket-basierten oder Instanz-basierten Lizenzen genutzt werden.
+
+Beispiel: Ein Kunde, der 8 TB File-Server-Daten schützen und vollständige Tape-Back Funktionalitäten nutzen will, benötigt 8 x _Arcserve UDP 9.x Premium Edition - Managed Capacity pro TB between 6 - 15 TB_ sowie Wartung.
+
+Nachkauf: Wenn der Kunde weitere 10 TB schützen will, müssen Sie 10x _Arcserve UDP 9.x Premium Edition - Managed Capacity pro TB between 16 - 25 TB_ erwerben, da die Gesamtmenge der geschützten Daten bei 18 TB liegt.
+
+### Appliance
+
+Arcserve Appliances werden nach Speicherkapazität lizenziert bzw. jede Appliance besitzt eine eigene Grundkapazität, welche erweitert werden kann. Es gelten keine Einschränkungen der Quellsysteme, Server oder Mengen von Daten im Backup auf der lizenzierten Appliance. Backups der lizenzierten Appliance können später auf Tape-Hardware kopiert werde, die mit der gleichen Appliance verbunden sind.
+
+### User
+
+Es gibt nur eine Subscription die nach Usern lizenziert wird: [Arcserve UDP Microsoft Office 365 Backup](/hersteller/arcserve/udp-microsoft-office-365-backup/). In dem Fall ist der Benutzer ein Office 365 Nutzer oder ein aktives Office 365 Postfach. Die Subscription kann eigenständig verwendet werden oder kombiniert mit Socket-basierten Lizenzen oder UDP-Lizenzen pro Betriebssystem (beliebige Edition).
+
+### Universal (Subscription per frontend TB, FETB)
+
+Arcserve UDP Universal License Abonnements werden nach Front-End-Terabyte lizenziert. Universal License schützt alle Daten aus jeder Quelle, eingeschlossen physischer und virtuelle Server, Cloud-Instanzen und VMs, Office 365-, NAS- und SAN-Geräten und aller anderen von Arcserve UDP unterstützten Datenquellen in unbegrenzter Anzahl. Die Subscription kann nicht mit anderen Editionen oder Lizenzierungsoptionen kombiniert werden.
+
+Die Universal License Lizenzierung umfasst unbegrenzte Aufbewahrung, uneingeschränkte Wiederherstellungen, das Kopieren von
+Sicherungen an sekundäre Speicherorte oder öffentliche Clouds für die Notfallwiederherstellung. Darüber hinaus können nur Kunden von Arcserve UDP Universal Licenses eine kostenlose Lizenz von [Sophos Intercept X Advanced für Server](/hersteller/sophos/intercept-x-for-server/) anfordern, um den Recovery Point Server (RPS) von Arcserve UDP vor Ransomware-, Malware und Hacker-Angriffen zu schützen.
+
+Hinweise: Wartung und Support rund um die Uhr (gemäß Arcserve-Supportrichtlinie) sind inklusive. Wenn das Abonnement nach Ablauf nicht erneuert wird, können Sicherungen nur für die Nachfrist von 30 Tagen fortgesetzt werden. Daten- und Bare-Metal-Wiederherstellungen sind zulässig.
+
+
+## Wartung, Support und Upgrades
+
+Beim Kauf der Software wird immer mindestens ein Jahr *Enterprise Support* benötigt. Damit erhalten Sie Support und kostenlose Upgrades während der Laufzeit.
+
+### Wartung
+
+Mit der Wartung haben Sie Anspruch auf kostenlose Upgrades, Updates sowie Zugang zu Arcserve-Support-Diensten während der Laufzeit des Wartungsvertrages. Die Wartung für UDP ist nicht in den (unbefristeten) Kauflizenzen enthalten und muss bei Neukauf gesondert erworben werden.
+
+Beispiel: Sie erwerben 1x Arcserve UDP 9.x Premium Edition - Socket Lizenz (Neu). Dazu benötigen Sie entweder 1x Arcserve UDP 9.x Premium Edition - Drei Jahre Socket Enterprise Wartung (Neu) oder 1x Arcserve UDP 9.x Premium Edition - Ein Jahr Socket Enterprise Wartung (Neu).
+
+*Abonnement-Lizenzen, einschließlich Universal, enthalten bereits Wartungslizenzen für die Dauer des Abonnements.*
+
+### Wartung für Upgrades und Crossgrades
+
+Kunden, die ein Upgrade ihrer Editionen oder ein Crossgrade ihrer Produkte durchführen wollen, müssen eine Crossgrade Lizenz mit einer neuen Wartung erwerben.
+
+Beispiel: Für ein Upgrade auf _Arcserve UDP Premium Edition – Socket License_ müssen Sie folgende Lizenzen erwerben, damit Sie weiterhin kostenlose Upgrades und Zugang zu Arcserve-Support-Diensten erhalten: Arcserve UDP Premium Edition - Socket Lizenz Crossgrade **und** Arcserve UDP Premium Edition - Socket Enterprise Wartung (Neu).
+
+### Wartungsverlängerung
+
+In der Regel wird man 90 Tage vor Ablauf der Wartung benachrichtigt, dass der Wartungsvertrag verlängert werden muss. Falls Sie Ihre Wartung verlängern möchten, sollten Sie das vor Laufzeitende veranlassen. Denn wenn Sie nicht rechtzeitig verlängern, kann es passieren, dass Sie ein Upgrade kaufen müssen. Sie verlieren nach Laufzeitende den Anspruch auf Support, kostenlose Updates und Upgrades.
+
+### Abgelaufene Wartung
+
+Falls ein Wartungsvertrag ausgelaufen ist und diesen nicht rechtzeitig verlängert hat, kann man diesen noch unter bestimmten Voraussetzungen zurückdatieren, ansonsten muss ein Upgrade gekauft werden:
+
+1. 30 Tage, um eine Verlängerung (Renewal) von einem Jahr zurückzudatieren
+2. 90 Tage, um eine Verlängerung (Renewal) von drei Jahren zurückzudatieren
+3. 91 und mehr Tage nach Verfall der Wartung muss ein Kunde einen Versions-Upgrade mit neuer Wartung erwerben.
+
+### Edition Upgrade
+
+<ArrowList>
+
+- Abonnement
+
+  Kunden mit Abonnement-Lizenzen, einschließlich Universal, können ein Upgrade auf eine höhere Arcserve UDP-Edition durchführen,
+  indem sie das entsprechende Abonnement entweder zum Zeitpunkt der Verlängerung oder früher erwerben.
+  Im letzteren Fall wird der Rest ihres aktiven Abonnements in den Neukauf einbezogen.
+
+- Unbefristete Lizenz inkl. Wartung
+
+  Kunden, die ihre unbefristete Lizenz auf eine höhere Arcserve UDP Edition aktualisieren möchten, können das entsprechende Crossgrade für die Arcserve UDP Edition erwerben.
+  Beachten Sie, dass *alle Lizenzen in derselben Umgebung von derselben Edition sein müssen und daher alle Lizenzen in derselben Umgebung gleichzeitig aktualisiert werden müssen*.
+
+</ArrowList>
+
+<GetInTouch theme="light">
+
+Lassen Sie sich bei offenen Fragen oder für ein persönliches Angebot beraten.
+
+</GetInTouch>

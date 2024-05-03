@@ -1,0 +1,19 @@
+- key:      datacore
+  items:
+  - name:   DataCore
+    slug:   /hersteller/datacore/
+  - name:   SANsymphony
+    sub:
+      - name: Hauptseite
+        style: index
+        slug: /hersteller/datacore/sansymphony/
+      - name: Business Essentials
+        slug: /hersteller/datacore/sansymphony/business/
+      - name: Standard
+        slug: /hersteller/datacore/sansymphony/standard/
+      - name: Enterprise
+        slug: /hersteller/datacore/sansymphony/enterprise/
+  - name:   Swarm
+    slug:   /hersteller/datacore/swarm/
+  - name:   FileFly
+    slug:   /hersteller/datacore/filefly/

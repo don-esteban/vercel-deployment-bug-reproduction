@@ -1,0 +1,101 @@
+- key:          ibm
+  items:
+  - name:       IBM
+    slug:       /hersteller/ibm/
+  - name:       SPSS Statistics
+    sub:
+    - name:     Hauptseite
+      style:    index
+      slug:     /hersteller/ibm/spss-statistics/
+    - name:   Editionen
+      sub:
+      - name: Base Edition
+        slug: /hersteller/ibm/spss-statistics/base/
+      - name: Standard Edition
+        slug: /hersteller/ibm/spss-statistics/standard/
+      - name: Professional Edition
+        slug: /hersteller/ibm/spss-statistics/professional/
+      - name: Premium Edition
+        slug: /hersteller/ibm/spss-statistics/premium/
+    - name:   Einzelne Module
+      sub:
+      - name: Advanced Statistics
+        slug: /hersteller/ibm/spss-statistics/advanced-statistics/
+      - name: Regression
+        slug: /hersteller/ibm/spss-statistics/regression/
+      - name: Custom Tables
+        slug: /hersteller/ibm/spss-statistics/custom-tables/
+      - name: Decision Trees
+        slug: /hersteller/ibm/spss-statistics/decision-trees/
+      - name: Forecasting
+        slug: /hersteller/ibm/spss-statistics/forecasting/
+      - name: Missing Values
+        slug: /hersteller/ibm/spss-statistics/missing-values/
+      - name: Categories
+        slug: /hersteller/ibm/spss-statistics/categories/
+      - name: Exact Tests
+        slug: /hersteller/ibm/spss-statistics/exact-tests/
+      - name: Direct Marketing
+        slug: /hersteller/ibm/spss-statistics/direct-marketing/
+      - name: Neural Networks
+        slug: /hersteller/ibm/spss-statistics/neural-networks/
+      - name: Complex Samples
+        slug: /hersteller/ibm/spss-statistics/complex-samples/
+      - name: Conjoint
+        slug: /hersteller/ibm/spss-statistics/conjoint/
+      - name: Amos
+        slug: /hersteller/ibm/spss-statistics/amos/
+    - name:     Subscriptions
+      sub:
+      - name:   Base Subscription
+        slug:   /hersteller/ibm/spss-statistics/base-subscription/
+      - name:   Custom Tables & Advanced Statistics
+        slug:   /hersteller/ibm/spss-statistics/custom-tables-advanced-statistics/
+      - name:   Forecasting & Decision Trees
+        slug:   /hersteller/ibm/spss-statistics/forecasting-decision-trees/
+      - name:   Complex Sampling & Testing
+        slug:   /hersteller/ibm/spss-statistics/complex-sampling-testing/
+  - name:       SPSS Modeler
+    sub:
+    - name:     Hauptseite
+      style:    index
+      slug:     /hersteller/ibm/spss-modeler/
+    - name:     Editionen
+      sub:
+        - name:     Personal Edition
+          slug:     /hersteller/ibm/spss-modeler/personal/
+        - name:     Professional Edition
+          slug:     /hersteller/ibm/spss-modeler/professional/
+        - name:     Gold Edition
+          slug:     /hersteller/ibm/spss-modeler/gold/
+  - name:       Spectrum Protect
+    sub:
+    - name:     Hauptseite
+      style:    index
+      slug:     /hersteller/ibm/spectrum-protect/
+    - name:     Bundles
+      sub:
+        - name: Suite Entry
+          slug: /hersteller/ibm/spectrum-protect/suite-entry/
+        - name: Suite
+          slug: /hersteller/ibm/spectrum-protect/suite/
+    - name: Basis Software
+      sub:
+      - name: Base Edition
+        slug: /hersteller/ibm/spectrum-protect/base/
+      - name: Extended Edition
+        slug: /hersteller/ibm/spectrum-protect/extended/
+    - name: Erweiterungsmodule
+      sub:
+      - name: Databases
+        slug: /hersteller/ibm/spectrum-protect/databases/
+      - name: ERP
+        slug: /hersteller/ibm/spectrum-protect/erp/
+      - name: Mail
+        slug: /hersteller/ibm/spectrum-protect/mail/
+      - name: SAN
+        slug: /hersteller/ibm/spectrum-protect/san/
+      - name: Snapshot
+        slug: /hersteller/ibm/spectrum-protect/snapshot/
+      - name: Virtual Environments
+        slug: /hersteller/ibm/spectrum-protect/virtual-environments/

@@ -1,0 +1,14 @@
+- key:      parallels
+  items:
+  - name:   Parallels
+    slug:   /hersteller/parallels/
+  - name:   Parallels RAS
+    slug:   /hersteller/parallels/ras/
+  - name:   Desktop for Mac Pro
+    slug:   /hersteller/parallels/desktop-mac-pro-edition/
+  - name:   Desktop for Mac Business
+    slug:   /hersteller/parallels/desktop-mac-business-edition/
+  - name:   Desktop for ChromeOS
+    slug:   /hersteller/parallels/desktop-chromebook-enterprise/
+#  - name:   Mac Management
+#    slug:   /hersteller/parallels/mac-management/

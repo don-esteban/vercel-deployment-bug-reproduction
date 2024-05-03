@@ -1,0 +1,14 @@
+- key:      corel
+  items:
+  - name:   Corel
+    slug:   /hersteller/corel/
+  - name:   CorelDRAW Graphics Suite
+    slug:   /hersteller/corel/graphics-suite/
+  - name:   CorelDRAW Technical Suite
+    slug:   /hersteller/corel/technical-suite/
+  - name:   CorelDRAW Standard
+    slug:   /hersteller/corel/draw-standard-2021/
+  - name:   Painter
+    slug:   /hersteller/corel/painter-2023/
+  - name:   PaintShopPro
+    slug:   /hersteller/corel/paintshoppro-2023/

@@ -1,0 +1,107 @@
+---
+title: Vergleich aller VMware vSphere Editionen
+bcTitle: Vergleich aller vSphere Editionen
+seoTitle: Vergleich der VMware vSphere Editionen
+bkey: vmware
+ckey: enrico-koehle
+date: 2022-06-27
+wanted:
+  features:
+    - name: Vergleich der vSphere Editionen mit Essentials und Acceleration Kits
+    - name: Unterschiede in den enthaltenen Features und Funktionen
+---
+
+
+
+<Intro>
+
+ Es gibt mittlerweile 3 vSphere Haupteditionen, 2 spezielle vSphere Editionen für den Einsatz in Niederlassungen und 4 vSphere Bundles. Alle Editionen unterscheiden sich funktional und lizenzrechtlich. Da kann man leicht den Überblick verlieren. Auf dieser Seite vergleichen wir alle Editionen und Bundles funktional und lizenzrechtlich.
+
+
+</Intro>
+
+<TOC />
+
+
+<Info type="strong">
+
+**WICHTIG:** <br />
+
+Einige Produkte sind nach der Umstrukturierung durch Broadcom nicht mehr oder nur in geänderter Zusammenstellung erhältlich. Weitere Informationen auf der [VMware Hauptseite](/hersteller/vmware/) oder unter [VMware vSphere](/hersteller/vmware/vsphere/).
+
+Was ist passiert? Informationen zur VMware Übernahme in unserem Blogbeitrag [VMware by Broadcom](/blog/vmware-by-broadcom/).
+
+
+</Info>
+
+
+## vSphere Funktionsvergleich
+
+
+|Funktion/Feature|Std|Ent|Pla|Ess|EsP|Acc|AcE|Rob|RoA|
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|ESXi Hypervisor|✓|✓|✓|✓|✓|✓|✓|✓|✓|
+|vMotion Cross vSwitch|✓|✓|✓|–|✓|✓|✓|✓|✓|
+|vMotion Cross Cloud|✓|✓|✓|–|–|✓|✓|✓|✓|
+|vMotion Cross vCenter und Cross Long Distance|–|✓|✓|–|–|–|✓|–|–|
+|Storage vMotion|✓|✓|✓|–|–|✓|✓|✓|✓|
+|Content Library|✓|✓|✓|–|–|✓|✓|✓|✓|
+|Fault Tolerance|✓|✓|✓|–|–|✓|✓|✓|✓|
+|Storage API for Array Integration|✓|✓|✓|–|–|✓|✓|✓|✓|
+|Multipathing|✓|✓|✓|–|–|✓|✓|✓|✓|
+|vSphere Replication|✓|✓|✓|–|–|✓|✓|✓|✓|
+|Distributed Switch|–|✓|✓|–|–|–|✓|–|–|
+
+
+
+## ESXi Hypervisor
+
+Der **ESXi Hypervisor** ist selbstverständlich in allen vSphere Editionen und Bundles enthalten. Im Gegensatz zur kostenlosen Version des ESXi lässt sich der kostenpflichtige Hypervisor mit [vCenter Server](/hersteller/vmware/vcenter-server/) verwalten.
+
+## vMotion Cross vSwitch
+
+
+Mit **vMotion** (Hot Migration, Live Migration) lassen sich eingeschaltete virtuelle Maschinen im laufenden Betrieb auf neue Hosts verschieben. Die virtuellen Maschinen sind auch während der Migration verfügbar. Bei der Migration können neue vSwitches zugeordnet
+werden (Cross vSwitch). Siehe VMware Manual [Migration mit vMotion](https://docs.vmware.com/de/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-D19EA1CB-5222-49F9-A002-4F8692B92D63.html?hWord=N4IghgNiBcIG4FsD2AXAlkgdgAgWg5gE5jpYgC+QA) oder auch [VMware vMotion PDF](/hersteller/vmware/vmware_vmotion.pdf).
+
+
+## vMotion Cross Cloud
+
+Mit **Cross Cloud vMotion** lassen sich virtuelle Maschinen im laufenden Betrieb zwischen dem eigenen Rechenzentrum (on prem) und einer Public Cloud verschieben (Cross Cloud). Unterstützt wird beispielsweise [IBM Cloud for VMware](/hersteller/ibm/). Siehe VMware Manual [Migration mit vMotion](https://docs.vmware.com/de/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-D19EA1CB-5222-49F9-A002-4F8692B92D63.html?hWord=N4IghgNiBcIG4FsD2AXAlkgdgAgWg5gE5jpYgC+QA).
+
+## vMotion Cross vCenter und Cross Long Distance
+
+Mit **Cross vCenter vMotion** und **Cross Long Distance vMotion** lassen sich virtuelle Maschinen im laufenden Betrieb verschiedenen Rechenzentren (vCenter Server) und über Länder/Kontinente hinweg (Long Distance) verschieben. Bei Long Distance Migrationen wird round-trip time (RTT) bis zu 100ms unterstützt. Siehe VMware Manual [Migration mit vMotion](https://docs.vmware.com/de/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-D19EA1CB-5222-49F9-A002-4F8692B92D63.html?hWord=N4IghgNiBcIG4FsD2AXAlkgdgAgWg5gE5jpYgC+QA).
+
+## Storage vMotion
+
+
+Mit **Storage vMotion** lassen sich virtuelle Maschinen und virtuelle Festplatten im laufenden Betrieb auf demselben Host zwischen Datenspeichern verschieben. Beispielsweise kann so ein Storage Array im laufenden Betrieb ausgetauscht oder optimiert werden. Zuerst verschieb man die VM unterbrechungsfrei auf einen anderen Speicher. Nun kann man das Array offline nehmen und optimieren oder austauschen. Ist alles erledigt, wird die VM auf das Array zurück verschoben. Siehe VMware Manuel [Migration mit Storage vMotion](https://docs.vmware.com/de/VMware-vSphere/6.7/com.vmware.vsphere.vcenterhost.doc/GUID-AB266895-BAA4-4BF3-894E-47F99DC7B77F.html?hWord=N4IghgNiBcIM4BcD2AnMBzApgAgG4FskEBLJAOxAF8g) oder auch [VMware vMotion PDF](/hersteller/vmware/vmware_vstorage_thin_provisioning_datasheet_de.pdf), und [VMware vStorage PDF](/hersteller/vmware/vmware_vstorage_vmfs.pdf).
+
+
+## Content Library
+
+**Content Libraries** dienen der Ablage und Bereitstellung von Dateien und Dateigruppen. Einzelne Dateien sind beispielsweise Textdateien und ISO-Images. VM- und vApp-Vorlagen (Templates) sind Beispiele für Dateigruppen, die sich aus vielen einzelnen Dateien zusammensetzen. Dateigruppen werden in der Content Library als ein Element behandelt. Content Libraries lassen sich von verschiedenen vCenter Servern gemeinsam nutzen und verwalten. Siehe VMware Manual [Verwenden von Inhaltsbibliotheken](https://docs.vmware.com/de/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-254B2CE8-20A8-43F0-90E8-3F6776C2C896.html?hWord=N4IghgNiBcIMIHsB2AXApqgBAGQJYCMAnMQgTxAF8g).
+
+
+## Fault Tolerance
+
+
+Bei **Fault Tolerance (FT)** werden wichtige Workloads, beispielsweise die VM mit dem ERP System, auf zwei verschiedene Hosts verteilt. Fällt eine VM aus, übernimmt die andere. [vSphere Enterprise Plus](/hersteller/vmware/vsphere/enterprise-plus/) und [vSphere Enterprise Plus Acceleration Kit](/hersteller/vmware/vsphere/acceleration-kit/enterprise-plus/) unterstützen bis zu 8 vCPU pro fehlertoleranter VM. Alle anderen bis zu 2 vCPU. Siehe VMware Manual [Aktivieren der Fault Tolerance für virtuelle Maschinen](https://docs.vmware.com/de/VMware-vSphere/6.7/com.vmware.vsphere.avail.doc/GUID-7525F8DD-9B8F-4089-B020-BAA4AC6509D2.html).
+
+## Storage API for Array Integration
+
+vSphere stellt eine Reihe von APIs (Schnittstellen) zur Verfügung. Anbieter von Storage-Lösungen nutzen diese APIs zur Integration und Optimierung ihrer Produkte. **vSphere API for Array Integration (VAAI)** ermöglicht Speicheranbietern die Integration von [Hardwarebeschleunigung](https://docs.vmware.com/de/VMware-vSphere/6.7/com.vmware.vsphere.storage.doc/GUID-7A61B13D-7B3C-46F1-BF28-BFA4FDA53C88.html#GUID-7A61B13D-7B3C-46F1-BF28-BFA4FDA53C88) (CPU-Entlastung) und [Thin Provisioning](https://docs.vmware.com/de/VMware-vSphere/6.7/com.vmware.vsphere.storage.doc/GUID-08CBB1F0-0CF5-4783-9A12-EB3B5A2BB830.html#GUID-08CBB1F0-0CF5-4783-9A12-EB3B5A2BB830) (Speicherplatzüberwachung). Siehe VMware Manual [vSphere Storage APIs](https://docs.vmware.com/de/VMware-vSphere/6.7/com.vmware.vsphere.storage.doc/GUID-3FD5AB1E-47B3-49B5-845E-5224BE062A59.html?hWord=N4IghgNiBcIMoBcD2AnMBzApgAgIIAUBJAZ2wDNU8U0BPbQgOwU3TQQEskGQBfIA).
+
+## Multipathing
+
+**Multipathing** ermöglicht die Nutzung verschiedener physikalischer Verbindungen von der VM zum Storage. Fällt beispielsweise ein Switch, Adapter oder Kabel zum SAN aus, wird unterbrechungsfrei eine andere Verbindung genutzt. Neben Failover unterstützt Multipathing auch Lastenausgleich (Load Balancing). Siehe VMware Manual [Multipathing und Failover](https://docs.vmware.com/de/VMware-vSphere/6.7/com.vmware.vsphere.storage.doc/GUID-DD2FFAA7-796E-414C-84CE-1FCC14474D5B.html?hWord=N4IghgNiBcILYFcIBcCWAHMyAWqB2A5iAL5A).
+
+
+## vSphere Replication
+
+Mit **vSphere Replication** können virtuelle Maschinen innerhalb eines vCenter Servers und zwischen vCenter Servern repliziert werden. Das Replikationsziel kann auf demselben Host, auf einem anderen Host, in einem entfernten Rechenzentrem oder in einer Cloud liegen. Replikationen sind Kopien der Quell-VM, die vergleichbar mit einem inkrementellen Backup, über Austausch von Änderungen aktualisiert werden. Siehe VMware Manual [vSphere Replication](https://docs.vmware.com/de/vSphere-Replication/index.html).
+
+## Distributed Switch
+
+**vSphere Distributed Switch** ermöglicht die zentrale Verwaltung und Überwachung aller vSphere Hosts, die dem Switch zugeordnet sind. Distributed Switches werden im vCenter Server erstellt und konfiguriert. Anschließend werden die Einstellungen an alle Hosts verteilt. Damit lässt sich das gesamte Netzwerk eines Rechenzentrums zentral im vCenter Server verwaltet und überwachen. Siehe VMware Manual [vSphere Distributed Switch-Architektur](https://docs.vmware.com/de/VMware-vSphere/6.7/com.vmware.vsphere.networking.doc/GUID-B15C6A13-797E-4BCB-B9D9-5CBC5A60C3A6.html?hWord=N4IghgNiBcICYEsDOAXATggRgVxQUzgAIkB3BFAYwAsQBfIA).

@@ -1,0 +1,16 @@
+- key:      symantec
+  items:
+  - name:   Symantec
+    slug:   /hersteller/symantec/
+  - name: Endpoint Security (SES)
+    slug: /hersteller/symantec/endpoint-security/
+  - name: Endpoint Detection and Response
+    slug: /hersteller/symantec/endpoint-detection-response/
+  - name: Endpoint Protection (SEP)
+    slug: /hersteller/symantec/endpoint-protection-14/
+  - name: Endpoint Protection Small Business Edition (SEP SBE)
+    slug: /hersteller/symantec/endpoint-protection-14/small-business-edition/
+  - name: Protection Suite Enterprise
+    slug: /hersteller/symantec/protection-suite-enterprise/
+  - name: Desktop Email Encryption
+    slug: /hersteller/symantec/desktop-email-encryption/

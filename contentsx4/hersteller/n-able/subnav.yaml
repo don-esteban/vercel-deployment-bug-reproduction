@@ -1,0 +1,10 @@
+- key:      n-able
+  items:
+  - name:   N-able
+    slug:   /hersteller/n-able/
+  - name:   N-sight (RMM)
+    slug:   /hersteller/n-able/n-sight/
+  - name:   N-central (RMM)
+    slug:   /hersteller/n-able/n-central/
+  - name:   Cove Data Protection (Backup)
+    slug:   /hersteller/n-able/backup/

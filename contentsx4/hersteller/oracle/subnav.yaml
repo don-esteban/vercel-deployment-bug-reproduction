@@ -1,0 +1,12 @@
+- key:      oracle
+  items:
+  - name:   Oracle
+    slug:   /hersteller/oracle/
+  - name:   Database Standard
+    slug:   /hersteller/oracle/database-standard-edition/
+  - name:   Database Enterprise
+    slug:   /hersteller/oracle/database-enterprise-edition/
+  - name:   Database Personal
+    slug:   /hersteller/oracle/database-personal-edition/
+  - name:   Dienstleistungen
+    slug:   /hersteller/oracle/dienstleistungen/

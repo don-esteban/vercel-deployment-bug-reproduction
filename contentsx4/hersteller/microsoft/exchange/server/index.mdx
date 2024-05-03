@@ -1,0 +1,106 @@
+---
+title: Exchange Server vNext 2021/2022/2025
+bcTitle: Exchange Server vNext
+bkey: microsoft
+ckey: stefan-barth
+date: 2023-02-17
+wanted:
+  features:
+    - name: Der neue Exchange Server erscheint voraussichtlich erst 2025
+    - name: Exchange 2019 läuft jetzt auch unter Windows Server 2022
+furtherReading:
+  - name: Microsoft Exchange Roadmap (Juni 2022)
+    slug: https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-roadmap-update/ba-p/3421389
+---
+
+
+
+<Intro>
+
+Ursprünglich sollte der Exchange Server 2019 Nachfolger im 2. Halbjahr 2022 veröffentlicht werden. Microsoft hat mittlerweile den Release auf das zweite Halbjahr 2025 verschoben.
+
+Mit der nächsten Version Exchange 2025 wechselt Microsoft auf den Modern Lifecycle und führt wahrscheinlich eine Abonnement-Lizenzierung ein, ähnlich wie schon bei SharePoint und Project.
+Ob es eine Exchange Server 2025 Kauflizenz geben wird ist noch nicht bekannt.
+
+
+</Intro>
+
+<TOC />
+
+
+## Updates für den Exchange 2019
+
+Der aktuelle [Exchange Server 2019](/hersteller/microsoft/exchange/) unterstützt seit dem 2022H1 Upgrade nun endlich auch Installationen unter [Windows Server 2022](/hersteller/microsoft/windows-server/). Diese Funktion war eigentlich erst für die neue Exchange Server Version vorgesehen.
+
+
+
+## Neuerungen und Änderungen mit dem Exchange Server vNext
+
+Die wichtigste Änderung, [laut der Ankündigung von Microsoft](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-news-and-announcements-microsoft-ignite-2020-edition/ba-p/1662224), ist die Verabschiedung des Lizenzmodells mit Kauflizenzen.
+Den Exchange Server 2025 wird es nur noch als Subscription geben, CALs werden aber weiterhin benötigt. Vermutlich wird analog zur [SharePoint Server Subscription Edition](/hersteller/microsoft/sharepoint/server-subscription-edition/) und [Project Server Subscription Edition](/hersteller/microsoft/project/server-subscription-edition/) lizenziert.
+
+Das Abo-Modell wird wahrscheinlich im [CSP](/hersteller/microsoft/csp/) und als Volumenlizenz im [Open Value](/hersteller/microsoft/open-value/) zur Verfügung stehen.
+Die neue Microsoft Exchange Server Subscription ersetzt das bislang geltende Lizenzmodell. Der Umstieg bzw. das Upgrade von der Kauflizenz zur Mietlizenz, sollen problemlos möglich sein. Sobald es Informationen zum Upgrade-Prozess gibt, finden Sie diese hier.
+
+
+### Upgrades auf Exchange Server vNext
+
+Die nächste Version von Exchange Server unterstützt direkte Upgrades von Exchange Server 2019 für einen Zeitraum von ungefähr zwei Jahren nach deren Veröffentlichung. Mit dieser Funktion kann der Administrator vorhandene Server, auf denen Exchange Server 2019 ausgeführt wird, problemlos auf die abonnementbasierte Codebasis aktualisieren, ohne Server hinzufügen oder Postfächer verschieben zu müssen.
+
+Es wird weiterhin die Bereitstellung und Migration von früheren Versionen von Exchange nebeneinander unterstützt, so wie dies bereits in den letzten Versionen der Fall war. Jedoch wurde die Anzahl der Versionen erhöht, neben denen Exchange Server installiert werden kann. Das bedeutet, dass Kunden mit Exchange Server 2013, 2016 oder 2019 die nächste Version von Exchange Server in ihrer vorhandenen Exchange-Organisation installieren können.
+
+Microsoft empfiehlt dennoch Kunden, bei denen noch Exchange Server 2013-, oder 2016 Bereitstellungen vorhanden sind und auf lokale Server setzen, bereits heute mit der Planung sowie Installation von Exchange Server 2019 zu beginnen um mit Release der neuen Version direkt Upgraden bzw. Updaten zu können.
+
+
+### Modernes Exchange Admin Center ab sofort verfügbar
+
+Exchange-Administratoren können sich bereits heute für das neue Exchange Admin Center anmelden, indem Sie einfach ein neues Kippschalter-Steuerelement in der oberen rechten Ecke des alten Exchange-Verwaltungscenters verwenden. Das neue Admin Center wird dann auf derselben Browser-Registerkarte angezeigt und wurde dem Microsoft 365 Verwaltungsportal angepasst.
+
+
+### Zertifikatsbasierte Authentifizierung für Exchange Online PowerShell V2
+
+Microsoft stellt die zertifikatbasierte Authentifizierung für das Exchange Online PowerShell V2-Modul ab sofort zur Verfügung. Diese Funktion ermöglicht das Ausführen unbeaufsichtigter Skripts, ohne auf die Standardauthentifizierung zurückgreifen zu müssen. Die zertifikatbasierte Authentifizierung bietet Administratoren die Möglichkeit, Skripts auszuführen, ohne dass Dienstkonten erstellt oder Anmeldeinformationen lokal gespeichert werden müssen. Weitere Informationen finden Sie in den Microsoft Docs [App-only authentication for unattended scripts in the EXO V2 module](https://learn.microsoft.com/en-us/powershell/exchange/app-only-auth-powershell-v2?view=exchange-ps).
+
+### Plus-Adressierung in Exchange Online
+
+Die sogenannte Plus Addressing zu Exchange Online steht ab sofort zur Verfügung. Dadurch soll verhindert werden, dass E-Mail Adressen missbraucht werden. Die Funktion erleichtert es Endbenutzern, sich mit einer eindeutigen E-Mail-Adresse für E-Mail-Listen anzumelden. Dies macht es dann einfach, Regeln zu erstellen und zu erkennen, wo Adressen durchgesickert sind.
+
+
+## Exchange Server 2022 Editionen
+
+Bislang ist noch nichts über die neuen Editionen und Abonnement-Lizenzierung bekannt. Den Exchange Server 2019 gibt es in den Editionen Standard (bis 5 Postfachdatenbanken) und Enterprise (unlimitierte Postfachdatenbanken).
+Die Funktionalität richtet sich nach der Edition der CAL (Standard oder Enterprise):
+
+<ArrowList>
+
+ - [Exchange Server Standard 2019](/hersteller/microsoft/exchange/server-standard-2019/)
+ - [Exchange Server Enterprise 2019](/hersteller/microsoft/exchange/server-enterprise-2019/)
+ - [Exchange Server Standard CAL 2019](/hersteller/microsoft/exchange/server-standard-cal/)
+ - [Exchange Server Enterprise CAL 2019](/hersteller/microsoft/exchange/server-enterprise-cal/)
+
+</ArrowList>
+
+## Alternative: Exchange Pläne
+
+Microsoft Exchange ist auch als Microsoft 365 Cloud Service verfügbar. Hier erhalten Sie immer die Version mit den neuesten Updates.
+
+<ArrowList>
+
+ - [Exchange Online Plan 1](/hersteller/microsoft/exchange/online-plan-1/)<br />
+  Der Plan 1 enthält E-Mail, Kontakte, Aufgabenverwaltung und Kalender. Mit 50 GB großen Postfächern und bis zu 150 MB großen E-Mails genügt der Plan 1 den meisten Anforderungen kleinerer und mittlerer Organisationen.
+ - [Exchange Online Plan 2](/hersteller/microsoft/exchange/online-plan-2/)<br />
+  Exchange Online ist Microsofts E-Mail Dienst aus der Cloud. Der Plan 2 enthält alles aus dem [Plan 1](/hersteller/microsoft/exchange/online-plan-1/), ein doppelt so großes Postfach, unlimitierten Archivierungsspeicher, Unified Messaging und DLP.
+ - [Exchange Online Archiving](/hersteller/microsoft/exchange/online-archiving/)<br />
+  Microsofts Archivierungslösung für Office 365 Exchange Online und für On-Premises [Exchange Server 2019](/hersteller/microsoft/exchange/)
+ - [Exchange Online Kiosk Plan](/hersteller/microsoft/exchange/online-kiosk/)<br />
+  Bietet die E-Mail Funktionalität aus der Cloud in einem günstigen und eingeschränkten Plan, für Mitarbeiter ohne fest zugewiesenen Arbeitsplatz (Kiosk-Worker). Enthalten sind hier ausschließlich die E-Mail Dienste, auf die über den Browser via OWA (Outlook Web Access) zugegriffen werden kann.
+
+</ArrowList>
+
+
+<GetInTouch theme="light">
+
+Sie haben weitere Fragen zum Produkt oder zur Lizenzierung?<br />
+Kein Problem. Rufen Sie an oder schreiben Sie eine E-Mail. Ich berate Sie gerne.
+
+</GetInTouch>

@@ -1,0 +1,162 @@
+---
+title: Microsoft Cloud App Security (Microsoft Defender for Cloud Apps)
+bcTitle: Cloud App Security
+bkey: microsoft
+ckey: stefan-barth
+date: 2023-04-14
+wanted:
+  features:
+    - name: SaaS-Sicherheits-Lösung mit tiefer Einsicht, starken Datenkontrollen und erweitertem Bedrohungsschutz
+    - name: Bestandteil der Microsoft Defender for Cloud Apps
+    - name: Lizenzierung als Abonnement über CSP
+furtherReading:
+  - name: Microsoft Defender Vergleich mit Cloud App Security (Microsoft)
+    slug: https://learn.microsoft.com/de-de/defender-cloud-apps/editions-cloud-app-security-o365
+---
+
+
+
+<Intro>
+
+Microsoft Cloud App Security (MCAS) ist eine umfassende SaaS-Sicherheits-Lösung, die tiefe Sichtbarkeit, starke Datenkontrollen und erweiterten Bedrohungsschutz für Ihre Cloud-Apps bietet.
+Der Cloud Access Security Broker (CASB) lässt sich einfach mit Microsoft 365 und Azure verwenden oder auch mit Lösungen anderer Dritt-Anbieter kombinieren.
+
+Cloud App Security ist Teil der Microsoft Defender for Cloud Apps. Einen Vergleich der beiden Editionen finden Sie unten.
+
+</Intro>
+
+<TOC />
+
+
+## Preise für Unternehmen
+
+<Products bkey="microsoft" tags={["cloud-app-security", "csp"]}/>
+
+
+## Preise für Bildungseinrichtungen
+
+<Products bkey="microsoft" tags={["cloud-app-security", "csp-edu"]}/>
+
+
+## Preise für gemeinnützige Organisationen
+
+<Products bkey="microsoft" tags={["cloud-app-security", "csp-charity"]}/>
+
+
+## Cloud App Security in Microsoft 365 Plänen
+
+Cloud App Security ist in den folgenden Plänen enthalten:
+
+<ArrowList>
+
+  - [Enterprise Mobility + Security E5](/hersteller/microsoft/enterprise-mobility-security/e5/)
+  - [Microsoft 365 E5 Security](/hersteller/microsoft/microsoft-365/add-ons/e5-security/)
+  - [Microsoft 365 E5 Compliance](/hersteller/microsoft/microsoft-365/add-ons/e5-compliance/)
+  - [Microsoft 365 Education A3](/hersteller/microsoft/microsoft-365/education-a3/)
+  - [Microsoft 365 Education A5](/hersteller/microsoft/microsoft-365/education-a5/)
+  - [Office 365 Education E5](/hersteller/microsoft/office-365/enterprise-e5/) (Office 365 only)
+
+</ArrowList>
+
+
+## Lizenzüberblick
+
+<ArrowList>
+
+- **Standalone** Produkt. Es wird kein [Office 365](/hersteller/microsoft/office-365/) / [Microsoft 365](/hersteller/microsoft/microsoft-365/) Plan benötigt.
+- [Kompatibel mit weiteren Lösungen](#weitere-einsatzgebiete-und-integrationsmöglichkeiten).
+- Nach Nutzern lizenziert.
+- Als monatliche oder jährliche Subscription (Abonnement) über [CSP](/hersteller/microsoft/csp/) verfügbar.
+
+</ArrowList>
+
+Es gibt 2 Versionen:
+
+<ArrowList>
+
+- Für Lehrkräfte und Mitarbeiter von Bildungseinrichtungen (Faculty)
+- Für Schüler und Studenten (Students)
+
+</ArrowList>
+
+## Funktionen
+
+Nutzen Sie Microsoft Cloud App Security mit [Microsoft 365](/hersteller/microsoft/microsoft-365/), [Office 365](/hersteller/microsoft/office-365/), [Intune](/hersteller/microsoft/intune/) oder [Azure AD](/hersteller/microsoft/azure/active-directory/).
+
+Mehr Informationen zu den Funktionen finden Sie in der [Cloud App Security Dokumentation](https://learn.microsoft.com/de-de/defender-cloud-apps/what-is-defender-for-cloud-apps) oder auf der [Microsoft Cloud App Security Seite](https://www.microsoft.com/de-de/security/siem-and-xdr/microsoft-defender-cloud-apps).
+
+<ArrowList>
+
+- **Cloud Discovery**<br />
+  Cloud Discovery verwendet Ihre Datenverkehrsprotokolle, um die in Ihrer Organisation verwendeten Cloud-Apps dynamisch zu ermitteln und zu analysieren. Sie können Protokolldateien Ihrer Firewalls oder Proxys manuell zur Analyse hochladen, um einen Momentaufnahmebericht der Cloudnutzung in Ihrer Organisation zu erstellen. Verwenden Sie zum Einrichten kontinuierlicher Berichte Protokollsammler von Cloud App Security, um Ihre Protokolle regelmäßig weiterzuleiten.
+- **Sanktionieren einer App und Aufheben der Sanktionierung**<br />
+  Sie können Cloud App Security verwenden, um Apps in Ihrer Organisation mithilfe des Microsoft Cloud-App-Katalogs zu sanktionieren bzw. deren Sanktionierung aufzuheben.
+- **App-Connectors**<br />
+  App-Connectors verwenden APIs von Anbietern von Cloud-Apps, um die Cloud App Security-Cloud in andere Cloud-Apps zu integrieren. App-Connectors erweitern Kontrolle und Schutz. Cloud App Security kann Richtlinien durchsetzen, Bedrohungen erkennen, und Governanceaktionen zur Problembehebung bereitstellen. Cloud App Security verwendet die vom Cloud-Anbieter bereitgestellten APIs. Jede Anwendung hat ihr eigenes Framework und eigene API-Einschränkungen.
+- **Erkennung und Reaktion auf fortgeschrittene Angriffe am Endpunkt**<br />
+  Endpoint Detection and Response (EDR) überwacht Verhaltensweisen und Angriffstechniken, um erweiterte Angriffe in Echtzeit zu erkennen und abzuwehren. Neben Verhaltensweisen (z. B. das Anlegen von Dateien und Prozessen) werden auch Netzwerkverbindungen aufgezeichnet. Darüber hinaus können Sie Angriffe proaktiv suchen und Vorfälle basierend auf den Daten der letzten sechs Monate untersuchen.
+- **Automatische Untersuchung und Beseitigung von Bedrohungen**<br />
+  AutoIR nutzt künstliche Intelligenz, um automatisch Warnungen zu untersuchen und komplexe Bedrohungen in wenigen Minuten zu beseitigen. Die Technologie simuliert die Arbeitsschritte von Analysten, damit Sicherheitsteams Zeit sparen und sich auf größere Bedrohungen konzentrieren können.
+- **Verwalteter Threat-Hunting-Service**<br />
+  Microsoft-Bedrohungsexperten sind das Rückgrat eines verwalteten Threat-Hunting-Service. Mit fachkundiger Überwachung und Unterstützung helfen sie Ihren Sicherheitsteams, auf kritische Bedrohungen in Ihrer Umgebung zu reagieren.
+- **Schutz vor dateiloser Bedrohung**<br />
+  Durch AMSI, Verhaltensüberwachung, Speicherscans und Bootsektorschutz kann Microsoft Defender ATP dateilosen Bedrohungen auf den Grund gehen – auch bei raffinierten Verschleierungstechniken. Durch Machine Learning-Technologien in der Cloud können wir diese Erkenntnisse flächendeckend anwenden, um neu aufkommende Bedrohungen zu bekämpfen.
+
+</ArrowList>
+
+### Weitere Einsatzgebiete und Integrationsmöglichkeiten
+
+Microsoft Cloud App Security sammelt nicht nur Daten aus [Microsoft 365](/hersteller/microsoft/microsoft-365/) oder [Azure](/hersteller/microsoft/azure/). Cloud App Security lässt sich auch mit folgenden Dritt-Anbietern kombinieren:
+
+<ArrowList>
+
+- [DocuSign](/hersteller/docusign/)
+- Box
+- AWS
+- Dropbox
+- Salesforce
+- ServiceNow
+- Workday
+- Jira
+- uvm.
+
+</ArrowList>
+
+## Vergleich Cloud App Security - Defender for Cloud Apps
+
+
+|Feature|Cloud App Security|Defender for Cloud Apps|
+|:---|:---:|:---:|
+|**Cloud Discovery**|||
+|Ermittelte Apps|250.000+|750+|
+|Bereitstellung zur Ermittlungsanalyse|Manueller Upload|Manueller Protokollupload|
+|Protokollanonymisierung|✓|–|
+|Vollständiger App-Katalog|✓|–|
+|Risikobewertung für Cloud Apps|✓|–|
+|Analyse der Cloud-Nutzung|✓|–|
+|Fortlaufende Analyseberitchte|✓|–|
+|Anomalieerkennung für erkannte Apps|✓|–|
+|**Datenschutz**|||
+|Data Loss Prevention (DLP)|✓|✓|
+|Office 365 DLP|✓|✓|
+|DLP für Drittanbieter|✓|–|
+|Berechtigungen für Apps|✓|✓|
+|Richtlinien|✓|–|
+|Integration in Azure Information Protection (AIP)|✓|–|
+|Integration in DLP-Lösungen von Drittanbietern|✓|–|
+|**Bedrohungserkennung**|||
+|Anomalieerkennung und Verhaltensanalyse|✓|Nur Office 365|
+|Korrekturmaßnahmen bei Warnungen|✓|✓|
+|SIEM-Connector|✓|Nur Office 365|
+|Integration in Microsoft Intelligent Security Graph|✓|✓|
+|Aktivitätsrichtilinien|✓|✓|
+|App Steuerung für bedingten Zugriff|Cloud+lokal|Nur Office 365|
+|Cloudplattformsicherheit|Azure/AWS/GCP|Nur Azure|
+
+
+<GetInTouch theme="light">
+
+Sie haben Fragen zu Microsoft 365 oder möchten ein Angebot? Ich helfe Ihnen gerne weiter.<br />
+Rufen Sie mich an oder schreiben Sie eine E-Mail. Ich berate Sie gerne.
+
+</GetInTouch>

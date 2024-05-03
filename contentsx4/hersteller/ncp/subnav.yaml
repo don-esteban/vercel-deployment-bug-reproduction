@@ -1,0 +1,10 @@
+- key:      ncp
+  items:
+  - name:   NCP
+    slug:   /hersteller/ncp/
+  - name:   NCP Secure Entry Windows Client
+    slug:   /hersteller/ncp/windows/
+  - name:   NCP Secure Entry MAC Client
+    slug:   /hersteller/ncp/mac/
+  - name:   NCP Secure Android Client
+    slug:   /hersteller/ncp/android/

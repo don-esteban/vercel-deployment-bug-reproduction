@@ -1,0 +1,213 @@
+---
+title: Veeam Kauf und Lizenzierung
+bcTitle: Lizenzierung
+seoTitle: Veeam Übersicht zu Lizenzierung, Migration und Upgrades
+bkey: veeam
+ckey: timon-heidensohn
+date: 2023-03-27
+tocMaxLevel: 2
+wanted:
+  title: Veeam Kauf und Lizenzierung
+  features:
+    - name: So lizenzieren und kaufen Sie Veeam Data Platform, Veeam Backup und Veeam ONE.
+    - name: Veeam Universal License und Socket Subscription License
+furtherReading:
+    - name: Veeam Lizenzierung
+      slug: /hersteller/veeam/lizenzierung/
+      description: Unsere Übersichtsseite zu Lizenzierung, Migration und Upgrades
+    - name: Lizenzbestimmungen - PDF
+      slug: /hersteller/veeam/veeam_licensing_policy.pdf
+      description: Veeams ausführliche Lizenzbestimmungen
+    - name: Veeam Data Platform - PDF
+      slug: /hersteller/veeam/veeam_data_platform_feature_comparison.pdf
+    - name: Veeam Backup V12 - Release Notes - PDF
+      slug: /hersteller/veeam/veeam_backup_12_release_notes.pdf
+    - name: Veeam Product Lifecycle (externer Link)
+      description: Welche Produktversionen werden wie lange unterstützt? Eine immer aktuelle Übersicht
+      slug: https://www.veeam.com/de/product-lifecycle.html
+---
+
+
+<Intro>
+
+  Auf dieser Seite erfahren Sie Wissenswertes über Kauf und Lizenzierung von Veeam Produkten und Migration/Upgrades vorhandener Lizenzen.
+
+</Intro>
+
+<TOC />
+
+
+
+## Lizenzarten
+
+Neulizenzen sind als [Veeam Universal License (VUL)](#veeam-universal-license-vul) (kurz: *Universal License*. Perpetual or Subscription) und [Socket Subscription License](#socket-subscription-license-ssl) (kurz: *Socket License*. Subscription only) erhältlich.
+Nachfolgend finden Sie weitere Informationen zu beiden Lizenzarten.
+
+### Veeam Universal License (VUL)
+
+<ArrowList>
+
+- Erhältlich als Subscription oder perpetual License (bei VDP Premium nur Subscription)
+- Lizenziert wird nach der Anzahl der [Workloads (Instanzen)](#tabelle-instances)
+- Mindestlizenzierung: Packs á 10 Lizenzen (bei Essentials: 5)
+- Universal License ist flexibel und kann zwischen verschiedenen Workloads und Standorten übertragen werden (portable).
+- Als *Workload* versteht Veeam eine VM, einen physischen Server, eine Cloud-VM oder eine Enterprise Applikation, die gesichert wird.
+- Laufzeit beträgt ein bis fünf Jahre. Mit Ende der Laufzeit endet das Nutzungsrecht. <br />
+  Ein Angebot über mehrjährige Subscriptions erstelle ich Ihnen gerne auf Anfrage.
+
+</ArrowList>
+
+Zusammenfassung: <br />
+Die portable VUL-Lizenz ist die flexibelste Option für jede Umgebung.
+Sie umfasst Lizenzen für On-Premises, Hybrid- oder Multi-Cloud-Bereitstellungen, einschließlich umfangreiche Funktionen für alle Workload-Typen, wie VMware, AWS, Azure, Google Cloud, Windows und einige mehr.
+Wer flexibel und auf der sicheren Seite sein möchte, dem wird eine Migration bestehender Lizenzen auf VUL empfohlen.
+
+
+### Socket Subscription License (SSL)
+
+<ArrowList>
+
+- Ausschließlich als Subscription erhältlich
+- Laufzeiten jeweils ein Jahr
+- Lizenzierung pro CPU-Sockel
+
+</ArrowList>
+
+
+## Veeam License Upgrades
+
+<ArrowList>
+
+Grundsätzlich gilt:
+
+- Nur Kunden mit laufenden Support- und Wartungsverträgen haben Anspruch auf Upgrades.
+- Upgrades können gebührenpflichtig sein, auch wenn der Kunde ein Upgrade auf eine Version wünscht, zu der er bereits berechtigt war.
+- Product Edition Upgrades werden nur für unbefristete Lizenzen angeboten und können eine Upgrade SKU erfordern.
+
+</ArrowList>
+
+
+### Upgrade auf Universal License
+
+  Für Kunden mit Veeam Backup Standard, Enterprise und Enterprise Plus Editionen bietet Veeam die Möglichkeit ein Upgrade auf die jeweilige Universal License durchzuführen.
+
+  Die Upgrade Preise werden von Veeam individuell berechnet, daher erhalten Sie die Preise auf Anfrage. Für die Anfrage wird ein [Backup Server Logfile](#backup-server-logfile) benötigt. Bei Fragen stehe ich Ihnen selbstverständlich gerne zur Verfügung.
+
+
+### Upgrade auf Socket Subscription License
+
+  Seit 2023 gibt es zusätzlich die Möglichkeit eines UPGRADES auf ["Socket Subscription License"](#socket-subscription-license-ssl).
+  Diese Lizenz ist ausschließlich als Subscription verfügbar.
+  Kunden, welche sockelbasierte Kauflizenzen im Einsatz haben, müssen diese Lizenzen erst upgraden um Veeam Socket Subscription Licenses einsetzen zu dürfen.
+  Bei Fragen stehe ich Ihnen selbstverständlich gerne zur Verfügung.
+
+
+
+## Migration von sockelbasierter Lizenzierung
+
+
+<ArrowList>
+
+Betrifft Veeam Availability Suite, Backup & Replication, Backup Essentials und Veeam ONE:
+
+- Kunden mit einem "aktiven" Support- und Wartungsvertrag wird empfohlen, ihre ("alte") per Socket Lizenz(en) auf eine [Veeam Universal License (VUL)](#veeam-universal-license-vul) zu migrieren, um zusätzliche Funktionalität und Flexibilität zu erhalten.
+- Kunden können entweder Migrationsangebote zu [Veeam VUL](#veeam-universal-license-vul) oder [Socket Subscription License](#socket-subscription-license-ssl) bei mir anfragen.
+- Wartungsverlängerungen der sockelbasierten Kauflizenzen werden weiterhin angeboten. 
+- Die sockelbasierte Lizenzierung der *Kauflizenzen* ist seit Juli 2022 (siehe [Historie](#lizenzierung-historie)) nicht mehr erhältlich.
+
+</ArrowList>
+
+
+
+
+## Veeam Lizenzvergleich
+
+|Lizenzen|[Veeam Universal License (VUL)](#veeam-universal-license-vul) |[Socket Subscription License (SSL)](#socket-subscription-license-ssl)|
+|:---|:---:|:---:|
+|*ENVIRONMENTS*||
+|On-Prem|✓|✓|
+|Cloud und Hybrid|✓|–|
+|*VIRTUAL MACHINES (VMs)*|
+|VMware, Hyper-V|✓|✓|
+|Nutanix, Red Hat Virtualization|✓|–|
+|*Server/Workstations*||
+|Windows, Linux, MacOS, Solaris, IBM AIX|✓|–|
+|*Sonstiges*||
+|Unternehmensanwendungen MS, Oracle, SAP, weitere|✓|–|
+|Backup & Restore unter AWS, Azure, Google Cloud|✓|–|
+|NAS File Shares|✓|–|
+|weitere Agenten|✓|–|
+|*LIZENZIERUNG*|||
+|Subscription|✓|✓|
+|Perpetual|✓|–|
+|Portabilität|✓|–|
+|Basis|per Workload|per Socket|
+|Management|zentral|verteilt|
+|Lizenzpaket|5-10 Lizenzen|2-6 Sockets|
+
+
+## Tabelle Instances
+
+Was gilt als Workload und was als Instanz? Wie wird gerechnet? Hier eine Übersicht:
+
+|Workload Type|Licensed Object(s)|Instance|
+|:---|:---:|:---:|
+|VM or Cloud VM|1|1|
+|Server or Application Server|1|1|
+|Enterprise Application	|1	|1|
+|Workstation	|3	|1|
+|NAS	|500 GB	|1|
+
+
+##### Backup Server Logfile
+
+Um ein Angebot für ein Upgrade zu erhalten, benötigen wir Backup Server Logfile. Normalerweise finden Sie dies unter _C:\ProgramData\Veeam\Backup\Utils\VMC.log_
+
+Kritische Informationen wie IPs und Hostnamen werden nicht benötigt. Die für das Veeam Upgrade relevanten Sektionen sind:
+  - VEEAM SERVER CONFIGURATION
+  - LICENSE INFORMATION
+  - VEEAM INFRASTRUCTURE COUNTS (Hier finden Sie die Gesamtzahl der VMs)
+  - VMWARE INFRASTRUCTURE COUNTS
+  - HYPER-V INFRASTRUCTURE COUNTS
+  - INFRASTRUCTURE HOST DETAILS
+
+
+## Lizenzierung Historie
+
+#### Veeam Data Platform APRIL 2023
+
+  Die neue VDP vereint Veeam Universal License (VUL) und Socket License.
+
+#### Neue Socket Subscription License in 2023
+
+  Seit Anfang 2023 wird eine nach CPU-Sockel basierte Lizenzierung als Subscription angeboten: "Socket-Subscription License".
+  Anders als bei der Perpetual Socket-Lizenzierung gibt es bei den Socket-Subscription-Lizenzen weder mehrere Editionen oder Basic Support Optionen.
+  Alle Socket-Subscription-Lizenzen beinhalten *Enterprise Plus*-Funktionen und kommen mit *Production-Support*.
+
+  Kunden der Editionen *Standard, Enterprise* und *Enterprise Plus* müssen auf diese UPGRADEN, sofern weitere Sockel benötigt werden.
+  Mehr dazu unter [Veeam License Upgrades](/hersteller/veeam/lizenzierung/#veeam-license-upgrades).
+
+
+Veeam bietet wieder eine Lizenzierung nach Prozessor-Sockeln ([Socket Subscription License](#socket-subscription-license-ssl)) an.
+Diese Lizenzen sind ausschließlich als Subscription verfügbar.
+
+[Veeam Universal License (VUL)](#veeam-universal-license-vul) ist neben der Subscription auch als Dauerlizenz (perpetual) verfügbar.
+Lizenziert wird hier wie bei den Subscriptions nach der Anzahl an Workloads (Instanzen).
+
+
+#### Ende der sockelbasierten Lizenzierung seit Juli 2022
+
+  Seit Juli 2022 ist die sockelbasierte Lizenzierung für dauerhafte Veeam [Availability Suite](/hersteller/veeam/availability-suite/), [Backup & Replication](/hersteller/veeam/backup-replication/) und [Backup Essentials](/hersteller/veeam/backup-essentials/) Lizenzen nicht mehr erhältlich.
+  Damit entfallen die Editionen mit Neulizenzen und Lizenzerweiterungen (Standard, Enterprise, Enterprise Plus), Renewals bestehender Lizenzen sind weiterhin möglich.
+
+  Ein [Upgrade auf Veeam Universal License (VUL)](#veeam-universal-license-vul) oder [Veeam Socket Subscription License](#socket-subscription-license-ssl) ist daher für eine Lizenzerweiterung nötig.
+
+
+#### Lizenzierung seit 2021
+
+  Veeam ändert die Lizenzierung der Standard und Enterprise Editionen.
+  Seit dem 1.1.2021 ist die sockelbasierte Lizenzierung abgeschafft.
+  Die Universal Licenses ist neben der Subscription auch als dauerhafte Lizenz (perpetual) verfügbar.
+  Lizenziert wird hier wie bei den Subscriptions nach der Anzahl an Workloads (Instanzen).
+
+  Einen Überblick der Änderungen finden Sie unserer [News zu den Änderungen an der Veeam Lizenzierung](/blog/neue-veeam-lizenzierung/).

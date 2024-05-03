@@ -1,0 +1,132 @@
+---
+title: Microsoft Lizenzierung im Überblick
+bcTitle: Lizenzierung
+seoTitle: "Microsoft Lizenzierung und Lizenzierungsmodelle"
+bkey: microsoft
+ckey: stefan-barth
+date: 2023-02-17
+tocMaxLevel: 2
+wanted:
+  features:
+    - name: Übersicht der Lizenzierungsmöglichkeiten für Microsoft Software
+    - name: Unterschiede bei Beschaffung und Lizenzierung
+furtherReading:
+  - name: Microsoft Licensing Guide
+    slug: https://www.microsoft.com/licensing/docs/view/licensing-programs?filter=program+comparisons
+    description: Der Microsoft Licensing Guide (englisch) mit Informationen zur Lizenzierung von Produkten und Services.
+  - name: Microsoft Supportende
+    slug: /hersteller/microsoft/supportende-eol/#exchange-server
+    description: Informationen zum Lebenszyklus und Daten zum Supportende für alle Microsoft Produkte.
+---
+
+
+
+<Intro>
+
+ Die Lizenzierung bei Microsoft wird über die Jahre immer komplexer und unübersichtlicher. Microsoft Lizenzen wurden lange ausschließlich nach dem Server-/ CAL-Modell lizenziert. Mittlerweile sind mit Core-Lizenzierung und Cloud-Abonnements weitere Lizenzmodelle hinzugekommen.
+ Hier finden Sie einen Überblick der verschiedenen Lizenzierungsmodelle. Die Informationen richten sich hauptsächlich an IT-Einkäufer.
+
+
+</Intro>
+
+<TOC />
+
+
+## Lizenzmodelle
+
+### Cloud-Lizenzierung
+
+Die Lizenzierung von [Microsoft 365](/hersteller/microsoft/microsoft-365/) Cloud-Abonnements erfolgt nach Benutzern. Microsoft nennt das [User Subscription License (USL)](/hersteller/microsoft/office-365/lizenzierung/).
+USL sind in den Lizenzprogrammen [CSP](/hersteller/microsoft/csp/) und [Open Value](/hersteller/microsoft/open-value/) verfügbar. Die Laufzeit beträgt normalerweise ein Jahr. Es sind aber auch monatliche oder dreijährige Abonnements möglich.
+Die Lizenzen enthalten zusätzliche Rechte und Support während der Laufzeit. Auf der Microsoft Seite finden Sie eine [Übersicht der Produkte mit USL Lizenzierung.](https://www.microsoft.com/de-de/licensing/product-licensing/microsoft-365)
+
+Siehe auch: [Microsoft 365 Lizenzierung](/hersteller/microsoft/office-365/lizenzierung/)
+
+
+### Prozessorkern-Lizenzierung
+
+Die Prozessorkern-Lizenzierung (Core-Lizenzierung) ist ursprünglich nur für [SQL-Server](/hersteller/microsoft/sql-server/) verfügbar. Bei der Lizenzierung nach Kernen wird für jeden physischen oder virtuellen Prozessorkern eine Lizenz benötigt, mindestens jedoch vier Kerne pro Prozessor beim SQL Server.
+Die Zugriffe auf den Server müssen dann nicht mehr einzeln lizenziert werden. Auf der Seite zu [SQL Server](/hersteller/microsoft/sql-server/lizenzierung/) finden Sie eine ausführliche Erklärung der Lizenzierungsart. Lesen Sie auch unseren Beitrag [Häufige Fragen zur Lizenzierung von Microsoft SQL Server](/blog/sql-server-lizenzierung-faq/).
+
+Der [Windows Server](/hersteller/microsoft/windows-server/) wird zwar ebenfalls nach Prozessorkernen lizenziert, benötigt aber zusätzlich CALs und ist daher eine spezielle Form der Serverlizenz.
+
+Siehe auch: [Windows Server Lizenzierung](/hersteller/microsoft/windows-server/lizenzierung/) und [SQL Server Lizenzierung](/hersteller/microsoft/sql-server/lizenzierung/)
+
+
+### Server-/CAL-Lizenzierung
+
+ Bei der Server/-CAL-Lizenzierung benötigen Sie eine Lizenz für jede Serverinstanz. Zugriffe auf den Server benötigen eine Zugriffslizenz (CAL - Client Access License) oder External Connector Lizenz.
+ Nicht authentifizierte externe Benutzer, d.h. Benutzer die im Active Directory unbekannt sind, benötigen keine Zugriffslizenz.
+
+
+<ArrowList>
+
+- Serverlizenz:<br/>
+ Jede physische oder virtuelle Betriebssystem-Instanz, muss mit einer Serverlizenz lizenziert werden. Prozessorkerne spielen normalerweise keine Rolle (u.a. [Exchange Server](/hersteller/microsoft/exchange/), [SharePoint Server](/hersteller/microsoft/sharepoint/)).
+ Außnahme ist der Windows Server. Hier wird die Anzahl der Prozessoren lizenziert.
+
+- Zugriffslizenzen (CALs):<br />
+ Jeder Benutzer und jedes Gerät, das auf einen Server zugreift benötigt eine Client-Zugriffslizenz (CAL). CALs werden entweder nach Benutzern ([User CAL](/glossar/user-cal-microsoft/)), oder nach Geräten ([Device CAL](/glossar/device-cal-microsoft/)) für den jeweiligen Server lizenziert. Microsoft [CAL Suites](/hersteller/microsoft/cal-suite/) enthalten CALs für mehrere Microsoft Server.
+
+ - External Connector:<br />
+ Die Lizenzierung authentifizierter externer Benutzer ist entweder über einzelne CALs für jeden Nutzer/jedes Gerät oder über sogenannte External Connector-Lizenzen möglich. Diese gestattet einer beliebigen Anzahl externer Nutzer den Zugriff auf die Serversoftware.
+
+</ArrowList>
+
+
+#### CAL Editionen
+
+ Manche Server-Funktionen werden über die CAL-Edition freigeschaltet: Beim [Exchange Server](/hersteller/microsoft/exchange/) oder [SharePoint Server](/hersteller/microsoft/sharepoint/) erhalten Sie beispielsweise mit der Standard-CAL nur die Basis-Funktionen. Für weitere Funktionen wird zusätzlich eine Enterprise CAL benötigt.
+ Für den [Skype for Business Server](/hersteller/microsoft/skype-for-business/) gibt es mit der Plus CAL noch ein weiteres Upgrade, das unter anderem Voice over IP (VoIP) freischaltet.
+ Es gibt auch CAL die unterschiedliche Zugriffsarten lizenzieren. Beispielsweise wird beim Zugriff auf einen Windows Terminalserver eine Remote Desktop Services ([RDS](/hersteller/microsoft/windows-server/remote-desktop-services/)) CAL benötigt.
+ Eine Übersicht der unterschiedlichen CAL-Editionen und weitere Informationen finden Sie auf den jeweiligen Produkt-Seiten.
+
+Siehe auch: [Microsoft CAL Übersicht](/hersteller/microsoft/cal-suite/)
+
+<Info>
+
+ Bei einer Infrastruktur mit mehreren Microsoft Server Produkten, wie [Windows Server](/hersteller/microsoft/windows-server/), [SharePoint](/hersteller/microsoft/sharepoint/) und [Exchange](/hersteller/microsoft/exchange/), bietet sich die Nutzung von CAL Suites an.
+ Hier gibt es Bundles mit allen Standard- ([Core CAL Suite](/hersteller/microsoft/cal-suite/core-cal-suite/)) oder Enterprise- ([ECAL Suite](/hersteller/microsoft/cal-suite/enterprise-cal-suite/)) Zugriffslizenzen, einschließliche Terminalserverzugriff ([RDS CAL](/hersteller/microsoft/windows-server/remote-desktop-services/)).
+
+</Info>
+
+
+## Lizenzprogramme
+
+ Microsoft Software ist in unterschiedlichen Lizenzprogrammen mit verschiedenen Nutzungsrechten verfügbar. Ausführliche Informationen finden Sie auf unseren Seiten:
+
+
+<ArrowItem>
+
+**[Microsoft Lizenzprogramme](/hersteller/microsoft/lizenzprogramme/)**
+
+</ArrowItem>
+
+
+## Weitere Informationen
+
+Beiträge zu speziellen Themen und Produkten finden Sie auf den jeweiligen Produktseiten, direkt in [unserem Blog](/blog/) oder über die Suchfunktion. Erklärungen zu den gängigsten Abkürzungen finden Sie in unserem [Glossar](/glossar/).
+Hier eine Auswahl der wichtigsten Themen:
+
+<ArrowList>
+
+ - [Lizenzmobilität mit SA](/blog/lizenzmobilitaet-fuer-microsoft-lizenzen-mit-software-assurance/)
+ - [Die 5 wichtigsten Office 365 Entscheidungshilfen](/blog/die-5-wichtigsten-office-365-entscheidungshilfen/)
+ - [Office 365 Terminalserver Lizenzierung](/hersteller/microsoft/office-365/terminalserver-lizenzierung/)
+ - [SQL Server Lizenzierung FAQ](/blog/sql-server-lizenzierung-faq/)
+ - [Windows Server LTSC und SAC erklärt](/blog/windows-server2019-ltsc-sac/)
+ - [Microsoft Teams für Unternehmen](/blog/microsoft-teams-fuer-unternehmen/)
+
+</ArrowList>
+
+### Herstellerseiten
+
+Auf den Microsoft Seiten finden Sie weitere Informationen und Hilfe:
+
+<ArrowList>
+
+- [Microsoft Lizenzbedingungen (Product Terms)](https://www.microsoft.com/licensing/docs/view/Licensing-Use-Rights)
+- [Microsoft Licensing Guide Übersicht](https://www.microsoft.com/licensing/docs/view/licensing-programs?filter=program+comparisons)
+- [Volume Licensing Service Center (VLSC) Guide](https://www.microsoft.com/de-de/download/details.aspx?id=10585)
+
+</ArrowList>

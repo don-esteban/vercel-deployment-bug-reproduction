@@ -1,0 +1,212 @@
+---
+title: Kauf und Lizenzierung
+bkey: vmware
+bcTitle: Kauf und Lizenzierung
+ckey: enrico-koehle
+date: 2024-03-30
+tocMaxLevel: 1
+wanted:
+  features:
+    - name: Lizenzierung
+    - name: Einkauf
+    - name: Terminologie
+furtherReading:
+  - slug: /hersteller/vmware/
+    name: VMware Produktübersicht
+    description: Alle VMware Produkte im Überblick
+  - slug: /blog/vmware-vsphere-lizenzdschungel/
+    name: Der Weg durch den Lizenz-Dschungel
+    description: Wissenswertes zur VMware Lizenzierung, auch in Verbindung mit Microsoft Windows Servern.
+  - slug: /blog/vmware-by-broadcom/
+    name: Broadcoms VMware Übernahme
+    description: Informationen zu VMware by Broadcom und der Produktumstellung
+---
+
+<Intro>
+
+Auf diesen Seiten erfahren Sie Wichtiges zum Kauf von VMware Produkten. Sie erfahren, wie man VMware lizenziert und was Sie dabei beachten müssen.
+
+</Intro>
+
+<TOC />
+
+
+<Info>
+
+Die Lizenzmodelle wurden nach der Übernahme vereinfacht. Bei den Lizenzen gibt es nur noch Subscriptions (Ausnahme: VMware Workstation/Fusion).
+Mehr erfahren Sie unter: [VMware by Broadcom - Blogbeitrag](/blog/vmware-by-broadcom/).
+
+</Info>
+
+
+## Lizenzmatrix Übersicht (2024)
+
+| Lizenzierung | [VVS](/hersteller/vmware/vsphere/standard/) | [VVEP](/hersteller/vmware/vsphere/essentials-plus-kit/) | [VVF](/hersteller/vmware/vsphere-foundation/) | [VCF](/hersteller/vmware/cloud-foundation/) | [WKS](/hersteller/vmware/workstation/) | [FUS](/hersteller/vmware/fusion/) | [HRZ](/hersteller/vmware/horizon/) |
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| [Subscription](#subscriptions) | ✓ | ✓ | ✓ | ✓ | – | – | ✓ |
+| [Perpetual](#kauflizenzen) | – | – | – | – | ✓ | ✓ | – |
+| *Nach Anzahl …* |  |  |  |  |  |  |  |
+| [CPUs](#lizenzierung-nach-prozessoren) | – | ✓ | – | – | – | – | – |
+| [Cores](#lizenzierung-nach-prozessorkernen) | ✓ | ✓ | ✓ | ✓ | – | – | – |
+| [Hosts](#lizenzierung-nach-hosts) | – |  ✓ | – | – | ✓ | ✓ | – |
+| *Nach Benutzer* |  |  |  |  |  |  |  |
+| [CCU (Concurrent Connection User)](#concurrent-connection-user-ccu) | – | – | – | – | – | – | ✓ |
+| [NU (Named User)](#named-user-nu) | – | – | – | – | – | – | ✓ |
+| *Production Support ([SnS](#support-and-subscription-services-sns))* |  |  |  |  |  |  |  |
+| inklusive | ✓ | ✓ | ✓ | ✓ | – | – | ✓ |
+| zusätzliche Buchung (erforderlich) | – | – | – | – | ✓ | ✓ | – |
+
+<Legend>
+
+| Benutzte Abkürzungen |  |
+|:---|:---|
+| **VVS:** [VMware vSphere Standard](/hersteller/vmware/vsphere/standard/) | **VVEP:** [VMware vSphere Essentials Plus Kit ](/hersteller/vmware/vsphere/essentials-plus-kit/) |
+| **VVF:** [VMware vSphere Foundation](/hersteller/vmware/vsphere-foundation/) | **VCF:** [VMware Cloud Foundation](/hersteller/vmware/cloud-foundation/) |
+| **WKS:** [Vmware Workstation](/hersteller/vmware/workstation/) | **FUS:** [Vmware Fusion](/hersteller/vmware/fusion/) |
+| **HRZ:**[VMware Horizon](/hersteller/vmware/horizon/) | |
+
+</Legend>
+
+
+
+
+
+
+## Kauflizenzen
+
+Die traditionellen Kauflizenzen (Dauerlizenzen) werden von VMware by Broadcom nicht mehr angeboten. **Ausnahme: VMware Workstation/Fusion.**
+Im Gegensatz zu Subscriptions (Abonnement-Lizenzen) ist das Nutzungsrecht zeitlich unbegrenzt. Kauflizenzen werden auch *Perpetual Licenses* genannt.
+
+
+
+
+## Subscriptions
+
+Subscriptions bzw. Abonnement-Lizenzen gewähren das Nutzungsrecht nur während der Laufzeit. Nach Ablauf müssen Subscriptions verlängert oder die Software deinstalliert werden. Subscriptions enthalten ebenfalls Support (SnS) und oft zusätzliche Dienste, die typischerweise aus der Cloud bezogen werden. Beispielsweise enthielt vSphere+ das in der Cloud gehostete Management-Tool *Cloud Services Console*.
+
+Beispiel für eine Subscription: *VMware vSphere Standard (VVS)*.
+
+
+## Lizenzierungsarten (weitere)
+
+
+### Lizenzierung nach Prozessoren
+
+Bei der Lizenzierung nach Prozessoren oder CPUs werden die gesteckten Prozessoren (nicht die Cores) aller physischen Hosts gezählt. Die Summe ist die Anzahl benötigter Prozessor-Lizenzen. Allerdings gibt es eine 32 Core/CPU Grenze. CPUs mit mehr Cores werden wie mehrerer CPUs gerechnet. Eine 64 Core-CPU zählt als zwei Prozessoren und eine 128-Cores-CPU zählt als vier Prozessoren usw.
+
+Beispiele für Prozessor-Lizenzen: *VMware vSAN*.
+
+
+### Lizenzierung nach Prozessorkernen
+
+Bei der Lizenzierung nach Cores werden die physischen Kerne aller CPUs der ESXi Hosts gezählt. Diese Anzahl wird lizenziert. Zusätzlich gibt es eine Minimum-Lizenzierung von 16 Cores/CPU. Sie können zur Berechnung der erforderlichen Lizenzen beispielsweise so vorgehen:
+
+- Zählen Sie alle CPU der ESXi Hosts, die mit 16 Cores oder weniger ausgestattet sind (P).
+- Zählen Sie alle Cores der CPUs, die mit mehr als 16 Cores ausgestattet sind (C).
+- Zu lizenzierende Kapazität (Anzahl Lizenzen) ist: (P × 16) + C
+
+Beispiele für Prozessor-Lizenzen: *VMware vSphere Standard (VVS)*.
+
+
+### Lizenzierung nach Hosts
+
+Bei der Lizenzierung nach Hosts ist die eingesetzte Hardware irrelevant. Jeder Host erfordert eine Lizenz. [vSphere Essentials Kits](/hersteller/vmware/vsphere/essentials-kit/) wurden nach Hosts lizenziert.
+
+Bei den neuen Produktpaketen bietet [VMware vSphere Essentials Plus Kit (VVEP)](/hersteller/vmware/vsphere/essentials-plus-kit/) eine ähnliche Lizenzierung an: Maximal drei Hosts und 96 Cores.
+
+
+### Lizenzierung nach virtuellen Maschinen
+
+Bei der Lizenzierung nach virtuellen Maschinen werden lediglich VMs betrachtet. Dabei ist unerheblich, auf welcher Hardware vSphere installiert wird und wie viele vSphere Hosts eingesetzt werden. Es zählen nur die virtuellen Maschinen.
+
+VM-Lizenzierung ist nur in Außenstellen und Zweigniederlassungen erlaubt, die über zentralisierte vCenter Server der Haupt-Rechenzentren verwaltet werden. Sie erkennen entsprechende Produkte am Zusatz **ROBO** (Remote Office, Branch Office). ROBO-Lizenzen werden in 25-VM-Packs angeboten. Ein Lizenzpack kann auf mehrere Außenstellen verteilt werden. Pro Außenstelle dürfen jedoch maximal 25 VM genutzt werden.
+
+- Nur für Außenstellen und Zweigniederlassungen
+- Als 25-VM-Packs erhältlich
+- Maximal 25 VM pro Außenstelle
+- Ein VM-Pack darf auf mehrere Außenstellen verteilt werden
+
+Beispiele für ROBO-Lizenzen sind: *vSphere ROBO Standard*, *vSAN ROBO* und *HCI Kit ROBO*.
+
+<Info>
+
+*ROBO-Produkte* sind seit der Produktkonsolidierung nicht mehr erhältlich. Mehr unter [VMware by Broadcom - Blogbeitrag](/blog/vmware-by-broadcom/)
+
+</Info>
+
+
+
+### Lizenzierung nach Instanzen
+
+Bei der Lizenzierung nach Instanzen ist die zugrundeliegende Hardware irrelevant. Jede Instanz erforderte eine Lizenz. *vCenter Server Standard* und *vCenter Server Foundation* wurden bspw. nach Instanzen lizenziert.
+
+Eine Ausnahme war *vSphere+* und die darin enthaltene vCenter Server Lizenz. Zwar wurde auch hier nach Instanzen lizenziert, jedoch gab es kein Limit. Alle von der vSphere+ Infrastruktur benötigten vCenter Server waren enthalten.
+
+
+### Lizenzierung nach Benutzern
+
+Bei der Lizenzierung nach Benutzern ist die zugrundeliegende Hardware irrelevant. Jeder benannte Benutzer (Named User) oder alternativ auch jeder Zugriff (Concurrent User - CCU) erfordert eine Lizenz.
+
+Beispiel für Benutzerlizenzierung: *VMware Horizon*.
+
+
+#### Concurrent Connection User (CCU)
+
+ Concurent Connection User (CCU) werden für alle Horizon Term Editionen angeboten und für [Horizon Subscription](/hersteller/vmware/horizon/universal-subscription/) angeboten. Lizenziert wird die gleichzeitige Nutzung von Horizon 8. Auch wenn ein Anwender nur eine Komponente des Lizenz-Bundles benutzt, gilt die gesamte Bundle-Lizenz als dem Anwender zugeordnet. Wenn beispielsweise ein Nutzer seinen virtuellen Desktop jedoch nicht ThinApp nutzt, ist auch die ThinApp Lizenz "verbraucht" und kann keinem anderen Anwender zugeordnet werden.
+
+ Beispiel für CCU: *VMware Horizon*.
+
+
+#### Named User (NU)
+
+ Named User (NU) werden für die [Horizon 8 Advanced](/hersteller/vmware/horizon/advanced/) und [Horizon 8 Enterprise](/hersteller/vmware/horizon/enterprise/) angeboten und für alle Horizon Subscriptions. Wie bei CCU Lizenzen wird die gesamte Bundle-Lizenz dem Anwender durch Nutzung irgendeiner Bundle-Komponente zugeordnet. Bei der NU-Lizenzierung bleibt die Zuordnung bei jedem Zugriff für 60 Tage bestehen. Bei CCU nur, solange die Lizenz genutzt wird. NU-Lizenzen werden Mitarbeitern fest (mindestens 60 Tage) zugeordnet. Beim Verlassen der Organisation kann sofort neu zugeteilt werden.
+
+ Beispiel für NU: *VMware Horizon*.
+
+
+## Support and Subscription Services (SnS)
+
+Support and Subscription Services (SnS) bieten technische Unterstützung (Telefon, E-Mail inkl. Remote-Support) und kostenlose Upgrades (Upgrade-Schutz).
+
+- Basic Support (12x5):<br />
+Montag bis Freitag von 8:00 bis 18:00 Uhr. Bis zu vier Administratoren.
+
+- Production Support (24x7):<br />
+Täglich 24 Stunden. Bis zu sechs Administratoren.
+
+<Info>
+
+Broadcom stellt VMware Lizenzen nur noch als Subscriptions zur Verfügung.
+Vorhandene Legacy-Lizenzen können selbstverständlich weiter verwendet werden und erhalten [Support und Updates (SnS)](/glossar/sns-support-and-subscription-vmware/) solange sie unter Wartung stehen.
+
+**SnS kann allerdings nicht mehr verlängert werden! Ohne SnS erhalten Sie weder Support noch Updates.**
+
+Die große **Ausnahme: VMware Workstation/Fusion**
+
+</Info>
+
+Support ist für den gesamten Lizenzbestand einheitlich. Sie müssen alle Lizenzen mit der gleichen Supportstufe ausstatten. Wenn Sie nach Ablauf denn Support verlängern möchten, müssen Sie alle Lizenzen einheitlich ausstatten. Den Support nur für einige Lizenzen zu verlängern, ist nicht möglich.
+
+
+## Sonderkonditionen
+
+Einige Kundengruppen erhalten Sonderkonditionen. Dazu gehören Schulen, Universitäten, Bildungseinrichtungen und generell alle Organisationen, die von der Körperschaftssteuer befreit sind:
+
+- Gemeinnützige Organisationen (Charity)
+- Vereine
+- Staatsbetriebe wie Lotteriegesellschaften und die Deutsche Kreditbank
+- Körperschaften des öffentlichen Rechts, wie Innungen, Handwerkskammern und Handelskammern
+
+<GetInTouch variant="info">
+
+Ich prüfe gerne, ob für Ihre Organisation zusätzliche Rabatte oder Sonderkonditionen möglich sind. Schicken Sie mir einfach ein E-Mail oder rufen Sie mich an.
+
+</GetInTouch>
+
+## Download und Lizenzschlüssel
+
+VMware stellt die Software als Download zur Verfügung. Mit dem Lizenzkauf werden Lizenzschlüssel ausgeliefert, die im vCenter Server verwaltet werden.
+
+<br />
+
+<GetInTouch theme="light" />

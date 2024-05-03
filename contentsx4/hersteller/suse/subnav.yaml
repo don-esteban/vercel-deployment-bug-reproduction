@@ -1,0 +1,20 @@
+- key:      suse
+  items:
+  - name:   SUSE
+    slug:   /hersteller/suse/
+  - name:   Desktop
+    slug:   /hersteller/suse/linux-enterprise-desktop/
+  - name:   Server
+    slug:   /hersteller/suse/linux-enterprise-server/
+  - name:   Server Real Time
+    slug:   /hersteller/suse/linux-enterprise-real-time/
+  - name:   Server Micro
+    slug:   /hersteller/suse/linux-enterprise-micro/
+  - name:   Server for SAP Application
+    slug:   /hersteller/suse/linux-enterprise-for-sap-application/
+  - name:   Manager
+    slug:   /hersteller/suse/linux-manager/
+  - name:   Rancher
+    slug:   /hersteller/suse/rancher/
+  - name:   NeuVector
+    slug:   /hersteller/suse/neuvector/

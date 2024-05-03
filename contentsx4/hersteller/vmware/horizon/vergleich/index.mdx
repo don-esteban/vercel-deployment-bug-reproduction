@@ -1,0 +1,134 @@
+---
+title: VMware Horizon 8 Vergleich aller Editionen und Subscriptions
+bcTitle: Vergleich
+seoTitle: Vergleich aller Horizon Editionen und Subscriptions
+bkey: vmware
+ckey: enrico-koehle
+date: 2023-09-20
+wanted:
+  features:
+    - name: Vergleich der verschiedenen Lizenzierungsarten und Funktionen
+    - name: Unterschiede zwischen den Horizon Subscriptions und Editionen
+furtherReading:
+  - slug: /blog/vmware-vsphere-lizenzdschungel/
+    name: Der Weg durch den Lizenz-Dschungel
+    description: Wissenswertes zur VMware Lizenzierung, auch in Verbindung mit Microsoft Windows Servern.
+  - slug: /hersteller/vmware/kauf-und-lizenzierung/
+    name: VMware Kauf und Lizenzierung
+    description: Wichtiges zum Kauf und über die Lizenzierung von VMware Produkten in der Form eines Nachschlagewerks.
+  - slug: https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/products/horizon/vmw-horizon-subscription-feature-comparison.pdf
+    name: VMware Horizon Subscription Vergleich (PDF, englisch)
+    description: Englisches PDF-Datenblatt von VMware.
+---
+
+
+
+<Intro>
+
+VMware Horizon wird in drei unterschiedlichen Term Editionen und Subscriptions angeboten und enthalten je nach Edition Horizon Cloud oder vSphere. Auf dieser Seite vergleichen wir alle Editionen und Bundles funktional und lizenzrechtlich.
+
+</Intro>
+
+<TOC />
+
+
+<Info type="strong">
+
+  Durch die Übernahme von VMware durch Broadcom Ende 2023 erfolgten Änderungen am Produktangebot und an den Lizenzmodellen. Manche Editionen sind nicht oder nur in anderer Zusammnstellung erhältlich.
+
+</Info>
+
+
+## Horizon Editionen und Subscription Vergleich
+
+
+||LIN|STD|ADV|ENT|STD+|ENT+|SUB|
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|**Lizenzierung**|
+|Subscription|-|✓|✓|✓|✓|✓|✓|
+|Concurrent Connection User |✓|✓|✓|✓|✓|✓|✓|
+|Named User |-|-|✓|✓|✓|✓|✓|
+|**Deployment**|
+|Public Cloud Deployment|-|-|-|-|✓|✓|✓|
+|Single Cloud Deployment|-|-|-|-|✓|✓|-|
+|Cloud/Hybrid, Multi-Cloud Deployment|-|-|-|-|-|-|✓|
+|On-Premises Deployment|✓|✓|✓|✓|✓|✓|✓|
+|VMware vSphere, vCenter enthalten|✓|✓|-|-|✓|✓|✓|
+|**Virtual Desktops und RDSH**|
+|Virtual Desktops (Windows) mit Instant/Full Clones|-|✓|✓|✓|✓|✓|✓|
+|Virtual Desktops (Linux) mit Instant/Full Clones|✓|-|-|✓|✓|-|✓|✓|
+|RDSH Session-basierte Desktops und Apps mit Instant/Full Clones|-|-|✓|✓|-|✓|✓|
+|Linux hosted Apps|-|-|-|✓|-|✓|✓|
+|Support für Windows 10 Multi-Session (Microsoft Windows Virtual Desktop)|-|-|-|-|-|-|✓|
+|VM-hosted Apps (Windows 10 OS)|-|-|-|✓|-|-|✓|
+|Remote Windows 10 Physical PC Access|-|✓|✓|✓|✓|✓|✓|
+|Support für nonvSphere VDI/RDSH (Windows)|-|✓|✓|✓|✓|✓|✓|
+|Support für nonvSphere VDI/RDSH (Linux)|✓|-|-|✓|-|✓|✓|
+|**Management**|
+|Zugriff auf cloud-hosted Horizon Control Plane|-|-|-|-|✓|✓|✓|
+|VMware-managed, Multi-Tenant DaaS Deployment Option|-|-|-|-|-|-|✓|
+|Horizon Control Plane services|-|-|-|-|-|-|✓|
+|Rest APIs|-|-|-|✓|✓|✓|✓|
+|Help desk tool|-|-|-|✓|✓|✓|✓|
+|AppStacks/App Volumes (Lifecycle Management)|-|-|-|✓|✓|✓|✓|
+|VMware Dynamic Environment Manager Standard|-|-|-|-|✓|✓|-|
+|VMware Dynamic Environment Manager Enterprise|-|-|✓|✓|-|✓|✓|
+|**User Access and Remote Experience**|
+|VMware Workspace ONE Zugriff mit Multi-Faktor-Authentifikator|-|-|✓|✓|✓|✓|✓|
+|Zugriff auf Anwendungskatalog|-|-|✓|✓|✓|✓|✓|
+|Blast Extreme, PCoIP, RDP protocol|✓|✓|✓|✓|✓|✓|✓|
+|Integrierbar mit Collaboration-Software (bspw. Teams)|-|-|-|✓|✓|✓|✓|
+|VMware Unified Access Gateway|✓|✓|✓|✓|✓|✓|✓|
+
+
+|Verwendete Abkürzungen:||
+|:---|:---|
+|**LIN:** Horizon for Linux|**STD:** [Horizon Standard](/hersteller/vmware/horizon/standard/)|
+|**ADV:** [Horizon Advanced](/hersteller/vmware/horizon/advanced/)|**ENT:** [Horizon Enterprise](/hersteller/vmware/horizon/enterprise/)|
+|**STD+:** [Horizon Standard Plus](/hersteller/vmware/horizon/standard-plus/)|**ENT+:** [Horizon Enterprise Plus](/hersteller/vmware/horizon/enterprise-plus/)|
+|**SUB:** [Horizon Univsersal Subscription](/hersteller/vmware/horizon/universal-subscription/)|
+
+
+
+## Horizon Subscription Vergleich
+
+||UNIA|APPA|UNIC|APPC|ENT|
+|:---|:---:|:---:|:---:|:---:|:---:|
+|**Lizenzierung**|
+|Subscription|✓|✓|✓|✓|✓|
+|Concurrent|✓|✓|✓|✓|✓|
+|Named User|✓|✓|✓|✓|✓|
+|**Deployment**|
+|Cloud/Hybrid, Multi-Cloud Deployment|✓|✓|✓|✓|nur Behörden|
+|Horizon Subscription (VMware Cloud on AWS)|✓|✓|✓|✓|✓|
+|Horizon Cloud (Azure, IBM)|✓|✓|-|-|-|
+|On-Premises Deployment|✓|✓|✓|✓|✓|
+|VMware vSphere, VMware vCenter (on-prem) enthalten|✓|✓|-|-|✓|
+|**Virtual Desktops und RDSH**|
+|Virtual Desktops (Windows und Linux) mit Instant/Full Clones|✓|-|✓|-|✓|
+|RDSH Session-basierte Desktops und Apps mit Instant/Full Clones|✓|✓|✓|✓|✓|
+|Linux hosted Apps|✓|✓|✓|✓|✓|
+|Support für Windows 10 Multi-Session (Microsoft Windows Virtual Desktop)|✓|✓|✓|✓|-|
+|VM-hosted Apps (Windows 10 OS)|✓|✓|✓|✓|✓|
+|Remote Windows 10 Physical PC Access|✓|✓|✓|✓|✓|
+|Support für  nonvSphere VDI/RDSH|✓|✓|✓|✓|✓|
+|**Management**|
+|Zugriff auf: Always up-to date control plane|✓|✓|✓|✓|-|
+|VMware-managed, Multi-Tenant DaaS Deployment Option|✓|✓|✓|✓|-|
+|Horizon Control Plane services|✓|✓|✓|✓|-|
+|Rest APIs|✓|✓|✓|✓|✓|
+|Help desk tool|✓|✓|✓|✓|✓|
+|AppStacks (Lifecycle Management)|✓|✓|✓|✓|✓|
+|VMware Dynamic Environment Manager (Policy Management)|✓|✓|✓|✓|✓|
+|**User Access and Remote Experience**|
+|VMware Workspace ONE Zugriff mit Multi-Faktor-Authentifikator|✓|✓|✓|✓|✓|
+|Zugriff auf Anwendungskatalog|✓|✓|✓|✓|-|
+|Blast Extreme, PCoIP, RDP protocol|✓|✓|✓|✓|✓|
+|Integrierbar mit Collaboration-Software (bspw. Teams)|✓|✓|✓|✓|✓|
+|VMware Unified Access Gateway|✓|✓|✓|✓|✓|
+
+|Verwendete Abkürzungen:||
+|:---|:---|
+|**UNIC:** [Horizon Universal Subscription (Core)](/hersteller/vmware/horizon/universal-subscription/)|**APPC:** Horizon Apps Universal Subscription (Core)|
+|**UNIA:** [Horizon Universal Subscription (Add-on)](/hersteller/vmware/horizon/universal-subscription/)|**APPA:** Horizon Apps Universal Subscription (Add-on)|
+|**ENT:** [Horizon Enterprise Term Edition Subscription](/hersteller/vmware/horizon/enterprise/)||

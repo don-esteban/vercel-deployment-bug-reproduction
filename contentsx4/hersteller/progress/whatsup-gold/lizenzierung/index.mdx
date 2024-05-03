@@ -1,0 +1,182 @@
+---
+title: WhatsUp Gold Lizenzierung
+bcTitle: Lizenzierung
+bkey: progress
+ckey: jona-rosenauer
+date: 2022-10-06
+furtherReading:
+  - name: WhatsUp Gold Vergleich
+    slug: /hersteller/progress/whatsup-gold/vergleich/
+    description: Vergleich der Editionen Total Plus, Premium und WhatsUp Gold Subscription.
+tocMaxLevel: 2
+wanted:
+  features:
+    - name: "WhatsUp Gold Premium: Lizenzierung nach Geräten"
+    - name: "WhatsUp Gold Total Plus: Punktesystem zur Lizenzierung"
+    - name: "WhatsUp Gold Subscription: Lizenzierung nach Geräten"
+---
+
+<Intro>
+
+So lizenzieren Sie WhatsUp Gold (WUG). Informieren Sie sich über optimale Lizenzierung, Einkauf und Beschaffung. Der Abruf unserer One-Click-Angebote dauert nur Sekunden.
+
+</Intro>
+
+<TOC />
+
+## Was muss lizenziert werden?
+
+<ArrowList>
+
+- **Physische und virtuelle Geräte**<br />
+  Das sind primär Router, Switches und Firewalls.
+- **Physische und virtuelle Server**<br />
+  Microsoft Windows und andere unterstütze Server-Betriebssysteme
+- **Anwendungen**<br />
+  Dazu zählen Microsoft Exchange, SharePoint, Dynamics, Lync, Datenbankserver, DNS, HTTP-/Applikationsserver, Active Directory, Hyper-V, eigene und Legacy Applikationen.
+- **Flow Sources** (Bandbreite/Netzwerkverkehr)<br />
+  Wenn Sie bspw. den Netzwerkverkehr zu Clients hinter einer Firewall überwachen möchten, dann wäre das eine Flow Source.
+- **Log Sources**<br />
+  Das sind Geräte und Einheiten, die in Logfiles schreiben, bspw. ein Router.
+- **ESXi/Hyper-V Hosts und VMs**<br />
+  Es wird beides lizenziert, virtuelle Maschinen (Guest) und Virtualisierungsserver (Host).
+
+</ArrowList>
+
+<Info>
+
+**Nur überwachte Einheiten werden lizenziert**
+
+Sie müssen nicht Ihr gesamtes Netzwerk, sondern nur überwachte Einheiten lizenzieren. Sie können sich auf kritische Bereiche Ihrer Infrastruktur konzentrieren und nur für diese Lizenzen kaufen.
+
+</Info>
+
+
+## Wie berechnet man benötigte Lizenzen?
+
+Sie zählen alle überwachten Einheiten und ermittelt anschließend die Anzahl benötigter Lizenzen. Details erklären wir in den folgenden Abschnitten.
+
+### Bei WUG Total Plus
+
+Bei [WhatsUp Gold Total Plus](/hersteller/progress/whatsup-gold/total-plus/) ist die Lizenzmetrik ein Punktesystem. Jede Firewall bspw. ergibt einen Punkt. Eine Flow Source (Überwachung des Datenverkehrs) hingegen ergibt 10&nbsp;Punkte. Soll die Firewall und deren Traffic überwacht werden, ergibt das 11&nbsp;Punkte.
+
+|Überwachte Einheit|Punkte|
+|:---|---:|
+|Physische oder virtuelle Netzwerk-Einheiten (Routers, Switches, WLCs, APs, Firewalls)|1&nbsp;Punkt|
+|Physische Server|1&nbsp;Punkt|
+|ESXi-, Hyper-V Hosts und VMs (jeden Host und jede VM zählen)|1&nbsp;Punkt|
+|Flow Sources (Bandbreite/Netzwerkverkehr)|10&nbsp;Punkte|
+|Anwendungen wie Microsoft Exchange, Dynamics, Datenbankserver, eigene Anwendungen|10&nbsp;Punkte|
+
+Sie zählen alle zu überwachenden Einheiten und bewerten diese mit Punkten. Die Summe müssen Sie lizenzieren. Total Plus wird in [Lizenz-Punkte-Paketen](/hersteller/progress/whatsup-gold/total-plus/#neulizenzen) angeboten. Angenommen, sie haben 63 Punkte errechnet, dann müssen Sie die 75-Punkte-Lizenz kaufen.
+
+Es folgt eine Beispielrechnung:
+
+|Anzahl|Überwachte Einheiten|Punkte|
+|---:|:---|---:|
+|25|Netzwerk-Geräte und physische Server|25&nbsp;Punkt|
+|12|Virtuelle Hosts und Guests (2 ESXi + 10 VMs)|12&nbsp;Punkt|
+|1|Flow Source|10&nbsp;Punkt|
+|2|Applikationen (Exchange und Oracle Database)|20&nbsp;Punkt|
+||Summe|67&nbsp;Punkt|
+||**Benötigtes Lizenzpaket**|**75&nbsp;Punkte**|
+
+### Bei WUG Premium
+
+[WhatsUp Gold Premium](/hersteller/progress/whatsup-gold/premium/) ist die Netzwerk-Monitoring-Basis-Edition. WUG Premium enthält grundlegende Funktionen, die Sie mit Add-ons nach Bedarf erweitern. Lizenzmetrik ist die Anzahl überwachter Geräte. Geräte sind bspw. physische und virtuelle Router, Switches, Firewalls und Server (Windows, Linux).
+
+Sie summieren die Anzahl überwachter Geräte und kaufen das entsprechende Lizenzpaket. WUG Premium wird in [Geräte-Lizenz-Paketen](/hersteller/progress/whatsup-gold/premium/#neulizenzen) angeboten. Angenommen, sie haben 63 Geräte errechnet, dann müssen Sie die 75-Geräte-Lizenz kaufen. Es gibt allerdings eine Ausnahme in Verbindung mit Virtual Monitoring. Das Geräte-Lizenz-Paket richtet sich immer nach der größeren Anzahl. Details und Beispiele finden Sie im Abschnitt über die Lizenzierung von [Virtual Monitoring](/hersteller/progress/whatsup-gold/premium/#virtual-monitoring-add-on-preise).
+
+### Bei WUG Subscription
+
+Die Lizenzierung von [WhatsUp Gold Subscription](/hersteller/progress/whatsup-gold/subscription/) entspricht der von [WhatsUp Gold Premium](#bei-wug-premium). Der einzige Unterschied ist das Abrechnungsmodell. Premium ist eine Dauerlizenz (Kauflizenz) und WUG Subscription ist eine Abonnement-Lizenz (Mietlizenz).
+
+### Bei WUG Add-ons
+
+Add-ons werden nach überwachten Geräten, Flow Sources, Log-Sources und Applikationen lizenziert.
+
+<ArrowList>
+
+- **Configuration Management**<br />
+überwachte Geräte/Einheiten
+- **Network Traffic Analysis**<br />
+überwachten Netzwerkverkehr bspw. an Routers oder Firewalls
+- **Virtual Monitoring**<br />
+überwachte VMware vSphere ESXi Hosts, Microsoft Hyper-V Hosts und alle überwachten virtuellen Maschinen
+- **Application Monitoring**<br />
+überwachte Applikationen wie Microsoft SharePoint, Oracle Datenbanken und eigene Applikationen
+- **Log Management**<br />
+überwachte Log-Sourcen wie Router und Firewalls
+- **Failover Manager**<br />
+Größe des Lizenzpaketes muss dem von WUG Premium entsprechen
+
+</ArrowList>
+
+#### Virtual Monitoring Add-on
+
+Das Virtual Monitoring Add-on bildet eine Ausnahme. Die Größe des benötigten Lizenzpaketes richtet sich wie bei *Failover Manager* nach der Größe des WUG Premium Lizenzpaketes. Allerdings gilt das auch in die andere Richtung. Zählt man überwachte Hosts und Guests zusammen und bekommt eine Summe, die größer als die der WUG Premium Geräte ist, dann muss auch für WUG Premium ein größeres Lizenzpaket bestellt werden.
+
+Nehmen wir den üblichen Fall. Die Summe der Hosts und Guests (Virtual Monitoring Add-on) ist kleiner als die Summer der Geräte (WUG Premium/WUG Subscription)
+
+|Produkt|Anzahl|Überwachte Einheiten|Lizenzen|
+|:---|---:|:---|---:|
+|WUG Premium oder WUG Subscription|65|Netzwerk-Geräte und physische Server|65&nbsp;Geräte|
+|WUG Virtual Monitoring Add-on|25|überwachte Hosts (5) und überwachte VMs&nbsp;(20) |25&nbsp;Hosts/Guests|
+
+In diesem Fall müssen Sie für WUG Premium/Subscription und das Add-on Virtual Monitoring **75er-Lizenzpakete** kaufen.
+
+Es gibt jedoch auch den umgekehrten Fall. Die Summe der Hosts und Guests (Virtual Monitoring Add-on) ist größer als die Summer der Geräte (WUG Premium/WUG Subscription)
+
+|Produkt|Anzahl|Überwachte Einheiten|Lizenzen|
+|:---|---:|:---|---:|
+|WUG Premium oder WUG Subscription|45|Netzwerk-Geräte und physische Server|45&nbsp;Geräte|
+|WUG Virtual Monitoring Add-on|80|überwachte Hosts (10) und überwachte VMs&nbsp;(70) |80&nbsp;Hosts/Guests|
+
+In diesem Fall müssen Sie für WUG Premium/Subscription und das Add-on Virtual Monitoring **100er-Lizenzpakete**  kaufen.
+
+<Info>
+
+Wird WUG Premium mit dem Add-on Virtual Monitoring ergänzt, muss die Größe der Lizenzpakete immer übereinstimmen.
+
+</Info>
+
+## Welche Abrechnungsmodelle gibt es?
+
+Sie können WhatsUp Gold als Dauerlizenz kaufen oder als Abonnement-Lizenz mieten.
+
+WhatsUp Gold Total Plus Bundle wird nur als Kauflizenz angeboten. WhatsUp Gold Premium wird ebenfalls als Kauflizenz angeboten, allerdings gibt es mit WhatsUp Gold Subscription eine funktional identische Edition als Abonnement-Lizenz.
+
+Neue Kauflizenzen enthalten ein Jahr Service (Support, Updates, Upgrades). Den Service sollten Sie nach Ablauf verlängern.
+
+Die Abonnement-Lizenz WUG Subscription enthält ebenfalls Service und Support.
+
+## Wie kann man WUG kaufen?
+
+Sie haben mehrere Möglichkeiten.
+
+<ArrowList>
+
+- Rufen Sie mich an oder schreiben Sie mit ein Mail. Siehe oben rechts. Das bin ich. :-)
+- Fordern Sie mit wenigen Mausklicks als Entscheidungs- und Bestellgrundlage ein Angebot an. Das dauert nur Sekunden.
+
+</ArrowList>
+
+**Direkt zu den Preisen:**
+
+<ArrowList>
+
+- [WUG Total Plus](/hersteller/progress/whatsup-gold/total-plus/)
+- [WUG Premium](/hersteller/progress/whatsup-gold/premium/)
+- [WUG Subscription](/hersteller/progress/whatsup-gold/subscription/)
+
+</ArrowList>
+
+## Service und Support
+
+Die WhatsUp Gold Subscriptions und Dauerlizenzen mit aktivem Service erhalten Zugriff auf den [WhatsUp Gold Service](https://www.progress.com/support/whatsupgold-reference-guide) mit den folgenden Bestandteilen:
+  - In der **Progress Community** finden Sie Tipps und Lösungen für häufige Fragen.
+  - Die **Online Knowledge Base** bietet schnellen Zugriff auf alle produktspezifischen Informationen.
+  - Über das **SupportLink Ticketsystem** können Sie neue Supportfälle beantragen.
+  - Der **telefonische, technische Support** steht während der normalen Geschäftszeiten zur Verfügung.
+  - Dringende Supportfälle können beim zugewiesenen Support Engineer eskaliert werden.
+  - Eine Übersicht der normalen Antwortzeiten finden Sie auf der Seite [WUG Service Level Objectives](https://community.progress.com/s/products/support/service-level-objectives).

@@ -1,0 +1,52 @@
+- key:      telerik
+  items:
+  - name:   Telerik
+    slug:   /hersteller/telerik/
+  - name:   DevCraft
+    sub:
+      - name: Übersicht
+        slug:   /hersteller/telerik/devcraft/
+      - name: Complete
+        slug: /hersteller/telerik/devcraft/complete/
+      - name: Ultimate
+        slug: /hersteller/telerik/devcraft/ultimate/
+      - name: UI
+        slug: /hersteller/telerik/devcraft/ui/
+  - name:   UI
+    sub:
+    - name: Übersicht
+      slug: /hersteller/telerik/ui/
+    - name: ASP.NET
+      slug: /hersteller/telerik/ui/asp/
+    - name: Blazor
+      slug: /hersteller/telerik/ui/blazor/
+    - name: Silverlight
+      slug: /hersteller/telerik/ui/silverlight/
+    - name: WinForms
+      slug: /hersteller/telerik/ui/winforms/
+    - name: WinUI
+      slug: /hersteller/telerik/ui/winui/
+    - name: Xamarin
+      slug: /hersteller/telerik/ui/xamarin/
+    - name: UWP
+      slug: /hersteller/telerik/ui/uwp/
+    - name: WPF
+      slug: /hersteller/telerik/ui/wpf/
+  - name:   Test Studio
+    sub:
+    - name: Übersicht
+      slug: /hersteller/telerik/test-studio/
+    - name: Ultimate
+      slug: /hersteller/telerik/test-studio/ultimate/
+    - name: Web & Desktop
+      slug: /hersteller/telerik/test-studio/web-desktop/
+    - name: Add-Ons
+      slug: /hersteller/telerik/test-studio/add-ons/
+  - name:   Kendo UI
+    slug: /hersteller/telerik/kendo-ui/
+  - name:   Kendo React
+    slug:   /hersteller/telerik/kendo-react/
+  - name:   Reporting
+    slug:   /hersteller/telerik/reporting/
+  - name:   Fiddler
+    slug:   /hersteller/telerik/fiddler-everywhere/

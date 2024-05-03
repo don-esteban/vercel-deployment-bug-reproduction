@@ -1,0 +1,143 @@
+---
+title: Microsoft Endpoint Manager
+bcTitle: Endpoint Manager
+bkey: microsoft
+ckey: stefan-barth
+date: 2023-04-14
+wanted:
+  features:
+    - name: Endpunktsicherheit, Geräteverwaltung und intelligente Cloudaktionen
+    - name: Einheitliche Plattform für Sicherheit und Verwaltung
+furtherReading:
+  - name: Microsoft 365 Lizenzierung
+    slug: /hersteller/microsoft/microsoft-365/lizenzierung/
+    description: Informationen und Details zum Kauf von der Microsoft 365 Pläne.
+  - name: Microsoft 365 Übersicht
+    slug: /hersteller/microsoft/microsoft-365/
+    description: Informationen und Preise für die Microsoft 365 Pläne.
+---
+
+
+
+<Intro>
+
+Microsoft Endpoint Manager umfasst Endpunktsicherheit, Geräteverwaltung und intelligente Cloudaktionen in einer einheitlichen Verwaltungsplattform zusammen mit Microsoft Intune und System Center Configuration Manager.
+Den Endpoint Manager erhält man mit vielen Microsoft 365 Plänen, Enterprise Mobility + Security (EMS), Intunem und System Center Configuration Manager.
+
+</Intro>
+
+<TOC />
+
+
+
+## Verwaltung über Endpoint Manager
+
+Der Endpoint Manager ermöglicht die Bereitstellung eines modernen Arbeitsplatzes mit einer modernen Verwaltung, um Ihre Daten sicher zu speichern, egal ob in der Cloud oder lokal.
+Der Endpoint Manager ist **keine neue Lizenz, sondern eine Lösungsplattform**.
+
+Die Plattform umfasst die Funktionen aus [Desktop Analytics](https://learn.microsoft.com/de-de/mem/configmgr/desktop-analytics/overview), [Intune](/hersteller/microsoft/intune/), [System Center Configuration Manager](/hersteller/microsoft/system-center/client-management-license/), [Windows Autopilot](https://learn.microsoft.com/de-de/mem/autopilot/windows-autopilot), [Azure Active Directory (AD)](/hersteller/microsoft/azure/active-directory/)
+und dem [Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431). Die Lösungsplattform kann in drei Varianten eingesetzt werden:
+
+<ArrowList>
+
+- **Cloud:** Alle Daten werden in Azure gespeichert. Damit werden keine eigenen Server oder Rechenzentren benötigt. Mit [Microsoft Intune](/hersteller/microsoft/intune/) erhalten Sie direkt Mobilitätsvorteile der Cloud und die Sicherheitsvorteile von Azure.
+- **Lokal:** Wenn Sie über eine lokale Infrastruktur mit [System Center Configuration Manager (SCCM)](/hersteller/microsoft/system-center/client-management-license/) verfügen oder noch nicht bereit sind, die Cloud zu nutzen, können Sie Ihre vorhandenen Systeme beibehalten.
+- **Cloud + lokal:** Viele Umgebungen sind heterogen und folgen dem Ansatz der Cloudanbindung. Dies bedeutet, dass eine Kombination aus Cloud- und lokalen Lösungen verwendet wird. Nutzen Sie bei neuen Geräten die Vorteile von Intune für den Zugriff auf und den Schutz von Daten. Wenn Sie Configuration Manager verwenden, stellen Sie eine Verbindung mit der Cloud her, um zusätzliche Funktionalität und Analysen zu erhalten. Wenn Sie einige Workloads in die Cloud verlagern möchten, bietet die [Co-Verwaltung](#co-verwaltung) einige Vorteile.
+
+</ArrowList>
+
+## Co-Verwaltung mit Endpoint Manager
+
+Die Co-Verwaltung ist eine der primären Möglichkeiten zum Anfügen Ihrer vorhandenen Configuration Manager-Bereitstellung an die Microsoft 365-Cloud. Damit können weitere cloudgestützte Funktionen, wie bedingter Zugriff, entsperrt werden.
+
+Co-Verwaltung ermöglicht Ihnen die gleichzeitige Verwaltung von Windows 10/11-Geräten mithilfe von Configuration Manager und Microsoft Intune. Damit können Sie Ihre vorhandenen Bereitstellungen in Configuration Manager mit der Cloud verknüpfen, indem Sie neue Funktionen hinzufügen. Durch die Verwendung von Co-Verwaltung haben Sie die Flexibilität, die Technologielösung zu nutzen, die für Ihr Unternehmen am besten geeignet ist. Wie Sie die Co-Verwaltung nutzen können und welche Voraussetzungen Sie benötigen, zeigen wir Ihnen auf:
+
+
+<Info>
+
+Hinweis: Wenn Sie Windows 10-Geräte gleichzeitig mit Configuration Manager und Microsoft Intune verwalten, wird diese Konfiguration als Co-Verwaltung bezeichnet. Wenn Sie Geräte mit Configuration Manager verwalten und sich bei einem MDM-Drittanbieterdienst registrieren, wird diese Konfiguration als Koexistenz bezeichnet.
+
+</Info>
+
+
+### Voraussetzungen
+
+Um die Co-Verwaltung nutzen zu können, benötigen Sie folgendes:
+
+<ArrowList>
+
+- [Azure AD Premium](/hersteller/microsoft/azure/active-directory) bspw. durch [Enterprise Mobility + Security](/hersteller/microsoft/enterprise-mobility-security/) oder [Microsoft 365](/hersteller/microsoft/microsoft-365/). Windows 10/11-Geräte müssen mit Azure AD verbunden sein.
+- [Microsoft Intune-Lizenz](/hersteller/microsoft/intune/) für den Administrator. Bietet Zugriff auf das Intune-Portal.
+- [System Center Configuration Manager](/hersteller/microsoft/system-center/client-management-license/): Version 1710 oder höher. Ab Version 1806 von Configuration Manager können Sie mehrere Instanzen von Configuration Manager mit einem einzelnen Intune-Mandanten verbinden.
+- [Microsoft Intune](https://learn.microsoft.com/de-de/mem/intune/fundamentals/setup-steps): Lizenz und Konfiguration.
+- [Windows 10](https://learn.microsoft.com/de-de/mem/configmgr/core/understand/configuration-manager-and-windows-as-service#key-articles-about-adopting-windows-as-a-service): Benötigt Version 1709 oder höher.
+- [Weitere Einstellungen für Berechtigungen und Rollen](https://learn.microsoft.com/de-de/mem/configmgr/comanage/overview#permissions-and-roles)
+
+</ArrowList>
+
+### Bestandskunden mit Configuration Manager im Einsatz
+
+Der Configuration Manager dient zur Konfigurationsverwaltung für die Microsoft-Plattform. Damit haben Kunden eine bessere Kontrolle über Ihre lokalen Geräte unter Beachtung von Unternehmen Compliance-Richtlinien. Seit Version 1710 können auch Funktionen von Intune gemeinsamnutzen. Dadurch können Sie auch Ihre mobilen Geräte verwalten, zusammen mit Ihren lokalen Geräten. Microsoft nennt dies Co-Verwaltung. Wir zeigen Ihnen auf, wie Sie die Co-Verwaltung nutzen können:
+
+<ArrowList>
+
+- Schritt 1: Sie benötigen einen sogenannten Microsoft Tenant. Das ist eine Domäne, die auf .onmicrosoft.com endet. Im Microsoft 365 Admin-Center finden Sie ihren Tenant unter Setup…Einrichten Ihrer benutzerdefinierten Domäne…Verwalten.
+- Schritt 2: Mit [Tenant Attach](https://learn.microsoft.com/en-us/mem/configmgr/tenant-attach/device-sync-actions) können Sie Ihre bestehende Configuration Manager (lokale) Infrastruktur in das Microsoft Endpoint Manager Admin Center (Cloud: endpoint.microsoft.com) einbinden. So können Sie alle verwalteten Geräte in einer einheitlichen Konsole darstellen.
+- Schritt 3: Ihre Windows 10-Geräte werden gemeinsam von Configuration Manager und MDM (Mobile Device Management) verwaltet.
+- Schritt 4: Sie können nun Ihre bestehenden Workloads stufenweise in die Cloud migrieren.
+
+</ArrowList>
+
+### Bestandskunden mit Intune
+
+Da Intune immer in der aktuellsten Version vorliegt, sind die Funktionen des Configuration Manager bereits installiert. Sie können nun Ihre Arbeitsplatz-PCs, sowie Windows Geräte gemeinsam mit Ihren mobilen Endgeräten verwalten.
+
+
+### Neukunden oder Neulizenzierung
+
+Neukunden empfehlen wir direkt mit Intune zu starten. Dies spart unter anderem Kosten von Servern und der Verwaltungsaufwand ist geringer. Auch Kunden, die neu lizenzieren müssen, empfehlen wir Intune zu nutzen. Kunden, die aber nicht in die Cloud wollen, müssen den [Configuration Manager](/hersteller/microsoft/system-center/client-management-license/) neu über das Open-Value Lizenzprogramm beziehen.
+
+
+## Endpoint Manager Bezugswege
+
+Der Endpoint Manager umfasst u.a Intune und Configuration Manager Funktionen. Intune gibt es als Subscription über CSP. Nach Ablauf der Subscription erlischt das Nutzungsrecht. Configuration Manger bezieht man als Lizenz inkl. Software Assurance über das Open-Value Lizenzprogramm (3 Jahre). Nach Ablauf der Software-Assurance gehört die Lizenz Ihnen, aber können keine Updates sowie Upgrades mehr erhalten.
+
+
+### Microsoft Endpoint Manager in Microsoft 365 Plänen
+
+Der Endpoint Manager ist in den folgende Microsoft 365 Plänen bereits enthalten:
+
+<ArrowList>
+
+- [Microsoft 365 E5](/hersteller/microsoft/microsoft-365/enterprise-e5/)
+- [Microsoft 365 E3](/hersteller/microsoft/microsoft-365/enterprise-e3/)
+- [Enterprise Mobility + Security E5](/hersteller/microsoft/enterprise-mobility-security/#e5preise)
+- [Enterprise Mobility + Security E3](/hersteller/microsoft/enterprise-mobility-security/#e3preise)
+- [Microsoft 365 Business Premium](/hersteller/microsoft/microsoft-365/business-premium/)
+- [Microsoft 365 F1](/hersteller/microsoft/microsoft-365/f1/)
+- [Microsoft 365 F3](/hersteller/microsoft/microsoft-365/f3/)
+- [Microsoft 365 Education A5](/hersteller/microsoft/microsoft-365/education-a5/)
+- [Microsoft 365 Education A3](/hersteller/microsoft/microsoft-365/education-a3/)
+- [Microsoft Intune](/hersteller/microsoft/intune/)
+- [Microsoft Endpoint Configuration Manager](/hersteller/microsoft/system-center/client-management-license/)
+- [Microsoft 365 Defender Services](/hersteller/microsoft/microsoft-365/defender/)
+
+</ArrowList>
+
+## Einsatzgebiete und Integrationsmöglichkeiten
+
+Wir listen hier einige Funktionen auf, die mit den einzelnen Komponenten im Endpoint Manager möglich sind:
+
+[Intune](/hersteller/microsoft/intune/) kann zusammen mit dem [Microsoft Defender for Endpoint](/hersteller/microsoft/microsoft-365/defender/endpoint/) eingesetzt werden. Damit kann der Defender zentral verwaltet werden, um Sicherheitsverletzungen zu verhindern und Auswirkungen innerhalb einer Organisation zu begrenzen. Mehr dazu in den Microsoft [EMS - Intune Dokumenten](https://learn.microsoft.com/de-DE/mem/intune/protect/advanced-threat-protection).
+
+Intune ist mit [Azure AD](/hersteller/microsoft/azure/) integriert, um eine breite Palette von Szenarios für die Zugriffssteuerung zu aktivieren. Z.B. können Sie überprüfen, ob das mobile Gerät kombatibel mit Ihren Organisationsstandards ist oder Dienste einschränken sowie sperren.
+
+Der [System Center Configuration Manager CML](/hersteller/microsoft/system-center/client-management-license/) dient zur Konfigurationsverwaltung für die Microsoft-Plattform. Verbessert ausserdem die Möglichkeiten der Kontrolle bei Beachtung von Unternehmen Compliance-Richtlinien.
+
+
+<GetInTouch theme="light">
+
+Sie haben Fragen zu Microsoft 365 oder möchten ein Angebot? Ich helfe Ihnen gerne weiter.<br />
+Rufen Sie mich an oder schreiben Sie eine E-Mail. Ich berate Sie gerne.
+
+</GetInTouch>

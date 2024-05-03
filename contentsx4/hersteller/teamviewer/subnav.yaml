@@ -1,0 +1,16 @@
+- key:      teamviewer
+  items:
+  - name:   TeamViewer
+    slug:   /hersteller/teamviewer/
+  - name:   Business
+    slug:   /hersteller/teamviewer/business/
+  - name:   Premium
+    slug:   /hersteller/teamviewer/premium/
+  - name:   Corporate
+    slug:   /hersteller/teamviewer/corporate/
+  - name:   Tensor
+    slug:   /hersteller/teamviewer/tensor/
+  - name:   Assist AR Lite
+    slug:   /hersteller/teamviewer/assist-ar/
+  - name:   Meeting
+    slug:   /hersteller/teamviewer/meeting/

@@ -1,0 +1,335 @@
+---
+title: SQL Server 2022 Lizenzierung
+bcTitle: Lizenzierung
+bkey: microsoft
+ckey: stefan-barth
+tocMaxLevel: 2
+date: 2023-03-03
+wanted:
+  features:
+    - name: Editionsvergleich der SQL Server 2022 Editionen
+    - name: Lizenzierung nach Cores oder mit Server- und Zugriffslizenzen (CALs)
+furtherReading:
+  - name: SQL Server FAQ
+    slug: /blog/sql-server-lizenzierung-faq/
+    description: Antworten auf die wichtigsten Fragen zum SQL Server.
+  - name: SQL Server Editionenvergleich
+    slug: /hersteller/microsoft/sql-server/editionen-vergleich/
+    description: Funktionsvergleich der unterschiedlichen SQL Server Editonen.
+  - name: SQL Server 2022 Licensing Guide (englisch)
+    slug: https://download.microsoft.com/download/9/3/d/93d32de6-f268-45ed-ba25-2f9a6756b6af/SQL_Server_2022_Licensing_guide.pdf
+    description: Weitere Details und noch mehr Beispiele finden Sie im SQL Licensing Guide.
+---
+
+
+
+<Intro>
+
+Der SQL Server 2022 wird, wie die Vorgängerversionen, entweder nach Server-/CAL oder nach Cores lizenziert.
+Hier finden Sie die wichtigsten Lizenzierungsregeln und Beispiele, wie Sie virtuelle Umgebungen lizenzieren können.
+Wir konzentrieren uns auf die beiden Haupt-Editionen Standard und Enterprise im Detail, auf die anderen Editionen gehen wir nur kurz ein.
+
+</Intro>
+
+<TOC />
+
+
+## SQL Server 2022 Editionen
+
+<ArrowList>
+
+ - **[SQL Server 2022 Standard](/hersteller/microsoft/sql-server/standard-2022/)**: Für mittelständische Unternehmen. Kann entweder nach Server-/CAL oder nach Cores lizenziert werden.
+ - **[SQL Server 2022 Enterprise](/hersteller/microsoft/sql-server/enterprise-2022/)**: Für mittelständische und große Organisationen. Wird nach Cores lizenziert. Server/CAL ist nicht verfügbar.
+ - **SQL Server 2022 Developer Edition**: Für Entwickler und Administratoren. Funktionsumfang wie Enterprise Edition. Darf nur zum Entwickeln und Testen eingesetzt werden. SQL Server Developer ist kostenlos und kann bei Microsoft heruntergeladen werden: [Download SQL Server Developer Edition](https://www.microsoft.com/de-de/sql-server/sql-server-downloads).
+ - **SQL Server 2022 Express**: Für kleine Desktop-, Web- und Serveranwendungen mit eingeschränkten Möglichkeiten. SQL Server Express ist kostenlos und kann bei Microsoft heruntergeladen werden: [Download SQL Server 2017 Express Edition](https://www.microsoft.com/de-de/sql-server/sql-server-downloads).
+ - **SQL Server 2022 Web Edition**: Für Partner, die Ihren Kunden Lösungen auf Basis von Microsoft SQL Server anbieten. Bezug und Preise nur über spezielle Hosting Partner.
+
+</ArrowList>
+
+<Info>
+
+**Azure SQL Database**<br />
+Es gibt noch eine weitere Edition: [Azure SQL Database](/hersteller/microsoft/azure-sql-database/). Die Azure SQL-DB wird über einen [Microsoft Azure Plan](/hersteller/microsoft/azure/) verbrauchsabhängig abgerechnet und kann nicht einzeln gekauft werden.
+
+</Info>
+
+
+### Editionenvergleich nach Lizenzmodell
+
+|Lizenzierung|Std|Ent|Web|Dev|Express|
+|:---|:---:|:---:|:---:|:---:|:---:|
+|**Server/CAL**|✓|–|–|–|free|free|
+|**Cores**|✓|✓|✓|✓/Azure|free|free|
+
+
+
+## SQL Server 2022 Server-/CAL-Lizenzierung
+
+<ArrowList>
+
+- Lizenziert wird nach dem [Microsoft Server-/CAL-Lizenzmodell](/hersteller/microsoft/lizenzierung/#server-cal-lizenzierung)
+- Jede Betriebssysteminstanz (physisch oder virtuell), in der ein SQL Server ausgeführt wird, benötigt eine Serverlizenz.
+- SQL Server Instanzen in Containern wie [Mirantis-Docker](/hersteller/mirantis-docker/) müssen ebenfalls lizenziert werden. Container werden lizenzrechtlich wie virtuelle Maschinen behandelt, auch wenn sie kein komplettes Betriebssystem virtualisieren.
+- CPUs und Cores des Servers, physisch oder virtuell, werden hier nicht berücksichtigt.
+- Jeder Zugriff auf SQL Server erfordert eine Zugriffslizenz (CAL).
+- Eine CAL berechtigt zum Zugriff auf alle SQL Server im Unternehmen.
+- CALs sind versionsgebunden und abwärtskompatibel.
+- Zugriffe können nach Benutzern (User CAL) oder Geräten (Device CAL) lizenziert werden.
+- Kauflizenzen erhalten Sie im [CSP](/hersteller/microsoft/csp/).
+- Volumenlizenzen mit 3 Jahren Software Assurance (SA) erhalten Sie im [Open Value](/hersteller/microsoft/open-value/).
+- Mit [Software Assurance (SA)](#vorteile-mit-csp-subscription-und-sa) erhalten Sie zusätzliche Vorteile.
+
+
+</ArrowList>
+
+### SQL Server 2022 kaufen
+
+Die Lizenzierung mit Serverlizenz und CALs ist nur für die [SQL Server Standard Edition](/hersteller/microsoft/sql-server/standard-2022/) verfügbar.
+
+<ArrowItem>
+
+[SQL Server Standard 2022](/hersteller/microsoft/sql-server/standard-2022/#servercal-lizenzierung)
+
+</ArrowItem>
+
+
+### Vorteile mit Server-/CAL
+
+ Jede Betriebssysteminstanz (physisch oder virtuell) und jeder Container (Docker oder andere) benötigt eine SQL Server Lizenz, sobald mindestens eine SQL Server Instanz ausgeführt wird. Die Anzahl an ausgeführten SQL Server Instanzen spielt keine Rolle. Sie können mit einer Lizenz innerhalb einer VM beispielsweise mehrere SQL Server Standard Instanzen ausführen. Im Gegensatz zur Core-basierten Lizenzierung muss die Hardware nicht betrachtet werden.
+ Die Hardware und die virtuellen Ressourcen der Server können ohne zusätzliche Kosten im Rahmen der Lizenzbestimmungen beliebig skaliert werden.
+
+<Info>
+
+ **Achtung:** Wenn sich weder Anwender noch Endgerät sicher bestimmen (zählen) lassen, muss auf core-basierte Lizenzierung ausgewichen werden. Dies ist häufig bei Web-Anwendungen der Fall.
+
+</Info>
+
+
+## SQL Server 2022 Core-Lizenzierung
+
+
+<ArrowList>
+
+- Lizenziert wird nach der [Core-Lizenzierung](/hersteller/microsoft/lizenzierung/#prozessorkern-lizenzierung).
+- Jeder Prozessorkern einer Betriebssystem-Instanz (physisch oder virtuell), auf der SQL Server 2022 ausgeführt wird, benötigt eine Server-Lizenz.
+- Core-Lizenzen werden immer in Zwei-Core-Einheiten angeboten. Es gilt eine Mindestlizenzierung von 4 Cores pro Server.
+- Zugriffslizenzen (CALs) werden nicht benötigt. Es dürfen beliebig viele interne und externe Anwender und Endgeräte auf core-basierte SQL Server zugreifen.
+- Bei der Lizenzierung von virtuellen Prozessorkernen (vCores) wird immer [Software Assurance (SA)](#vorteile-mit-csp-subscription-und-sa) benötigt. Linux / Docker Container sind davon ausgenommen.
+- Bei virtuellen Servern mit SQL Server Enterprise können alternativ zur vCore-Lizenzierung auch alle Kerne des physikalischen Hosts lizenziert werden. Auf einem so lizenzierten Host (vSphere, Hyper-V etc.) dürfen beliebig viele virtualisierte SQL Server Instanzen ausgeführt werden.
+- Kauflizenzen erhalten Sie im [CSP](/hersteller/microsoft/csp/).
+- Abonnementlizenzen mit zusätzlichen Rechten erhalten Sie als [CSP Subscription](/hersteller/microsoft/csp/).
+- Volumenlizenzen mit 3 Jahren Software Assurance (SA) erhalten Sie im [Open Value](/hersteller/microsoft/open-value/).
+- Mit [Software Assurance (SA)](#vorteile-mit-csp-subscription-und-sa) erhalten Sie zusätzliche Vorteile.
+
+</ArrowList>
+
+<Info>
+
+**Achtung:** Mit Einführung des SQL Server 2022 wird für den Einsatz in virtuellen Umgebungen immer eine aktive Software Assurance oder CSP Subscription benötigt.
+
+</Info>
+
+
+### SQL Server 2022 Core kaufen
+
+<ArrowList>
+
+- [SQL Server Standard Core 2022](/hersteller/microsoft/sql-server/standard-2022/#core-lizenzierung)
+
+- [SQL Server Enterprise Core 2022](/hersteller/microsoft/sql-server/enterprise-2022/)
+
+</ArrowList>
+
+
+### Besonderheiten SQL Server Enterprise
+
+ Mit [SQL Server 2022 Enterprise](/hersteller/microsoft/sql-server/enterprise-2022/) können Kunden, die alle physischen Kerne auf dem Server lizenziert haben, eine unbegrenzte Anzahl von Instanzen ausführen ([Maximum Virtualization](/glossar/maximum-virtualization/)). Jedoch ist die Anzahl der OSEs (physisch oder virtuell) auf die der Anzahl der dem Server zugewiesenen Kernlizenzen begrenzt. Beispielsweise kann ein Server mit vier Prozessoren und vier Kernen pro Prozessor - vollständig lizenziert mit 16-Kern-Lizenzen - SQL Server-Software in bis zu 16 VM ausführen, unabhängig von der Anzahl der virtuellen Kerne, die jeder VM zugewiesen sind.
+
+ Wenn man jedoch mehr VMs als zulässig ausführen will, muss man zusätzliche Cores lizenzieren. Jede zusätzliche Core-Lizenz ermöglicht die Bereitstellung von SQL Server-Software in einer zusätzlichen VM. Im vorherigen Beispiel würde ein Kunde, der SQL Server Enterprise Edition in 18 VMs ausführen möchte, einfach 18 Core-Lizenzen erwerben und diesem Server zuweisen.
+
+ Mit Software-Assurance entfällt die Begrenzung. Für alle Enterprise Edition-Kernlizenzen (für einen vollständig lizenzierten Server) werden die Nutzungsrechte der Kunden erweitert, sodass eine beliebige Anzahl von Instanzen der Software in einer beliebigen Anzahl von OSEs (physisch oder virtuell) ausgeführt werden kann, somit auch unbegrenzte VMs. Dies ist auch bei Hyper-threading vorteilhaft.
+ **Achtung:** Die Bereitstellung ist mit Software Assurance nur bei [gelisteten Anbietern](https://www.microsoft.com/licensing/docs) möglich.
+
+
+### Core-Lizenzierung ohne SA
+
+ Bei diesem Beispiel werden auf einem vSphere/ESXi oder Hyper-V Host verschiedene virtuelle Server ausgeführt.
+ Container wurden bis zum SQL Server 2019 lizenzrechtlich wie virtuelle Maschinen behandelt, auch wenn ein Container kein vollständiges Betriebssystem virtualisiert.
+ Mit SQL Server 2022 unterscheidet Microsoft jetzt die Lizenzierung: Für die Lizenzierung nach VMs wird mit SQL Server 2022 immer Software Assurance oder eine Subscription benötigt.
+ Die Lizenzierung von Docker/Linux Containern ist davon nicht betroffen.
+
+
+|Server-Typ|vCores|Benötigte Core-Lizenzen|benötigt SA|
+|:---|:---:|:---:|:---:|
+|Virtuelle Maschine 1|2|4|✓|
+|Virtuelle Maschine 2|4|4|✓|
+|Docker Container 1|2|4|–|
+|Docker Container 2|6|6|–|
+|Summe|14|18|–|
+
+
+ - Der ersten virtuellen Maschine wurden 2 vCores zugewiesen. Auf Grund der Mindestlizenzierung (4 Cores) müssen Lizenzen für 4 Cores bestellt werden.
+ - Der zweiten virtuellen Maschine wurden 4 vCores zugewiesen. Es müssen folglich Lizenzen für 4 Cores bestellt werden.
+ - Container werden wie virtuelle Maschinen behandelt. Es greift also auch die Mindestlizenzierung beim ersten Docker Container.
+
+
+### Core-Lizenzierung mit SA
+
+ [SQL Server Enterprise 2022](/hersteller/microsoft/sql-server/enterprise-2022/) kann auch nach physischen CPUs des Hosts lizenziert werden. Hierfür wird aktive SA oder eine [CSP Subscriptions](/hersteller/microsoft/csp/#rechte-mit-csp-subscriptions), mit [ähnlichen Rechte wie SA](#vorteile-mit-csp-subscription-und-sa), vorausgetzt.
+ Gehen wir beim Beispiel oben davon aus, dass der Virtualisierungshost mit 4 CPUs je zwei Prozessorkernen ausgestattet ist, dann wären lediglich 8 Core-Lizenzen notwendig.
+ Wäre der Host hingegen mit 4 CPU je 8 Core ausgestattet, käme die Lizenzierung nach vCores günstiger.
+
+<Info>
+
+Sollen mehrere SQL Server Instanzen in Docker Containern ausgeführt werden, ist die Lizenzierung physischer Prozessorkerne (SA oder CSP Subscription erforderlich) oft vorteilhaft. Docker-Container sind sehr effizient. Auf geeigneter Hardware oder in großen VMs können leicht 100 oder mehr Container ausgeführt werden.
+
+</Info>
+
+
+
+## Lizenzprogramme und Bezugswege
+
+### OEM Kauflizenzen
+
+Dauerhaft gültige [OEM-Lizenz](/hersteller/microsoft/oem/) (perpetual License) mit eigenschränkten Rechten. Support und einige Nutzungsrechte, bspw. zur Zweitnutzung oder Virtualisierung, sind nicht enthalten.
+
+### CSP Kauflizenzen
+
+Kauflizenzen für gewerbliche Kunden sind im [CSP-Lizenzprogramm](/hersteller/microsoft/csp/) erhältlich. Es gibt hier keine Mindestbestellmenge und auch keine Software Assurance. Bildungseinrichtungen und gemeinnützige Organisationen erhalten Sonderkonditionen. Behörden erhalten dieselben Einkaufskonditionen, wie Unternehmen. Das Downgrade-Recht, zum Einsatz älterer Versionen, ist aber enthalten. Software Sie im CSP Portal herunterladen.
+
+### CSP Subscriptions
+
+SQL Server CSP Subscriptions enthalten Support und ähnliche Rechten, wie mit [SQL Server mit Software Assurance](/hersteller/microsoft/sql-server/lizenzierung/#vorteile-mit-csp-subscription-und-sa).
+Lizenziert wird normalerweise als einjähriges Abonnement. Es gibt hier keine Mindestbestellmenge. Kostenlose Upgrades auf neue Versionen sind enthalten.
+
+### Open Value Volumenlizenzen
+
+ [Open Value Volumenlizenzen](/hersteller/microsoft/open-value/) enthalten immer [Software Assurance (SA)](/hersteller/microsoft/software-assurance/) und können als Kauflizenz mit 3 Jahren Software Assurance im Voraus oder auf Raten gekauft werden. Es gibt Sonderkonditionen für Behörden, Bildungseinrichtungen und gemeinnützige Organisationen. Seit Ende 2021 werden Open License Kunden bei SA-Verlängerungen auf das Open Value Lizenzprogramm umgestellt. Beachten Sie bitte, dass sich hierbei die Vertragslaufzeit von 2 Jahren (Open License) auf 3 Jahre (Open Value) ändert. Gerne beraten wir Sie beim Wechsel.
+
+### Azure Plan (Azure Subscription)
+
+  Der MS SQL Server kann auch über die Azure Cloud bereit gestellt werden. Die Azure SQL-DB kann nicht einzeln gekauft werden und wird über einen [Azure Plan](/hersteller/microsoft/azure/) gebucht und am Ende jedes Monats verbrauchsabhängig abgerechnet.
+
+
+## Wartung und Support
+
+ Der Wartungszyklus entspricht dem mit SQL Server 2017 eingeführten Modern Servicing Model. Während des fünfjährigen Produktlebenszyklus erhalten neue Versionen zunächst monatliche, kumulative Updates (CU). Nach einem Jahr ändert sich der Update-Zyklus der CU auf 2 Monate. Dies wird bis zum Ende der [Laufzeit des Produktlebenszyklus](https://learn.microsoft.com/de-de/lifecycle/products/?alpha=sql%20server) beibehalten. General Distribution Releases (GDR), die nur sicherheitsrelevante Fixes enthalten, gibt es weiterhin.
+
+ Siehe: [Microsoft Support-Ende](/hersteller/microsoft/supportende-eol/) und [SQL Server Servicing Model](/hersteller/microsoft/sql-server/servicing-model/).
+
+<Info>
+
+**Migrieren Sie auf SQL Server 2022**
+
+Wir bieten Ihnen Unterstützung durch zertifizierte Microsoft SQL Server Spezialisten, wenn Sie eine Migration planen.
+ Wenn Sie mögen, vereinbaren Sie mit mir ein erstes telefonisches Assessment, um den Aufwand abzuschätzen.
+
+</Info>
+
+
+### Vorteile mit CSP Subscription und SA
+
+ Die folgenden Möglichkeiten gelten **nur** für SQL Server mit aktiver SA oder CSP Subcriptions. In bestimmten Szenarien lassen sich dadurch Lizenzkosten senken.
+
+#### Unterschiede zwischen CSP Subscription und SA
+
+|Vorteile|SA|CSP|
+|:---|:---:|:---:|
+|Anrecht auf neue Versionen|✓|✓|
+|Azure Hybrid Benefit für SQL Server|✓|✓|
+|Selbstgehostete Anwendungen|✓|✓|
+|Disaster Recovery (Notfallwiederherstellung)|✓|✓|
+|Lizenzmobilität in Serverfarmen|✓|✓|
+|Lizenzmobilität durch Software Assurance|✓|✓|
+|Failover-Rechte|✓|✓|
+|Unbeschränkte Virtualisierung|✓|✓|
+|Recht zur Nutzung von Machine Learning Server|✓|✓|
+|Recht zur Nutzung von Power BI Report Server|✓|✓|
+
+|Verwendete Abkürzungen||
+|:---|:---|
+|**SA:** [Software Assurance](/hersteller/microsoft/software-assurance/)|**CSP:** [Cloud Solution Provider (CSP) Subscription](/hersteller/microsoft/csp/)|
+
+
+#### Passive Failover
+
+ **Achtung:** Bereitstellung nur bei [gelisteten Anbietern](https://www.microsoft.com/licensing/docs)
+
+<ArrowList>
+
+ - Passive Failover Instanzen (cold) müssen nicht lizenziert werden.
+ - Je lizenzierter aktiver Instanz eine passive Instanz.
+ - Passive Instanz darf nicht mehr Cores als die lizenzierte aktive Instanz nutzen.
+ - Passive Failover Instanzen können on premises installiert oder aus der Cloud bezogen werden.
+ - Passive Failover Instanzen (cold, on premises oder aus der Cloud) müssen nicht lizenziert werden. Passive Instanzen dürfen jedoch nicht mehr Cores als die lizenzierte aktive Instanz nutzen.
+
+</ArrowList>
+
+
+#### Lizenz-Mobilität
+
+ **Achtung:** Bereitstellung nur bei [gelisteten Anbietern](https://www.microsoft.com/licensing/docs).
+
+<ArrowList>
+
+ - SQL Server ohne SA dürfen innerhalb einer Serverfarm nur alle 90 Tage verschoben werden (Ausnahme: permanenter Hardware-Ausfall). Mit SA fällt diese Beschränkung weg.
+ - Mit SA können SQL Server innerhalb einer Serverfarm beliebig verschoben werden.
+ - Die Übertragung in eine externe Cloud oder ins Rechenzentrum eines Hosters ist ohne SA nicht erlaubt.
+ - Mit SA können SQL Server alle 90 Tage in eine externe Cloud oder ins Rechenzentrum eines Hosters verschoben werden.
+ - Die Rechte der CSP Subscriptions sind auf die Lizenzmobilität innerhalb einer Serverfarm begrenzt.
+ - Siehe auch: [Lizenzmobilität für Microsoft-Lizenzen mit Software-Assurance](/blog/lizenzmobilitaet-fuer-microsoft-lizenzen-mit-software-assurance/)
+
+</ArrowList>
+
+
+#### Maximum Virtualization
+
+Für die Lizenzierung des SQL Server 2022 nach einzelnen VMs wird eine aktive Software Assurance oder CSP Subscription benötigt.
+
+Die unbegrenzte Virtualisierung ([Maximum Virtualization](/glossar/maximum-virtualization/)) ist nur bei SQL Server Enterprise Lizenzen mit aktiver Software Assurance oder SQL Server Enterprise CSP Subscriptions möglich. Ansonsten können Sie keine weiteren virtuelle Instanzen nutzen, wenn diese die Anzahl der Cores überschreiten.
+Beispiel: Wenn Sie 16 Core Lizenzen im Einsatz haben, dürfen maximal 16 SQL Instanzen betrieben werden. Mit unbegrenzter Virtualisierung entfällt diese Beschränkung.
+
+
+#### Azure Hybrid Benefit
+
+Azure Hybrid-Vorteil ([Azure Hybrid Benefit](/glossar/azure-hybrid-benefit/)) ermöglicht die Migration von SQL Server Lizenzen in die Azure Cloud:
+
+
+<ArrowList>
+
+  - Umwandeln von Lizenzen im Verhältnis 1 Core SQL Server Enterprise zu 4 vCPU Azure SQL.
+  - Unlimitierte Virtualisierung unter Azure Dedicated Host
+  - Dual Use Right (Cloud + lokal) für 180 Tage zur Migration
+  - Extended Security Updates (ESU) kostenlos enthalten.
+
+</ArrowList>
+
+
+#### Recht zum Einsatz der neuesten Produktversionen
+
+ Mit aktiver Software Assurance oder mit einer CSP Subscription können Sie die neuesten Produktversionen direkt produktiv einsetzen.
+
+
+
+### Test und Evaluierung
+
+ Microsoft bietet verschiedene Möglichkeiten für [Test und Evaluierung von SQL Server 2022](https://www.microsoft.com/de-de/evalcenter/evaluate-sql-server-2022):
+
+<ArrowList>
+
+ - [Windows](https://www.microsoft.com/en-us/evalcenter/)
+ - [Red Hat Enterprise](https://learn.microsoft.com/en-us/sql/linux/quickstart-install-connect-red-hat?view=sql-server-ver15&viewFallbackFrom=sqlallproducts-allversions)
+ - [SUSE Linux Enterprise](https://learn.microsoft.com/en-us/sql/linux/quickstart-install-connect-suse?view=sql-server-ver15&viewFallbackFrom=sqlallproducts-allversions)
+ - [Ubuntu Linux](https://learn.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-ver15&viewFallbackFrom=sqlallproducts-allversions)
+ - [Docker auf Ubuntu](https://hub.docker.com/_/microsoft-mssql-server)
+ - [Docker auf Red Hat](https://catalog.redhat.com/#/mcr.microsoft.com/mssql/rhel/server/)
+
+</ArrowList>
+
+
+<GetInTouch theme="light">
+
+Sie haben weitere Fragen zum Produkt oder zur Lizenzierung?<br />
+Kein Problem. Rufen Sie an oder schreiben Sie eine E-Mail. Ich berate Sie gerne.
+
+</GetInTouch>

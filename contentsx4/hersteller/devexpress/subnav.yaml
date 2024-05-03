@@ -1,0 +1,28 @@
+- key:      devexpress
+  items:
+  - name:   DevExpress
+    slug:   /hersteller/devexpress/
+  - name:   Universal
+    slug:   /hersteller/devexpress/universal/
+  - name:   DXperience
+    slug:   /hersteller/devexpress/dxperience/
+  - name:   DevExtreme
+    slug:   /hersteller/devexpress/devextreme/
+  - name:   ASP.NET
+    slug:   /hersteller/devexpress/asp-net/
+  - name:   WPF
+    slug:   /hersteller/devexpress/wpf/
+  - name:   WinForms
+    slug:   /hersteller/devexpress/winforms/
+  - name:   Reporting
+    slug:   /hersteller/devexpress/reporting/
+  - name:   Office Files API
+    slug:   /hersteller/devexpress/office-file-api/
+  - name:   QuantumPack
+    slug:   /hersteller/devexpress/quantumpack/
+  - name:   GridPack
+    slug:   /hersteller/devexpress/gridpack/
+  - name:   NavigationPack
+    slug:   /hersteller/devexpress/navigationpack/
+  - name:   VCL
+    slug:   /hersteller/devexpress/vcl/

@@ -1,0 +1,16 @@
+- key:      idm
+  items:
+  - name:   IDM
+    slug:   /hersteller/idm/
+  - name:   IDM All Access
+    slug:   /hersteller/idm/all-access-subscription/
+  - name:   UltraEdit
+    slug:   /hersteller/idm/ultraedit/
+  - name:   UltraEdit Studio
+    slug:   /hersteller/idm/ultraedit-studio/
+  - name:   UltraCompare
+    slug:   /hersteller/idm/ultracompare/
+  - name:   UltraFinder
+    slug:   /hersteller/idm/ultrafinder/
+  - name:   UltraFTP
+    slug:   /hersteller/idm/ultraftp/

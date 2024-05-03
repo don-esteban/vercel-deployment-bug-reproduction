@@ -1,0 +1,22 @@
+- key:      gfi-software
+  items:
+  - name:   GFI
+    slug:   /hersteller/gfi-software/
+  - name:   MailEssentials
+    slug:   /hersteller/gfi-software/mailessentials/
+  - name:   Archiver
+    slug:   /hersteller/gfi-software/archiver/
+  - name:   FaxMaker
+    slug:   /hersteller/gfi-software/faxmaker/
+  - name:   LanGuard
+    slug:   /hersteller/gfi-software/languard/
+  - name:   ClearView
+    slug:   /hersteller/gfi-software/clearview/
+  - name:   KerioConnect
+    slug:   /hersteller/gfi-software/kerio-connect/
+  - name:   KerioControl
+    slug:   /hersteller/gfi-software/kerio-control/
+  - name:   KerioControl Appliance
+    slug:   /hersteller/gfi-software/kerio-control-appliance/
+  - name:   HelpDesk
+    slug:   /hersteller/gfi-software/helpdesk/

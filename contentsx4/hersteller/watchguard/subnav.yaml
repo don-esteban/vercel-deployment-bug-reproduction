@@ -1,0 +1,18 @@
+- key:      watchguard
+  items:
+  - name:   WatchGuard
+    slug:   /hersteller/watchguard/
+  - name:   Firebox Appliance
+    slug:   /hersteller/watchguard/firebox/
+  - name:   Firebox Cloud
+    slug:   /hersteller/watchguard/firebox-cloud/
+  - name:   FireboxV
+    slug:   /hersteller/watchguard/firebox-virtual/
+  - name:   Access Point
+    slug:   /hersteller/watchguard/access-point/
+  - name:   DNSWatchGO
+    slug:   /hersteller/watchguard/dnswatchgo/
+  - name:   AuthPoint
+    slug:   /hersteller/watchguard/authpoint/
+  - name:   PassPort
+    slug:   /hersteller/watchguard/passport/

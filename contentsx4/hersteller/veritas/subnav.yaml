@@ -1,0 +1,36 @@
+- key:      veritas
+  items:
+  - name:   Veritas
+    slug:   /hersteller/veritas/
+  - name:  Backup Exec
+    sub:
+      - name: Übersicht
+        slug:   /hersteller/veritas/backup-exec/
+      - name:   Backup Exec Simple
+        slug:   /hersteller/veritas/backup-exec/simple-core-pack/
+  - name:   Backup Exec (legacy)
+    sub:
+    - name:   Legacy Editions
+      sub:
+      - name:  Übersicht Editionen
+        slug:   /hersteller/veritas/backup-exec/editionen/
+      - name:   Bronze Edition
+        slug:   /hersteller/veritas/backup-exec/bronze-edition/
+      - name:   Silver Edition
+        slug:   /hersteller/veritas/backup-exec/silver-edition/
+      - name:   Gold Edition
+        slug:   /hersteller/veritas/backup-exec/gold-edition/
+    - name:   Server & more
+      sub:
+      - name:   Backup Exec Server
+        slug:   /hersteller/veritas/backup-exec/server/
+      - name:   V-Ray Edition
+        slug:   /hersteller/veritas/backup-exec/v-ray-edition/
+      - name:   Agenten
+        slug:   /hersteller/veritas/backup-exec/agenten/
+      - name:   Optionen
+        slug:   /hersteller/veritas/backup-exec/optionen/
+  - name:   System Recovery
+    slug:   /hersteller/veritas/system-recovery/
+  - name:   Desktop and Laptop Option (DLO)
+    slug:   /hersteller/veritas/desktop-laptop-option/

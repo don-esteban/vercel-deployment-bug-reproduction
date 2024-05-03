@@ -1,0 +1,36 @@
+- key:      veeam
+  items:
+  - name:   Veeam
+    slug:   /hersteller/veeam/
+  - name:   Data Platform Foundation
+    sub:
+    - name:   Übersicht
+      slug:   /hersteller/veeam/data-platform-foundation/
+    - name:   Universal License (VUL)
+      slug:   /hersteller/veeam/data-platform-foundation/#universal-license
+    - name:   Socket License
+      slug:   /hersteller/veeam/data-platform-foundation/#socket-license
+  - name:   Data Platform Essentials
+    sub:
+    - name:   Übersicht
+      slug:   /hersteller/veeam/data-platform-essentials/
+    - name:   Universal License (VUL)
+      slug:   /hersteller/veeam/data-platform-essentials/#universal-license
+    - name:   Socket License
+      slug:   /hersteller/veeam/data-platform-essentials/#socket-license
+  - name:   Data Platform Advanced
+    sub:
+    - name:   Übersicht
+      slug:   /hersteller/veeam/data-platform-advanced/
+    - name:   Universal License (VUL)
+      slug:   /hersteller/veeam/data-platform-advanced/#universal-license
+    - name:   Socket License
+      slug:   /hersteller/veeam/data-platform-advanced/#socket-license
+  - name:   Data Platform Premium
+    slug:   /hersteller/veeam/data-platform-premium/
+  - name:   Veeam ONE
+    slug:   /hersteller/veeam/one/
+  - name:   Backup for Microsoft 365
+    slug:   /hersteller/veeam/backup-for-microsoft-365/
+  - name:   Data Cloud for Microsoft 365
+    slug:  /hersteller/veeam/data-cloud-for-m365/

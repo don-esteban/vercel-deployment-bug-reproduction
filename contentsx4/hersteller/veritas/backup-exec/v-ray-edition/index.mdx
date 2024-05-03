@@ -1,0 +1,173 @@
+---
+title: Veritas Backup Exec 22 V-Ray Edition
+bcTitle: V-Ray Edition
+bkey: veritas
+ckey: harald-wieke
+date: 2023-04-03
+seoTitle: Veritas Backup Exec V-Ray Edition | Preise, Lizenzen und Informationen
+wanted:
+  features:
+    - name: Komplettlösung zur Datensicherung in virtualisierten Infrastrukturen
+    - name: Schützt ausschließlich virtuelle Umgebungen
+---
+
+
+
+<Intro>
+
+  *Backup Exec V-Ray Edition* ist eine Komplettlösung zur Datensicherung in virtualisierten Infrastrukturen und schützt ausschließlich virtuelle Umgebungen. Lizenziert wird nach *Prozessoren* (pro CPU-Sockel) des Hypervisor-Hosts.
+  Es werden Backup-Methoden mit und ohne *Agenten* unterstützt. Agenten für verbreitete Anwendungen sind im V-Ray Bundle enthalten.
+  Dazu gehören beispielsweise: Microsoft Exchange, Microsoft SQL Server, Microsoft SharePoint, Oracle Database, Symantec Enterprise Vault, IBM Lotus Notes.
+
+</Intro>
+
+<TOC />
+
+<Info>
+
+Dieses Produkt ist nur als Renewal erhältlich.
+
+Neulizenzen sind als [Backup Exec Simple Core Pack](/hersteller/veritas/backup-exec/simple-core-pack/) erhältlich. Darin sind sämtliche Funktionen inklusive.
+
+</Info>
+
+
+## Preise
+
+
+### Renewals
+
+
+<Products bkey="veritas" tags={["v-ray", "renewal"]}/>
+
+
+
+## Komponenten
+
+  Die V-Ray Edition enthält den Medien-Server/Backup-Server, alle Agenten und die Deduplizierungsoption. Das Nutzungsrecht ist auf virtuelle Umgebungen (VMware- und Hyper-V-Hosts) beschränkt. Lizenziert wird pro CPU der Hosts. Details und Beispiele zur Lizenzierung finden Sie im Abschnitt über die [Lizenzierung](#lizenzierung).
+
+ Folgende Komponenten sind enthalten:
+
+
+ - **Medienserver** - Stellt die Basisfunktionen für Backup und Restore zur Verfügung.
+ - **Veritas Backup Exec Agent for VMware** - Wiederherstellung virtueller Maschinen und [VMware Umgebungen](/hersteller/vmware/). ESX/ESXi/vSphere/vCenter.
+ - **Veritas Backup Exec Agent for Microsoft Hyper-V** - Sicherung and Wiederherstellung von Microsoft Hyper-V Hosts (auch im Cluster) und virtuellen Maschinen.
+ - **Veritas Backup Exec Agent for Windows** - Deckt alle Windows Instanzen des lizenzierten VMware oder Hyper-V-Hosts ab.
+ - **Veritas Backup Exec Agent for Linux** -	Deckt alle Linux Instanzen des lizenzierten VMware oder Hyper-V-Hosts ab.
+ - **Veritas Backup Exec Agent for Microsoft Active Directory** - Active Directory Backup und granulare Wiederherstellung (Granular Recovery Technology, GRT) einzelner AD-Objekte und -Attribute.
+ - **Veritas Backup Exec Agent for Microsoft Exchange Server** -	Sicherung und granulare Wiederherstellung (zum Beispiel einzelner Postfächer) von Microsoft Exchange Servern.
+ - **Veritas Backup Exec Agent for Microsoft SharePoint** - Sicherung und Wiederherstellung von [SharePoint](/hersteller/microsoft/sharepoint/) Objekten wie Web-Applikationen, Datenbanken, Dokumente, Medien, Konfigurationsdatenbanken und Service-Anwendungen.
+ - **Veritas Backup Exec Agent for Microsoft SQL Server** - Sicherung und Wiederherstellung von [Microsoft SQL Servern](/hersteller/microsoft/sql-server/).
+ - **Veritas Backup Exec Agent for Oracle on Windows or Linux Servers** - Sicherung und Wiederherstellung von [Oracle](/hersteller/oracle/) Datenbanken in Windows und Linux Betriebssystemen.
+ - **Veritas Backup Exec Deduplication Option** - Ermöglicht Server-seitige Deduplizierung, Client-seitige Deduplizierung und Appliance-Deduplizierung (Deduplizierung auf intelligenten Speichermedien).
+
+
+## Lizenzierung
+
+
+>  ** "... Protects virtual environments only. V-Ray Edition can be mixed with the a la carte licensing model ... to extend protection to physical environments. ..." ** <br/> Zitiert aus dem Veritas Backup Exec 21 [Licensing Guide](https://www.veritas.com/content/support/en_US/doc/ka6j000000009ubAAA-0).
+
+
+  Die V-Ray Edition ist das Backup Exec Bundle für die Sicherung und Wiederherstellung virtueller Infrastrukturen. Die im Bundle enthaltenen Nutzungsrechte gelten ausschließlich für die Nutzung in VMware ESX/ESXi und Microsoft Hyper-V Umgebungen.
+
+  Physikalische Server und Applikationen können mit gesichert werden, wenn dafür zusätzliche [Agenten](/hersteller/veritas/backup-exec/agenten/) erworben werden. Der Medienserver kann ebenfalls mittels [Optionen](/hersteller/veritas/backup-exec/optionen/) "aufgerüstet" werden.
+
+
+>  ** "... To fully protect a VMware or Hyper-V cluster, a license is required for each socket of each node of the cluster. ..." ** <br/> Zitiert aus dem Veritas Backup Exec 21 [Licensing Guide](https://www.veritas.com/content/support/en_US/doc/ka6j000000009ubAAA-0).
+
+
+  Mit dieser Grundregel ist das meiste gesagt. Als Basis für die Anzahl benötigter V-Ray-Lizenzen müssen einfach alle CPUs der ESX/Hyper-V Hosts zusammengezählt werden. Modell und Leistungsfähigkeit (Anzahl der Cores) ist unerheblich. Einfach die gesteckten CPUs addieren.
+
+
+
+<GetInTouch>
+
+  Haben Sie Fragen zu Migration, Upgrades oder sonstigen Lizenzierung?
+  Rufen Sie mich an oder schreiben mir eine E-Mail.
+
+</GetInTouch>
+
+
+
+### V-Ray Lizenzierungsbeispiel
+
+**Beginnen wir mit einer kleinen virtuellen Umgebung:**
+
+
+||Zu sichernde Umgebung||benötigte Lizenzen|
+|:---:|:---|:---:|:---|
+|3|X Hosts mit jeweils 2 CPUs bestückt. Virtuelle Maschinen mit Windows, Linux, SQL Server, Exchange Server etc.|6|V-Ray Edition (eine Lizenz pro CPU)|
+
+<br />
+
+**Sie möchten nun einige physikalische Server mit sichern:**
+
+
+
+||Zu sichernde Umgebung||benötigte Lizenzen|
+|:---:|:---|:---:|:---|
+|3|X Hosts mit jeweils 2 CPUs bestückt. Virtuelle Maschinen mit Windows, Linux, SQL Server, Exchange Server etc.|6|V-Ray Edition (eine Lizenz pro CPU)|
+|2|Windows File Server (physikalisch)|2|Agent for Windows|
+|1|Linux Server Server (physikalisch)|1|Agent for Linux|
+|1|Oracle Database Server (physikalisch)|1|Agent for Applications|
+
+<br />
+
+**Sie schaffen sich eine Tape Library mit 10 Laufwerken an:**
+
+
+||Zu sichernde Umgebung||benötigte Lizenzen|
+|:---:|:---|:---:|:---|
+|3|X Hosts mit jeweils 2 CPUs bestückt. Virtuelle Maschinen mit Windows, Linux, SQL Server, Exchange Server etc.|6|V-Ray Edition (eine Lizenz pro CPU)|
+|2|Windows File Server (physikalisch)|2|Agent for Windows|
+|1|Linux Server Server (physikalisch)|1|Agent for Linux|
+|1|Oracle Database Server (physikalisch)|1|Agent for Applications|
+|1|10 Bandlaufwerke innerhalb einer Tape-Library mit Autoloader.|9|Backup Exec Library Expansion Option (LEO)|
+
+<br />
+
+  **Warum 9 LEO?**
+
+  Die V-Ray Edition enthält den Medienserver. Der berechtigt zur Nutzung des ersten Bandlaufwerks. 6 V-Ray Lizenzen berechtigen jedoch nicht zur Nutzung von 6 Bandlaufwerken, sondern von 6 **ersten** Bandlaufwerken. Hätte man, sagen wir, 6 Tape-Libraries mit je zwei Bandlaufwerken (in der Summe 12 Laufwerke), wären nur 6 LEO fällig.
+
+<br />
+
+ **Einige Zeit später. Ihre Organisation ist deutlich gewachsen und Sie verwalten nun mehrere Backup Exec Server an verschiedenen Standorten:**
+
+
+||Zu sichernde Umgebung||benötigte Lizenzen|
+|:---:|:---|:---:|:---|
+|10|X Hosts mit jeweils 2 CPUs bestückt. Virtuelle Maschinen mit Windows, Linux, SQL Server, Exchange Server etc.|20|V-Ray Edition (eine Lizenz pro CPU)|
+|2|Windows File Server (physikalisch)|2|Agent for Windows|
+|1|Linux Server Server (physikalisch)|1|Agent for Linux|
+|1|Oracle Database Server (physikalisch)|1|Agent for Applications|
+|1|2 Bandlaufwerke innerhalb einer Tape-Library mit Autoloader.|2|Backup Exec Library Expansion Option (LEO)|
+|1|Jeder Standort wird mit einem eigenen Backup Server ausgestattet, um WAN und VPN- Lasten beim Backup/Restore zu verringern. Backups sollen weiterhin zentral verwaltet werden.|1|Backup Exec Central Admin Server Option|
+
+
+
+  **Warum 2 LEO?**
+
+  Die V-Ray Edition enthält den Medienserver. Der berechtigt zur Nutzung des ersten Bandlaufwerks. 20 V-Ray Lizenzen berechtigen jedoch nicht zur Nutzung von 20 Bandlaufwerken, sondern nur zur Nutzung von 20 **ersten** Bandlaufwerken. Daher sind noch zwei LEO notwendig.
+
+<br />
+
+**Es kommt eine SharePoint Server Farm hinzu. Ihre Backup-Strategie wird um ein Disk-to-Disk Sicherungskonzept mittels einer VTL (Virtual Disk Library) erweitert.**
+
+
+||Zu sichernde Umgebung||benötigte Lizenzen|
+|:---:|:---|:---:|:---|
+|10|X Hosts mit jeweils 2 CPUs bestückt. Virtuelle Maschinen mit Windows, Linux, SQL Server, Exchange Server etc.|20|V-Ray Edition (eine Lizenz pro CPU)|
+|2|Windows File Server (physikalisch)|2|Agent for Windows|
+|1|Linux Server Server (physikalisch)|1|Agent for Linux|
+|1|Oracle Database Server (physikalisch)|1|Agent for Applications|
+|1|2 Bandlaufwerke innerhalb einer Tape-Library mit Autoloader.|2|Backup Exec Library Expansion Option (LEO)|
+|1|Jeder Standort wird mit einem eigenen Backup Server ausgestattet, um WAN und VPN- Lasten beim Backup/Restore zu verringern. Backups sollen weiterhin zentral verwaltet werden.|1|Backup Exec Central Admin Server Option|
+|1|Verteile SharePoint Server Farm mit einem Web Front End Server, einem Index Server und einem physikalischen Query Server|1|Agent for Applications|
+|1|VTL (Virtual Disk Library)|1|Virtual Tape Library Unlimited Drive Option (VTL)|
+
+
+
+  **Warum nur ein SharePoint Agent?**
+
+  Zwei SharePoint Server laufen in der virtuellen Umgebung. Es ist nur ein Agent für den physikalischen Query-Server notwendig.

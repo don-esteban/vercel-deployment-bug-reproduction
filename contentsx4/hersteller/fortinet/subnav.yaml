@@ -1,0 +1,18 @@
+- key:      fortinet
+  items:
+  - name:   Fortinet
+    slug:   /hersteller/fortinet/
+  - name:   FortiGate
+    slug:   /hersteller/fortinet/fortigate/
+  - name:   FortiSwitch
+    slug:   /hersteller/fortinet/fortiswitch/
+  - name:   FortiClient
+    slug:   /hersteller/fortinet/forticlient/
+  - name:   FortiManager
+    slug:   /hersteller/fortinet/fortimanager/
+  - name:   FortiMonitor
+    slug:   /hersteller/fortinet/fortimonitor/
+  - name:   FortiAnalyzer
+    slug:   /hersteller/fortinet/fortianalyzer/
+  - name:   FortiAuthenticator
+    slug:   /hersteller/fortinet/fortiauthenticator/

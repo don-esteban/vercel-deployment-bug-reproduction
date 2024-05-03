@@ -1,0 +1,10 @@
+- key: nutanix
+  items:
+    - name: NUTANIX
+      slug: /hersteller/nutanix/
+    - name: Nutanix Cloud Infrastructure (NCI)
+      slug: /hersteller/nutanix/cloud-infrastructure/
+    - name: Nutanix Unified Storage (NUS)
+      slug: /hersteller/nutanix/unified-storage/
+    - name: Nutanix Microcluster Bundle
+      slug: /hersteller/nutanix/microcluster/

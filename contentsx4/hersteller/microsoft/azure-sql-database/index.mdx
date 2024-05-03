@@ -1,0 +1,107 @@
+---
+title: Azure SQL Database (SQL-DB)
+bcTitle: Azure SQL Database
+seoTitle: "Microsoft Azure SQL Database (SQL-DB) | Lizenzierung, Services, Dienste und Subscriptions."
+bkey: microsoft
+ckey: stefan-barth
+date: 2022-06-22
+wanted:
+  features:
+    - name: Intelligente, verwaltete SQL Server Datenbank in der Azure Cloud
+    - name: Buchung und Abrechnung über die Azure Subscription
+---
+
+
+
+<Intro>
+
+ Mit der Azure SQL Database (SQL-DB) erhalten Sie eine intelligente, verwaltete [SQL Server Datenbank](/hersteller/microsoft/sql-server/) als Dienst aus der Cloud (PaaS - Platform as a Service). Zur Nutzung einer frei skalierbaren, vollständig verwalteten Datenbank in der Azure Cloud mit integrierten KI Funktionen und integrierter Hochverfügbarkeit.
+
+ Die Azure SQL Database wird, wie die meisten Azure Dienste über die [Azure Subscription](/hersteller/microsoft/azure/) abgerechnet. Eine Beschreibung der Subscription finden Sie unten. Microsoft bietet auch einen <a href="https://azure.microsoft.com/de-de/pricing/details/azure-sql-database/single/" target="_blank">Preisrechner</a> für eine genauere Kosteneinschätzung
+
+
+
+</Intro>
+
+<TOC />
+
+
+
+## Voraussetzungen
+
+  Für die Nutzung der Azure SQL Database wird eine [Azure Subscription](/hersteller/microsoft/azure/) benötigt.
+
+
+<Info>
+
+ **Azure Hybridvorteil**
+
+ Wenn Sie einen lokalen [Microsoft SQL Server](/hersteller/microsoft/sql-server/) einsetzen, können Sie vom [Azure-Hybridvorteil](https://azure.microsoft.com/de-de/pricing/hybrid-benefit/) profitieren und Ihre **lokalen Lizenzen mit Software Assurance anrechnen lassen**. Damit können Sie beispielsweise vorhandene SQL Server Core-Lizenzen gegen vCPUs eintauschen. Für eine lokale [SQL Server Enterprise](/hersteller/microsoft/sql-server/enterprise-2022/) Core Lizenz erhalten Sie 4 vCores in der Cloud.
+
+
+
+</Info>
+
+
+
+## SQL Database Lizenzierung
+
+ Die Azure SQL Datenbank kann wahlweise nach **virtuellen Prozessoren (vCore)**, nach **Datenbanktransaktionen (DTU)** oder nach dem **serverlosen Modell** lizenziert werden.
+
+ - Die **Corebasierte Lizenzierung (vCore)** bietet Flexibilität und Kontrolle bei der Auswahl der Anzahl virtueller Kerne, sowie bei Größe und Geschwindigkeit des (Arbeits-)Speichers. Hier ist die Nutzung des [Azure-Hybridvorteils](https://azure.microsoft.com/de-de/pricing/hybrid-benefit/) mit lokalen Lizenzen möglich.
+ - **Transaktionsbasierte Lizenzierung** nach DTUs bietet sich an, wenn Sie eine vordefinierte Dienstebene (Basic, Standard, Premium) mit fester Speichermenge und Aufbewahrungsdauer zu einem festen Preis bevorzugen. Die Transkationsbasierte Lizenzierung ist einfacher einzurichten, aber in der Flexibilität eingeschränkt und nicht für alle Bereitstellungsoptionen verfügbar.
+ - Das **Serverlose Modell** für Einzeldatenbanken wird nach dem Ressourcenbedarf für den Workload sekundengenau abgerechnet. Für Datenbanken mit wechselnden, unvorhersehbaren Nutzungsmustern geeignet, die keine kritische Verfügbarkeit benötigen. Allerdings ausschließlich im Standard Service Tier verfügbar.
+
+ Eine Beschreibung für die genaue Ermittlung der vCPUs und DTUs finden Sie auf den [Microsoft Seiten](https://learn.microsoft.com/de-de/azure/azure-sql/database/purchasing-models?view=azuresql).
+
+
+### Skalierbare Service Tiers
+
+ Die Azure SQL Datenbank bietet 3 unterschiedliche Service-Stufen:
+
+
+ - **Standard/Universell** Für gewöhnliche Business Worloads. Lizenziert nach vCPUs oder DTU.
+
+ - **Premium/Unternehmenskritisch** Für Online Transaction Processing (OLTP) Datenbanken mit hoher Transaktionsrate, geringer Latenz und Premium Verfügbarkeit.
+
+ - **Hyperscale** Mit automatischer Skalierung für sehr große OLTP Datebanken bis 100 TB. Unterstützt bislang keine Managed SQL Server.
+
+
+
+## Vorteile mit der Azure SQL-DB
+
+
+ - **Vollständig verwaltete Datenbank** Automatisierte Updates, Bereitstellung, Sicherung, Hochverfügbarkeit und vieles mehr.
+
+ - **Flexible Anpassung** Unterschiedliche Kauf- und Bereitstellungsoptionen mit Service Tiers für jeden Bedarf.
+
+ - **Integrierte Sicherheit** Mehrere Schutzebenen mit integrierten Kontrollmechanismen und intelligenter Erkennung von Bedrohungen.
+
+ -  **Hochverfügbarkeit** [SLA von 99,995%](https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services?lang=1) durch Hochverfügbarkeit und integrierte KI.
+
+
+
+## Wie erhalte ich Zugang zu den Azure Diensten
+
+ Die Azure Subscription (Azure Abonnement) wird für die Nutzung der meisten Azure Dienste, wie Windows Virtual Desktop, benötigt.
+
+ Auf die Azure Subscription werden alle genutzten Azure-Dienste gebucht. Die Abrechnung erfolgt **jeweils am Monatsende** und richtet sich nach den **verwendeten Resourcen** der gebuchten Dienste.
+
+ Die Kosten für die Subscription sind somit abhängig von allen darauf gebuchten Diensten und deren jeweiliger Nutzungsdauer.
+
+ Die Azure Produkte sind über die Lizenzprogramme [Cloud Service Provider (CSP)](/hersteller/microsoft/csp/) oder [Enterprise Agreement](/hersteller/microsoft/lizenzierung/) erhältlich.
+
+ Weitere Informationen zur Azure Lizenzierung und der enthaltenen Services finden Sie in unserer [Azure FAQ und Dienstübersicht](/hersteller/microsoft/azure/faq/).
+
+
+
+### Unsere Empfehlung: Azure über CSP
+
+ Über Software-Express als CSP können Sie die Azure Services produktiv nutzen und erhalten die Vorteile wie günstigere Preise, gewohnte Rechnungen oder Buchungs-/und Kostenkontrolle.
+
+
+## Weitere Azure Dienste
+
+ - [Azure Subscription](/hersteller/microsoft/azure/)
+ - [Azure Active Directory](/hersteller/microsoft/azure/active-directory/)
+ - [Windows Virtual Desktop](/hersteller/microsoft/azure/azure-virtual-desktop/)

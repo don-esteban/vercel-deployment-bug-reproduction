@@ -1,0 +1,10 @@
+- key: stormagic
+  items:
+    - name: StorMagic
+      slug: /hersteller/stormagic/
+    - name: SvSAN
+      slug: /hersteller/stormagic/svsan/
+    - name: SvKMS
+      slug: /hersteller/stormagic/svkms/
+    - name: Cloud Services
+      slug: /hersteller/stormagic/cloud/

@@ -1,0 +1,14 @@
+- key:      google
+  items:
+  - name:   Google
+    slug:   /hersteller/google/
+  - name:   Workspace Starter
+    slug:   /hersteller/google/workspace-starter/
+  - name:   Workspace Business
+    slug:   /hersteller/google/workspace-business/
+  - name:   Workspace Enterprise
+    slug:   /hersteller/google/workspace-enterprise/
+  - name:   ChromeOS
+    slug:   /hersteller/google/chromeos/
+  - name:   Chromebooks
+    slug:   /hersteller/google/chromebooks/

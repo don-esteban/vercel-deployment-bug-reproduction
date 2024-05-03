@@ -1,0 +1,72 @@
+- key: acronis
+  items:
+    - name: Acronis
+      slug: /hersteller/acronis/
+    - name: Cyber Protect - Backup Standard
+      sub:
+        - name: Übersicht
+          slug: /hersteller/acronis/cyber-backup-standard/
+        - name: Workstation (Renewal only)
+          slug: /hersteller/acronis/cyber-backup-standard/workstation/
+        - name: Server (Renewal only)
+          slug: /hersteller/acronis/cyber-backup-standard/server/
+        - name: Windows Server Essentials (Renewal only)
+          slug: /hersteller/acronis/cyber-backup-standard/windows-server-essentials/
+        - name: Virtual Host (Renewal only)
+          slug: /hersteller/acronis/cyber-backup-standard/virtual-host/
+        - name: Microsoft 365
+          slug: /hersteller/acronis/cyber-backup-standard/microsoft-365/
+    - name: Cyber Protect - Backup Advanced
+      sub:
+        - name: Übersicht
+          slug: /hersteller/acronis/cyber-backup-advanced/
+        - name: Workstation
+          slug: /hersteller/acronis/cyber-backup-advanced/workstation/
+        - name: Server
+          slug: /hersteller/acronis/cyber-backup-advanced/server/
+        - name: Virtual Host
+          slug: /hersteller/acronis/cyber-backup-advanced/virtual-host/
+        - name: Microsoft 365
+          slug: /hersteller/acronis/cyber-backup-advanced/microsoft-365/
+    - name: Cyber Protect Essentials
+      sub:
+        - name: Übersicht
+          slug: /hersteller/acronis/cyber-protect-essentials/
+        - name: Workstation
+          slug: /hersteller/acronis/cyber-protect-essentials/workstation/
+        - name: Server
+          slug: /hersteller/acronis/cyber-protect-essentials/server/
+    - name: Cyber Protect Standard
+      sub:
+        - name: Übersicht
+          slug: /hersteller/acronis/cyber-protect-standard/
+        - name: Workstation
+          slug: /hersteller/acronis/cyber-protect-standard/workstation/
+        - name: Server
+          slug: /hersteller/acronis/cyber-protect-standard/server/
+        - name: Windows Server Essentials
+          slug: /hersteller/acronis/cyber-protect-standard/windows-server-essentials/
+        - name: Virtual Host
+          slug: /hersteller/acronis/cyber-protect-standard/virtual-host/
+    - name: Cyber Protect Advanced
+      sub:
+        - name: Übersicht
+          slug: /hersteller/acronis/cyber-protect-advanced/
+        - name: Workstation
+          slug: /hersteller/acronis/cyber-protect-advanced/workstation/
+        - name: Server
+          slug: /hersteller/acronis/cyber-protect-advanced/server/
+        - name: Virtual Host
+          slug: /hersteller/acronis/cyber-protect-advanced/virtual-host/
+    - name: Snap Deploy
+      slug: /hersteller/acronis/snap-deploy/
+    - name: Files Connect
+      slug: /hersteller/acronis/files-connect/
+    - name: Cyber Files
+      slug: /hersteller/acronis/cyber-files/
+    - name: Cyber Infrastructure
+      slug: /hersteller/acronis/cyber-infrastructure/
+    - name: Cyber Appliance
+      slug: /hersteller/acronis/cyber-appliance/
+    - name: Cyber Protect Connect Professional
+      slug: /hersteller/acronis/cyber-protect-connect/

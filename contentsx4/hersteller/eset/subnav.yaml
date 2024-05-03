@@ -1,0 +1,55 @@
+- key:      eset
+  items:
+  - name:   ESET
+    slug:   /hersteller/eset/
+  - name:   PROTECT (Bundles)
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/eset/protect/
+    - name:   PROTECT on-prem
+      sub:
+      - name:   PROTECT Entry on-prem
+        slug:   /hersteller/eset/protect/entry-on-prem/
+      - name:   PROTECT Advanced on-prem
+        slug:   /hersteller/eset/protect/advanced-on-prem/
+      - name:   PROTECT Complete on-prem
+        slug:   /hersteller/eset/protect/complete-on-prem/
+      - name:   PROTECT Enterprise on-prem
+        slug:   /hersteller/eset/protect/enterprise/
+    - name:   PROTECT Cloud
+      sub:
+      - name:   PROTECT Entry
+        slug:   /hersteller/eset/protect/entry/
+      - name:   PROTECT Advanced
+        slug:   /hersteller/eset/protect/advanced/
+      - name:   PROTECT Complete
+        slug:   /hersteller/eset/protect/complete/
+      - name:   PROTECT Enterprise
+        slug:   /hersteller/eset/protect/enterprise/
+      - name:   PROTECT Mail Plus
+        slug:   /hersteller/eset/protect/mail-plus/
+      - name:   PROTECT Elite
+        slug:   /hersteller/eset/protect/elite/
+  - name:   Detection and Response (EDR/XDR)
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/eset/detection-and-response/
+    - name:   Essentials
+      slug:   /hersteller/eset/detection-and-response/essentials/
+    - name:   Advanced
+      slug:   /hersteller/eset/detection-and-response/advanced/
+  - name:   Managed Detection and Response (MDR)
+    sub:
+    - name:   Hauptseite
+      style: index
+      slug:   /hersteller/eset/managed-detection-and-response/
+    - name:   MDR (Service)
+      slug:   /hersteller/eset/managed-detection-and-response/mdr-service/
+    - name:   Detection & Response Ultimate
+      slug:   /hersteller/eset/managed-detection-and-response/ultimate/
+  - name:   Inspect
+    slug:   /hersteller/eset/inspect/
+  - name:   Cloud Office Security
+    slug:   /hersteller/eset/cloud-office-security/

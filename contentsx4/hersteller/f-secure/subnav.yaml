@@ -1,0 +1,18 @@
+- key:      f-secure
+  items:
+  - name:   WithSecure/F-Secure
+    slug:   /hersteller/f-secure/
+  - name:   Business-Suite
+    slug:   /hersteller/f-secure/business-suite/
+  - name:   Client Security
+    slug:   /hersteller/f-secure/client-security/
+  - name:   Server Security
+    slug:   /hersteller/f-secure/server-security/
+  - name:   E-Mail & Server Security
+    slug:   /hersteller/f-secure/email-server-security/
+  - name:   Elements EndPoint Protection
+    slug:   /hersteller/f-secure/elements-endpoint-protection/
+  - name:   Elements EDR
+    slug:   /hersteller/f-secure/elements-endpoint-detection-response/
+  - name:   Elements for Microsoft 365
+    slug:   /hersteller/f-secure/elements-for-microsoft-365/

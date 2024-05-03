@@ -1,0 +1,8 @@
+- key:      mailstore
+  items:
+  - name:   MailStore
+    slug:   /hersteller/mailstore/
+  - name:   Server Standard
+    slug:   /hersteller/mailstore/standard/
+  - name:   Premium Support
+    slug:   /hersteller/mailstore/premium/

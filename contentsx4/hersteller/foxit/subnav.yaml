@@ -1,0 +1,18 @@
+- key: foxit
+  items:
+  - name:   Foxit
+    slug:   /hersteller/foxit/
+  - name:   PDF Editor
+    sub:
+      - name:   Hauptseite
+        slug:   /hersteller/foxit/pdf-editor/
+      - name:   PDF Editor Windows
+        slug:   /hersteller/foxit/pdf-editor/#preise-windows-version
+      - name:   PDF Editor Mac
+        slug:   /hersteller/foxit/pdf-editor/#preise-mac-version
+  - name:   PDF Editor Pro
+    slug:   /hersteller/foxit/pdf-editor-pro/
+  - name:   eSign
+    slug:   /hersteller/foxit/esign/
+  - name:   eSign Pro
+    slug:   /hersteller/foxit/esign-pro/

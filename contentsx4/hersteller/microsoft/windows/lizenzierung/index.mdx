@@ -1,0 +1,206 @@
+---
+title: Windows Lizenzierung
+bcTitle: Lizenzierung
+bkey: microsoft
+ckey: stefan-barth
+date: 2023-05-26
+tocMaxLevel: 1
+wanted:
+  features:
+    - name: Übersicht der Beschaffungsmöglichkeiten für Windows in den verschiedenen Lizenzprogrammen
+    - name: Unterschiede bei den Windows Updates im Current Branch, Current Branch for Business und Long Term Servicing Channel (LTSC)
+furtherReading:
+  - name: Windows Versionsvergleich
+    slug: /hersteller/microsoft/windows/versionsvergleich/
+    description: Vergleich von Windows 10 und 11.
+  - name: Windows Update Voraussetzungen
+    slug: /hersteller/microsoft/windows/update-voraussetzungen/
+    description: Übersicht der Upgrade Grundlagen für Windows Update Lizenzen.
+---
+
+
+
+<Intro>
+
+Windows 11 kann, wie der Vorgänger Windows 10, über die gängigen Beschaffungswege gekauft werden: OEM-Kauflizenzen, Volumenlizenz-/ CSP-Updates und Subscriptions. Für virtualisierte Umgebungen gibt es VDA (Virtual Desktop Access) Lizenzen.
+Mit Servicing Branches können Sie den Update Zyklus selbst festlegen. Hier finden Sie alle Informationen zur Windows Pro und Enterprise Lizenzierung.
+
+
+</Intro>
+
+<TOC />
+
+
+## Windows Pro Lizenzierung
+
+<ArrowList>
+
+- Lizenziert wird nach Geräten (Devices).
+- Jede Gerät auf dem Windows genutzt wird, benötigt eine Lizenz.
+- Die Windows Pro Vollversion erhalten Sie im Bundle mit neuen PCs oder als [OEM Lizenz](/hersteller/microsoft/oem/).
+- Die [CSP-Lizenz](/hersteller/microsoft/csp/) ist ein Update und benötigt eine [Updategrundlage](/hersteller/microsoft/windows/update-voraussetzungen/)
+
+</ArrowList>
+
+
+### Windows Pro kaufen
+
+<ArrowItem>
+
+**[Windows 11 Pro](/hersteller/microsoft/windows/pro/)**
+
+</ArrowItem>
+
+
+## Windows Enterprise Lizenzierung
+
+<ArrowList>
+
+- Windows Enterprise eine Update-Lizenz und benötigt eine [Updategrundlage](/hersteller/microsoft/windows/update-voraussetzungen/)
+- Windows Enterprise/Education per Device wird nach Geräten lizenziert.
+- Gerätelizenzen gibt es ausschließlich als [Open Value Volumenlizenz](/hersteller/microsoft/open-value/)
+- Windows Enterprise E3/E5 sind [CSP-Subscriptions](/hersteller/microsoft/csp/) und werden nach Benutzern lizenziert.
+
+</ArrowList>
+
+
+<Info>
+
+Die meisten Lizenzbestimmungen gelten auch für [Windows Education](/hersteller/microsoft/windows/education/).
+
+</Info>
+
+
+### Windows Enterprise kaufen
+
+<ArrowItem>
+
+**[Windows 11 Enterprise](/hersteller/microsoft/windows/enterprise/)**
+
+</ArrowItem>
+
+
+<Info>
+
+**Windows 10 Supportende**
+
+Microsoft hat bereits das [Support-Ende für die beiden Editionen Windows 10 Home und Windows 10 Pro](https://learn.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro) bekannt gegeben. Ab dem 14.10.2025 wird es keine weiteren Updates mehr für die beiden Versionen geben.	Bislang ist noch kein offizielles Supportende [Windows 10 Enterprise](/hersteller/microsoft/windows/enterprise/) angekündigt. Die Enterprise Edition beinhaltet allerdings auch immer Support und Upgrades auf neue Versionen.
+
+Siehe: [Microsoft Support-Ende](/hersteller/microsoft/supportende-eol/).
+
+</Info>
+
+
+#### Windows 10/11 Enterprise Software Assurance (SA)
+
+Windows 10/11 Enterprise ist ausschließlich in den Volumenlizenzprogrammen mit Software Assurance oder als CSP Subscription erhältlich. Damit sind auch erweiterte Nutzungsrechte und Services enthalten. Für Windows 10/11 Pro ist keine SA oder Subscription verfügbar.
+Zu den Vorteilen mit Windows Enterprise zählen:
+
+<ArrowList>
+
+ - **MDOP:** Siehe [Microsoft Desktop Optimization Pack](https://learn.microsoft.com/en-us/microsoft-desktop-optimization-pack/).
+ - **Windows Thin PC:** Siehe [Windows Thin PC FAQ](https://download.microsoft.com/download/1/4/8/148AD06A-B4BD-4078-8AFA-68F829A83E23/WinTPC%20FAQ%20v2%200.pdf).
+ - **Windows Virtual Desktop Access (VDA) Rights:** Für virtuelle Desktop Infrastrukturen interessat. Zugriff auf virtuelle Windows Instanzen.
+ - **Windows To Go:** Nutzung von Windows 10 Enterprise von USB-Devices.
+ - **Alle [Servicing Branches](#windows-update-einstellungen-servicing-branches):** CB, CBB und neue LTSC.
+ - Extended Hotfix Support, Resolution Support, E-Mail-Support, Zugang zum Windows-Quellcode für interne Entwicklung und Support, Trainingsgutscheine, E-Learning.
+
+</ArrowList>
+
+
+## Windows-Update-Einstellungen (Servicing Branches)
+
+Windows Updates unterscheiden sich in den verfügbaren Update Zyklen und Methoden über Servicing Branches:
+
+### Current Branch (CB)
+
+ Dies ist die Standardeinstellung in Windows: Sie erhalten und installieren Updates automatisch, sobald diese verfügbar sind. Die Updates können über den Windows Update Service heruntergeladen werden oder über einen Windows Server Update Services (WSUS) verteilt werden.
+
+### Current Branch for Business (CBB)
+
+ Beim Current Branch for Business (CBB) kann die Installation der Updates bis zu 8 Monate aufgeschoben werden. Die Einstellung ist in den Windows 10 Editionen Pro, Education und Enterprise enthalten. Damit haben Sie Zeit um die neuen Funktionen erst selbst zu testen, bzw. den unsicheren Einführungszeitraum für neue Funktionen abzuwarten.
+
+### Long-Term Servicing Channel (LTSC)
+
+ Die Windows 10 LTSC-Edition (vormals LTSB - Long Term Servicing Branch) gibt es in den Volumenlizenzprogrammen und im CSP. Die LTSC-Edition erhält lediglich Sicherheitsupdates und ist somit auf den Funktionumfang bei der Erst-Installation eingefroren. Daher sind einige Windows 10 Applikationen und Funktionen, die von Microsoft regelmäßig neue Funktionsupdates erhalten, in der LTSC-Version nicht enthalten.
+ Darunter sind unter anderem der Edge Browser (Internet Explorer 11 ist enthalten), Cortana (eingeschränkte Suche ist möglich), Windows Store und einige der vorinstallierten Apps, wie Outlook Mail, Outlook Calendar, OneNote, Weather, News, Sports, Money, Photos, Camera, Music und Clock.
+
+
+## Windows VDA Lizenzierung
+
+Die Windows Enterprise E3 oder E5 Lizenz deckt die meisten Virtualisierungsszenarios für den Zugriff von Windows PCs ab. In den [Windows Enterprise](/hersteller/microsoft/windows/enterprise/) Lizenzen ist das VDA Recht bereits enthalten.
+[Windows VDA](/hersteller/microsoft/windows/vda/) (Virtual Desktop Access) wird daher benötigt, wenn von Nicht-Windows-Rechnern (Mac, Thin Client, Linux PCs etc.) auf virtuelle Windows-Desktops zugegriffen werden soll.
+Es kann als Volumenlizenz nach Geräten oder als Subscription nach Benutzern lizenziert werden.
+
+
+### Windows VDA aus dem Volumenlizenzprogramm
+
+ Mit [Windows 10/11 Enterprise VDA](/hersteller/microsoft/windows/vda/) im Volumenlizenzprogramm Open Value wird immer ein spezifisches Gerät lizenziert. Auch Geräte außerhalb des Unternehmens, beispielsweise Home Office-PCs die dem jeweiligen Mitarbeiter gehören oder PCs die bei einem Vertragspartner stehen, können lizenziert werden.
+
+ Das lizenzierte Gerät muss mit einem qualifizierenden Betriebssystem (OS) lizenziert sein und das qualifizierende OS muss auf dem lizenzierten Gerät installiert sein. Die Zuweisung der VDA Pro-Gerät-Lizenz ist dauerhaft, außer der Kunde hat Software Assurance für das betreffende Gerät. Die Lizenz kann nach 90 Tagen einem anderen Gerät zugewiesen werden. Im Falle eines Hardware-Defekts auch vor Ablauf der 90-tägigen Frist.
+
+### Windows VDA aus dem CSP Programm
+
+[Windows 10 E3 VDA CSP](/hersteller/microsoft/windows/vda/) wird pro Benutzer lizenziert. Mit VDA CSP darf der Nutzer auf seinen virtuellen Desktop oder auf eine virtuelle Maschine aus der Azure Cloud, von einem beliebigen Gerät außerhalb des Unternehmensnetzwerks zugreifen. 
+
+
+### Windows VDA Anwendungsbeispiele
+
+Die meisten Nutzer benötigen keine speziellen VDA Lizenzen.
+Wir listen hier einige Anwendugsfälle, in denen sich eine VDA Lizenzierung dennoch lohnen kann:
+
+<ArrowList>
+
+ - Ausführung von mehreren Windows-Instanzen auf dem eigenen Rechner für Test und Entwicklung.
+ - Ausführung von Windows auf Servern im Rechenzentrum oder in der Azure-Cloud (VDI bzw. Virtual Desktop Infrastructure).
+ - Von Thin Clients, von Tablets und beispielsweise von Zuhause wird auf den virtuellen Desktop zugegriffen.
+ - Reines BYOD. Mitarbeiter nutzen ihren virtuellen Desktop ausschließlich von eigenen Devices wie Notebooks oder Tablets.
+ - Externe Mitarbeiter bekommen Zugriff auf einen im Rechenzentrum gehosteten virtuellen Desktop.
+
+</ArrowList>
+
+
+## Lizenzprogramme und Bezugswege
+
+### OEM Kauflizenzen
+
+Dauerhaft gültige [OEM-Lizenz](/hersteller/microsoft/oem/) (perpetual License) mit eigenschränkten Rechten. Lizenziert wird pro Gerät. Support und einige Nutzungsrechte, bspw. zur Zweitnutzung oder Virtualisierung, sind nicht enthalten.
+
+OEM oder auch SB (Systembuilder)-Versionen sind die einfachste Möglichkeit Windows 10 oder 11 zu erhalten. Sie erhalten einen COA ([Certificate of Authenticity](/glossar/coa-certificate-of-authenticity/))-Sticker mit dem Lizenzschlüssel physisch zugesandt. Der COA-Sticker ist der Lizenznachweis und sollte daher gut aufgehoben werden. Die OEM Lizenz dient auch als [Upgrade Grundlage](/hersteller/microsoft/windows/update-voraussetzungen/).
+
+
+### Open Value Volumenlizenzen
+
+[Open Value Volumenlizenzen](/hersteller/microsoft/open-value/) enthalten immer [Software Assurance (SA)](/hersteller/microsoft/software-assurance/) und können als Kauflizenz mit 3 Jahren Software Assurance im Voraus oder auf Raten gekauft werden. Es gibt Sonderkonditionen für Behörden, Bildungseinrichtungen und gemeinnützige Organisationen. Seit Ende 2021 werden Open License Kunden bei SA-Verlängerungen auf das Open Value Lizenzprogramm umgestellt. Beachten Sie bitte, dass sich hierbei die Vertragslaufzeit von 2 Jahren (Open License) auf 3 Jahre (Open Value) ändert. Gerne beraten wir Sie beim Wechsel.
+Für eine Upgrade-Lizenz muss jeweils ein [qualifizierendes Betriebssystem](/hersteller/microsoft/windows/update-voraussetzungen/) auf dem Gerät vorhanden sein.
+
+Im den Microsoft Volumenlizenzprogrammen können Sie ab einer Bestellmenge von fünf Lizenzen einkaufen.
+
+### CSP Kauflizenzen
+
+Windows Pro Kauflizenzen für gewerbliche Kunden sind im [CSP-Lizenzprogramm](/hersteller/microsoft/csp/) erhältlich. Lizenziert wird pro Benutzer. Es gibt hier keine Mindestbestellmenge und auch keine Software Assurance. Bildungseinrichtungen und gemeinnützige Organisationen erhalten Sonderkonditionen. Behörden erhalten dieselben Einkaufskonditionen, wie Unternehmen. Das Downgrade-Recht, zum Einsatz älterer Versionen, ist aber enthalten. Die Software kann im CSP Portal heruntergeladen werden.
+Es wird eine [Upgrade Grundlage](/hersteller/microsoft/windows/update-voraussetzungen/) benötigt.
+
+### CSP Subscriptions
+
+CSP Subscriptions enthalten dieselben [Vorteile wie die Software Assurance](/hersteller/microsoft/software-assurance/) in den Volumenlizenzverträgen. Die Lizenzen können im CSP Portal heruntergeladen werden.
+Es wird eine [Upgrade Grundlage](/hersteller/microsoft/windows/update-voraussetzungen/) benötigt.
+
+
+## ALternative: Microsoft 365
+
+Die Windows Enterprise Lizenz ist auch in vielen Microsoft 365 Abonnements im Bundle mit weiteren Microsoft Produkten, wie Office, Exchange Online oder SharePoint Online, verfügbar.
+
+<ArrowItem>
+
+**[Microsoft 365](/hersteller/microsoft/microsoft-365/)**
+
+</ArrowItem>
+
+
+<GetInTouch theme="light">
+
+Sie haben weitere Fragen zum Produkt oder zur Lizenzierung?<br />
+Kein Problem. Rufen Sie an oder schreiben Sie eine E-Mail. Ich berate Sie gerne.
+
+</GetInTouch>

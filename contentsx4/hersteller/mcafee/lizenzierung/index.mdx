@@ -1,0 +1,226 @@
+---
+title: Trellix Lizenzierung im Überblick
+bcTitle: Lizenzierung
+bkey: mcafee
+ckey: simon-klein
+date: 2023-06-23
+seoTitle: Trellix Security Lizenzierung | Vergleich, Lizenzen, Node, User, Betriebssystem
+seoDescription: Informationen für Einkäufer und Administratoren. Nur 3 Klicks zu Ihrem Angebot. Ratgeber zu Lizenzen, Updates und Subscriptions.
+wanted:
+  title: Überblick Lizenzierung
+  features:
+    - name: Lizenzierungsarten bei Trellix Enterprise
+    - name: Erläuterungen und Hinweise
+furtherReading:
+  - name: Trellix ePolicy Orchestrator (ePO) FAQ
+    description: FAQ zur Trellix Verwaltungszentrale
+    slug:   /hersteller/mcafee/epolicy-orchestrator-epo-faq/
+  - name: Endpoint Security FAQ
+    description: Überblick der wichtigsten Komponenten und Neuerungen, wie beispielsweise den Virenscanner (Anti Malware, Antivirus, Anti-Spyware), Desktop Firewall und Web Control.
+    slug:   /hersteller/mcafee/endpoint-security/
+---
+
+
+
+<Intro>
+
+Auf dieser Seite finden Sie einen Überblick zu verschiedenen Lizenzierungsarten von Trellix Enterprise.
+
+
+</Intro>
+
+<TOC />
+
+## Kauflizenz
+
+Kauflizenzen sind Dauerlizenzen. Im Gegensatz zu Subscriptions (Abonnement-Lizenzen) ist das Nutzungsrecht zeitlich unbegrenzt. Trellix bezeichnet Kauflizenzen auch mit Perpetual License.
+
+Beispiel für eine Kauflizenz: Trellix Complete Data Protection.
+
+## Subscription
+
+Subscriptions bzw. Abonnement-Lizenzen gewähren das Nutzungsrecht nur während der Laufzeit. Nach Ablauf müssen Subscriptions verlängert oder deinstalliert werden. Subscriptions enthalten ebenfalls Support (Basic Support) und oft zusätzliche Dienste, die typischerweise aus der Cloud bezogen werden. Beispielsweise enthält MVISION das in der Cloud gehostete Management-Tool ePO SaaS.
+
+Beispiel für eine Subscription: Trellix MVISION.
+
+## Lizenzierung nach Benutzern
+
+Bei der Lizenzierung nach Benutzern werden alle Nutzer gezählt, die mit der Software arbeiten bzw. geschützt werden müssen. Der Begriff "Benutzer" bezeichnet eine einzelne Person in einer Organisation, die über eine gültige Lizenz für die Verwendung der Software verfügt und die von dieser Person autorisiert wurde, die Software zu verwenden. Siehe auch  [Trellix Product Entitlement Definitions PDF](/hersteller/mcafee/mcafee-product-entitlement-definitions.pdf)
+
+Beispiel für eine Benutzer-Lizenz: [MVISION](/hersteller/mcafee/mvision/). Pro Benutzerlizenz darf die Software auf insgesamt fünf Endgeräten installiert und genutzt werden. Das Notebook, Smartphone oder der Computer muss Eigentum des Lizenznehmers sein. Für weitere Endgeräte sind entsprechend eine oder mehrere zusätzliche Lizenzen erforderlich. Wird ein Endgerät, z.B. ein Drucker oder Server, von mehreren Personen genutzt, zählt auch dieser als Benutzer und benötigt eine eigene Lizenz.
+
+
+
+## Lizenzierung nach Betriebssystem-Instanzen
+
+Eine Betriebssystem-Instanz (OS-Instanz) ist jedes einzelne installierte Betriebssystem (OS). Auf einem physischen Server, der nicht virtualisiert wurde, kann nur ein Betriebssystem installiert sein. Wurde der physische Server virtualisiert, können mehrere OS-Instanzen laufen. In diesem Fall ist ebenfalls eine Lizenz pro OS-Instanz erforderlich. Siehe auch [Trellix Product Entitlement Definitions PDF](/hersteller/mcafee/mcafee-product-entitlement-definitions.pdf)
+
+Beispiel einer OS-Instance-Lizenz": [Trellix Cloud Workload Security (CWS)](/hersteller/mcafee/cloud-workload-security/).
+
+## Lizenzierung nach Nodes
+
+Was ist ein Node? Die traditionellen Trellix Lösungen werden pro Node lizenziert. Ein Node (Knoten) ist ein Endpunkt, der mit einer Trellix Lösung geschützt wird. Zwischen physischen und virtuellen Endpunkten wird nicht unterschieden.
+
+Ein Node ist jede Art von Gerät, das in der Lage ist, Daten zu verarbeiten, einschließlich, aber nicht beschränkt auf die folgenden Arten von IT-Geräten:
+Mobile Endgeräte (wie Smartphones und Tablets), PC-Workstations, Dateiserver, Druckserver, E-Mail-Server, Terminalserver, Internet-Gateways, Storage Area Network Server (SANS). Geräte, die mit einem Server oder Netzwerk verbunden sind, auf dem die Trellix Enterprise Software ausgeführt wird, gelten ebenfalls als Knoten. Auf einem virtuellen System gilt jede virtuelle Maschine oder Instanz, auf der die Trellix Enterprise Software ausgeführt wird, ebenfalls als Node. Siehe auch [Trellix Product Entitlement Definitions PDF](/hersteller/mcafee/mcafee-product-entitlement-definitions.pdf).
+
+<Info type="strong">
+
+*Anwendungsbeispiel:*<br />
+Mit [Trellix Complete Data Protection](/hersteller/mcafee/cdp-uebersicht/) kann man beispielsweise ein [Microsoft Surface Laptop](https://surface-world.de/shop/surface-familie/surface-laptop-2-for-business/), einen Windows-Arbeitsplatzrechner, einen mit [VMWare vSphere](/hersteller/vmware/vsphere/) virtualisierten Windows-Server oder einen virtuellen Desktop schützen.
+Jeder Endpunkt wird einfach als "Node" gerechnet. Weitere Beispiele für Endpunkte sind Datenbank-Server und Storage Devices.
+
+</Info>
+
+## Beispiele zur Lizenzierung
+
+Im Folgenden stellen wir Beispiele vor, wie die vorhandene Infrastruktur lizenziert werden kann.
+
+
+### Physische Infrastruktur ohne Virtualisierung
+
+<Info type="strong">
+
+Bei diesem Beispiel besteht die Umgebung aus einem Windows-Server, einem Exchange-Server und aus verschiedenen Windows-/macOS-Endgeräten. Im Trellix Lizenz-Bundle [Trellix Complete Endpoint Protection - Business (CEB)](/hersteller/mcafee/complete-endpoint-protection-business/) sind alle notwendigen Komponenten enthalten. Bei **CEB** gilt die Mindestbestellmenge von 5 Lizenzen.
+
+</Info>
+
+|Anzahl|Endpoint/Node|Kommentar|
+|:---:|:---|:---|
+|1|Windows Server 2019|Der Server wird auch als Domain Controller und Dateiablage genutzt. CEB enthält den nötigen Virenschutz für Windows Server.|
+|1|Microsoft Exchange Server 2019|Für Microsoft Exchange ist eine spezielle Komponente in der CEB enthalten. MS Exchange wird als Node gerechnet und erfordert eine eigene Lizenz.|
+|25|Windows 10 Rechner (Desktops, Notebook)|Jeder Windows-Rechner wird als 1 Node gerechnet.|
+|5|Apple MacBooks|In der CEB ist ebenfalls der Schutz für macOS enthalten. Jedes einzelne macOS Gerät wird als 1 Node gerechnet|
+|32||Summe zu lizenzierender Nodes. Sie bestellen 32 x CEB in der Staffel 26-50 Nodes.|
+
+
+
+### Physische Infrastruktur mit SharePoint
+
+<Info type="strong">
+
+Bei diesem Beispiel besteht die Umgebung aus einem Windows-Server, einem Exchange-Server, einem SharePoint-Server und aus verschiedenen Windows-/macOS-Endgeräten. Im Trellix Lizenz-Bundle [Trellix Complete Endpoint Protection - Business (CEB)](/hersteller/mcafee/complete-endpoint-protection-business/) sind alle notwendigen Komponenten enthalten. Bei **CEB** gilt die Mindestbestellmenge von 5 Lizenzen.
+
+Die Umgebung sieht wie folgt aus:
+
+</Info>
+
+|Anzahl|Endpoint/Node|Kommentar|
+|:---:|:---|:---|
+|1|Windows Server 2019|Der Server wird auch als Domain Controller und Dateiablage genutzt. CEB enthält den nötigen Virenschutz für MS Windows Server.|
+|1|Microsoft Exchange Server 2019|Für Microsoft Exchange ist eine spezielle Komponente in der CEB enthalten. MS Exchange wird als Node gerechnet und erfordert eine eigene Lizenz.|
+|1|Microsoft SharePoint Server 2019|Wenn der SharePoint Server geschützt werden soll, wird dafür die CEB benötigt. Der MS SharePoint Server wird dann als Node gerechnet und erfordert eine Lizenz.|
+|25|Windows 10 Rechner (Desktops, Notebook)|Jeder Windows-Rechner wird als 1 Node gerechnet.|
+|5|Apple MacBooks|In der CEB ist ebenfalls der Schutz für macOS enthalten. Jedes einzelne macOS Gerät wird als 1 Node gerechnet|
+|33||Summe zu lizenzierender Nodes. Sie bestellen 33 x CEB in der Staffel 26-50 Nodes.|
+
+
+_Als kleiner Zusatz: mit CEB können auch Festplatten und Wechselmedien verschlüsselt werden._
+
+
+
+### Umgebung mit virtuellen Instanzen
+
+<Info type="strong">
+
+Bei diesem Beispiel werden die Windows-Desktops, der SharePoint-Server und zwei Windows-Server aus Azure (Cloud) zur Verfügung gestellt (Virtual Desktop Infrastructure oder kurz VDI). Der Zugriff erfolgt von Thin Clients. Die virtuellen Desktops können mit [MOVE AntiVirus for Virtual Desktops](/hersteller/mcafee/move/antivirus-for-virtual-desktops/) abgesichert werden. Für die nötige Lizenzierung gilt die Mindestbestellmenge von 5 Lizenzen.
+
+</Info>
+
+|Anzahl|Endpoint/Node|Kommentar|
+|:---:|:---|:---|
+|2|Windows Server 2019|Der Server wird auch als Domain Controller und Dateiablage genutzt. CEB enthält den nötigen Virenschutz für MS Windows Server.|
+|1|Microsoft SharePoint Server 2019|Wenn der SharePoint-Server geschützt werden soll, wird dafür die CEB benötigt. Der SharePoint-Server wird dann als Node gerechnet und erfordert eine Lizenz.|
+|30|virtuelle Windows 10 Desktops (Azure)|Jeder Windows-Desktop wird als 1 Node gerechnet.|
+|5|Apple MacBooks|In der CEB ist ebenfalls der Schutz für macOS enthalten. Jedes macOS-Gerät wird als 1 Node gerechnet|
+|38||Summe zu lizenzierender Nodes. Sie bestellen 30 x MOVE AntiVirus for Virtual Desktops in der Staffel 26-50 Nodes und 8x CEB (da der SharePoint Server geschützt werden soll).|
+
+### Umgebung mit einer Cloud-Infrastruktur
+
+<Info type="strong">
+
+In diesem Beispiel speichert das Unternehmen Daten, Dateien sowie Dokumente in der Cloud. Die Mitarbeiter sollen mit beliebigen Endgeräten (Smartphone, Laptop, PC) auf die Daten in der Cloud zugreifen können, die Endgeräte und der Datenverkehr sollen geschützt werden. Die Infrastruktur basiert auf Windows 10 Umgebungen. Zum Schutz der Daten auf lokalen und mobilen Endgeräten wird [MVISION Plus](/hersteller/mcafee/mvision/plus/) empfohlen. Dieses Softwarepaket beinhaltet neben einem erweiterten Virenschutz für Windows 10 Umgebungen auch einen Schutz für IoT-Geräte und mobile Endgeräte.
+
+[MVISION](/hersteller/mcafee/mvision/) ist ein Abonnement und wird pro Benutzer lizenziert. Jeder Nutzer ist berechtigt, die Lizenz auf bis zu 5 Endgeräten zu nutzen. Die Mindestabnahme liegt bei 5 Lizenzen. Business-Support ist im Abonnement enthalten.
+
+</Info>
+
+|Anzahl|Endpoint/Node|Kommentar|
+|:---:|:---|:---|
+|30|Mitarbeiter|Jeder Mitarbeiter wird als User gerechnet.|
+|30|Smartphones|Smartphones können mit der MVISION Software geschützt werden. Endgeräte benötigen hierbei keine zusätzliche Lizenz.|
+|30|Windows 10 Rechner|Jeder Windows-Desktop wird normalerweise als 1 Node gerechnet. Endgeräte benötigen hierbei keine zusätzliche Lizenz.|
+|15|Surface Laptops|Jeder Laptop wird normalerweise als 1 Node gerechnet. Endgeräte benötigen hierbei keine zusätzliche Lizenz.|
+|1|Drucker|Drucker können mit der MVISION Software geschützt werden. Dieser wird von mehreren Personen genutzt und zählt als "User".|
+|1|Server|Server können mit der MVISION Software geschützt werden. Dieser wird von mehreren Personen genutzt und zählt als "User".|
+|32||Summe zu lizenzierenden Nutzer. Sie bestellen 32 x MVISION Plus in der Staffel 5-250 User.|
+
+<Info>
+
+Falls Sie Interesse an [Surface-Laptops](https://surface-world.de/produkt-kategorie/neue-surface-modelle/) haben, können Sie sich gerne bei [Surface World](https://surface-world.de/) umschauen, oder direkt Kontakt mit [Raphael Schurer](https://surface-world.de/kontakt/business/) aufnehmen.
+
+
+</Info>
+
+
+### Wartungsverlängerungen
+
+Nach einem Jahr der Neubestellung läuft die Wartung bzw. der Business-Support aus. Mit der Wartung erhält man regelmäßige Aktualisierungen, Support, sowie Upgrades und Updates.
+
+Wartungsverlängerung können für ein, zwei oder drei Jahre vorgenommen werden. Dazu wird die jeweilige Grant# benötigt. Wenn durch den Nachkauf mehrere Berechtigungsnummern vorhanden sind, müssen die Support-Renewals zum Preislevel der jeweiligen Grant# bestellt werden.
+
+
+**Beispiel:**
+
+Es wurden zuerst 20 [Trellix Complete Endpoint Protection - Business (CEB)](/hersteller/mcafee/complete-endpoint-protection-business/)-Lizenzen und später weitere 60 [CEB](/hersteller/mcafee/complete-endpoint-protection-business/)-Lizenzen dazu gekauft, dann sind zwei Bewilligungsnachweise/Lizenznachweise und damit zwei Grant# vorhanden. Das Support-Renewal für die 20 [CEB](/hersteller/mcafee/complete-endpoint-protection-business/) erfolgt in der 5-25er Staffel, die 60 [CEB](/hersteller/mcafee/complete-endpoint-protection-business/) in der 51-100er Staffel.
+
+
+
+
+<GetInTouch variant="info">
+
+**Laufzeitanpassungen:** Falls weitere Bestellung geplant sind, können die Laufzeiten angepasst werden. Kontaktieren Sie mich dazu, ich erstelle Ihnen gerne ein individuelles Angebot.
+
+</GetInTouch>
+
+### Trellix Nachbestellung
+
+Es werden für weitere Mitarbeiter zusätzliche Lizenzen benötigt? Ab 5 Lizenzen ist ein Nachkauf möglich.
+Nachbestellungen können innerhalb der bereits erreichten Preisstaffel getätigt werden. Dazu benötigen Sie die entsprechende Bewilligungsnummer (Grant#), die Sie auf dem Bewilligungsnachweis (Grant Letter, Lizenzpapier) finden. Bei Nachbestellungen erhalten Sie jeweils eine neue Grantnummer. Die Laufzeit der Wartung bei Neubestellungen beginnt mit dem Lieferdatum und beträgt 1 Jahr. Die Laufzeiten können nur mit einer [Wartungsverlängerung](#wartungsverlängerungen) angepasst werden. Lizenzerweiterungen, die mit der Wartungsverlängerung einhergehen, haben die gleiche Laufzeit.
+
+*Beispiele zu Nachbestellungen:*
+
+- Es gibt derzeit 80 Trellix-Lizenzen, z.B. 80 CEB-Lizenzen. 5 Lizenzen werden nachgekauft. Diese 5 Lizenzen können in der bereits erreichten Staffel 51-100 bestellt werden. Bei der Bestellung muss die Grant# der 80 Lizenzen angegeben werden. Es wird jedoch auf eine neue Grant# gebucht, d.h. man erhält einen weiteren Bewilligungsnachweis mit einer neuen Bewilligungsnummer.
+- Es werden 30 Lizenzen nachgekauft. Obwohl insgesamt 120 Lizenzen erworben werden, gilt weiterhin die Preisstaffel 51-100. Auch hier gibt es einen neuen "Grant Letter" mit einer neuen Grant Number.
+- Die Wartung einer Erstbestellung von 80 Trellix-Lizenzen läuft aus. Sie verlängern die 80 Lizenzen und kaufen zusätzlich 25 Lizenzen. Obwohl Sie in dieser Bestellung insgesamt 105 Lizenzen haben, gilt weiterhin die Preisstaffel 51-100. Erst bei der nächsten Wartungsverlängerung kann in einer günstigeren Preisstaffel eingekauft werden.
+- Es werden 120 Lizenzen nachgekauft, dadurch bekommt man den Preis der 101-250er Staffel. Auch diese Bestellung löst einen neuen "Grant Letter" mit neuer Bewilligungsnummer aus. Es können nun Bestellungen in günstigeren Preisstaffel getätigt werden.
+
+
+<Info>
+
+**Was ist ein Grant#?:** <br />
+
+Grant Numbers (Grant#, Bewilligungsnummer) sind eine Art Kundennummern, über die Trellix die gekauften Lizenzen identifiziert. Grant Numbers werden beispielsweise bei Nachbestellungen für die Bestimmung des Preislevels benötigt. Über die Grant# erhält man ebenfalls Zugriff auf Downloads für Ihre lizenzierte Software.
+
+Trellix vergibt bei jeder Bestellung (auch bei einer Nachbestellung) eine neue Bewilligungsnummer. Man kann über Support-Laufzeitanpassungen eine Zusammenlegung von Grant Numbers erreichen. Das wirkt sich zukünftig positiv auf Renewal- und Nachkauf-Preise aus.
+
+
+Gerne berate ich Sie individuell zum Thema Lizenzierung und Produkten, rufen Sie mich an.
+
+</Info>
+
+## Rabattgruppe für Firmen, Behörden und Schulen
+
+Es gibt die folgenden Rabattgruppen:
+
+-  **Commercial:** Für alle Firmen und Organisationen, die nicht in eine andere Rabattgruppe gehören.
+-  **Government:** Für Behörden und Einrichtungen der Öffentlichen Hand.
+-  **Education:** Für Schulen und anerkannte Ausbildungseinrichtungen. Außerdem können viele gemeinnützige Organisationen in der EDU-Rabattgruppe bestellen.
+
+
+<GetInTouch variant="info">
+
+Auf Anfrage können wir Bildungseinrichtungen sowie Behörden ein Angebot für die vergünstigten Lizenzen erstellen. Gerne können Sie mich dazu kontaktieren.
+
+
+</GetInTouch>
