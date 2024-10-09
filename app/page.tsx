@@ -6,7 +6,7 @@ export default async function Page() {
   return (
     <div>
       <h1>TEST at 24/10/08</h1>
-      <p>Base path: {base}</p>
+      {/* <p>Base path: {base}</p> */}
       <p>Path to project: {process.cwd()}</p>
     </div>
   );
